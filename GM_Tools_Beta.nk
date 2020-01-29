@@ -3,11 +3,11 @@ BackdropNode {
  name BackdropNode10
  tile_color 0x666666ff
  label "<center><font color=orange>Motion Graphics"
- note_font "Verdana Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 390
- ypos -1307
+ xpos 279
+ ypos -1578
  bdwidth 761
  bdheight 1126
  z_order -856886
@@ -17,11 +17,11 @@ BackdropNode {
  name BackdropNode11
  tile_color 0x444444ff
  label "<center><font color=aqua>Repeaters"
- note_font "Verdana Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos -1170
+ xpos 384
+ ypos -1441
  bdwidth 551
  bdheight 179
  z_order 1
@@ -31,11 +31,11 @@ BackdropNode {
  name BackdropNode12
  tile_color 0x444444ff
  label "<center><font color=aqua>Pattern generators"
- note_font "Verdana Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos -930
+ xpos 384
+ ypos -1201
  bdwidth 551
  bdheight 179
  z_order 1
@@ -45,11 +45,11 @@ BackdropNode {
  name BackdropNode13
  tile_color 0x444444ff
  label "<center><font color=aqua>Alpha edge treatments"
- note_font "Verdana Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos -690
+ xpos 384
+ ypos -961
  bdwidth 551
  bdheight 179
  z_order 1
@@ -59,11 +59,11 @@ BackdropNode {
  name BackdropNode14
  tile_color 0x444444ff
  label "<center><font color=aqua>Switches"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos -114
+ xpos 384
+ ypos -385
  bdwidth 551
  bdheight 179
  z_order 1
@@ -73,11 +73,11 @@ BackdropNode {
  name BackdropNode15
  tile_color 0x444444ff
  label "<center><font color=aqua>Roto helpers"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos 126
+ xpos 384
+ ypos -145
  bdwidth 551
  bdheight 179
  z_order 1
@@ -87,11 +87,11 @@ BackdropNode {
  name BackdropNode16
  tile_color 0x444444ff
  label "<center><font color=aqua>Cleanup tool"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos 390
+ xpos 384
+ ypos 119
  bdwidth 551
  bdheight 179
  z_order 1
@@ -101,11 +101,11 @@ BackdropNode {
  name BackdropNode17
  tile_color 0x444444ff
  label "<center><font color=aqua>Roundtable tool"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos 654
+ xpos 384
+ ypos 383
  bdwidth 551
  bdheight 179
  z_order 1
@@ -115,11 +115,11 @@ BackdropNode {
  name BackdropNode18
  tile_color 0x444444ff
  label "<center><font color=aqua>Info checker"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos 918
+ xpos 384
+ ypos 647
  bdwidth 551
  bdheight 179
  z_order 1
@@ -129,11 +129,11 @@ BackdropNode {
  name BackdropNode19
  tile_color 0x444444ff
  label "<center><font color=aqua>Filter"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
- xpos 495
- ypos -426
+ xpos 384
+ ypos -697
  bdwidth 551
  bdheight 179
  z_order 1
@@ -143,11 +143,11 @@ Group {
  name GM_Switch_Highlight
  tile_color 0xffff00ff
  label "\[if \{\[numvalue this.which_highlight] == 0\} \{return \[value this.zero_is]\} else \{return \[value this.one_is]\}]\n\[knob tile_color \[ expr \{ \[value which_highlight]? 16711935 : 4294902015 \}]]"
- note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 13
  selected true
- xpos 840
- ypos 7
+ xpos 729
+ ypos -264
  addUserKnob {20 User}
  addUserKnob {41 which_highlight l which T Switch1.which}
  addUserKnob {26 ""}
@@ -192,8 +192,8 @@ Group {
  name GM_Render_Switch
  tile_color 0xbbbbbbff
  selected true
- xpos 620
- ypos 14
+ xpos 509
+ ypos -257
  addUserKnob {20 User}
  addUserKnob {26 info1 l "<font size=5><b>Switch this node"}
  addUserKnob {6 r_s_tick l "Show 1" +STARTLINE}
@@ -214,7 +214,7 @@ Group {
   xpos 400
   ypos 518
  }
-set Nabb7c380 [stack 0]
+set Nb0a3fc00 [stack 0]
  Input {
   inputs 0
   name Input0
@@ -230,9 +230,9 @@ set Nabb7c380 [stack 0]
   xpos 620
   ypos 632
  }
-set Nabbb1c00 [stack 0]
-push $Nabb7c380
-push $Nabbb1c00
+set Nb0a3f500 [stack 0]
+push $Nb0a3fc00
+push $Nb0a3f500
  Switch {
   inputs 2
   which {{parent.r_s_tick}}
@@ -261,8 +261,8 @@ Group {
  name GM_Alpha_Puli
  tile_color 0xffae53ff
  selected true
- xpos 620
- ypos 254
+ xpos 509
+ ypos -17
  addUserKnob {20 checker l Checker}
  addUserKnob {4 over l Mode t "Choose between the preferred visibility modes to test your matte. For `Overlay` you can choose between colors. " M {Overlay Grey Black White Checkerboard "" "" "" "" "" "" "" "" ""}}
  addUserKnob {4 overlay l Overlay t "Choose between the colors to see the edges better when the Mode is on `Overlay`." M {Pink Blue Yellow Green Red "" "" "" "" "" "" ""}}
@@ -425,62 +425,62 @@ Group {
   xpos 764
   ypos -534
  }
-set Nabbd8700 [stack 0]
+set Nb1a56000 [stack 0]
  Crop {
   box {0 0 {width} {height}}
   name Crop1
   xpos 2600
   ypos -538
  }
- set Cabbd8380 [stack 0]
+ set Cb1a71c00 [stack 0]
  Dot {
   name Dot16
   xpos 3074
   ypos -534
  }
-set Nabbd8000 [stack 0]
+set Nb1a71880 [stack 0]
  Dot {
   name Dot20
   xpos 3734
   ypos -534
  }
-set Nabbf7c00 [stack 0]
+set Nb1a71500 [stack 0]
  Dot {
   name Dot23
   xpos 4394
   ypos -534
  }
-set Nabbf7880 [stack 0]
+set Nb1a71180 [stack 0]
  Dot {
   name Dot29
   xpos 4944
   ypos -534
  }
-set Nabbf7500 [stack 0]
+set Nb1a70e00 [stack 0]
  Dot {
   name Dot34
   xpos 5604
   ypos -534
  }
-set Nabbf7180 [stack 0]
+set Nb1a70a80 [stack 0]
  Dot {
   name Dot43
   xpos 6264
   ypos -534
  }
-set Nabbf6e00 [stack 0]
+set Nb1a70700 [stack 0]
  Dot {
   name Dot35
   xpos 7034
   ypos -534
  }
-set Nabbf6a80 [stack 0]
+set Nb1a70380 [stack 0]
  Dot {
   name Dot51
   xpos 7694
   ypos -534
  }
-set Nabbf6700 [stack 0]
+set Nb1a70000 [stack 0]
  Dot {
   name Dot41
   xpos 8354
@@ -534,8 +534,8 @@ set Nabbf6700 [stack 0]
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabc13880 [stack 0]
-push $Nabc13880
+set Nb1a8d180 [stack 0]
+push $Nb1a8d180
  Dilate {
   channels mask
   size 8
@@ -552,7 +552,7 @@ push $Nabc13880
   xpos 8210
   ypos 1040
  }
-push $Nabc13880
+push $Nb1a8d180
  Multiply {
   inputs 1+1
   value 0
@@ -568,13 +568,13 @@ push $Nabc13880
   xpos 8320
   ypos 1214
  }
- set Cabc12700 [stack 0]
+ set Cb1a8c000 [stack 0]
  Dot {
   name Dot42
   xpos 8354
   ypos 1458
  }
-push $Nabbf6700
+push $Nb1a70000
  Grade {
   channels alpha
   gamma 1e-06
@@ -623,8 +623,8 @@ push $Nabbf6700
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabc53880 [stack 0]
-push $Nabc53880
+set Nb1ac9180 [stack 0]
+push $Nb1ac9180
  Dilate {
   channels mask
   size 8
@@ -641,7 +641,7 @@ push $Nabc53880
   xpos 7550
   ypos 1040
  }
-push $Nabc53880
+push $Nb1ac9180
  Multiply {
   inputs 1+1
   value 0
@@ -651,7 +651,7 @@ push $Nabc53880
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 7660
   ypos 1214
   selected false
@@ -661,7 +661,7 @@ clone $Cabc12700 {
   xpos 7694
   ypos 1458
  }
-push $Nabbf6a80
+push $Nb1a70380
  Shuffle {
   red alpha
   green alpha
@@ -703,8 +703,8 @@ push $Nabbf6a80
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabc95c00 [stack 0]
-push $Nabc95c00
+set Nb1b0d500 [stack 0]
+push $Nb1b0d500
  Dilate {
   channels mask
   size 8
@@ -721,7 +721,7 @@ push $Nabc95c00
   xpos 6890
   ypos 1040
  }
-push $Nabc95c00
+push $Nb1b0d500
  Multiply {
   inputs 1+1
   value 0
@@ -731,7 +731,7 @@ push $Nabc95c00
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 7000
   ypos 1214
   selected false
@@ -741,7 +741,7 @@ clone $Cabc12700 {
   xpos 7034
   ypos 1458
  }
-push $Nabbf6e00
+push $Nb1a70700
  Grade {
   channels alpha
   blackpoint 0.1
@@ -755,7 +755,7 @@ push $Nabbf6e00
   xpos 6264
   ypos 66
  }
-set Nabc94000 [stack 0]
+set Nb1b4d880 [stack 0]
  Dot {
   name Dot49
   xpos 6154
@@ -766,7 +766,7 @@ set Nabc94000 [stack 0]
   name FilterErode6
   tile_color 0x6aff55ff
   label IN
-  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 12
   xpos 6120
   ypos 96
@@ -784,7 +784,7 @@ set Nabc94000 [stack 0]
   xpos 6154
   ypos 234
  }
-push $Nabc94000
+push $Nb1b4d880
  Dot {
   name Dot53
   xpos 6374
@@ -795,7 +795,7 @@ push $Nabc94000
   name FilterErode7
   tile_color 0xff5594ff
   label OUT
-  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 12
   xpos 6340
   ypos 96
@@ -820,13 +820,13 @@ push $Nabc94000
   xpos 6230
   ypos 217
  }
-set Nabcd0000 [stack 0]
+set Nb1bad880 [stack 0]
  Dot {
   name Dot64
   xpos 6264
   ypos 282
  }
-set Nabcffc00 [stack 0]
+set Nb1bad500 [stack 0]
  Dot {
   name Dot65
   xpos 6044
@@ -837,7 +837,7 @@ set Nabcffc00 [stack 0]
   xpos 6044
   ypos 522
  }
-push $Nabcffc00
+push $Nb1bad500
  Constant {
   inputs 0
   channels rgb
@@ -888,7 +888,7 @@ push $Nabcffc00
   xpos 4800
   ypos -897
  }
-set Nabcfe380 [stack 0]
+set Nb1bcdc00 [stack 0]
  Switch {
   inputs 5
   which {{parent.over_color}}
@@ -896,7 +896,7 @@ set Nabcfe380 [stack 0]
   xpos 5020
   ypos -682
  }
-set Nabcfe000 [stack 0]
+set Nb1bcd880 [stack 0]
  Dot {
   name Dot55
   label " RED"
@@ -905,14 +905,14 @@ set Nabcfe000 [stack 0]
   ypos 330
   hide_input true
  }
-set Nabd23c00 [stack 0]
-push $Nabcd0000
+set Nb1bcd500 [stack 0]
+push $Nb1bad880
  Invert {
   name Invert7
   xpos 6340
   ypos 272
  }
-push $Nabd23c00
+push $Nb1bcd500
  Invert {
   name Invert6
   xpos 6340
@@ -929,8 +929,8 @@ push $Nabd23c00
   xpos 434
   ypos -342
  }
-set Nabd22e00 [stack 0]
-clone $Cabbd8380 {
+set Nb1bcc700 [stack 0]
+clone $Cb1a71c00 {
   xpos 2600
   ypos -346
   selected false
@@ -940,31 +940,31 @@ clone $Cabbd8380 {
   xpos 2854
   ypos -342
  }
-set Nabd22700 [stack 0]
+set Nb1bcc000 [stack 0]
  Dot {
   name Dot21
   xpos 3624
   ypos -342
  }
-set Nabd22380 [stack 0]
+set Nb1bf5c00 [stack 0]
  Dot {
   name Dot24
   xpos 4284
   ypos -342
  }
-set Nabd22000 [stack 0]
+set Nb1bf5880 [stack 0]
  Dot {
   name Dot31
   xpos 4834
   ypos -342
  }
-set Nabd43c00 [stack 0]
+set Nb1bf5500 [stack 0]
  Dot {
   name Dot36
   xpos 5714
   ypos -342
  }
-set Nabd43880 [stack 0]
+set Nb1bf5180 [stack 0]
  Dot {
   name Dot44
   xpos 6484
@@ -989,7 +989,7 @@ set Nabd43880 [stack 0]
   xpos 6230
   ypos 416
  }
- set Cabd42a80 [stack 0]
+ set Cb1bf4380 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1030,8 +1030,8 @@ set Nabd43880 [stack 0]
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabd42380 [stack 0]
-push $Nabd42380
+set Nb1c19c00 [stack 0]
+push $Nb1c19c00
  Dilate {
   channels mask
   size 8
@@ -1048,7 +1048,7 @@ push $Nabd42380
   xpos 6120
   ypos 1040
  }
-push $Nabd42380
+push $Nb1c19c00
  Multiply {
   inputs 1+1
   value 0
@@ -1058,7 +1058,7 @@ push $Nabd42380
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 6230
   ypos 1214
   selected false
@@ -1068,22 +1068,22 @@ clone $Cabc12700 {
   xpos 6264
   ypos 1434
  }
-push $Nabbf7500
-push $Nabbf7500
-push $Nabcfe000
+push $Nb1a70e00
+push $Nb1a70e00
+push $Nb1bcd880
  Dot {
   name Dot30
   xpos 5054
   ypos 426
  }
-set Nabd74a80 [stack 0]
-push $Nabd43c00
+set Nb1c18380 [stack 0]
+push $Nb1bf5500
  Dot {
   name Dot32
   xpos 4834
   ypos 426
  }
-clone $Cabd42a80 {
+clone $Cb1bf4380 {
   inputs 3
   xpos 4910
   ypos 416
@@ -1128,8 +1128,8 @@ clone $Cabd42a80 {
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabda5c00 [stack 0]
-push $Nabda5c00
+set Nb1c4b500 [stack 0]
+push $Nb1c4b500
  Dilate {
   channels mask
   size 8
@@ -1146,7 +1146,7 @@ push $Nabda5c00
   xpos 4800
   ypos 1040
  }
-push $Nabda5c00
+push $Nb1c4b500
  Multiply {
   inputs 1+1
   value 0
@@ -1156,7 +1156,7 @@ push $Nabda5c00
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 4910
   ypos 1214
   selected false
@@ -1166,22 +1166,22 @@ clone $Cabc12700 {
   xpos 4944
   ypos 1434
  }
-push $Nabbf7180
+push $Nb1a70a80
  Invert {
   name Invert5
   xpos 5570
   ypos 248
  }
-set Nabda4380 [stack 0]
-push $Nabda4380
-push $Nabd74a80
-push $Nabd43880
+set Nb1cbbc00 [stack 0]
+push $Nb1cbbc00
+push $Nb1c18380
+push $Nb1bf5180
  Dot {
   name Dot37
   xpos 5714
   ypos 426
  }
-clone $Cabd42a80 {
+clone $Cb1bf4380 {
   inputs 3
   xpos 5570
   ypos 416
@@ -1227,8 +1227,8 @@ clone $Cabd42a80 {
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabddd500 [stack 0]
-push $Nabddd500
+set Nb1cbae00 [stack 0]
+push $Nb1cbae00
  Dilate {
   channels mask
   size 8
@@ -1245,7 +1245,7 @@ push $Nabddd500
   xpos 5460
   ypos 1040
  }
-push $Nabddd500
+push $Nb1cbae00
  Multiply {
   inputs 1+1
   value 0
@@ -1255,7 +1255,7 @@ push $Nabddd500
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 5570
   ypos 1214
   selected false
@@ -1265,7 +1265,7 @@ clone $Cabc12700 {
   xpos 5604
   ypos 1434
  }
-push $Nabbf7880
+push $Nb1a71180
  Grade {
   channels alpha
   gamma 10
@@ -1273,7 +1273,7 @@ push $Nabbf7880
   xpos 4360
   ypos 200
  }
-push $Nabd22000
+push $Nb1bf5880
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1336,7 +1336,7 @@ push $Nabd22000
   xpos 3514
   ypos 378
  }
-set Nabe1a000 [stack 0]
+set Nb1d2d880 [stack 0]
  Dot {
   name Dot25
   xpos 4174
@@ -1380,8 +1380,8 @@ set Nabe1a000 [stack 0]
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabe4d500 [stack 0]
-push $Nabe4d500
+set Nb1d2ce00 [stack 0]
+push $Nb1d2ce00
  Dilate {
   channels mask
   size 8
@@ -1398,7 +1398,7 @@ push $Nabe4d500
   xpos 4030
   ypos 1040
  }
-push $Nabe4d500
+push $Nb1d2ce00
  Multiply {
   inputs 1+1
   value 0
@@ -1408,7 +1408,7 @@ push $Nabe4d500
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 4140
   ypos 1214
   selected false
@@ -1418,7 +1418,7 @@ clone $Cabc12700 {
   xpos 4174
   ypos 1410
  }
-push $Nabbf7c00
+push $Nb1a71500
  Grade {
   channels alpha
   gamma 1e-06
@@ -1426,7 +1426,7 @@ push $Nabbf7c00
   xpos 3700
   ypos 224
  }
-push $Nabd22380
+push $Nb1bf5c00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1440,7 +1440,7 @@ push $Nabd22380
   xpos 3590
   ypos 446
  }
-push $Nabe1a000
+push $Nb1d2d880
  Merge2 {
   inputs 2
   name Merge10
@@ -1479,8 +1479,8 @@ push $Nabe1a000
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set Nabe8ce00 [stack 0]
-push $Nabe8ce00
+set Nb1d60700 [stack 0]
+push $Nb1d60700
  Dilate {
   channels mask
   size 8
@@ -1497,7 +1497,7 @@ push $Nabe8ce00
   xpos 3370
   ypos 1040
  }
-push $Nabe8ce00
+push $Nb1d60700
  Multiply {
   inputs 1+1
   value 0
@@ -1507,7 +1507,7 @@ push $Nabe8ce00
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 3480
   ypos 1214
   selected false
@@ -1517,20 +1517,20 @@ clone $Cabc12700 {
   xpos 3514
   ypos 1410
  }
-push $Nabbd8000
+push $Nb1a71880
  Dot {
   name Dot18
   xpos 3074
   ypos 450
  }
-set Nabed1500 [stack 0]
+set Nb1da4e00 [stack 0]
  Clamp {
   channels alpha
   name Clamp4
   xpos 3150
   ypos 440
  }
-push $Nabed1500
+push $Nb1da4e00
  Merge2 {
   inputs 2
   operation difference
@@ -1550,7 +1550,7 @@ push $Nabed1500
   xpos 3040
   ypos 710
  }
-push $Nabcfe380
+push $Nb1bcdc00
  Dot {
   name Dot19
   label " RED"
@@ -1559,7 +1559,7 @@ push $Nabcfe380
   ypos 354
   hide_input true
  }
-set Nabed0000 [stack 0]
+set Nb1deb880 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1573,13 +1573,13 @@ set Nabed0000 [stack 0]
   xpos 2930
   ypos 782
  }
-push $Nabed0000
+push $Nb1deb880
  Invert {
   name Invert4
   xpos 2930
   ypos 488
  }
-push $Nabd22700
+push $Nb1bcc000
  Merge2 {
   inputs 2
   name Merge8
@@ -1631,8 +1631,8 @@ push $Nabd22700
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0" x1018 1}}
  }
-set Nabf02700 [stack 0]
-push $Nabf02700
+set Nb1dea000 [stack 0]
+push $Nb1dea000
  Dilate {
   channels mask
   size 8
@@ -1649,7 +1649,7 @@ push $Nabf02700
   xpos 2710
   ypos 1040
  }
-push $Nabf02700
+push $Nb1dea000
  Multiply {
   inputs 1+1
   value 0
@@ -1659,7 +1659,7 @@ push $Nabf02700
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0" x1001 0}}
  }
-clone $Cabc12700 {
+clone $Cb1a8c000 {
   xpos 2820
   ypos 1214
   selected false
@@ -1696,25 +1696,25 @@ clone $Cabc12700 {
   xpos 4470
   ypos 2318
  }
-push $Nabbd8700
+push $Nb1a56000
  Dot {
   name Dot1
   xpos 764
   ypos 162
  }
-set Nabf42380 [stack 0]
+set Nb1e63c00 [stack 0]
  Dot {
   name Dot2
   xpos 874
   ypos 162
  }
-set Nabf42000 [stack 0]
+set Nb1e63880 [stack 0]
  Dot {
   name Dot3
   xpos 984
   ypos 162
  }
-set Nabf6fc00 [stack 0]
+set Nb1e63500 [stack 0]
  Grade {
   channels alpha
   gamma 10
@@ -1722,7 +1722,7 @@ set Nabf6fc00 [stack 0]
   xpos 950
   ypos 200
  }
-push $Nabf42000
+push $Nb1e63880
  Grade {
   channels alpha
   gamma 1e-06
@@ -1730,7 +1730,7 @@ push $Nabf42000
   xpos 840
   ypos 200
  }
-push $Nabf42380
+push $Nb1e63c00
  Switch {
   inputs 3
   which {{parent.checker_1}}
@@ -1755,13 +1755,13 @@ push $Nabf42380
   xpos 510
   ypos 632
  }
-push $Nabd22e00
+push $Nb1bcc700
  Dot {
   name Dot11
   xpos 434
   ypos 498
  }
-set Nabf6e380 [stack 0]
+set Nb1e95c00 [stack 0]
  ColorCorrect {
   shadows 0
   midtones 0
@@ -1780,7 +1780,7 @@ set Nabf6e380 [stack 0]
  }
  Reformat {
   name Reformat_MAIN
-  note_font "Verdana Bold Bold Bold Bold Bold"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold"
   note_font_size 21
   xpos 400
   ypos 950
@@ -1790,7 +1790,7 @@ set Nabf6e380 [stack 0]
   xpos 434
   ypos 1050
  }
-set Nabfb1500 [stack 0]
+set Nb1e94e00 [stack 0]
  Dot {
   name Dot4
   xpos 434
@@ -1806,32 +1806,32 @@ set Nabfb1500 [stack 0]
   xpos 510
   ypos 1520
  }
-set Nabfb0e00 [stack 0]
-push $Nabfb1500
+set Nb1e94700 [stack 0]
+push $Nb1e94e00
  Dot {
   name Dot39
   xpos 544
   ypos 1050
  }
-set Nabfb0a80 [stack 0]
+set Nb1e94380 [stack 0]
  Premult {
   name Premult2
   xpos 620
   ypos 1046
  }
-set Nabfb0700 [stack 0]
+set Nb1e94000 [stack 0]
  Dot {
   name Dot7
   xpos 654
   ypos 1098
  }
-set Nabfb0380 [stack 0]
+set Nb1efbc00 [stack 0]
  Dot {
   name Dot13
   xpos 654
   ypos 1146
  }
-set Nabfb0000 [stack 0]
+set Nb1efb880 [stack 0]
  Dot {
   name Dot12
   xpos 654
@@ -1851,7 +1851,7 @@ set Nabfb0000 [stack 0]
   xpos 1060
   ypos 1190
  }
-push $Nabfb0000
+push $Nb1efb880
  Constant {
   inputs 0
   channels rgb
@@ -1868,7 +1868,7 @@ push $Nabfb0000
   xpos 950
   ypos 1142
  }
-push $Nabfb0380
+push $Nb1efbc00
  Constant {
   inputs 0
   channels rgb
@@ -1885,7 +1885,7 @@ push $Nabfb0380
   xpos 840
   ypos 1094
  }
-push $Nabfb0700
+push $Nb1e94000
  Constant {
   inputs 0
   channels rgb
@@ -1901,7 +1901,7 @@ push $Nabfb0700
   xpos 730
   ypos 1046
  }
-push $Nabfb1500
+push $Nb1e94e00
  Constant {
   inputs 0
   channels rgb
@@ -1959,7 +1959,7 @@ push $Nabfb1500
   xpos -40
   ypos 1406
  }
-push $Nabfb0a80
+push $Nb1e94380
  Keymix {
   inputs 3
   mix 0.2
@@ -1974,7 +1974,7 @@ push $Nabfb0a80
   xpos 730
   ypos 1406
  }
-set Nacfdc380 [stack 0]
+set Nb1f59c00 [stack 0]
  Dot {
   name Dot10
   xpos 874
@@ -1985,8 +1985,8 @@ set Nacfdc380 [stack 0]
   xpos 874
   ypos 1626
  }
-push $Nabfb0e00
-push $Nabf6fc00
+push $Nb1e94700
+push $Nb1e63500
  Dot {
   name Dot6
   xpos 1864
@@ -1997,14 +1997,14 @@ push $Nabf6fc00
   xpos 1864
   ypos 930
  }
-set Nad005500 [stack 0]
+set Nb1f58e00 [stack 0]
  Clamp {
   channels alpha
   name Clamp1
   xpos 1940
   ypos 920
  }
-push $Nad005500
+push $Nb1f58e00
  Merge2 {
   inputs 2
   operation difference
@@ -2038,7 +2038,7 @@ push $Nad005500
   xpos 1754
   ypos 978
  }
-set Nad035c00 [stack 0]
+set Nb1f87500 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2052,13 +2052,13 @@ set Nad035c00 [stack 0]
   xpos 1720
   ypos 1550
  }
-push $Nad035c00
+push $Nb1f87500
  Invert {
   name Invert3
   xpos 1610
   ypos 968
  }
-push $Nabf6e380
+push $Nb1e95c00
  Dot {
   name Dot8
   xpos 1424
@@ -2076,7 +2076,7 @@ push $Nabf6e380
   xpos 1390
   ypos 1550
  }
-push $Nacfdc380
+push $Nb1f59c00
  Keymix {
   inputs 3
   name Keymix1
@@ -2116,8 +2116,8 @@ Group {
  name GM_Channel_Puli
  tile_color 0xffae53ff
  selected true
- xpos 840
- ypos 254
+ xpos 729
+ ypos -17
  addUserKnob {20 tab1 l Settings}
  addUserKnob {26 info_title l Information}
  addUserKnob {26 info l "" +STARTLINE T "The node automacially sends the alpha\nvalue to the channel that is the input`s\nname and keeps the incoming alpha\nvalue on the alpha channel combined."}
@@ -2177,19 +2177,19 @@ Group {
   ypos -538
   disable {{crop_inpu==0}}
  }
- set Cad062a80 [stack 0]
+ set Cb1fba380 [stack 0]
  Dot {
   name Dot3
   xpos 434
   ypos -294
  }
-set Nad062700 [stack 0]
+set Nb1fba000 [stack 0]
  Dot {
   name Dot6
   xpos 434
   ypos -78
  }
-set Nad062380 [stack 0]
+set Nb1fe5c00 [stack 0]
  Shuffle {
   red black
   green black
@@ -2200,7 +2200,7 @@ set Nad062380 [stack 0]
   xpos 400
   ypos 224
  }
-set Nad062000 [stack 0]
+set Nb1fe5880 [stack 0]
  Remove {
   channels alpha
   name Remove_a_b
@@ -2218,7 +2218,7 @@ push 0
   ypos -658
   number 1
  }
-clone $Cad062a80 {
+clone $Cb1fba380 {
   xpos 290
   ypos -538
   selected false
@@ -2228,13 +2228,13 @@ clone $Cad062a80 {
   xpos 324
   ypos -342
  }
-set Nad095180 [stack 0]
+set Nb1fe4a80 [stack 0]
  Dot {
   name Dot5
   xpos 324
   ypos -126
  }
-set Nad094e00 [stack 0]
+set Nb1fe4700 [stack 0]
  Shuffle {
   red black
   green alpha
@@ -2245,7 +2245,7 @@ set Nad094e00 [stack 0]
   xpos 290
   ypos 152
  }
-set Nad094a80 [stack 0]
+set Nb1fe4380 [stack 0]
  Remove {
   channels alpha
   name Remove_a_g
@@ -2262,7 +2262,7 @@ set Nad094a80 [stack 0]
   ypos -658
   number 2
  }
-clone $Cad062a80 {
+clone $Cb1fba380 {
   xpos 180
   ypos -538
   selected false
@@ -2272,13 +2272,13 @@ clone $Cad062a80 {
   xpos 214
   ypos -390
  }
-set Nad0b9c00 [stack 0]
+set Nb201d500 [stack 0]
  Dot {
   name Dot4
   xpos 214
   ypos -174
  }
-set Nad0b9880 [stack 0]
+set Nb201d180 [stack 0]
  Shuffle {
   red alpha
   green black
@@ -2289,7 +2289,7 @@ set Nad0b9880 [stack 0]
   xpos 180
   ypos 80
  }
-set Nad0b9500 [stack 0]
+set Nb201ce00 [stack 0]
  Remove {
   channels alpha
   name Remove_a_r
@@ -2304,37 +2304,37 @@ set Nad0b9500 [stack 0]
   name Merge_channel
   tile_color 0x777777ff
   label "\[value operation]"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   xpos 290
   ypos 440
  }
-push $Nad062000
-push $Nad094a80
-push $Nad0b9500
-push $Nad062380
+push $Nb1fe5880
+push $Nb1fe4380
+push $Nb201ce00
+push $Nb1fe5c00
  Invert {
   name Invert_b
   tile_color 0x777777ff
   xpos 620
   ypos -88
  }
-push $Nad094e00
+push $Nb1fe4700
  Invert {
   name Invert_g
   tile_color 0x777777ff
   xpos 620
   ypos -136
  }
-push $Nad0b9880
+push $Nb201d180
  Invert {
   name Invert_r
   tile_color 0x777777ff
   xpos 620
   ypos -184
  }
-push $Nad062700
-push $Nad095180
-push $Nad0b9c00
+push $Nb1fba000
+push $Nb1fe4a80
+push $Nb201d500
  Constant {
   inputs 0
   channels rgb
@@ -2494,451 +2494,13 @@ push $Nad0b9c00
   ypos 902
  }
 end_group
-push $cut_paste_input
-push 0
-Group {
- inputs 2
- name GM_TransformColorTexture
- tile_color 0xaa55ffff
- selected true
- xpos 730
- ypos 512
- addUserKnob {20 User}
- addUserKnob {4 output l Options M {Texture Color Both "" "" "" "" "" "" "" ""}}
- output Both
- addUserKnob {26 ""}
- addUserKnob {41 size l "over separation" t "Allows you to adjust the texture/color separation on the layer that goes over the other one." T Blur_TCT2.size}
- addUserKnob {41 size_1 l "under separation" t "Allows you to adjust the texture/color separation on the layer that goes under the other one." T Blur_TCT1.size}
- addUserKnob {26 ""}
- addUserKnob {41 translate T Transform1_TCT.translate}
- addUserKnob {41 rotate T Transform1_TCT.rotate}
- addUserKnob {41 scale1 l scale T Scale_Proxy.scale1}
- addUserKnob {41 skewX l "skew X" T Transform1_TCT.skewX}
- addUserKnob {41 skewY l "skew Y" T Transform1_TCT.skewY}
- addUserKnob {41 skew_order l "skew order" T Transform1_TCT.skew_order}
- addUserKnob {41 center T Transform1_TCT.center}
- addUserKnob {22 setcenter l "Set Center" T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center\").setValue(\[newWidth, newHeight])" +STARTLINE}
- addUserKnob {41 invert_matrix l invert T Transform1_TCT.invert_matrix}
- addUserKnob {41 filter T Transform1_TCT.filter}
- addUserKnob {41 clamp -STARTLINE T Transform1_TCT.clamp}
- addUserKnob {41 black_outside l "black outside" -STARTLINE T Transform1_TCT.black_outside}
- addUserKnob {41 motionblur T Transform1_TCT.motionblur}
- addUserKnob {41 shutter T Transform1_TCT.shutter}
- addUserKnob {41 shutteroffset l "shutter offset" T Transform1_TCT.shutteroffset}
- addUserKnob {41 shuttercustomoffset l "" -STARTLINE T Transform1_TCT.shuttercustomoffset}
- addUserKnob {26 ""}
- addUserKnob {41 from0 l "mask channel" T Copy_TCT.from0}
- addUserKnob {6 keep_bb l "Keep BBox" +STARTLINE}
- keep_bb true
- addUserKnob {26 ""}
- addUserKnob {41 mix T Merge_TCT.mix}
- addUserKnob {26 ""}
- addUserKnob {20 info n 1}
- info 0
- addUserKnob {26 inf l "" +STARTLINE T "When the node`s A input is not in use the node will \nuse the information comes on the B input."}
- addUserKnob {20 endGroup n -1}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/transformcolortexture')\n"}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_TransformColorTexture© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name B
-  xpos -1360
-  ypos 375
- }
-set Nad122380 [stack 0]
- Input {
-  inputs 0
-  name A
-  xpos -480
-  ypos 279
-  number 1
- }
- Switch {
-  inputs 2
-  which {{"!\[exists parent.input1]"}}
-  name Switch1_TCT
-  tile_color 0x666666ff
-  label "which: \[value which]"
-  xpos -480
-  ypos 369
- }
-set Nad159c00 [stack 0]
- Dot {
-  name Dot1
-  xpos -446
-  ypos 522
- }
-set Nad159880 [stack 0]
- Dot {
-  name Dot3
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -556
-  ypos 522
- }
- Transform {
-  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
-  rotate {{parent.Transform1_TCT.rotate}}
-  scale {{parent.Transform1_TCT.scale}}
-  skewX {{parent.Transform1_TCT.skewX}}
-  skewY {{parent.Transform1_TCT.skewY}}
-  skew_order {{parent.Transform1_TCT.skew_order}}
-  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
-  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
-  filter {{Transform1_TCT.filter}}
-  clamp {{parent.Transform1_TCT.clamp}}
-  black_outside {{parent.Transform1_TCT.black_outside}}
-  motionblur {{parent.Transform1_TCT.motionblur}}
-  shutter {{parent.Transform1_TCT.shutter}}
-  shutteroffset {{Transform1_TCT.shutteroffset}}
-  name Transform2_TCT1
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -590
-  ypos 1412
- }
- Input {
-  inputs 0
-  name mask
-  xpos -480
-  ypos 1215
-  number 2
- }
-push $Nad122380
- Dot {
-  name Dot2
-  xpos -1326
-  ypos 522
- }
-set Nad158a80 [stack 0]
- Dot {
-  name Dot11
-  xpos -1106
-  ypos 522
- }
-set Nad158700 [stack 0]
- Dot {
-  name Dot5
-  xpos -886
-  ypos 522
- }
-set Nad158380 [stack 0]
- Dot {
-  name Dot12
-  xpos -666
-  ypos 522
- }
- Expression {
-  channel3 alpha
-  expr3 1
-  name Expression_A1_TCT1
-  tile_color 0x666666ff
-  label "a: \[value expr3]"
-  xpos -700
-  ypos 609
- }
-set Nad173c00 [stack 0]
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge
-  tile_color 0x444444ff
-  label "\[value disable]"
-  selected true
-  xpos -700
-  ypos 1196
-  disable {{"!\[exists parent.input2]"}}
- }
-push $Nad159880
- Dot {
-  name Dot7
-  xpos -226
-  ypos 522
- }
-set Nad173180 [stack 0]
- Dot {
-  name Dot14
-  xpos -6
-  ypos 522
- }
- Transform {
-  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
-  rotate {{parent.Transform1_TCT.rotate}}
-  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
-  skewX {{parent.Transform1_TCT.skewX}}
-  skewY {{parent.Transform1_TCT.skewY}}
-  skew_order {{Transform1_TCT.skew_order}}
-  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
-  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
-  filter {{Transform1_TCT.filter}}
-  clamp {{parent.Transform1_TCT.clamp}}
-  black_outside {{parent.Transform1_TCT.black_outside}}
-  motionblur {{parent.Transform1_TCT.motionblur}}
-  shutter {{parent.Transform1_TCT.shutter}}
-  shutteroffset {{Transform1_TCT.shutteroffset}}
-  name Transform3_TCT
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -40
-  ypos 740
- }
- Dot {
-  name Dot4
-  xpos -6
-  ypos 1026
- }
-push $Nad173c00
-push $Nad173180
- Blur {
-  size 30
-  name Blur_TCT2
-  tile_color 0x666666ff
-  label "size: \[value size]"
-  xpos -260
-  ypos 603
- }
-set Nad172380 [stack 0]
- Transform {
-  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
-  rotate {{parent.Transform1_TCT.rotate}}
-  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
-  skewX {{parent.Transform1_TCT.skewX}}
-  skewY {{parent.Transform1_TCT.skewY}}
-  skew_order {{parent.Transform1_TCT.skew_order}}
-  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
-  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
-  filter {{Transform1_TCT.filter}}
-  clamp {{parent.Transform1_TCT.clamp}}
-  black_outside {{parent.Transform1_TCT.black_outside}}
-  motionblur {{parent.Transform1_TCT.motionblur}}
-  shutter {{parent.Transform1_TCT.shutter}}
-  shutteroffset {{Transform1_TCT.shutteroffset}}
-  name Transform2_TCT
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -260
-  ypos 740
- }
-push $Nad158380
- Blur {
-  size 30
-  name Blur_TCT1
-  tile_color 0x666666ff
-  xpos -920
-  ypos 609
- }
-set Nad1a5c00 [stack 0]
- Keymix {
-  inputs 3
-  name Keymix2_TCT
-  tile_color 0x666666ff
-  xpos -920
-  ypos 753
-  disable {{"output  == 1 ? 0 : 1"}}
- }
- Dot {
-  name Dot13
-  xpos -886
-  ypos 882
- }
-push $Nad173c00
-push $Nad159880
-push $Nad172380
- Merge2 {
-  inputs 2
-  operation divide
-  name MergeDiv_TCT2
-  tile_color 0x666666ff
-  xpos -480
-  ypos 615
- }
- Transform {
-  translate {100 0}
-  scale {{Scale_Proxy.scale1} {Scale_Proxy.scale1}}
-  center {960 540}
-  shutteroffset centred
-  name Transform1_TCT
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -480
-  ypos 740
- }
-push $Nad158700
-push $Nad1a5c00
- Merge2 {
-  inputs 2
-  operation divide
-  name MergeDiv_TCT1
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 615
- }
- Keymix {
-  inputs 3
-  name Keymix1_TCT
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 753
-  disable {{"output == 0 ? 0 : 1"}}
- }
- Merge2 {
-  inputs 2
-  operation multiply
-  name MergeMult_TCT1
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 879
- }
- Switch {
-  inputs 2
-  which {{"output  <2 ? 0 : 1"}}
-  name Switch_TCT
-  tile_color 0x666666ff
-  label "which: \[value which]"
-  xpos -1140
-  ypos 1017
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.alpha
-  name Copy_TCT
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 1209
- }
- Premult {
-  name Premult_TCT
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 1335
- }
-set Nad1d7880 [stack 0]
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge_TCT1
-  tile_color 0x555555ff
-  xpos -1140
-  ypos 1419
- }
-push $Nad158a80
- Dot {
-  name Dot6
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1326
-  ypos 1218
- }
-set Nad1d7180 [stack 0]
- Dot {
-  name Dot8
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1546
-  ypos 1218
- }
- ChannelMerge {
-  inputs 2
-  name ChannelMerge_TCT2
-  tile_color 0x555555ff
-  xpos -1580
-  ypos 1419
- }
- Dot {
-  name Dot9
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1546
-  ypos 1530
- }
-push $Nad1d7880
-push $Nad1d7180
- Merge2 {
-  inputs 2
-  also_merge all
-  name Merge_TCT
-  tile_color 0x666666ff
-  xpos -1360
-  ypos 1335
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.alpha
-  name Copy_TCT2
-  tile_color 0x555555ff
-  xpos -1360
-  ypos 1521
- }
- Crop {
-  box {{Crop_proxy_TCT.box.x} {Crop_proxy_TCT.box.y} {Crop_proxy_TCT.box.r} {Crop_proxy_TCT.box.t}}
-  name Crop_TCT
-  tile_color 0x555555ff
-  xpos -1360
-  ypos 1647
-  disable {{!parent.keep_bb}}
- }
- Output {
-  name Output
-  xpos -1360
-  ypos 1743
- }
-push $Nad159c00
- Crop {
-  box {{input.format.x} {input.format.y} {input.width} {input.height}}
-  name Crop_proxy_TCT
-  tile_color 0x555555ff
-  xpos -260
-  ypos 375
- }
- StickyNote {
-  inputs 0
-  name StickyNote3
-  label "output == 0 ? 0 : 1"
-  xpos -1151
-  ypos 807
- }
- StickyNote {
-  inputs 0
-  name StickyNote1
-  label "output == 1 ? 0 : 1"
-  xpos -931
-  ypos 807
- }
- StickyNote {
-  inputs 0
-  name StickyNote4
-  label "output <2 ? 0 : 1"
-  xpos -1147
-  ypos 1071
- }
- NoOp {
-  inputs 0
-  name Scale_Proxy
-  tile_color 0x666666ff
-  xpos -480
-  ypos 879
-  addUserKnob {20 User}
-  addUserKnob {14 scale1 R 0 100}
-  scale1 1
- }
-end_group
 Group {
  inputs 0
  name GM_Camera_Around
  tile_color 0xea6827ff
  selected true
- xpos 730
- ypos 758
+ xpos 619
+ ypos 487
  addUserKnob {20 User l Settings}
  addUserKnob {41 translate l Center t "Allows you to adjust the center point." T ca1.translate}
  addUserKnob {7 dis_cam l Distance t "Allows you to adjust the camera`s distance from the center point." R 0 100}
@@ -2984,8 +2546,8 @@ Group {
   xpos 410
   ypos 354
  }
-set Nad237c00 [stack 0]
-push $Nad237c00
+set Nb219f500 [stack 0]
+push $Nb219f500
  Axis2 {
   inputs 2
   translate {0 {hei_cam} 0}
@@ -3036,8 +2598,8 @@ Group {
  name GM_Color_Flicker
  tile_color 0xffbf00ff
  selected true
- xpos 620
- ypos -298
+ xpos 509
+ ypos -569
  addUserKnob {20 User l "Color Flicker"}
  addUserKnob {26 wa_co l "<font color=yellow size=\"4\"><b>Wave Control</b></font>"}
  addUserKnob {41 freq l "Wave Length " T proxy.freq}
@@ -3085,7 +2647,7 @@ Group {
   xpos -996
   ypos 66
  }
-set Na9fd5c00 [stack 0]
+set Nb21f1180 [stack 0]
  Expression {
   channel3 alpha
   expr3 1
@@ -3102,7 +2664,7 @@ set Na9fd5c00 [stack 0]
   ypos 123
   disable {{"!\[exists parent.input1]"}}
  }
-set Na9fd5180 [stack 0]
+set Nb21f0700 [stack 0]
  Dot {
   name Dot2
   tile_color 0x949494ff
@@ -3111,14 +2673,14 @@ set Na9fd5180 [stack 0]
   xpos -1216
   ypos 378
  }
-push $Na9fd5180
-push $Na9fd5c00
+push $Nb21f0700
+push $Nb21f1180
  Dot {
   name Dot3
   xpos -666
   ypos 66
  }
-set Na9fd4a80 [stack 0]
+set Nb21f0000 [stack 0]
  Grade {
   multiply {{"random((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"}}
   name Grade_B
@@ -3135,8 +2697,8 @@ set Na9fd4a80 [stack 0]
   xpos -920
   ypos 279
  }
-push $Na9fd5180
-push $Na9fd4a80
+push $Nb21f0700
+push $Nb21f0000
  Grade {
   multiply {{"random((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
   name Grade_G
@@ -3153,8 +2715,8 @@ push $Na9fd4a80
   xpos -920
   ypos 207
  }
-push $Na9fd5180
-push $Na9fd4a80
+push $Nb21f0700
+push $Nb21f0000
  Grade {
   multiply {{"random((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
   name Grade_R
@@ -3169,7 +2731,7 @@ push $Na9fd4a80
   xpos -920
   ypos 135
  }
-push $Na9fd5c00
+push $Nb21f1180
  Copy {
   inputs 2+1
   from0 rgba.red
@@ -3200,7 +2762,7 @@ push $Na9fd5c00
   ypos 273
   disable {{"!\[exists parent.input0]"}}
  }
-push $Na9fd5c00
+push $Nb21f1180
  Dissolve {
   inputs 2+1
   which 1
@@ -3235,8 +2797,8 @@ Group {
  name GM_Liquid_Distortion
  tile_color 0x55ffbfff
  selected true
- xpos 840
- ypos -298
+ xpos 729
+ ypos -569
  addUserKnob {20 User l Liquid}
  addUserKnob {7 contrast_liq l Contrast R 1 4}
  contrast_liq 3
@@ -3270,13 +2832,13 @@ Group {
   xpos 434
   ypos -270
  }
-set N60bd2700 [stack 0]
+set Nb2282a80 [stack 0]
  Dot {
   name Dot12
   xpos 214
   ypos -270
  }
-set N63bba700 [stack 0]
+set Nb2282700 [stack 0]
  Dot {
   name Dot17
   xpos 214
@@ -3287,7 +2849,7 @@ set N63bba700 [stack 0]
   xpos -6
   ypos -438
  }
-set Nbc906380 [stack 0]
+set Nb2282000 [stack 0]
  Shuffle {
   red black
   green black
@@ -3305,7 +2867,7 @@ set Nbc906380 [stack 0]
   ypos -215
   disable {{"!\[exists parent.input1]"}}
  }
-push $Nbc906380
+push $Nb2282000
  Expression {
   temp_name0 seed
   temp_expr0 "\[ regexp -inline \{\\d+\}  \[knob name] ]"
@@ -3321,7 +2883,7 @@ push $Nbc906380
   xpos -590
   ypos -442
  }
-set N63bba000 [stack 0]
+set Nb22a5500 [stack 0]
  Transform {
   center {1024 778}
   name Transform_liq
@@ -3340,7 +2902,7 @@ set N63bba000 [stack 0]
   xpos -556
   ypos -294
  }
-set N7680e380 [stack 0]
+set Nb22a4700 [stack 0]
  TimeOffset {
   time_offset 2
   time ""
@@ -3348,7 +2910,7 @@ set N7680e380 [stack 0]
   xpos -700
   ypos -298
  }
-push $N7680e380
+push $Nb22a4700
  Copy {
   inputs 2
   from0 rgba.red
@@ -3362,7 +2924,7 @@ push $N7680e380
   xpos -556
   ypos -150
  }
-set N5ccf2700 [stack 0]
+set Nb22a4000 [stack 0]
  TimeOffset {
   time_offset {{-TimeOffset_to_red.time_offset}}
   time ""
@@ -3370,7 +2932,7 @@ set N5ccf2700 [stack 0]
   xpos -700
   ypos -154
  }
-push $N5ccf2700
+push $Nb22a4000
  Copy {
   inputs 2
   from0 rgba.green
@@ -3393,7 +2955,7 @@ push $N5ccf2700
   xpos -40
   ypos -82
  }
-push $N63bba700
+push $Nb2282700
  Expression {
   expr0 (x+0.5)/width
   expr1 (y+0.5)/height
@@ -3416,7 +2978,7 @@ push $N63bba700
   xpos 214
   ypos -6
  }
-push $N60bd2700
+push $Nb2282a80
  STMap {
   inputs 2
   uv rgb
@@ -3452,7 +3014,7 @@ push $N60bd2700
   addUserKnob {7 scale1 l scale R 0 100}
   scale1 50
  }
-push $N63bba000
+push $Nb22a5500
  Viewer {
   frame_range 1001-1101
   name Viewer1
@@ -3465,8 +3027,8 @@ Group {
  name GM_Round_Matte
  tile_color 0xffbb56ff
  selected true
- xpos 620
- ypos -562
+ xpos 509
+ ypos -833
  addUserKnob {20 User}
  addUserKnob {7 round1 l Roundness R 0 200}
  round1 40
@@ -3498,13 +3060,13 @@ Group {
   xpos -336
   ypos -486
  }
-set Na9bc8000 [stack 0]
+set Nb2317180 [stack 0]
  Dot {
   name Dot23
   xpos -556
   ypos -486
  }
-set Na9bf9c00 [stack 0]
+set Nb2316e00 [stack 0]
  Clamp {
   name Clamp
   tile_color 0x555555ff
@@ -3528,20 +3090,20 @@ set Na9bf9c00 [stack 0]
    name Input
    xpos 0
   }
-set Na9bf9500 [stack 0]
+set Nb2316700 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9bf9180 [stack 0]
-push $Na9bf9180
+set Nb2316380 [stack 0]
+push $Nb2316380
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9bf9180
+push $Nb2316380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3573,7 +3135,7 @@ push $Na9bf9180
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9bf8000 [stack 0]
+set Nb2377180 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -3581,7 +3143,7 @@ set Na9bf8000 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9bf8000
+push $Nb2377180
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3600,7 +3162,7 @@ push $Na9bf8000
    xpos 177
    ypos 446
   }
-push $Na9bf9500
+push $Nb2316700
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -3636,20 +3198,20 @@ push $Na9bf9500
    name Input
    xpos 0
   }
-set Na9c36380 [stack 0]
+set Nb23b9500 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9c36000 [stack 0]
-push $Na9c36000
+set Nb23b9180 [stack 0]
+push $Nb23b9180
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9c36000
+push $Nb23b9180
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3681,7 +3243,7 @@ push $Na9c36000
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9c6ae00 [stack 0]
+set Nb23b8000 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -3689,7 +3251,7 @@ set Na9c6ae00 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9c6ae00
+push $Nb23b8000
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3708,7 +3270,7 @@ push $Na9c6ae00
    xpos 177
    ypos 446
   }
-push $Na9c36380
+push $Nb23b9500
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -3727,14 +3289,14 @@ push $Na9c36380
    ypos 556
   }
  end_group
-set Na9b06400 [stack 0]
+set Nb228f000 [stack 0]
  Dot {
   name Dot1
   xpos -776
   ypos -246
  }
-push $Na9b06400
-push $Na9bf9c00
+push $Nb228f000
+push $Nb2316e00
  Merge2 {
   inputs 2
   operation mask
@@ -3761,7 +3323,7 @@ push $Na9bf9c00
   xpos -480
   ypos -256
  }
-push $Na9bc8000
+push $Nb2317180
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -3791,8 +3353,8 @@ Group {
  name GM_Matte_Edge
  tile_color 0xcc9800ff
  selected true
- xpos 840
- ypos -562
+ xpos 729
+ ypos -833
  addUserKnob {20 User}
  addUserKnob {4 method l Method M {"Merge In/Out" "Separate In/Out"}}
  addUserKnob {26 out l "<b><font color=orange>Outside"}
@@ -3824,13 +3386,13 @@ Group {
   xpos -446
   ypos 378
  }
-set Na9cdd500 [stack 0]
+set Nb2422700 [stack 0]
  Dot {
   name Dot15
   xpos -556
   ypos 378
  }
-set Na9cdd180 [stack 0]
+set Nb2422380 [stack 0]
  Group {
   name key_chew
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -3849,20 +3411,20 @@ set Na9cdd180 [stack 0]
    xpos -40
    ypos -10
   }
-set Na9cdce00 [stack 0]
+set Nb2422000 [stack 0]
   Dot {
    name Dot1
    xpos 324
    ypos -6
   }
-set Na9cdca80 [stack 0]
-push $Na9cdca80
+set Nb2453c00 [stack 0]
+push $Nb2453c00
   Invert {
    name Invert1
    xpos 180
    ypos 32
   }
-push $Na9cdca80
+push $Nb2453c00
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3895,7 +3457,7 @@ push $Na9cdca80
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9d07880 [stack 0]
+set Nb2452a80 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -3903,7 +3465,7 @@ set Na9d07880 [stack 0]
    xpos 290
    ypos 230
   }
-push $Na9d07880
+push $Nb2452a80
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3922,7 +3484,7 @@ push $Na9d07880
    xpos 180
    ypos 440
   }
-push $Na9cdce00
+push $Nb2422000
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -3941,7 +3503,7 @@ push $Na9cdce00
    ypos 566
   }
  end_group
-push $Na9cdd180
+push $Nb2422380
  Dissolve {
   inputs 2
   which 1
@@ -3963,13 +3525,13 @@ push $Na9cdd180
   xpos -556
   ypos 762
  }
-push $Na9cdd500
+push $Nb2422700
  Dot {
   name Dot8
   xpos -336
   ypos 378
  }
-set Na9d41180 [stack 0]
+set Nb248e380 [stack 0]
  Group {
   name key_chew1
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -3987,20 +3549,20 @@ set Na9d41180 [stack 0]
    name Input
    xpos 0
   }
-set Na9d40e00 [stack 0]
+set Nb248e000 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9d40a80 [stack 0]
-push $Na9d40a80
+set Nb24bfc00 [stack 0]
+push $Nb24bfc00
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9d40a80
+push $Nb24bfc00
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4032,7 +3594,7 @@ push $Na9d40a80
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9d75880 [stack 0]
+set Nb24bea80 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -4040,7 +3602,7 @@ set Na9d75880 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9d75880
+push $Nb24bea80
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4059,7 +3621,7 @@ push $Na9d75880
    xpos 177
    ypos 446
   }
-push $Na9d40e00
+push $Nb248e000
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -4078,7 +3640,7 @@ push $Na9d40e00
    ypos 556
   }
  end_group
-push $Na9d41180
+push $Nb248e380
  Dissolve {
   inputs 2
   which 1
@@ -4087,7 +3649,7 @@ push $Na9d41180
   xpos -370
   ypos 584
  }
-set Na9db1c00 [stack 0]
+set Nb24fae00 [stack 0]
  Dot {
   name Dot18
   xpos -336
@@ -4101,19 +3663,19 @@ set Na9db1c00 [stack 0]
   xpos -480
   ypos 746
  }
-push $Na9d41180
+push $Nb248e380
  Dot {
   name Dot3
   xpos -116
   ypos 378
  }
-set Na9db1180 [stack 0]
+set Nb24fa380 [stack 0]
  Dot {
   name Dot4
   xpos -116
   ypos 930
  }
-set Na9db0e00 [stack 0]
+set Nb24fa000 [stack 0]
  Invert {
   name Invert1
   tile_color 0x555555ff
@@ -4129,25 +3691,25 @@ set Na9db0e00 [stack 0]
   xpos -480
   ypos 908
  }
-push $Na9db1180
+push $Nb24fa380
  Dot {
   name Dot11
   xpos 214
   ypos 378
  }
-set Na9db0380 [stack 0]
+set Nb2523500 [stack 0]
  Dot {
   name Dot5
   xpos 214
   ypos 426
  }
-set Na9db0000 [stack 0]
+set Nb2523180 [stack 0]
  Dot {
   name Dot6
   xpos 104
   ypos 426
  }
-set Na9dd7c00 [stack 0]
+set Nb2522e00 [stack 0]
  Group {
   name key_chew2
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -4166,20 +3728,20 @@ set Na9dd7c00 [stack 0]
    xpos -40
    ypos -10
   }
-set Na9dd7880 [stack 0]
+set Nb2522a80 [stack 0]
   Dot {
    name Dot1
    xpos 324
    ypos -6
   }
-set Na9dd7500 [stack 0]
-push $Na9dd7500
+set Nb2522700 [stack 0]
+push $Nb2522700
   Invert {
    name Invert1
    xpos 180
    ypos 32
   }
-push $Na9dd7500
+push $Nb2522700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4212,7 +3774,7 @@ push $Na9dd7500
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9dd6380 [stack 0]
+set Nb2549500 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -4220,7 +3782,7 @@ set Na9dd6380 [stack 0]
    xpos 290
    ypos 230
   }
-push $Na9dd6380
+push $Nb2549500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4239,7 +3801,7 @@ push $Na9dd6380
    xpos 180
    ypos 440
   }
-push $Na9dd7880
+push $Nb2522a80
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -4258,7 +3820,7 @@ push $Na9dd7880
    ypos 566
   }
  end_group
-push $Na9dd7c00
+push $Nb2522e00
  Dissolve {
   inputs 2
   which {{parent.Dissolve2.which}}
@@ -4272,13 +3834,13 @@ push $Na9dd7c00
   xpos 104
   ypos 810
  }
-push $Na9db0000
+push $Nb2523180
  Dot {
   name Dot9
   xpos 324
   ypos 426
  }
-set Na9e0e000 [stack 0]
+set Nb258d180 [stack 0]
  Group {
   name key_chew3
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -4296,20 +3858,20 @@ set Na9e0e000 [stack 0]
    name Input
    xpos 0
   }
-set Na9e47c00 [stack 0]
+set Nb258ce00 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9e47880 [stack 0]
-push $Na9e47880
+set Nb258ca80 [stack 0]
+push $Nb258ca80
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9e47880
+push $Nb258ca80
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4341,7 +3903,7 @@ push $Na9e47880
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9e46700 [stack 0]
+set Nb25b9880 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -4349,7 +3911,7 @@ set Na9e46700 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9e46700
+push $Nb25b9880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4368,7 +3930,7 @@ push $Na9e46700
    xpos 177
    ypos 446
   }
-push $Na9e47c00
+push $Nb258ce00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -4387,7 +3949,7 @@ push $Na9e47c00
    ypos 556
   }
  end_group
-push $Na9e0e000
+push $Nb258d180
  Dissolve {
   inputs 2
   which {{parent.Dissolve1.which}}
@@ -4417,7 +3979,7 @@ push $Na9e0e000
   xpos 180
   ypos 794
  }
-push $Na9db0e00
+push $Nb24fa000
  ChannelMerge {
   inputs 2
   operation multiply
@@ -4436,7 +3998,7 @@ push $Na9db0e00
   xpos -150
   ypos 1004
  }
-push $Na9cdd180
+push $Nb2422380
  Dot {
   name Dot21
   xpos -996
@@ -4447,13 +4009,13 @@ push $Na9cdd180
   xpos -996
   ypos 618
  }
-set Na9ead180 [stack 0]
+set Nb25f2380 [stack 0]
  Dot {
   name Dot13
   xpos -1106
   ypos 618
  }
-set Na9eace00 [stack 0]
+set Nb25f2000 [stack 0]
  Group {
   name key_chew4
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -4473,20 +4035,20 @@ set Na9eace00 [stack 0]
    xpos -40
    ypos -10
   }
-set Na9eaca80 [stack 0]
+set Nb2627c00 [stack 0]
   Dot {
    name Dot1
    xpos 324
    ypos -6
   }
-set Na9eac700 [stack 0]
-push $Na9eac700
+set Nb2627880 [stack 0]
+push $Nb2627880
   Invert {
    name Invert1
    xpos 180
    ypos 32
   }
-push $Na9eac700
+push $Nb2627880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4519,7 +4081,7 @@ push $Na9eac700
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9ed5500 [stack 0]
+set Nb2626700 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -4527,7 +4089,7 @@ set Na9ed5500 [stack 0]
    xpos 290
    ypos 230
   }
-push $Na9ed5500
+push $Nb2626700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4546,7 +4108,7 @@ push $Na9ed5500
    xpos 180
    ypos 440
   }
-push $Na9eaca80
+push $Nb2627c00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -4565,7 +4127,7 @@ push $Na9eaca80
    ypos 566
   }
  end_group
-push $Na9eace00
+push $Nb25f2000
  Dissolve {
   inputs 2
   which 1
@@ -4587,13 +4149,13 @@ push $Na9eace00
   xpos -1106
   ypos 1002
  }
-push $Na9ead180
+push $Nb25f2380
  Dot {
   name Dot19
   xpos -886
   ypos 618
  }
-set Na9f18e00 [stack 0]
+set Nb265a000 [stack 0]
  Group {
   name key_chew5
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -4611,20 +4173,20 @@ set Na9f18e00 [stack 0]
    name Input
    xpos 0
   }
-set Na9f18a80 [stack 0]
+set Nb2691c00 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9f18700 [stack 0]
-push $Na9f18700
+set Nb2691880 [stack 0]
+push $Nb2691880
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9f18700
+push $Nb2691880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4656,7 +4218,7 @@ push $Na9f18700
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9f41500 [stack 0]
+set Nb2690700 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -4664,7 +4226,7 @@ set Na9f41500 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9f41500
+push $Nb2690700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -4683,7 +4245,7 @@ push $Na9f41500
    xpos 177
    ypos 446
   }
-push $Na9f18a80
+push $Nb2691c00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -4702,7 +4264,7 @@ push $Na9f18a80
    ypos 556
   }
  end_group
-push $Na9f18e00
+push $Nb265a000
  Dissolve {
   inputs 2
   which 1
@@ -4756,7 +4318,7 @@ push $Na9f18e00
   xpos -116
   ypos 1434
  }
-push $Na9db0380
+push $Nb2523500
  Dot {
   name Dot1
   xpos 874
@@ -4796,7 +4358,7 @@ push $Na9db0380
   addUserKnob {7 out l Size R 0 100}
   out 10
  }
-push $Na9db1c00
+push $Nb24fae00
  Blur {
   channels alpha
   size 5
@@ -4811,8 +4373,8 @@ Group {
  name GM_CrossPattern
  tile_color 0xd5ff1dff
  selected true
- xpos 620
- ypos -808
+ xpos 509
+ ypos -1079
  addUserKnob {20 User}
  addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image" "Distorted Image" STMap "" ""}}
  addUserKnob {6 keep_alpha l "Keep Original Alpha" -STARTLINE}
@@ -4854,13 +4416,13 @@ Group {
   xpos 104
   ypos -534
  }
-set Na9a4d500 [stack 0]
+set Nb2725500 [stack 0]
  Remove {
   name CP_Remove1
   xpos 70
   ypos -328
  }
-set Na9a4d180 [stack 0]
+set Nb2725180 [stack 0]
  Expression {
   expr0 "ceil((\[value type](y/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))) + (\[value type](x/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))))"
   expr1 "ceil((\[value type2](y/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))) / (\[value type2](x/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))))"
@@ -4884,7 +4446,7 @@ set Na9a4d180 [stack 0]
   addUserKnob {7 speed2 l Speed2 R 0 100}
   speed2 5
  }
-set Na9a4ce00 [stack 0]
+set Nb2724e00 [stack 0]
  Shuffle {
   green black
   blue black
@@ -4898,7 +4460,7 @@ set Na9a4ce00 [stack 0]
   xpos -40
   ypos -88
  }
-push $Na9a4ce00
+push $Nb2724e00
  Shuffle {
   red green
   green black
@@ -4959,20 +4521,20 @@ push $Na9a4ce00
    name Input
    xpos 0
   }
-set Na9a84a80 [stack 0]
+set Nb275aa80 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9a84700 [stack 0]
-push $Na9a84700
+set Nb275a700 [stack 0]
+push $Nb275a700
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9a84700
+push $Nb275a700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5004,7 +4566,7 @@ push $Na9a84700
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9ab7500 [stack 0]
+set Nb2793500 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -5012,7 +4574,7 @@ set Na9ab7500 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9ab7500
+push $Nb2793500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5031,7 +4593,7 @@ push $Na9ab7500
    xpos 177
    ypos 446
   }
-push $Na9a84a80
+push $Nb275aa80
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -5066,20 +4628,20 @@ push $Na9a84a80
    name Input
    xpos 0
   }
-set Na9b01880 [stack 0]
+set Nb27d1880 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na9b01500 [stack 0]
-push $Na9b01500
+set Nb27d1500 [stack 0]
+push $Nb27d1500
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na9b01500
+push $Nb27d1500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5111,7 +4673,7 @@ push $Na9b01500
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9b00380 [stack 0]
+set Nb27d0380 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -5119,7 +4681,7 @@ set Na9b00380 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9b00380
+push $Nb27d0380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5138,7 +4700,7 @@ push $Na9b00380
    xpos 177
    ypos 446
   }
-push $Na9b01880
+push $Nb27d1880
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -5184,15 +4746,15 @@ push $Na9b01880
   xpos 104
   ypos 570
  }
-set Na9b71c00 [stack 0]
+set Nb2843c00 [stack 0]
  Dot {
   name Dot4
   xpos 104
   ypos 642
  }
-set Na9b71880 [stack 0]
-push $Na9b71c00
-push $Na9a4d180
+set Nb2843880 [stack 0]
+push $Nb2843c00
+push $Nb2725180
  Dot {
   name Dot8
   tile_color 0x949494ff
@@ -5201,7 +4763,7 @@ push $Na9a4d180
   xpos 434
   ypos -318
  }
-set Na9b71500 [stack 0]
+set Nb2843500 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -5220,7 +4782,7 @@ set Na9b71500 [stack 0]
   xpos 400
   ypos 632
  }
-set Na9b70e00 [stack 0]
+set Nb2842e00 [stack 0]
  Blur {
   size {{blur}}
   name Blur1
@@ -5228,7 +4790,7 @@ set Na9b70e00 [stack 0]
   xpos 730
   ypos 625
  }
-push $Na9b71500
+push $Nb2843500
  Dot {
   name Dot2
   tile_color 0x949494ff
@@ -5251,9 +4813,9 @@ push $Na9b71500
   xpos 1170
   ypos 638
  }
-set Na9b99c00 [stack 0]
-push $Na9b99c00
-push $Na9a4d500
+set Nb286fc00 [stack 0]
+push $Nb286fc00
+push $Nb2725500
  Dot {
   name Dot7
   xpos 984
@@ -5275,7 +4837,7 @@ push $Na9a4d500
   xpos 984
   ypos 978
  }
-set Na9b99180 [stack 0]
+set Nb286f180 [stack 0]
  STMap {
   inputs 2
   uv rgb
@@ -5284,20 +4846,20 @@ set Na9b99180 [stack 0]
   xpos 1170
   ypos 961
  }
-push $Na9b71880
+push $Nb2843880
  Dot {
   name Dot5
   xpos 104
   ypos 714
  }
-set Na9b98a80 [stack 0]
+set Nb286ea80 [stack 0]
  Dot {
   name Dot6
   xpos 104
   ypos 834
  }
-push $Na9b98a80
-push $Na9b70e00
+push $Nb286ea80
+push $Nb2842e00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -5333,8 +4895,8 @@ push $Na9b70e00
   xpos 400
   ypos 1070
  }
-set Na9bc9500 [stack 0]
-push $Na9b99180
+set Nb289d500 [stack 0]
+push $Nb286f180
  Merge2 {
   inputs 2
   also_merge all
@@ -5342,7 +4904,7 @@ push $Na9b99180
   xpos 950
   ypos 1070
  }
-push $Na9bc9500
+push $Nb289d500
  Switch {
   inputs 4
   which {{output}}
@@ -5373,8 +4935,8 @@ Group {
  tile_color 0xe8f57dff
  note_font "DejaVu Sans"
  selected true
- xpos 840
- ypos -807
+ xpos 729
+ ypos -1078
  addUserKnob {20 User}
  addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image" "Distorted Image" STMap ""}}
  addUserKnob {6 keep_a l "Keep Original Alpha" -STARTLINE}
@@ -5413,7 +4975,7 @@ Group {
   xpos 214
   ypos -750
  }
-set Na98c8a80 [stack 0]
+set Nb289c000 [stack 0]
  Remove {
   name Remove_ML
   tile_color 0x555555ff
@@ -5428,7 +4990,7 @@ set Na98c8a80 [stack 0]
   xpos 214
   ypos -534
  }
-set Na98c8380 [stack 0]
+set Nb28cf880 [stack 0]
  Dot {
   name Dot7
   tile_color 0x949494ff
@@ -5482,20 +5044,20 @@ set Na98c8380 [stack 0]
    name Input
    xpos 0
   }
-set Na98ed180 [stack 0]
+set Nb28ce700 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na98ece00 [stack 0]
-push $Na98ece00
+set Nb28ce380 [stack 0]
+push $Nb28ce380
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na98ece00
+push $Nb28ce380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5527,7 +5089,7 @@ push $Na98ece00
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9929c00 [stack 0]
+set Nb28fb180 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -5535,7 +5097,7 @@ set Na9929c00 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9929c00
+push $Nb28fb180
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5554,7 +5116,7 @@ push $Na9929c00
    xpos 177
    ypos 446
   }
-push $Na98ed180
+push $Nb28ce700
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -5581,7 +5143,7 @@ push $Na98ed180
   xpos -6
   ypos -270
  }
-push $Na98c8380
+push $Nb28cf880
  Expression {
   channel3 alpha
   expr3 "( \[value proxy.type](\[if \{\[numvalue proxy.axis] == 0\} \{return \"x\"\} else \{return \"y\"\}]/proxy.thickness \[if \{\[numvalue proxy.direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]  (frame+proxy.offset)*proxy.speed )  )*proxy.value"
@@ -5628,20 +5190,20 @@ push $Na98c8380
    name Input
    xpos 0
   }
-set Na995f180 [stack 0]
+set Nb293c700 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Na995ee00 [stack 0]
-push $Na995ee00
+set Nb293c380 [stack 0]
+push $Nb293c380
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Na995ee00
+push $Nb293c380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5673,7 +5235,7 @@ push $Na995ee00
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Na9997c00 [stack 0]
+set Nb2969180 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -5681,7 +5243,7 @@ set Na9997c00 [stack 0]
    xpos 332
    ypos 218
   }
-push $Na9997c00
+push $Nb2969180
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -5700,7 +5262,7 @@ push $Na9997c00
    xpos 177
    ypos 446
   }
-push $Na995f180
+push $Nb293c700
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -5743,21 +5305,21 @@ push $Na995f180
   xpos 214
   ypos -78
  }
-set Na99d1880 [stack 0]
+set Nb29ace00 [stack 0]
  Dot {
   name Dot2
   xpos 214
   ypos 18
  }
-set Na99d1500 [stack 0]
-push $Na99d1880
-push $Na98c8380
+set Nb29aca80 [stack 0]
+push $Nb29ace00
+push $Nb28cf880
  Dot {
   name Dot1
   xpos 544
   ypos -534
  }
-set Na99d1180 [stack 0]
+set Nb29ac700 [stack 0]
  ShuffleCopy {
   inputs 2
   red alpha
@@ -5784,7 +5346,7 @@ set Na99d1180 [stack 0]
   xpos 544
   ypos 66
  }
-set Na99d0700 [stack 0]
+set Nb29d5c00 [stack 0]
  Blur {
   size {{blur}}
   name Blur1
@@ -5792,7 +5354,7 @@ set Na99d0700 [stack 0]
   xpos 730
   ypos 49
  }
-push $Na99d1180
+push $Nb29ac700
  Dot {
   name Dot10
   xpos 1204
@@ -5812,9 +5374,9 @@ push $Na99d1180
   xpos 1170
   ypos 62
  }
-set Na99f5500 [stack 0]
-push $Na99f5500
-push $Na98c8a80
+set Nb29d4a80 [stack 0]
+push $Nb29d4a80
+push $Nb289c000
  Dot {
   name Dot11
   xpos 984
@@ -5833,7 +5395,7 @@ push $Na98c8a80
   xpos 984
   ypos 258
  }
-set Na99f4a80 [stack 0]
+set Nb29d4000 [stack 0]
  STMap {
   inputs 2
   uv rgb
@@ -5842,20 +5404,20 @@ set Na99f4a80 [stack 0]
   xpos 1170
   ypos 241
  }
-push $Na99d1500
+push $Nb29aca80
  Dot {
   name Dot3
   xpos 214
   ypos 114
  }
-set Na99f4380 [stack 0]
+set Nb29fb880 [stack 0]
  Dot {
   name Dot4
   xpos 214
   ypos 210
  }
-push $Na99f4380
-push $Na99d0700
+push $Nb29fb880
+push $Nb29d5c00
  ShuffleCopy {
   inputs 2
   blue alpha
@@ -5890,15 +5452,15 @@ push $Na99d0700
   xpos 510
   ypos 374
  }
-set Na9a1ce00 [stack 0]
-push $Na99f4a80
+set Nb29fa380 [stack 0]
+push $Nb29d4000
  Merge2 {
   inputs 2
   name Merge2
   xpos 950
   ypos 374
  }
-push $Na9a1ce00
+push $Nb29fa380
  Switch {
   inputs 4
   which {{output}}
@@ -5947,8 +5509,8 @@ Group {
  name GM_Repeater
  tile_color 0xdf7100ff
  selected true
- xpos 620
- ypos -1042
+ xpos 509
+ ypos -1313
  addUserKnob {20 User}
  addUserKnob {26 shape l "<b>I N P U T"}
  addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
@@ -5992,7 +5554,7 @@ Group {
   name BackdropNode1
   tile_color 0xff
   label "<center><font color=red>DON`T TOUCH\nstatic"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 42
   xpos 738
   ypos 63
@@ -6022,8 +5584,8 @@ Group {
   xpos 510
   ypos 465
  }
-set N909a4700 [stack 0]
-push $N909a4700
+set Nb2a2c700 [stack 0]
+push $Nb2a2c700
  Transform {
   translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
   rotate {{Trans_COPY1_proxy.rotate1}}
@@ -6055,7 +5617,7 @@ push $N909a4700
   xpos 544
   ypos 668
  }
-set N909a5c00 [stack 0]
+set Nb3a2bc00 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6073,7 +5635,7 @@ set N909a5c00 [stack 0]
   xpos 510
   ypos 686
  }
-set N909a5880 [stack 0]
+set Nb3a2b880 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6091,7 +5653,7 @@ set N909a5880 [stack 0]
   xpos 510
   ypos 710
  }
-set N909d1c00 [stack 0]
+set Nb3a2b500 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6109,7 +5671,7 @@ set N909d1c00 [stack 0]
   xpos 510
   ypos 734
  }
-set N909d1880 [stack 0]
+set Nb3a2b180 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6127,7 +5689,7 @@ set N909d1880 [stack 0]
   xpos 510
   ypos 758
  }
-set N909d1500 [stack 0]
+set Nb3a2ae00 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6145,7 +5707,7 @@ set N909d1500 [stack 0]
   xpos 510
   ypos 782
  }
-set N909d1180 [stack 0]
+set Nb3a2aa80 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6163,7 +5725,7 @@ set N909d1180 [stack 0]
   xpos 510
   ypos 806
  }
-set N909d0e00 [stack 0]
+set Nb3a2a700 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6181,7 +5743,7 @@ set N909d0e00 [stack 0]
   xpos 510
   ypos 830
  }
-set N909d0a80 [stack 0]
+set Nb3a2a380 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6199,7 +5761,7 @@ set N909d0a80 [stack 0]
   xpos 510
   ypos 854
  }
-set N909d0700 [stack 0]
+set Nb3a2a000 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6217,7 +5779,7 @@ set N909d0700 [stack 0]
   xpos 510
   ypos 878
  }
-set N909d0380 [stack 0]
+set Nb3a61c00 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6235,7 +5797,7 @@ set N909d0380 [stack 0]
   xpos 510
   ypos 902
  }
-set N909d0000 [stack 0]
+set Nb3a61880 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6253,7 +5815,7 @@ set N909d0000 [stack 0]
   xpos 510
   ypos 926
  }
-set Na6fcfc00 [stack 0]
+set Nb3a61500 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6271,7 +5833,7 @@ set Na6fcfc00 [stack 0]
   xpos 510
   ypos 950
  }
-set Na6fcf880 [stack 0]
+set Nb3a61180 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6289,7 +5851,7 @@ set Na6fcf880 [stack 0]
   xpos 510
   ypos 974
  }
-set Na6fcf500 [stack 0]
+set Nb3a60e00 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6307,7 +5869,7 @@ set Na6fcf500 [stack 0]
   xpos 510
   ypos 998
  }
-set Na6fcf180 [stack 0]
+set Nb3a60a80 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6325,7 +5887,7 @@ set Na6fcf180 [stack 0]
   xpos 510
   ypos 1022
  }
-set Na6fcee00 [stack 0]
+set Nb3a60700 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6343,7 +5905,7 @@ set Na6fcee00 [stack 0]
   xpos 510
   ypos 1046
  }
-set Na6fcea80 [stack 0]
+set Nb3a60380 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6361,7 +5923,7 @@ set Na6fcea80 [stack 0]
   xpos 510
   ypos 1070
  }
-set Na6fce700 [stack 0]
+set Nb3a60000 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6379,7 +5941,7 @@ set Na6fce700 [stack 0]
   xpos 510
   ypos 1094
  }
-set Na6fce380 [stack 0]
+set Nb3aa1c00 [stack 0]
  Transform {
   translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
   rotate {{Trans_COPY1.rotate}}
@@ -6397,25 +5959,25 @@ set Na6fce380 [stack 0]
   xpos 510
   ypos 1118
  }
-push $Na6fce380
-push $Na6fce700
-push $Na6fcea80
-push $Na6fcee00
-push $Na6fcf180
-push $Na6fcf500
-push $Na6fcf880
-push $Na6fcfc00
-push $N909d0000
-push $N909d0380
-push $N909d0700
-push $N909d0a80
-push $N909d0e00
-push $N909d1180
-push $N909d1500
-push $N909d1880
-push $N909d1c00
-push $N909a5880
-push $N909a5c00
+push $Nb3aa1c00
+push $Nb3a60000
+push $Nb3a60380
+push $Nb3a60700
+push $Nb3a60a80
+push $Nb3a60e00
+push $Nb3a61180
+push $Nb3a61500
+push $Nb3a61880
+push $Nb3a61c00
+push $Nb3a2a000
+push $Nb3a2a380
+push $Nb3a2a700
+push $Nb3a2aa80
+push $Nb3a2ae00
+push $Nb3a2b180
+push $Nb3a2b500
+push $Nb3a2b880
+push $Nb3a2bc00
  Merge2 {
   inputs 2
   operation {{Merge_Proxy.operation1}}
@@ -6668,8 +6230,8 @@ Group {
  name GM_ShapeRepeater
  tile_color 0xf25400ff
  selected true
- xpos 840
- ypos -1048
+ xpos 729
+ ypos -1319
  addUserKnob {20 User}
  addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image"}}
  addUserKnob {26 shape l "<b>S H A P E"}
@@ -6720,7 +6282,7 @@ Group {
   name BackdropNode1
   tile_color 0xff
   label "<center><font color=red>DON`T TOUCH\nstatic"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 42
   xpos 738
   ypos 63
@@ -6781,7 +6343,7 @@ Group {
   xpos 544
   ypos 90
  }
-set Na986ca80 [stack 0]
+set Nb3b60380 [stack 0]
  Remove {
   name Remove
   label static
@@ -6842,8 +6404,8 @@ set Na986ca80 [stack 0]
   xpos 510
   ypos 560
  }
-set Na9899500 [stack 0]
-push $Na9899500
+set Nb3b86e00 [stack 0]
+push $Nb3b86e00
  Transform {
   translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
   rotate {{Trans_COPY1_proxy.rotate1}}
@@ -6888,8 +6450,8 @@ push $Na9899500
   xpos 510
   ypos 2593
  }
-set Na9898380 [stack 0]
-push $Na986ca80
+set Nb3bc1c00 [stack 0]
+push $Nb3b60380
  Dot {
   name Dot4
   label static
@@ -6903,7 +6465,7 @@ push $Na986ca80
   xpos 290
   ypos 2600
  }
-push $Na9898380
+push $Nb3bc1c00
  Switch {
   inputs 2
   which {{output}}
@@ -6948,9 +6510,11 @@ Group {
  name GM_Input_Info
  tile_color 0xff9455ff
  selected true
- xpos 730
- ypos 1046
+ xpos 619
+ ypos 775
  addUserKnob {20 User}
+ addUserKnob {41 text_pos l "Text Position" T proxy.text_pos}
+ addUserKnob {26 ""}
  addUserKnob {6 shotname l "Shot Name" +STARTLINE}
  shotname true
  addUserKnob {3 shot_n_number l "Shot Name Parts"}
@@ -6984,15 +6548,13 @@ Group {
  addUserKnob {20 edit_text l "Edit Text" n 1}
  edit_text 0
  addUserKnob {7 fontsize l "Font Size" R 1 200}
- fontsize 100
+ fontsize 60
  addUserKnob {41 color l "Text Color" T TextColor.color}
- addUserKnob {4 x_justify l justify M {left center right justify ""}}
- x_justify right
- addUserKnob {4 y_justify l "" -STARTLINE M {top center bottom ""}}
  addUserKnob {41 translate_1 l translate T Transform_all.translate}
  addUserKnob {41 rotate T Transform_all.rotate}
  addUserKnob {41 scale T Transform_all.scale}
  addUserKnob {41 center T Transform_all.center}
+ addUserKnob {22 setcenter l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center\").setValue(\[newWidth, newHeight])"}
  addUserKnob {26 ""}
  addUserKnob {41 mix_2 l mix T Merge_text.mix}
  addUserKnob {20 endGroup_1 l endGroup n -1}
@@ -7025,20 +6587,20 @@ Group {
   xpos 214
   ypos -606
  }
-set Nad236000 [stack 0]
+set N962dea80 [stack 0]
  Crop {
   box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
   name Crop_proxy
   xpos 1060
   ypos -610
  }
-push $Nad236000
+push $N962dea80
  Dot {
   name Dot1
   xpos 214
   ypos -486
  }
-set Nad283880 [stack 0]
+set N962de380 [stack 0]
  Shuffle {
   red black
   green black
@@ -7049,61 +6611,61 @@ set Nad283880 [stack 0]
   xpos 400
   ypos -496
  }
-set Nad283500 [stack 0]
+set N962de000 [stack 0]
  Dot {
   name Dot2
   xpos 874
   ypos -486
  }
-set Nad283180 [stack 0]
+set Ndce43c00 [stack 0]
  Dot {
   name Dot3
   xpos 1094
   ypos -486
  }
-set Nad282e00 [stack 0]
+set Ndce43880 [stack 0]
  Dot {
   name Dot4
   xpos 1314
   ypos -486
  }
-set Nad282a80 [stack 0]
+set Ndce43500 [stack 0]
  Dot {
   name Dot9
   xpos 1534
   ypos -486
  }
-set Nad282700 [stack 0]
+set Ndce43180 [stack 0]
  Dot {
   name Dot7
   xpos 1754
   ypos -486
  }
-set Nad282380 [stack 0]
+set Ndce42e00 [stack 0]
  Dot {
   name Dot5
   xpos 1974
   ypos -486
  }
-set Nad282000 [stack 0]
+set Ndce42a80 [stack 0]
  Dot {
   name Dot6
   xpos 2194
   ypos -486
  }
-set Nad2a1c00 [stack 0]
+set Ndce42700 [stack 0]
  Dot {
   name Dot14
   xpos 2414
   ypos -486
  }
-set Nad2a1880 [stack 0]
+set Ndce42380 [stack 0]
  Dot {
   name Dot15
   xpos 2634
   ypos -486
  }
-set Nad2a1500 [stack 0]
+set Ndce42000 [stack 0]
  Dot {
   name Dot16
   xpos 2854
@@ -7117,8 +6679,8 @@ set Nad2a1500 [stack 0]
   old_message {{67 111 108 111 114 115 112 97 99 101 58 32 32 91 115 112 108 105 116 32 91 107 110 111 98 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 99 111 108 111 114 115 112 97 99 101 93 32 93}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100 11 100}
@@ -7148,7 +6710,7 @@ set Nad2a1500 [stack 0]
   ypos -394
   disable {{parent.colorspace==0 x1018 1}}
  }
-push $Nad2a1500
+push $Ndce42000
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7157,8 +6719,8 @@ push $Nad2a1500
   old_message {{70 111 114 109 97 116 32 110 97 109 101 58 32 91 108 114 97 110 103 101 32 91 115 112 108 105 116 32 91 107 110 111 98 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 102 111 114 109 97 116 93 32 93 32 55 32 49 53 93}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100 12 100}
@@ -7188,19 +6750,19 @@ push $Nad2a1500
   ypos -394
   disable {{parent.format_name==0}}
  }
-push $Nad2a1880
+push $Ndce42380
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
   font_height_toolbar 100
   message "Format: \[value Crop_proxy.box.r] * \[value Crop_proxy.box.t]"
-  old_message {{70 111 114 109 97 116 58 32 49 57 50 48 32 42 32 49 48 56 48}
+  old_message {{70 111 114 109 97 116 58 32 50 48 52 56 32 42 32 49 53 53 54}
     }
   old_expression_markers {{8 11 15 18}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100 6 100 7 100}
@@ -7229,22 +6791,22 @@ push $Nad2a1880
   xpos 2380
   ypos -394
  }
-push $Nad2a1c00
+push $Ndce42700
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
   font_height_toolbar 100
   message "Frame number: \[value frame]\n"
-  old_message {{70 114 97 109 101 32 110 117 109 98 101 114 58 32 49 48 48 49 10}
+  old_message {{70 114 97 109 101 32 110 117 109 98 101 114 58 32 49 51 10}
     }
-  old_expression_markers {{14 17}
+  old_expression_markers {{14 15}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
-  font_size_values {{0 100 1 100 2 100 3 100 4 100 12 100 13 100 18 100}
+  font_size_values {{0 100 1 100 2 100 3 100 4 100 12 100 13 100 16 100}
     }
   cursor_position 12
   global_font_scale {{parent.fontsize/100}}
@@ -7270,7 +6832,7 @@ push $Nad2a1c00
   xpos 2160
   ypos -394
  }
-push $Nad282000
+push $Ndce42a80
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7281,8 +6843,8 @@ push $Nad282000
   old_expression_markers {{16 15}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100 1 100 2 100 3 100 4 100 5 100 6 100 7 100 8 100 9 100 10 100 11 100 12 100 16 100}
@@ -7310,7 +6872,7 @@ push $Nad282000
   xpos 1940
   ypos -394
  }
-push $Nad282380
+push $Ndce42e00
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7319,8 +6881,8 @@ push $Nad282380
   old_message {{70 105 108 101 32 101 120 116 101 110 115 105 111 110 58 32 91 102 105 108 101 32 101 120 116 101 110 115 105 111 110 32 91 107 110 111 98 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 102 105 108 101 93 93}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100}
@@ -7349,7 +6911,7 @@ push $Nad282380
   xpos 1720
   ypos -394
  }
-push $Nad282700
+push $Ndce43180
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7358,8 +6920,8 @@ push $Nad282700
   old_message {{70 105 108 101 32 110 97 109 101 58 32 91 102 105 108 101 32 116 97 105 108 32 91 107 110 111 98 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 102 105 108 101 93 93 10}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100 58 100}
@@ -7388,22 +6950,22 @@ push $Nad282700
   xpos 1500
   ypos -394
  }
-push $Nad282a80
+push $Ndce43500
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
   font_height_toolbar 100
-  message "Version: \[lindex \[split \[lindex \[split \[lindex \[split \[value \[topnode parent.input0].file] /] end] _] end] .] 0]\n "
-  old_message {{86 101 114 115 105 111 110 58 32 91 108 105 110 100 101 120 32 91 115 112 108 105 116 32 91 108 105 110 100 101 120 32 91 115 112 108 105 116 32 91 108 105 110 100 101 120 32 91 115 112 108 105 116 32 91 118 97 108 117 101 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 102 105 108 101 93 32 47 93 32 101 110 100 93 32 95 93 32 101 110 100 93 32 46 93 32 48 93 10 32}
+  message "Version: \[lindex \[split \[lindex \[split \[lindex \[split \[value \[topnode parent.input0].file] /] end] _] end] .] 0]"
+  old_message {{86 101 114 115 105 111 110 58 32 91 108 105 110 100 101 120 32 91 115 112 108 105 116 32 91 108 105 110 100 101 120 32 91 115 112 108 105 116 32 91 108 105 110 100 101 120 32 91 115 112 108 105 116 32 91 118 97 108 117 101 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 102 105 108 101 93 32 47 93 32 101 110 100 93 32 95 93 32 101 110 100 93 32 46 93 32 48 93}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
-  font_size_values {{0 100 1 100 2 100 3 100 4 100 5 100 6 100 7 100 8 100 9 100 10 100 11 100 112 100}
+  font_size_values {{0 100 1 100 2 100 3 100 4 100 5 100 6 100 7 100 8 100 9 100 10 100 11 100}
     }
-  cursor_position 114
+  cursor_position 112
   global_font_scale {{parent.fontsize/100}}
   center {1920 1080}
   cursor_initialised true
@@ -7421,14 +6983,14 @@ push $Nad282a80
   disable {{parent.versio==0}}
  }
  Transform {
-  translate {0 {"(shot_name.disable==1 ? 0:-(parent.fontsize))\n+\nproxy.gap\n+\n(frame_range.disable==1 ? 0:-(parent.fontsize))\n+\nproxy.gap"}}
+  translate {0 {"(shot_name.disable==1 ? 0:-(parent.fontsize))\n+\nproxy.gap\n+\n(frame_range.disable==1 ? 0:-(parent.fontsize))\n+\nproxy.gap\n\n"}}
   center {1920 1080}
   name Transform_version
   xpos 1280
   ypos -394
  }
 push 0
-push $Nad282e00
+push $Ndce43880
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7437,8 +6999,8 @@ push $Nad282e00
   old_message {{70 114 97 109 101 32 82 97 110 103 101 58 32 91 118 97 108 117 101 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 102 105 114 115 116 93 32 45 32 91 118 97 108 117 101 32 91 116 111 112 110 111 100 101 32 112 97 114 101 110 116 46 105 110 112 117 116 48 93 46 108 97 115 116 93}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   cursor_position 89
@@ -7466,7 +7028,7 @@ push $Nad282e00
   xpos 1060
   ypos -394
  }
-push $Nad283180
+push $Ndce43c00
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7477,8 +7039,8 @@ push $Nad283180
   old_expression_markers {{80 80}
     }
   box {{input.format.x+(input.format.r*.02)} {"input.format.y + (input.format.t*.02)"} {input.format.r-(input.format.r*.02)} {input.format.t-(input.format.t*.02)}}
-  xjustify {{parent.x_justify}}
-  yjustify {{parent.y_justify}}
+  xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
+  yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
   font_size_values {{0 100 1 100 2 100 3 100 4 100 5 100 6 100 7 100 8 100 9 100 10 100 0 {curve x1018 114} 1 114 2 110 3 110 4 110 5 110 6 110 7 110 8 110 9 110 10 110}
@@ -7506,20 +7068,28 @@ push $Nad283180
   xpos 840
   ypos -106
  }
+ Transform {
+  translate {0 {"proxy.text_pos < 2 ? 0 :(-Transform_colorspace.translate.y)"}}
+  center {960 540}
+  shutteroffset centred
+  name Transform1
+  xpos 840
+  ypos -58
+ }
  Crop {
   box {{parent.Crop_proxy.box.x} {parent.Crop_proxy.box.y} {parent.Crop_proxy.box.r} {parent.Crop_proxy.box.t}}
   name Crop_TEXT
   xpos 840
   ypos -10
  }
-set Nad376380 [stack 0]
+set N60152a80 [stack 0]
  Constant {
   inputs 0
   channels rgb
   color 1
   name TextColor
   xpos 1060
-  ypos 566
+  ypos 567
  }
  Crop {
   box {{parent.Crop_proxy.box.x} {parent.Crop_proxy.box.y} {parent.Crop_proxy.box.r} {parent.Crop_proxy.box.t}}
@@ -7542,7 +7112,7 @@ set Nad376380 [stack 0]
   xpos 840
   ypos 926
  }
-push $Nad376380
+push $N60152a80
  Dot {
   name Dot10
   xpos 764
@@ -7561,7 +7131,7 @@ push $Nad376380
   xpos 730
   ypos 320
  }
-push $Nad376380
+push $N60152a80
  Dot {
   name Dot11
   xpos 1314
@@ -7591,7 +7161,7 @@ push $Nad376380
   channels rgb
   name ShadowColor
   xpos 1500
-  ypos 110
+  ypos 111
  }
  Crop {
   box {{parent.Crop_proxy.box.x} {parent.Crop_proxy.box.y} {parent.Crop_proxy.box.r} {parent.Crop_proxy.box.t}}
@@ -7621,7 +7191,7 @@ push $Nad376380
   xpos 730
   ypos 422
  }
-push $Nad283500
+push $N962de000
  Merge2 {
   inputs 2
   name Merge_shadow
@@ -7636,19 +7206,19 @@ push $Nad283500
   ypos 926
  }
  Transform {
-  center {1584 891}
+  center {960 540}
   name Transform_all
   xpos 400
   ypos 974
  }
-set Nad423c00 [stack 0]
-push $Nad283880
+set N5f4a0380 [stack 0]
+push $N962de380
  Dot {
   name Dot12
   xpos 214
   ypos 762
  }
-set Nad423880 [stack 0]
+set N5f4a0000 [stack 0]
  Dot {
   name Dot13
   xpos -6
@@ -7661,7 +7231,7 @@ set Nad423880 [stack 0]
   xpos -40
   ypos 998
  }
-push $Nad423c00
+push $N5f4a0380
  Shuffle {
   alpha black
   name Shuffle2
@@ -7669,6 +7239,7 @@ push $Nad423c00
   xpos 400
   ypos 1136
  }
+set N58f27500 [stack 0]
  Switch {
   inputs 2
   which {{parent.show_only_text.which==0}}
@@ -7677,9 +7248,9 @@ push $Nad423c00
   xpos 70
   ypos 1136
  }
-push $Nad423c00
-push $Nad423c00
-push $Nad423880
+push $N5f4a0380
+push $N5f4a0380
+push $N5f4a0000
  Merge2 {
   inputs 2
   name Merge_all
@@ -7726,5 +7297,453 @@ push $Nad423880
   addUserKnob {20 User}
   addUserKnob {7 gap l Gap R -200 200}
   gap {{-parent.spacing}}
+  addUserKnob {4 text_pos l "Text Position" M {"Top Left" "Top Right" "Bottom Left" "Bottom Right"}}
+  text_pos "Top Right"
+ }
+push $N58f27500
+ Viewer {
+  frame_range 1-264
+  name Viewer1
+  selected true
+  xpos 620
+  ypos 566
+ }
+end_group
+push $cut_paste_input
+push 0
+Group {
+ inputs 2
+ name GM_TransformColorTexture
+ tile_color 0xaa55ffff
+ selected true
+ xpos 619
+ ypos 241
+ addUserKnob {20 User}
+ addUserKnob {4 output l Options M {Texture Color Both "" "" "" "" "" "" "" ""}}
+ output Both
+ addUserKnob {26 ""}
+ addUserKnob {41 size l "over separation" t "Allows you to adjust the texture/color separation on the layer that goes over the other one." T Blur_TCT2.size}
+ addUserKnob {41 size_1 l "under separation" t "Allows you to adjust the texture/color separation on the layer that goes under the other one." T Blur_TCT1.size}
+ addUserKnob {26 ""}
+ addUserKnob {41 translate T Transform1_TCT.translate}
+ addUserKnob {41 rotate T Transform1_TCT.rotate}
+ addUserKnob {41 scale1 l scale T Scale_Proxy.scale1}
+ addUserKnob {41 skewX l "skew X" T Transform1_TCT.skewX}
+ addUserKnob {41 skewY l "skew Y" T Transform1_TCT.skewY}
+ addUserKnob {41 skew_order l "skew order" T Transform1_TCT.skew_order}
+ addUserKnob {41 center T Transform1_TCT.center}
+ addUserKnob {22 setcenter l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 invert_matrix l invert T Transform1_TCT.invert_matrix}
+ addUserKnob {41 filter T Transform1_TCT.filter}
+ addUserKnob {41 clamp -STARTLINE T Transform1_TCT.clamp}
+ addUserKnob {41 black_outside l "black outside" -STARTLINE T Transform1_TCT.black_outside}
+ addUserKnob {41 motionblur T Transform1_TCT.motionblur}
+ addUserKnob {41 shutter T Transform1_TCT.shutter}
+ addUserKnob {41 shutteroffset l "shutter offset" T Transform1_TCT.shutteroffset}
+ addUserKnob {41 shuttercustomoffset l "" -STARTLINE T Transform1_TCT.shuttercustomoffset}
+ addUserKnob {26 ""}
+ addUserKnob {41 from0 l "mask channel" T Copy_TCT.from0}
+ addUserKnob {6 keep_bb l "Keep BBox" +STARTLINE}
+ keep_bb true
+ addUserKnob {26 ""}
+ addUserKnob {41 mix T Merge_TCT.mix}
+ addUserKnob {26 ""}
+ addUserKnob {20 info n 1}
+ info 0
+ addUserKnob {26 inf l "" +STARTLINE T "When the node`s A input is not in use the node will \nuse the information comes on the B input."}
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/transformcolortexture')\n"}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_TransformColorTexture© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name B
+  xpos -1360
+  ypos 375
+ }
+set Nb20bfc00 [stack 0]
+ Input {
+  inputs 0
+  name A
+  xpos -480
+  ypos 279
+  number 1
+ }
+ Switch {
+  inputs 2
+  which {{"!\[exists parent.input1]"}}
+  name Switch1_TCT
+  tile_color 0x666666ff
+  label "which: \[value which]"
+  xpos -480
+  ypos 369
+ }
+set Nb20bf500 [stack 0]
+ Dot {
+  name Dot1
+  xpos -446
+  ypos 522
+ }
+set Nb20bf180 [stack 0]
+ Dot {
+  name Dot3
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -556
+  ypos 522
+ }
+ Transform {
+  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
+  rotate {{parent.Transform1_TCT.rotate}}
+  scale {{parent.Transform1_TCT.scale}}
+  skewX {{parent.Transform1_TCT.skewX}}
+  skewY {{parent.Transform1_TCT.skewY}}
+  skew_order {{parent.Transform1_TCT.skew_order}}
+  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
+  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
+  filter {{Transform1_TCT.filter}}
+  clamp {{parent.Transform1_TCT.clamp}}
+  black_outside {{parent.Transform1_TCT.black_outside}}
+  motionblur {{parent.Transform1_TCT.motionblur}}
+  shutter {{parent.Transform1_TCT.shutter}}
+  shutteroffset {{Transform1_TCT.shutteroffset}}
+  name Transform2_TCT1
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -590
+  ypos 1412
+ }
+ Input {
+  inputs 0
+  name mask
+  xpos -480
+  ypos 1215
+  number 2
+ }
+push $Nb20bfc00
+ Dot {
+  name Dot2
+  xpos -1326
+  ypos 522
+ }
+set Nb20be380 [stack 0]
+ Dot {
+  name Dot11
+  xpos -1106
+  ypos 522
+ }
+set Nb20be000 [stack 0]
+ Dot {
+  name Dot5
+  xpos -886
+  ypos 522
+ }
+set Nb20dfc00 [stack 0]
+ Dot {
+  name Dot12
+  xpos -666
+  ypos 522
+ }
+ Expression {
+  channel3 alpha
+  expr3 1
+  name Expression_A1_TCT1
+  tile_color 0x666666ff
+  label "a: \[value expr3]"
+  xpos -700
+  ypos 609
+ }
+set Nb20df500 [stack 0]
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge
+  tile_color 0x444444ff
+  label "\[value disable]"
+  selected true
+  xpos -700
+  ypos 1196
+  disable {{"!\[exists parent.input2]"}}
+ }
+push $Nb20bf180
+ Dot {
+  name Dot7
+  xpos -226
+  ypos 522
+ }
+set Nb20dea80 [stack 0]
+ Dot {
+  name Dot14
+  xpos -6
+  ypos 522
+ }
+ Transform {
+  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
+  rotate {{parent.Transform1_TCT.rotate}}
+  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
+  skewX {{parent.Transform1_TCT.skewX}}
+  skewY {{parent.Transform1_TCT.skewY}}
+  skew_order {{Transform1_TCT.skew_order}}
+  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
+  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
+  filter {{Transform1_TCT.filter}}
+  clamp {{parent.Transform1_TCT.clamp}}
+  black_outside {{parent.Transform1_TCT.black_outside}}
+  motionblur {{parent.Transform1_TCT.motionblur}}
+  shutter {{parent.Transform1_TCT.shutter}}
+  shutteroffset {{Transform1_TCT.shutteroffset}}
+  name Transform3_TCT
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -40
+  ypos 740
+ }
+ Dot {
+  name Dot4
+  xpos -6
+  ypos 1026
+ }
+push $Nb20df500
+push $Nb20dea80
+ Blur {
+  size 30
+  name Blur_TCT2
+  tile_color 0x666666ff
+  label "size: \[value size]"
+  xpos -260
+  ypos 603
+ }
+set Nb2115c00 [stack 0]
+ Transform {
+  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
+  rotate {{parent.Transform1_TCT.rotate}}
+  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
+  skewX {{parent.Transform1_TCT.skewX}}
+  skewY {{parent.Transform1_TCT.skewY}}
+  skew_order {{parent.Transform1_TCT.skew_order}}
+  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
+  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
+  filter {{Transform1_TCT.filter}}
+  clamp {{parent.Transform1_TCT.clamp}}
+  black_outside {{parent.Transform1_TCT.black_outside}}
+  motionblur {{parent.Transform1_TCT.motionblur}}
+  shutter {{parent.Transform1_TCT.shutter}}
+  shutteroffset {{Transform1_TCT.shutteroffset}}
+  name Transform2_TCT
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -260
+  ypos 740
+ }
+push $Nb20dfc00
+ Blur {
+  size 30
+  name Blur_TCT1
+  tile_color 0x666666ff
+  xpos -920
+  ypos 609
+ }
+set Nb2115500 [stack 0]
+ Keymix {
+  inputs 3
+  name Keymix2_TCT
+  tile_color 0x666666ff
+  xpos -920
+  ypos 753
+  disable {{"output  == 1 ? 0 : 1"}}
+ }
+ Dot {
+  name Dot13
+  xpos -886
+  ypos 882
+ }
+push $Nb20df500
+push $Nb20bf180
+push $Nb2115c00
+ Merge2 {
+  inputs 2
+  operation divide
+  name MergeDiv_TCT2
+  tile_color 0x666666ff
+  xpos -480
+  ypos 615
+ }
+ Transform {
+  translate {100 0}
+  scale {{Scale_Proxy.scale1} {Scale_Proxy.scale1}}
+  center {960 540}
+  shutteroffset centred
+  name Transform1_TCT
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -480
+  ypos 740
+ }
+push $Nb20be000
+push $Nb2115500
+ Merge2 {
+  inputs 2
+  operation divide
+  name MergeDiv_TCT1
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 615
+ }
+ Keymix {
+  inputs 3
+  name Keymix1_TCT
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 753
+  disable {{"output == 0 ? 0 : 1"}}
+ }
+ Merge2 {
+  inputs 2
+  operation multiply
+  name MergeMult_TCT1
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 879
+ }
+ Switch {
+  inputs 2
+  which {{"output  <2 ? 0 : 1"}}
+  name Switch_TCT
+  tile_color 0x666666ff
+  label "which: \[value which]"
+  xpos -1140
+  ypos 1017
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name Copy_TCT
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 1209
+ }
+ Premult {
+  name Premult_TCT
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 1335
+ }
+set Nb2145180 [stack 0]
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge_TCT1
+  tile_color 0x555555ff
+  xpos -1140
+  ypos 1419
+ }
+push $Nb20be380
+ Dot {
+  name Dot6
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1326
+  ypos 1218
+ }
+set Nb2144a80 [stack 0]
+ Dot {
+  name Dot8
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1546
+  ypos 1218
+ }
+ ChannelMerge {
+  inputs 2
+  name ChannelMerge_TCT2
+  tile_color 0x555555ff
+  xpos -1580
+  ypos 1419
+ }
+ Dot {
+  name Dot9
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1546
+  ypos 1530
+ }
+push $Nb2145180
+push $Nb2144a80
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge_TCT
+  tile_color 0x666666ff
+  xpos -1360
+  ypos 1335
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name Copy_TCT2
+  tile_color 0x555555ff
+  xpos -1360
+  ypos 1521
+ }
+ Crop {
+  box {{Crop_proxy_TCT.box.x} {Crop_proxy_TCT.box.y} {Crop_proxy_TCT.box.r} {Crop_proxy_TCT.box.t}}
+  name Crop_TCT
+  tile_color 0x555555ff
+  xpos -1360
+  ypos 1647
+  disable {{!parent.keep_bb}}
+ }
+ Output {
+  name Output
+  xpos -1360
+  ypos 1743
+ }
+push $Nb20bf500
+ Crop {
+  box {{input.format.x} {input.format.y} {input.width} {input.height}}
+  name Crop_proxy_TCT
+  tile_color 0x555555ff
+  xpos -260
+  ypos 375
+ }
+ StickyNote {
+  inputs 0
+  name StickyNote3
+  label "output == 0 ? 0 : 1"
+  xpos -1151
+  ypos 807
+ }
+ StickyNote {
+  inputs 0
+  name StickyNote1
+  label "output == 1 ? 0 : 1"
+  xpos -931
+  ypos 807
+ }
+ StickyNote {
+  inputs 0
+  name StickyNote4
+  label "output <2 ? 0 : 1"
+  xpos -1147
+  ypos 1071
+ }
+ NoOp {
+  inputs 0
+  name Scale_Proxy
+  tile_color 0x666666ff
+  xpos -480
+  ypos 879
+  addUserKnob {20 User}
+  addUserKnob {14 scale1 R 0 100}
+  scale1 1
  }
 end_group
