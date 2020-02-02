@@ -1,5 +1,3 @@
-set cut_paste_input [stack 0]
-version 11.2 v3
 BackdropNode {
  inputs 0
  name BackdropNode10
@@ -568,6 +566,1542 @@ push $Nb7a3c700
 end_group
 push $cut_paste_input
 Group {
+ name GM_ShapeRepeater
+ tile_color 0xf25400ff
+ selected true
+ xpos 620
+ ypos -832
+ addUserKnob {20 User}
+ addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image"}}
+ addUserKnob {26 shape l "<b>S H A P E"}
+ addUserKnob {41 position l Position T Flare.position}
+ addUserKnob {22 set_center_pos l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"position\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 size_mult l "Size " T Flare.size_mult}
+ addUserKnob {41 anamorph l Anamorph T Flare.anamorph}
+ addUserKnob {41 corners l Points T Flare.corners}
+ addUserKnob {41 flattening l "Edge Flattening" T Flare.flattening}
+ addUserKnob {41 sharpness l "Corner Sharpness" T Flare.sharpness}
+ addUserKnob {41 corners_angle l Angle T Flare.corners_angle}
+ addUserKnob {41 falloff l Falloff T proxy1.falloff}
+ addUserKnob {41 multiply l Color T Grade.multiply}
+ addUserKnob {20 trans_shape l "T r a n s f o r m  S h a p e" n 1}
+ trans_shape 0
+ addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
+ addUserKnob {41 rotate2 l rotate T Trans_COPY1_proxy_2.rotate2}
+ addUserKnob {41 scale2 l scale T Trans_COPY1_proxy_2.scale2}
+ addUserKnob {41 skewX2 l skewX T Trans_COPY1_proxy_2.skewX2}
+ addUserKnob {41 skewY2 l skewY T Trans_COPY1_proxy_2.skewY2}
+ addUserKnob {41 skeworder2 l "skew order" T Trans_COPY1_proxy_2.skeworder2}
+ addUserKnob {41 center2 l center T Trans_COPY1_proxy_2.center2}
+ addUserKnob {22 set_senter_trans_shape l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center2\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 invert2 l invert T Trans_COPY1_proxy_2.invert2}
+ addUserKnob {41 filter2 l filter T Trans_COPY1_proxy_2.filter2}
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {26 rep1 l "<b>R E P E A T E R"}
+ addUserKnob {41 copy1 l Copies T PROXY_MAIN1.copy1}
+ addUserKnob {41 fadeout1 l "Fade Out" T Trans_COPY1_proxy.fadeout1}
+ addUserKnob {41 fadein1 l "Fade In" T Trans_COPY1_proxy.fadein1}
+ addUserKnob {6 apply_on_copy1 l "Apply Transform on Original Shape" +STARTLINE}
+ addUserKnob {41 translate1 l translate T Trans_COPY1_proxy.translate1}
+ addUserKnob {41 rotate1 l rotate T Trans_COPY1_proxy.rotate1}
+ addUserKnob {41 scale1 l scale T Trans_COPY1_proxy.scale1}
+ addUserKnob {41 skewX1 l skewX T Trans_COPY1_proxy.skewX1}
+ addUserKnob {41 skewY1 l skewY T Trans_COPY1_proxy.skewY1}
+ addUserKnob {41 skeworder1 l "skew order" T Trans_COPY1_proxy.skeworder1}
+ addUserKnob {41 center1 l center T Trans_COPY1_proxy.center1}
+ addUserKnob {41 invert1 l invert T Trans_COPY1_proxy.invert1}
+ addUserKnob {41 filter1 l filter T Trans_COPY1_proxy.filter1}
+ addUserKnob {41 motionblur1 l motionblur T Trans_COPY1_proxy.motionblur1}
+ addUserKnob {41 shutter1 l shutter T Trans_COPY1_proxy.shutter1}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/shape-repeater')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_ShapeRepeater© by Attila Gasparetz</font>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode1
+  tile_color 0xff
+  label "<center><font color=red>DON`T TOUCH\nstatic"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font_size 42
+  xpos 738
+  ypos 63
+  bdwidth 285
+  bdheight 305
+ }
+ NoOp {
+  inputs 0
+  name proxy1
+  label static
+  xpos 620
+  ypos 248
+  addUserKnob {20 User}
+  addUserKnob {7 falloff l Falloff R 0 100}
+  falloff 5
+ }
+ NoOp {
+  inputs 0
+  name PROXY_MAIN1
+  knobChanged "\nm = nuke.thisNode()\nkc = nuke.thisKnob()\nif kc.name() in \[\"copy1\"]:\n    for n in nuke.allNodes():\n        if \"static\" not in n\['label'].getValue():\n            nuke.delete(n)\n    \n    iRep = m.knob('copy1').getValue()\n    iRepeats = int(iRep)-1\n    RepMax = int(iRep)\n    bfirstLoop = True\n    \n    # Main Transform for Copy1\n    w = nuke.toNode('Trans_COPY1')\n    \n    # Last Merge connected to this\n    b = nuke.toNode('COPIES1_end')\n    \n    # Dot would be connected to this and allows toggle between original and modified source \n    s = nuke.toNode('Switch1')\n    \n    nDot = nuke.nodes.Dot()\n    nDot.setInput(0, s)\n\n    nMult = nuke.toNode('mu1t2_1')\n    \n    if (iRepeats+1) >= 2: \n    \n        for i in range(iRepeats):\n            RepNum = int(i)+1\n            RepNum2 = int(i)+2\n            nMult.knob('ReMax').setValue( RepMax )\n            nMult.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CTrans = nuke.nodes.Transform(name = \"t\" + str(i))\n            CTrans.knob('translate').setExpression('Trans_COPY1.translate')\n            CTrans.knob('rotate').setExpression('Trans_COPY1.rotate')\n            CTrans.knob('scale').setExpression('Trans_COPY1.scale')\n            CTrans.knob('skewX').setExpression('Trans_COPY1.skewX')\n            CTrans.knob('skewY').setExpression('Trans_COPY1.skewY')\n            CTrans.knob('skew_order').setExpression('Trans_COPY1.skew_order')\n            CTrans.knob('center').setExpression('Trans_COPY1.center')\n            CTrans.knob('invert_matrix').setExpression('Trans_COPY1.invert_matrix')\n            CTrans.knob('filter').setExpression('Trans_COPY1.filter')\n            CTrans.knob('motionblur').setExpression('Trans_COPY1.motionblur')\n            CTrans.knob('shutter').setExpression('Trans_COPY1.shutter')\n            CTrans.knob('shutteroffset').setValue(0)\n            CMult1 = nuke.nodes.Multiply(name = \"mu1_\" + str(i))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult1.addKnob(k)\n            CMult1.addKnob(k2)\n            CMult1.knob('ReMax').setValue( RepMax )\n            CMult1.knob('ReNum').setValue( RepNum )\n            CMult1.knob('value').setExpression('((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )')\n            CMult1.setInput(0, CTrans)\n            CMult2 = nuke.nodes.Multiply(name = \"mu1t2_\" + str(RepNum2))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult2.addKnob(k)\n            CMult2.addKnob(k2)\n            CMult2.knob('ReMax').setValue( RepMax )\n            CMult2.knob('ReNum').setValue( RepNum )\n            CMult2.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CMult2.setInput(0, CMult1)\n            nMerge = nuke.nodes.Merge2(name = \"m\" + str(i))\n            nMerge.knob('also_merge').setValue('all')\n            nMerge.setInput(1, CMult2)\n            \n            if bfirstLoop:\n                bfirstLoop = False\n                CTrans.setInput(0, nDot)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nMult)\n            else:\n                CTrans.setInput(0, nPrevTrans)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nPrevMerge)\n \n            nPrevMerge = nMerge\n            nPrevTrans = CTrans\n            nPrevMult1 = CMult1\n            nPrevMult2 = CMult2\n        \n        MNum = int(iRepeats) - 1\n        \n        p = nuke.toNode(\"m\" + str(MNum))\n        \n        b.setInput(0, p)\n\n\n    else:\n        b.setInput(0, nDot)\n"
+  label static
+  xpos 840
+  ypos 248
+  addUserKnob {20 User}
+  addUserKnob {3 copy1 l Copies1}
+  copy1 3
+ }
+ Input {
+  inputs 0
+  name Input
+  label static
+  xpos 510
+  ypos -16
+ }
+ Dot {
+  name Dot2
+  label static
+  xpos 544
+  ypos 90
+ }
+set Nb7a69880 [stack 0]
+ Remove {
+  name Remove
+  label static
+  xpos 510
+  ypos 169
+ }
+ Flare {
+  position {960 540}
+  radius {100 {radius.0} {100+parent.proxy1.falloff}}
+  ring_color {1 1 1}
+  inner_color {1 1 1}
+  outer_falloff {1 1 1}
+  inner_falloff {1 1 1}
+  brightness {1 1 1}
+  vis_out 1
+  flattening 6
+  sharpness 1
+  corners_angle 0.1
+  mult_offset 0
+  name Flare
+  label static
+  xpos 510
+  ypos 248
+ }
+ Shuffle {
+  alpha red
+  name Shuffle1
+  label static
+  xpos 510
+  ypos 320
+ }
+ Clamp {
+  name Clamp
+  label static
+  xpos 510
+  ypos 361
+ }
+ Transform {
+  translate {{Trans_COPY1_proxy_2.translate2} {Trans_COPY1_proxy_2.translate2}}
+  rotate {{Trans_COPY1_proxy_2.rotate2}}
+  scale {{Trans_COPY1_proxy_2.scale2} {Trans_COPY1_proxy_2.scale2}}
+  skewX {{Trans_COPY1_proxy_2.skewX2}}
+  skewY {{Trans_COPY1_proxy_2.skewY2}}
+  skew_order {{Trans_COPY1_proxy_2.skeworder2}}
+  center {{Trans_COPY1_proxy_2.center2} {Trans_COPY1_proxy_2.center2}}
+  invert_matrix {{Trans_COPY1_proxy_2.invert2}}
+  filter {{Trans_COPY1_proxy_2.filter2}}
+  shutteroffset centred
+  name Transform1
+  label static
+  xpos 510
+  ypos 416
+ }
+ Grade {
+  name Grade
+  label static
+  xpos 510
+  ypos 488
+ }
+set Nb7a68380 [stack 0]
+push $Nb7a68380
+ Transform {
+  translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
+  rotate {{Trans_COPY1_proxy.rotate1}}
+  scale {{Trans_COPY1_proxy.scale1} {Trans_COPY1_proxy.scale1}}
+  skewX {{Trans_COPY1_proxy.skewX1}}
+  skewY {{Trans_COPY1_proxy.skewY1}}
+  skew_order {{Trans_COPY1_proxy.skeworder1}}
+  center {{"Flare.position - translate.x + Trans_COPY1_proxy.center1.x"} {"Flare.position- translate.y +  + Trans_COPY1_proxy.center1.y"}}
+  invert_matrix {{Trans_COPY1_proxy.invert1}}
+  filter {{Trans_COPY1_proxy.filter1}}
+  motionblur {{Trans_COPY1_proxy.motionblur1}}
+  shutter {{Trans_COPY1_proxy.shutter1}}
+  shutteroffset centred
+  name Trans_COPY1
+  label static
+  xpos 400
+  ypos 488
+ }
+ Switch {
+  inputs 2
+  which {{!apply_on_copy1}}
+  name Switch1
+  label static
+  xpos 510
+  ypos 608
+ }
+set Nb7aa1c00 [stack 0]
+ Dot {
+  name Dot1
+  xpos 544
+  ypos 646
+ }
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t0
+  xpos 510
+  ypos 664
+ }
+set Nb7aa1500 [stack 0]
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t1
+  xpos 620
+  ypos 690
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_1
+  xpos 620
+  ypos 716
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 2
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_3
+  xpos 620
+  ypos 761
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 2
+ }
+push $Nb7aa1500
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_0
+  xpos 510
+  ypos 690
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_2
+  xpos 510
+  ypos 735
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+push $Nb7aa1c00
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_1
+  label static
+  xpos 730
+  ypos 601
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name m0
+  xpos 730
+  ypos 741
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name m1
+  xpos 730
+  ypos 767
+ }
+ NoOp {
+  name COPIES1_end
+  label static
+  xpos 510
+  ypos 2456
+ }
+ Crop {
+  box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
+  name Crop1
+  label "Box: \[value box]\nstatic"
+  xpos 510
+  ypos 2593
+ }
+set Nb7ad7180 [stack 0]
+push $Nb7a69880
+ Dot {
+  name Dot4
+  label static
+  xpos 104
+  ypos 2610
+ }
+ Merge2 {
+  inputs 2
+  name Merge1
+  label static
+  xpos 290
+  ypos 2600
+ }
+push $Nb7ad7180
+ Switch {
+  inputs 2
+  which {{output}}
+  name Switch2
+  label "Which: \[value which]\nstatic"
+  xpos 510
+  ypos 2689
+ }
+ Output {
+  name Output1
+  label static
+  xpos 510
+  ypos 2816
+ }
+ NoOp {
+  inputs 0
+  name Trans_COPY1_proxy_2
+  label static
+  xpos 290
+  ypos 464
+  addUserKnob {20 User}
+  addUserKnob {12 translate2}
+  addUserKnob {7 rotate2 R -180 180}
+  addUserKnob {14 scale2 R 0 100}
+  scale2 1
+  addUserKnob {7 skewX2 R -1 1}
+  addUserKnob {7 skewY2 R -1 1}
+  addUserKnob {4 skeworder2 M {XY YX ""}}
+  addUserKnob {12 center2}
+  center2 {960 540}
+  addUserKnob {6 invert2 +STARTLINE}
+  addUserKnob {4 filter2 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4 ""}}
+  filter2 Cubic
+ }
+ NoOp {
+  inputs 0
+  name Trans_COPY1_proxy
+  label static
+  xpos 180
+  ypos 656
+  addUserKnob {20 User}
+  addUserKnob {12 translate1}
+  translate1 {200 0}
+  addUserKnob {7 rotate1 R -180 180}
+  addUserKnob {14 scale1 R 0 100}
+  scale1 1
+  addUserKnob {7 skewX1 R -1 1}
+  addUserKnob {7 skewY1 R -1 1}
+  addUserKnob {4 skeworder1 M {XY YX}}
+  addUserKnob {12 center1}
+  addUserKnob {6 invert1 +STARTLINE}
+  addUserKnob {4 filter1 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4}}
+  filter1 Cubic
+  addUserKnob {7 motionblur1 R 0 4}
+  motionblur1 1
+  addUserKnob {7 shutter1 R 0 2}
+  shutter1 0.5
+  addUserKnob {26 ""}
+  addUserKnob {7 fadeout l "Fade Out"}
+  fadeout {{1-fadeout1}}
+  addUserKnob {7 fadeout1 l "Fade Out 1"}
+  addUserKnob {7 fadein l "Fade In"}
+  fadein {{1-fadein1}}
+  addUserKnob {7 fadein1 l "Fade In"}
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_CrossPattern
+ tile_color 0xd5ff1dff
+ selected true
+ xpos 400
+ ypos -592
+ addUserKnob {20 User}
+ addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image" "Distorted Image" STMap "" ""}}
+ output "Pattern Over Image"
+ addUserKnob {6 keep_alpha l "Keep Original Alpha" -STARTLINE}
+ keep_alpha true
+ addUserKnob {26 ""}
+ addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
+ addUserKnob {26 ""}
+ addUserKnob {41 type l Type T CP_Expression.type}
+ addUserKnob {41 type2 l Type2 T CP_Expression.type2}
+ addUserKnob {41 direction l Direction T CP_Expression.direction}
+ addUserKnob {41 direction2 l Direction2 T CP_Expression.direction2}
+ addUserKnob {41 size l Size T CP_Expression.size}
+ addUserKnob {41 size2 l Size2 T CP_Expression.size2}
+ addUserKnob {41 offset l Offset T CP_Expression.offset}
+ addUserKnob {41 offset2 l Offset2 T CP_Expression.offset2}
+ addUserKnob {41 speed l Speed T CP_Expression.speed}
+ addUserKnob {41 speed2 l Speed2 T CP_Expression.speed2}
+ addUserKnob {41 multiply l Color T CP_Grade2.multiply}
+ addUserKnob {6 invert l Invert +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {7 roundness l Roundness R 0 100}
+ roundness 30
+ addUserKnob {7 contr l Contrast}
+ addUserKnob {7 blur l Blur R 0 100}
+ addUserKnob {26 ""}
+ addUserKnob {41 mix l Mix T Merge1.mix}
+ addUserKnob {26 "" +STARTLINE}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/cross-pattern')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_CrossPattern© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name Input
+  xpos 70
+  ypos -634
+ }
+ Dot {
+  name Dot1
+  xpos 104
+  ypos -534
+ }
+set N58a90a80 [stack 0]
+ Remove {
+  name CP_Remove1
+  xpos 70
+  ypos -328
+ }
+set N58a90700 [stack 0]
+ Expression {
+  expr0 "ceil((\[value type](y/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))) + (\[value type](x/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))))"
+  expr1 "ceil((\[value type2](y/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))) / (\[value type2](x/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))))"
+  name CP_Expression
+  xpos 70
+  ypos -274
+  addUserKnob {20 User}
+  addUserKnob {4 type l Type M {sin cos tan}}
+  addUserKnob {4 type2 l Type2 M {sin cos tan}}
+  addUserKnob {4 direction l Direction M {Up Down ""}}
+  addUserKnob {4 direction2 l Direction2 M {Up Down}}
+  direction2 Down
+  addUserKnob {7 size l Size R 0 100}
+  size 30
+  addUserKnob {7 size2 l Size2 R 0 100}
+  size2 60
+  addUserKnob {7 offset l Offset R 0 100}
+  addUserKnob {7 offset2 l Offset2 R 0 100}
+  addUserKnob {7 speed l Speed R 0 100}
+  speed 5
+  addUserKnob {7 speed2 l Speed2 R 0 100}
+  speed2 5
+ }
+set N58a90380 [stack 0]
+ Shuffle {
+  green black
+  blue black
+  alpha black
+  name CP_ShuffleR
+  xpos -40
+  ypos -154
+ }
+ Clamp {
+  name CP_Clamp1
+  xpos -40
+  ypos -88
+ }
+push $N58a90380
+ Shuffle {
+  red green
+  green black
+  blue black
+  alpha black
+  name CP_ShuffleG
+  xpos 180
+  ypos -154
+ }
+ Clamp {
+  name CP_Clamp2
+  xpos 180
+  ypos -88
+ }
+ Merge2 {
+  inputs 2
+  operation {{Merge_Proxy.operation1}}
+  Achannels {rgba.red -rgba.green -rgba.blue rgba.alpha}
+  Bchannels {rgba.red rgba.green -rgba.blue rgba.alpha}
+  output rgb
+  name CP_Merge
+  xpos 70
+  ypos 14
+ }
+ Clamp {
+  name CP_Clamp3
+  xpos 70
+  ypos 56
+ }
+ Shuffle {
+  red black
+  green black
+  blue black
+  alpha red
+  name Shuffle4
+  xpos 70
+  ypos 134
+ }
+ Invert {
+  name CP_Invert
+  xpos 70
+  ypos 176
+  disable {{!invert}}
+ }
+ Group {
+  name key_chew
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  xpos 70
+  ypos 230
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{-parent.roundness}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set N58ac0700 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set N58ac0380 [stack 0]
+push $N58ac0380
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $N58ac0380
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N216f180 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $N216f180
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $N58ac0700
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+ Group {
+  name key_chew1
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  xpos 70
+  ypos 302
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{-parent.key_chew.chew}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set N21b5500 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set N21b5180 [stack 0]
+push $N21b5180
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $N21b5180
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N21b4000 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $N21b4000
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $N21b5500
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+ Clamp {
+  name CP_Clamp4
+  xpos 70
+  ypos 368
+ }
+ Grade {
+  channels all
+  blackpoint {{"parent.contr * .45"}}
+  whitepoint {{"1 - ( blackpoint * 1.1) "}}
+  white_clamp true
+  name CP_Grade
+  xpos 70
+  ypos 440
+ }
+ Shuffle {
+  red alpha
+  green alpha
+  blue alpha
+  name Shuffle5
+  xpos 70
+  ypos 494
+ }
+ Dot {
+  name Dot3
+  xpos 104
+  ypos 570
+ }
+set N221b880 [stack 0]
+ Dot {
+  name Dot4
+  xpos 104
+  ypos 642
+ }
+set N221b500 [stack 0]
+push $N221b880
+push $N58a90700
+ Dot {
+  name Dot8
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 434
+  ypos -318
+ }
+set N221b180 [stack 0]
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.red
+  name CP_CopyR
+  tile_color 0xff0000ff
+  xpos 400
+  ypos 560
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.green
+  name CP_CopyG
+  tile_color 0x1fff00ff
+  xpos 400
+  ypos 632
+ }
+set N221aa80 [stack 0]
+ Blur {
+  size {{blur}}
+  name Blur1
+  label "Size: \[value size]"
+  xpos 730
+  ypos 625
+ }
+push $N221b180
+ Dot {
+  name Dot2
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 1204
+  ypos -318
+ }
+ Expression {
+  expr0 (x+0.5)/width
+  expr1 (y+0.5)/height
+  name Expression1
+  xpos 1170
+  ypos -58
+ }
+ Merge2 {
+  inputs 2
+  mix {{Merge1.mix/5}}
+  name Merge2
+  xpos 1170
+  ypos 638
+ }
+set N2245880 [stack 0]
+push $N2245880
+push $N58a90a80
+ Dot {
+  name Dot7
+  xpos 984
+  ypos -534
+ }
+ Shuffle {
+  alpha black
+  name Shuffle1
+  label "\[value in]"
+  xpos 950
+  ypos 776
+  disable {{keep_alpha}}
+ }
+ Dot {
+  name Dot9
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 984
+  ypos 978
+ }
+set N2244e00 [stack 0]
+ STMap {
+  inputs 2
+  uv rgb
+  name STMap1
+  label "UV: \[value uv]"
+  xpos 1170
+  ypos 961
+ }
+push $N221b500
+ Dot {
+  name Dot5
+  xpos 104
+  ypos 714
+ }
+set N2244700 [stack 0]
+ Dot {
+  name Dot6
+  xpos 104
+  ypos 834
+ }
+push $N2244700
+push $N221aa80
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.blue
+  name CP_CopyB
+  tile_color 0x3fffff
+  xpos 400
+  ypos 704
+ }
+ Grade {
+  name CP_Grade2
+  xpos 400
+  ypos 758
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name CP_CopyA
+  tile_color 0x999999ff
+  xpos 400
+  ypos 824
+ }
+ Blur {
+  size {{Blur1.size}}
+  name Blur2
+  label "Size: \[value size]"
+  xpos 400
+  ypos 913
+ }
+ Premult {
+  name Premult1
+  xpos 400
+  ypos 1070
+ }
+set N2277180 [stack 0]
+push $N2244e00
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge1
+  xpos 950
+  ypos 1070
+ }
+push $N2277180
+ Switch {
+  inputs 4
+  which {{output}}
+  name Switch1
+  label "Which: \[value which]"
+  xpos 950
+  ypos 1232
+ }
+ Output {
+  name Output1
+  xpos 950
+  ypos 1454
+ }
+ NoOp {
+  inputs 0
+  name Merge_Proxy
+  xpos 180
+  ypos 14
+  addUserKnob {20 User}
+  addUserKnob {4 operation1 M {atop average color-burn color-dodge conjoint-over copy difference disjoint-over divide exclusion from geometric hard-light hypot in mask matte max min minus multiply out over overlay plus screen soft-light stencil under xor ""}}
+  operation1 multiply
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Moving_Lines
+ tile_color 0xe8f57dff
+ note_font "DejaVu Sans"
+ selected true
+ xpos 620
+ ypos -591
+ addUserKnob {20 User}
+ addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image" "Distorted Image" STMap ""}}
+ output "Pattern Over Image"
+ addUserKnob {6 keep_a l "Keep Original Alpha" -STARTLINE}
+ keep_a true
+ addUserKnob {26 ""}
+ addUserKnob {41 type_1 l Type T proxy.type}
+ addUserKnob {41 axis_1 l Axis T proxy.axis}
+ addUserKnob {41 direction_1 l Direction T proxy.direction}
+ addUserKnob {41 thickness_1 l Thickness T proxy.thickness}
+ addUserKnob {41 chew l Gap T key_chew_ML.chew}
+ addUserKnob {41 speed_1 l Speed T proxy.speed}
+ addUserKnob {41 value_1 l Value +INVISIBLE T proxy.value}
+ addUserKnob {41 offset_1 l Offset T proxy.offset}
+ addUserKnob {7 blur l Blur R 0 100}
+ addUserKnob {41 multiply l Color T Grade_ML.multiply}
+ addUserKnob {6 invert +STARTLINE}
+ invert true
+ addUserKnob {26 ""}
+ addUserKnob {6 cross l "Enable Cross" +STARTLINE}
+ cross true
+ addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
+ addUserKnob {26 ""}
+ addUserKnob {41 mix l Mix T Merge2.mix}
+ addUserKnob {26 "" +STARTLINE}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/moving-lines')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Moving_Lines© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name Input
+  xpos 180
+  ypos -874
+ }
+ Dot {
+  name Dot9
+  xpos 214
+  ypos -750
+ }
+set N35ce000 [stack 0]
+ Remove {
+  name Remove_ML
+  tile_color 0x555555ff
+  xpos 180
+  ypos -640
+ }
+ Dot {
+  name Dot5
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 214
+  ypos -534
+ }
+set N7a31880 [stack 0]
+ Dot {
+  name Dot7
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -6
+  ypos -534
+ }
+ Expression {
+  channel3 alpha
+  expr3 "( \[value proxy.type](\[if \{\[numvalue proxy.axis] == 0\} \{return \"y\"\} else \{return \"x\"\}]/proxy.thickness \[if \{\[numvalue proxy.direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]  (frame+proxy.offset)*proxy.speed )  )*proxy.value"
+  name Moving_Lines_Exp1
+  tile_color 0x555555ff
+  selected true
+  xpos -40
+  ypos -490
+  addUserKnob {20 User}
+  addUserKnob {4 type M {sin cos tan}}
+  addUserKnob {4 axis M {x y}}
+  axis y
+  addUserKnob {4 direction M {up down}}
+  direction down
+  addUserKnob {7 thickness R 1 100}
+  thickness 34.5
+  addUserKnob {7 speed R 0 2}
+  speed 0.3
+  addUserKnob {7 value R 0 10}
+  value 1
+  addUserKnob {7 offset R 0 100}
+ }
+ Clamp {
+  name Clamp_ML1
+  tile_color 0x555555ff
+  xpos -40
+  ypos -424
+ }
+ Group {
+  name key_chew_ML1
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos -40
+  ypos -346
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{parent.key_chew_ML.chew}}
+  addUserKnob {7 soften R 0 200}
+  soften {{parent.key_chew_ML.soften}}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set N7a30700 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set N7a30380 [stack 0]
+push $N7a30380
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $N7a30380
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N7a5d180 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $N7a5d180
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $N7a30700
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+ Dot {
+  name Dot8
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -6
+  ypos -270
+ }
+push $N7a31880
+ Expression {
+  channel3 alpha
+  expr3 "( \[value proxy.type](\[if \{\[numvalue proxy.axis] == 0\} \{return \"x\"\} else \{return \"y\"\}]/proxy.thickness \[if \{\[numvalue proxy.direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]  (frame+proxy.offset)*proxy.speed )  )*proxy.value"
+  name Moving_Lines_Exp
+  tile_color 0x555555ff
+  xpos 180
+  ypos -490
+  addUserKnob {20 User}
+  addUserKnob {4 type M {sin cos tan}}
+  addUserKnob {4 axis M {x y}}
+  axis y
+  addUserKnob {4 direction M {up down}}
+  direction down
+  addUserKnob {7 thickness R 1 100}
+  thickness 19.5
+  addUserKnob {7 speed R 0 2}
+  speed 0.3
+  addUserKnob {7 value R 0 10}
+  value 1
+  addUserKnob {7 offset R 0 100}
+  addUserKnob {7 rotate R 0 180}
+  rotate 23.6
+ }
+ Clamp {
+  name Clamp_ML
+  tile_color 0x555555ff
+  xpos 180
+  ypos -424
+ }
+ Group {
+  name key_chew_ML
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos 180
+  ypos -346
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set Nad40700 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set Nad40380 [stack 0]
+push $Nad40380
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $Nad40380
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set Nad73180 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $Nad73180
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $Nad40700
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+ Merge2 {
+  inputs 2
+  operation {{Merge_Proxy.operation1}}
+  name Merge_ML
+  tile_color 0x555555ff
+  xpos 180
+  ypos -274
+  disable {{"parent.cross ==0"}}
+ }
+ Invert {
+  name Invert_ML
+  tile_color 0x555555ff
+  xpos 180
+  ypos -160
+  disable {{"parent.invert == 0"}}
+ }
+ Dot {
+  name Dot6
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 214
+  ypos -78
+ }
+set Nadb0e00 [stack 0]
+ Dot {
+  name Dot2
+  xpos 214
+  ypos 18
+ }
+set Nadb0a80 [stack 0]
+push $Nadb0e00
+push $N7a31880
+ Dot {
+  name Dot1
+  xpos 544
+  ypos -534
+ }
+set Nadb0700 [stack 0]
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green black
+  blue black
+  alpha black
+  name ShuffleCopy_R
+  tile_color 0x555555ff
+  xpos 510
+  ypos -82
+ }
+ ShuffleCopy {
+  inputs 2
+  green alpha
+  blue black
+  alpha black
+  name ShuffleCopy_G
+  tile_color 0x555555ff
+  xpos 510
+  ypos 14
+ }
+ Dot {
+  name Dot12
+  xpos 544
+  ypos 66
+ }
+set Nadddc00 [stack 0]
+ Blur {
+  size {{blur}}
+  name Blur1
+  label "Size: \[value size]"
+  xpos 730
+  ypos 49
+ }
+push $Nadb0700
+ Dot {
+  name Dot10
+  xpos 1204
+  ypos -534
+ }
+ Expression {
+  expr0 (x+0.5)/width
+  expr1 (y+0.5)/height
+  name Expression1
+  xpos 1170
+  ypos -346
+ }
+ Merge2 {
+  inputs 2
+  mix {{Merge2.mix/5}}
+  name Merge1
+  xpos 1170
+  ypos 62
+ }
+set Naddca80 [stack 0]
+push $Naddca80
+push $N35ce000
+ Dot {
+  name Dot11
+  xpos 984
+  ypos -750
+ }
+ Shuffle {
+  alpha black
+  name Shuffle1
+  label "\[value in]"
+  xpos 950
+  ypos -184
+  disable {{keep_a}}
+ }
+ Dot {
+  name Dot13
+  xpos 984
+  ypos 258
+ }
+set Naddc000 [stack 0]
+ STMap {
+  inputs 2
+  uv rgb
+  name STMap1
+  label "UV: \[value uv]"
+  xpos 1170
+  ypos 241
+ }
+push $Nadb0a80
+ Dot {
+  name Dot3
+  xpos 214
+  ypos 114
+ }
+set Nae01880 [stack 0]
+ Dot {
+  name Dot4
+  xpos 214
+  ypos 210
+ }
+push $Nae01880
+push $Nadddc00
+ ShuffleCopy {
+  inputs 2
+  blue alpha
+  alpha black
+  name ShuffleCopy_B
+  tile_color 0x555555ff
+  xpos 510
+  ypos 110
+ }
+ Grade {
+  name Grade_ML
+  xpos 510
+  ypos 158
+ }
+ ShuffleCopy {
+  inputs 2
+  name ShuffleCopy_A
+  tile_color 0x555555ff
+  xpos 510
+  ypos 206
+  disable {{"parent.alpha == 0"}}
+ }
+ Blur {
+  size {{Blur1.size}}
+  name Blur2
+  label "Size: \[value size]"
+  xpos 510
+  ypos 265
+ }
+ Premult {
+  name Premult1
+  xpos 510
+  ypos 374
+ }
+set Nae00380 [stack 0]
+push $Naddc000
+ Merge2 {
+  inputs 2
+  name Merge2
+  xpos 950
+  ypos 374
+ }
+push $Nae00380
+ Switch {
+  inputs 4
+  which {{output}}
+  name Switch1
+  label "Which: \[value which]"
+  xpos 950
+  ypos 536
+ }
+ Output {
+  name Output
+  xpos 950
+  ypos 686
+ }
+ NoOp {
+  inputs 0
+  name Merge_Proxy
+  xpos 290
+  ypos -274
+  addUserKnob {20 User}
+  addUserKnob {4 operation1 M {atop average color-burn color-dodge conjoint-over copy difference disjoint-over divide exclusion from geometric hard-light hypot in mask matte max min minus multiply out over overlay plus screen soft-light stencil under xor ""}}
+  operation1 over
+ }
+ NoOp {
+  inputs 0
+  name proxy
+  tile_color 0x555555ff
+  xpos -150
+  ypos -490
+  addUserKnob {20 User}
+  addUserKnob {4 type l typ M {sin cos tan}}
+  addUserKnob {4 axis M {x y}}
+  addUserKnob {4 direction M {up down}}
+  addUserKnob {7 thickness R 1 100}
+  thickness 30
+  addUserKnob {7 speed R 0 2}
+  speed 1
+  addUserKnob {7 value R 0 10}
+  value 10
+  addUserKnob {7 offset R 0 100}
+ }
+end_group
+push $cut_paste_input
+Group {
  name GM_Round_Matte
  tile_color 0xffbb56ff
  selected true
@@ -894,6 +2428,1449 @@ push $N332b500
 end_group
 push $cut_paste_input
 Group {
+ name GM_Matte_Edge
+ tile_color 0xcc9800ff
+ selected true
+ xpos 620
+ ypos -346
+ addUserKnob {20 User}
+ addUserKnob {4 method l Method M {"Merge In/Out" "Separate In/Out"}}
+ addUserKnob {26 out l "<b><font color=orange>Outside"}
+ addUserKnob {41 in_1 l Size T proxy.in}
+ addUserKnob {41 size_1 l Blur T Blur_IN.size}
+ addUserKnob {41 which l Mix T Dissolve1.which}
+ addUserKnob {26 in l "<b><font color=orange>Inside"}
+ addUserKnob {41 out_1 l Size T proxy.out}
+ addUserKnob {41 size_3 l Blur T Blur_OUT.size}
+ addUserKnob {41 which_1 l Mix T Dissolve2.which}
+ addUserKnob {26 ""}
+ addUserKnob {6 prem l Premult +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {7 mix_all l Mix}
+ mix_all 1
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/matte-edge')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Matte Edge© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name Input
+  tile_color 0x666666ff
+  xpos -480
+  ypos 38
+ }
+ Dot {
+  name Dot14
+  xpos -446
+  ypos 378
+ }
+set N303a700 [stack 0]
+ Dot {
+  name Dot15
+  xpos -556
+  ypos 378
+ }
+set N303a380 [stack 0]
+ Group {
+  name key_chew
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos -700
+  ypos 518
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{parent.proxy.in}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos -40
+   ypos -10
+  }
+set N303a000 [stack 0]
+  Dot {
+   name Dot1
+   xpos 324
+   ypos -6
+  }
+set N3063c00 [stack 0]
+push $N3063c00
+  Invert {
+   name Invert1
+   xpos 180
+   ypos 32
+  }
+push $N3063c00
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 180
+   ypos 86
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)"}}
+   name FgEdgeBlur
+   xpos 180
+   ypos 128
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1)}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 180
+   ypos 176
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew)))}}
+   name FgEdgeGamma1
+   selected true
+   xpos 180
+   ypos 224
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N3062a80 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 290
+   ypos 230
+  }
+push $N3062a80
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 180
+   ypos 278
+  }
+  Clamp {
+   name Clamp2
+   xpos 180
+   ypos 320
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 180
+   ypos 440
+  }
+push $N303a000
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos -40
+   ypos 446
+  }
+  Premult {
+   name Premult1
+   xpos -40
+   ypos 494
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos -40
+   ypos 566
+  }
+ end_group
+push $N303a380
+ Dissolve {
+  inputs 2
+  which 1
+  name Dissolve2
+  tile_color 0x555555ff
+  xpos -590
+  ypos 584
+ }
+ Blur {
+  channels alpha
+  size 5
+  name Blur_IN
+  tile_color 0x666666ff
+  xpos -590
+  ypos 656
+ }
+ Dot {
+  name Dot16
+  xpos -556
+  ypos 762
+ }
+push $N303a700
+ Dot {
+  name Dot8
+  xpos -336
+  ypos 378
+ }
+set N309c380 [stack 0]
+ Group {
+  name key_chew1
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos -260
+  ypos 518
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{-proxy.out}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set N309c000 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set N30c9c00 [stack 0]
+push $N30c9c00
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $N30c9c00
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N30c8a80 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $N30c8a80
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $N309c000
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+push $N309c380
+ Dissolve {
+  inputs 2
+  which 1
+  name Dissolve1
+  tile_color 0x555555ff
+  xpos -370
+  ypos 584
+ }
+set N3102e00 [stack 0]
+ Dot {
+  name Dot18
+  xpos -336
+  ypos 762
+ }
+ ChannelMerge {
+  inputs 2
+  operation xor
+  name ChannelMerge
+  tile_color 0x666666ff
+  xpos -480
+  ypos 745
+ }
+push $N309c380
+ Dot {
+  name Dot3
+  xpos -116
+  ypos 378
+ }
+set N3102380 [stack 0]
+ Dot {
+  name Dot4
+  xpos -116
+  ypos 930
+ }
+set N3102000 [stack 0]
+ Invert {
+  name Invert1
+  tile_color 0x555555ff
+  xpos -260
+  ypos 920
+ }
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge4
+  tile_color 0x555555ff
+  label "\[value operation]"
+  xpos -480
+  ypos 907
+ }
+push $N3102380
+ Dot {
+  name Dot11
+  xpos 214
+  ypos 378
+ }
+set N3133500 [stack 0]
+ Dot {
+  name Dot5
+  xpos 214
+  ypos 426
+ }
+set N3133180 [stack 0]
+ Dot {
+  name Dot6
+  xpos 104
+  ypos 426
+ }
+set N3132e00 [stack 0]
+ Group {
+  name key_chew2
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos -40
+  ypos 566
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{parent.proxy.in}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos -40
+   ypos -10
+  }
+set N3132a80 [stack 0]
+  Dot {
+   name Dot1
+   xpos 324
+   ypos -6
+  }
+set N3132700 [stack 0]
+push $N3132700
+  Invert {
+   name Invert1
+   xpos 180
+   ypos 32
+  }
+push $N3132700
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 180
+   ypos 86
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)"}}
+   name FgEdgeBlur
+   xpos 180
+   ypos 128
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1)}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 180
+   ypos 176
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew)))}}
+   name FgEdgeGamma1
+   selected true
+   xpos 180
+   ypos 224
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N315b500 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 290
+   ypos 230
+  }
+push $N315b500
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 180
+   ypos 278
+  }
+  Clamp {
+   name Clamp2
+   xpos 180
+   ypos 320
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 180
+   ypos 440
+  }
+push $N3132a80
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos -40
+   ypos 446
+  }
+  Premult {
+   name Premult1
+   xpos -40
+   ypos 494
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos -40
+   ypos 566
+  }
+ end_group
+push $N3132e00
+ Dissolve {
+  inputs 2
+  which {{Dissolve2.which}}
+  name Dissolve4
+  tile_color 0x555555ff
+  xpos 70
+  ypos 632
+ }
+ Dot {
+  name Dot7
+  xpos 104
+  ypos 810
+ }
+push $N3133180
+ Dot {
+  name Dot9
+  xpos 324
+  ypos 426
+ }
+set N3197180 [stack 0]
+ Group {
+  name key_chew3
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos 400
+  ypos 566
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{-proxy.out}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set N3196e00 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set N3196a80 [stack 0]
+push $N3196a80
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $N3196a80
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N31c3880 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $N31c3880
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $N3196e00
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+push $N3197180
+ Dissolve {
+  inputs 2
+  which {{Dissolve1.which}}
+  name Dissolve5
+  tile_color 0x555555ff
+  xpos 290
+  ypos 632
+ }
+ Blur {
+  channels alpha
+  size {{parent.Blur_OUT.size}}
+  name Blur_OUT1
+  tile_color 0x666666ff
+  xpos 290
+  ypos 704
+ }
+ Dot {
+  name Dot10
+  xpos 324
+  ypos 810
+ }
+ ChannelMerge {
+  inputs 2
+  operation xor
+  name ChannelMerge1
+  tile_color 0x666666ff
+  xpos 180
+  ypos 793
+ }
+push $N3102000
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge3
+  tile_color 0x555555ff
+  label "\[value operation]"
+  xpos 180
+  ypos 907
+ }
+ ChannelMerge {
+  inputs 2
+  operation plus
+  name ChannelMerge2
+  tile_color 0x555555ff
+  label "\[value operation]"
+  xpos -150
+  ypos 1003
+ }
+push $N303a380
+ Dot {
+  name Dot21
+  xpos -996
+  ypos 378
+ }
+ Dot {
+  name Dot12
+  xpos -996
+  ypos 618
+ }
+set N3204380 [stack 0]
+ Dot {
+  name Dot13
+  xpos -1106
+  ypos 618
+ }
+set N3204000 [stack 0]
+ Group {
+  name key_chew4
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos -1250
+  ypos 758
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{parent.proxy.in}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos -40
+   ypos -10
+  }
+set N3231c00 [stack 0]
+  Dot {
+   name Dot1
+   xpos 324
+   ypos -6
+  }
+set N3231880 [stack 0]
+push $N3231880
+  Invert {
+   name Invert1
+   xpos 180
+   ypos 32
+  }
+push $N3231880
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 180
+   ypos 86
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)"}}
+   name FgEdgeBlur
+   xpos 180
+   ypos 128
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1)}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 180
+   ypos 176
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew)))}}
+   name FgEdgeGamma1
+   selected true
+   xpos 180
+   ypos 224
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N3230700 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 290
+   ypos 230
+  }
+push $N3230700
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 180
+   ypos 278
+  }
+  Clamp {
+   name Clamp2
+   xpos 180
+   ypos 320
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 180
+   ypos 440
+  }
+push $N3231c00
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos -40
+   ypos 446
+  }
+  Premult {
+   name Premult1
+   xpos -40
+   ypos 494
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos -40
+   ypos 566
+  }
+ end_group
+push $N3204000
+ Dissolve {
+  inputs 2
+  which {{Dissolve2.which}}
+  name Dissolve6
+  tile_color 0x555555ff
+  xpos -1140
+  ypos 824
+ }
+ Blur {
+  channels alpha
+  size {{parent.Blur_IN.size}}
+  name Blur_IN1
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 872
+ }
+ Dot {
+  name Dot17
+  xpos -1106
+  ypos 1002
+ }
+push $N3204380
+ Dot {
+  name Dot19
+  xpos -886
+  ypos 618
+ }
+set N326a000 [stack 0]
+ Group {
+  name key_chew5
+  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
+  tile_color 0x555555ff
+  xpos -810
+  ypos 758
+  addUserKnob {20 Controls}
+  addUserKnob {7 chew t "\t\t" R -200 200}
+  chew {{-proxy.out}}
+  addUserKnob {7 soften R 0 200}
+  addUserKnob {6 matteMult +STARTLINE}
+ }
+  Input {
+   inputs 0
+   name Input
+   xpos 0
+  }
+set N329dc00 [stack 0]
+  Dot {
+   name Dot1
+   xpos 366
+   ypos 5
+  }
+set N329d880 [stack 0]
+push $N329d880
+  Invert {
+   name Invert1
+   xpos 177
+   ypos 34
+  }
+push $N329d880
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch1
+   xpos 177
+   ypos 87
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
+   name FgEdgeBlur
+   xpos 177
+   ypos 111
+  }
+  Grade {
+   channels alpha
+   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
+   black_clamp false
+   name FgEdgeMult
+   xpos 177
+   ypos 165
+  }
+  Grade {
+   channels alpha
+   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
+   name FgEdgeGamma1
+   xpos 177
+   ypos 213
+   addUserKnob {20 User}
+   addUserKnob {7 JSplineVFake}
+   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
+  }
+set N329c700 [stack 0]
+  Merge2 {
+   inputs 2
+   operation minus
+   name Merge1
+   xpos 332
+   ypos 218
+  }
+push $N329c700
+  Switch {
+   inputs 2
+   which {{"\[value parent.chew]>=0?0:1"}}
+   name Switch2
+   xpos 177
+   ypos 284
+  }
+  Clamp {
+   name Clamp2
+   xpos 177
+   ypos 323
+  }
+  Blur {
+   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
+   name BlurResult
+   xpos 177
+   ypos 446
+  }
+push $N329dc00
+  ShuffleCopy {
+   inputs 2
+   name ShuffleCopy1
+   xpos 0
+   ypos 451
+  }
+  Premult {
+   name Premult1
+   xpos 0
+   ypos 486
+   disable {{"1-\[value parent.matteMult]" i}}
+  }
+  Output {
+   name Output1
+   xpos 0
+   ypos 556
+  }
+ end_group
+push $N326a000
+ Dissolve {
+  inputs 2
+  which {{Dissolve1.which}}
+  name Dissolve7
+  tile_color 0x555555ff
+  xpos -920
+  ypos 824
+ }
+ Blur {
+  channels alpha
+  size {{parent.Blur_OUT.size}}
+  name Blur_OUT2
+  tile_color 0x666666ff
+  xpos -920
+  ypos 896
+ }
+ Dot {
+  name Dot20
+  xpos -886
+  ypos 1002
+ }
+ ChannelMerge {
+  inputs 2
+  operation xor
+  name ChannelMerge5
+  tile_color 0x666666ff
+  xpos -1030
+  ypos 985
+ }
+ Dot {
+  name Dot22
+  xpos -996
+  ypos 1146
+ }
+ Switch {
+  inputs 2
+  which {{parent.method}}
+  name Switch1
+  tile_color 0x555555ff
+  xpos -150
+  ypos 1142
+ }
+ Clamp {
+  name Clamp
+  tile_color 0x555555ff
+  xpos -150
+  ypos 1304
+ }
+ Dot {
+  name Dot2
+  xpos -116
+  ypos 1434
+ }
+push $N3133500
+ Dot {
+  name Dot1
+  xpos 874
+  ypos 378
+ }
+ Dissolve {
+  inputs 2
+  channels alpha
+  which {{parent.mix_all}}
+  name Dissolve3
+  tile_color 0x555555ff
+  xpos 840
+  ypos 1424
+ }
+ Premult {
+  name Premult1
+  tile_color 0x555555ff
+  xpos 840
+  ypos 1550
+  disable {{"parent.prem == 0"}}
+ }
+ Output {
+  name Output
+  tile_color 0x666666ff
+  xpos 840
+  ypos 1598
+ }
+ NoOp {
+  inputs 0
+  name proxy
+  tile_color 0x666666ff
+  xpos -480
+  ypos 518
+  addUserKnob {20 User}
+  addUserKnob {7 in l Size R 0 100}
+  in 10
+  addUserKnob {7 out l Size R 0 100}
+  out 10
+ }
+push $N3102e00
+ Blur {
+  channels alpha
+  size 5
+  name Blur_OUT
+  tile_color 0x666666ff
+  xpos -260
+  ypos 656
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Color_Flicker
+ tile_color 0xffbf00ff
+ selected true
+ xpos 400
+ ypos -82
+ addUserKnob {20 User l "Color Flicker"}
+ addUserKnob {26 wa_co l "<font color=yellow size=\"4\"><b>Wave Control</b></font>"}
+ addUserKnob {41 freq l "Wave Length " T proxy.freq}
+ addUserKnob {41 maxVal l Max T proxy.maxVal}
+ addUserKnob {41 minVal l Min T proxy.minVal}
+ addUserKnob {41 offset l Offset T proxy.offset}
+ addUserKnob {26 clamp l "<font color=yellow size=\"4\"><b>Clamp"}
+ addUserKnob {41 minimum l Minimum T Clamp_red.minimum}
+ addUserKnob {41 maximum l Maximum T Clamp_red.maximum}
+ addUserKnob {26 mix_4 l "<font color=yellow size=\"4\"><b>Mix "}
+ addUserKnob {41 mix_1 l "Red mix" T Copy_RED.mix}
+ addUserKnob {41 mix_2 l "Green Mix" T Copy_GREEN.mix}
+ addUserKnob {41 mix_3 l "Blue Mix" T Copy_BLUE.mix}
+ addUserKnob {41 which l Mix T Dissolve1.which}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut1 l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/color-flicker')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Color Flicker© by Attila Gasparetz</font>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode7
+  tile_color 0x181818ff
+  label "<center><font color=red>\nRED\nrandom((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=green>\nGREEN\nrandom((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=blue>\nBLUE\nrandom((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"
+  note_font_size 42
+  xpos -328
+  ypos -113
+  bdwidth 1537
+  bdheight 658
+ }
+ Input {
+  inputs 0
+  name Mask
+  xpos -1470
+  ypos 135
+  number 1
+ }
+ Input {
+  inputs 0
+  name Input
+  xpos -1030
+  ypos -57
+ }
+ Dot {
+  name Dot1
+  xpos -996
+  ypos 66
+ }
+set N2fc5c00 [stack 0]
+ Expression {
+  channel3 alpha
+  expr3 1
+  name Expression
+  xpos -1250
+  ypos 63
+ }
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge
+  tile_color 0xff
+  xpos -1250
+  ypos 123
+  disable {{"!\[exists parent.input1]"}}
+ }
+set N2fc5180 [stack 0]
+ Dot {
+  name Dot2
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1216
+  ypos 378
+ }
+push $N2fc5180
+push $N2fc5c00
+ Dot {
+  name Dot3
+  xpos -666
+  ypos 66
+ }
+set N2fc4a80 [stack 0]
+ Grade {
+  multiply {{"random((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"}}
+  name Grade_B
+  xpos -700
+  ypos 279
+ }
+ Clamp {
+  channels rgb
+  minimum {{Clamp_red.minimum}}
+  maximum {{Clamp_red.maximum}}
+  mix {{Grade_RED.mix}}
+  name Clamp_blue
+  tile_color 0x777777ff
+  xpos -920
+  ypos 279
+ }
+push $N2fc5180
+push $N2fc4a80
+ Grade {
+  multiply {{"random((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
+  name Grade_G
+  xpos -700
+  ypos 207
+ }
+ Clamp {
+  channels rgb
+  minimum {{Clamp_red.minimum}}
+  maximum {{Clamp_red.maximum}}
+  mix {{Grade_RED.mix}}
+  name Clamp_green
+  tile_color 0x777777ff
+  xpos -920
+  ypos 207
+ }
+push $N2fc5180
+push $N2fc4a80
+ Grade {
+  multiply {{"random((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
+  name Grade_R
+  xpos -700
+  ypos 135
+ }
+ Clamp {
+  channels rgb
+  mix {{Grade_RED.mix}}
+  name Clamp_red
+  tile_color 0x777777ff
+  xpos -920
+  ypos 135
+ }
+push $N2fc5c00
+ Copy {
+  inputs 2+1
+  from0 rgba.red
+  to0 rgba.red
+  name Copy_RED
+  tile_color 0xff0000ff
+  xpos -1030
+  ypos 129
+  disable {{"!\[exists parent.input0]"}}
+ }
+ Copy {
+  inputs 2+1
+  from0 rgba.green
+  to0 rgba.green
+  name Copy_GREEN
+  tile_color 0x1fff00ff
+  xpos -1030
+  ypos 201
+  disable {{"!\[exists parent.input0]"}}
+ }
+ Copy {
+  inputs 2+1
+  from0 rgba.blue
+  to0 rgba.blue
+  name Copy_BLUE
+  tile_color 0x3fffff
+  xpos -1030
+  ypos 273
+  disable {{"!\[exists parent.input0]"}}
+ }
+push $N2fc5c00
+ Dissolve {
+  inputs 2+1
+  which 1
+  name Dissolve1
+  label "Which: \[value which]"
+  xpos -1030
+  ypos 363
+ }
+ Output {
+  name Output1
+  xpos -1030
+  ypos 543
+ }
+ NoOp {
+  inputs 0
+  name proxy
+  tile_color 0xff
+  selected true
+  xpos -480
+  ypos 207
+  addUserKnob {20 User}
+  addUserKnob {7 freq l Frequency R 0 10}
+  freq 2
+  addUserKnob {7 offset l Offset R 0 100}
+  addUserKnob {7 maxVal l Max R 0 20}
+  maxVal 3
+  addUserKnob {7 minVal l Min R 0 20}
+  minVal 1
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Liquid_Distortion
+ tile_color 0x55ffbfff
+ selected true
+ xpos 620
+ ypos -82
+ addUserKnob {20 User l Liquid}
+ addUserKnob {7 contrast_liq l Contrast R 1 4}
+ contrast_liq 3
+ addUserKnob {41 scale1 l Scale T CONTROL.scale1}
+ addUserKnob {7 speed_liq l Speed R 1 100}
+ speed_liq 50
+ addUserKnob {41 slid_03 l Offset T CONTROL.slid_03}
+ addUserKnob {41 size l Blur T Blur_liq.size}
+ addUserKnob {6 crop l Crop +STARTLINE}
+ crop true
+ addUserKnob {26 ""}
+ addUserKnob {7 mix l Mix}
+ mix 0.5
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/liquid-distortion')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 credit l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Liquid Distortion© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name mask
+  xpos -260
+  ypos -202
+  number 1
+ }
+ Input {
+  inputs 0
+  name Input
+  xpos 400
+  ypos -514
+ }
+ Dot {
+  name Dot18
+  xpos 434
+  ypos -270
+ }
+set N2f33880 [stack 0]
+ Dot {
+  name Dot12
+  xpos 214
+  ypos -270
+ }
+set N2f33500 [stack 0]
+ Dot {
+  name Dot17
+  xpos 214
+  ypos -438
+ }
+ Dot {
+  name Dot2
+  xpos -6
+  ypos -438
+ }
+set N2f32e00 [stack 0]
+ Shuffle {
+  red black
+  green black
+  blue black
+  alpha white
+  name Shuffle1
+  xpos -40
+  ypos -298
+ }
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge1
+  xpos -40
+  ypos -215
+  disable {{"!\[exists parent.input1]"}}
+ }
+push $N2f32e00
+ Expression {
+  temp_name0 seed
+  temp_expr0 "\[ regexp -inline \{\\d+\}  \[knob name] ]"
+  temp_name1 scale
+  temp_expr1 CONTROL.slid_02*random(seed*2)
+  temp_name2 offset
+  temp_expr2 random(seed)*CONTROL.slid_03
+  expr0 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
+  expr1 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
+  expr2 0
+  name ELEMENTS_liq
+  xpos -590
+  ypos -442
+ }
+ ColorCorrect {
+  contrast {{contrast_liq}}
+  shadows 0
+  name ColorCorrect_liq
+  xpos -590
+  ypos -346
+ }
+ Dot {
+  name Dot13
+  xpos -556
+  ypos -294
+ }
+set N2f55880 [stack 0]
+ TimeOffset {
+  time_offset 2
+  time ""
+  name TimeOffset_to_red
+  xpos -700
+  ypos -298
+ }
+push $N2f55880
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 rgba.red
+  name Copy3
+  xpos -590
+  ypos -232
+ }
+ Dot {
+  name Dot14
+  xpos -556
+  ypos -150
+ }
+set N2f55180 [stack 0]
+ TimeOffset {
+  time_offset {{-TimeOffset_to_red.time_offset}}
+  time ""
+  name TimeOffset_to_green
+  xpos -700
+  ypos -154
+ }
+push $N2f55180
+ Copy {
+  inputs 2
+  from0 rgba.green
+  to0 rgba.green
+  name Copy4
+  xpos -590
+  ypos -88
+ }
+ Blur {
+  channels rgb
+  size 30
+  name Blur_liq
+  xpos -370
+  ypos -82
+ }
+ Merge2 {
+  inputs 2
+  operation mask
+  name Merge1
+  xpos -40
+  ypos -82
+ }
+push $N2f33500
+ Expression {
+  expr0 (x+0.5)/width
+  expr1 (y+0.5)/height
+  name Expression_STmap
+  xpos 180
+  ypos -178
+ }
+ Merge2 {
+  inputs 2
+  mix {{(parent.mix)/100 x1005 0.1}}
+  name Merge_dist_to_st
+  xpos 180
+  ypos -82
+ }
+ Dot {
+  name Dot1
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 214
+  ypos -6
+ }
+push $N2f33880
+ STMap {
+  inputs 2
+  uv rgb
+  name STMap_liq
+  xpos 400
+  ypos -16
+ }
+ Crop {
+  box {{input.format.x} {input.format.y} {input.width} {input.height}}
+  name Crop_liq
+  xpos 400
+  ypos 62
+  disable {{!parent.crop}}
+ }
+ Output {
+  name Output
+  xpos 400
+  ypos 110
+ }
+ NoOp {
+  inputs 0
+  name CONTROL
+  tile_color 0x444444ff
+  note_font_size 30
+  xpos -590
+  ypos -523
+  addUserKnob {20 User}
+  addUserKnob {7 slid_01 l slider01_speed R 1 100}
+  slid_01 {{101-(speed_liq)}}
+  addUserKnob {7 slid_02 l slider02_scale R 0 100}
+  slid_02 {{100-scale1}}
+  addUserKnob {7 slid_03 l slider03_seed R 1 100}
+  slid_03 1
+  addUserKnob {7 scale1 l scale R 0 100}
+  scale1 50
+ }
+end_group
+push $cut_paste_input
+Group {
  name GM_Render_Switch
  tile_color 0xbbbbbbff
  selected true
@@ -959,6 +3936,446 @@ push $N2f08e00
   name Output1
   xpos 400
   ypos 830
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Switch_Highlight
+ tile_color 0xffff00ff
+ label "\[if \{\[numvalue this.which_highlight] == 0\} \{return \[value this.zero_is]\} else \{return \[value this.one_is]\}]\nGroup: \[value group_n]\n\[knob tile_color \[ expr \{ \[value which_highlight]? 16711935 : 4294902015 \}]]\n"
+ note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 13
+ selected true
+ xpos 620
+ ypos 216
+ addUserKnob {20 User}
+ addUserKnob {41 which_highlight l which T Switch1.which}
+ addUserKnob {26 ""}
+ addUserKnob {1 zero_is l "0 is"}
+ zero_is "on script"
+ addUserKnob {1 one_is l "1 is"}
+ one_is "on precomp"
+ addUserKnob {26 ""}
+ addUserKnob {1 group_n l Group}
+ group_n "Light passes"
+ addUserKnob {26 ""}
+ addUserKnob {22 control1 l "Set All 0" T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(False)\n        except Exception:\n            pass\n" +STARTLINE}
+ addUserKnob {22 control2 l "Set All 1" -STARTLINE T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(True)\n        except Exception:\n            pass\n"}
+ addUserKnob {26 ""}
+ addUserKnob {22 setgroup0 l "Set same group 0" T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(False)\n            else:\n                pass        \n        except Exception:\n            pass\n" +STARTLINE}
+ addUserKnob {22 setgroup1 l "Set same group 1" -STARTLINE T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(True)\n            else:\n                pass        \n        except Exception:\n            pass\n"}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/switch-highlight')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Switch_Highlight© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 290
+  ypos 398
+  number 1
+ }
+ Input {
+  inputs 0
+  name Input0
+  xpos 510
+  ypos 398
+ }
+ Switch {
+  inputs 2
+  name Switch1
+  xpos 400
+  ypos 494
+ }
+ Output {
+  name Output1
+  xpos 400
+  ypos 590
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Channel_Puli
+ tile_color 0xffae53ff
+ selected true
+ xpos 620
+ ypos 470
+ addUserKnob {20 tab1 l Settings}
+ addUserKnob {26 info_title l Information}
+ addUserKnob {26 info l "" +STARTLINE T "The node automacially sends the alpha\nvalue to the channel that is the input`s\nname and keeps the incoming alpha\nvalue on the alpha channel combined."}
+ addUserKnob {26 adj_out l "Adjust RGBA "}
+ addUserKnob {6 rem_alpha l "Remove Alpha" t "Allows you to remove the alpha value." +STARTLINE}
+ addUserKnob {6 rem_a_r l "Remove Alpha from Red" t "Allows you to remove the alpha value from the outcome that comes in on the Red input. " +STARTLINE}
+ addUserKnob {6 rem_a_g l "Remove Alpha from Green" t "Allows you to remove the alpha value from the outcome that comes in on the Green input. " +STARTLINE}
+ addUserKnob {6 rem_a_b l "Remove Alpha from Blue" t "Allows you to remove the alpha value from the outcome that comes in on the Blue input. " +STARTLINE}
+ addUserKnob {6 rem_rgb l "Remove RGB" t "Allows you to remove the rgb value." +STARTLINE}
+ addUserKnob {6 shuff_a_rgb l "Shuffle Alpha to RGB" t "Allows you to shuffle alpha value to rgb." +STARTLINE}
+ addUserKnob {26 cr_ch l "Create new channels"}
+ addUserKnob {41 out l "Red to" t "Allows you to shuffle the `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r.out}
+ addUserKnob {41 out_1 l "Green to" t "Allows you to shuffle the `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g.out}
+ addUserKnob {41 out_2 l "Blue to" t "Allows you to shuffle the `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b.out}
+ addUserKnob {41 out_3 l "Red Invert to" t "Allows you to shuffle the inverted `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r_inv.out}
+ addUserKnob {41 out_4 l "Green Invert to " t "Allows you to shuffle the inverted `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g_inv.out}
+ addUserKnob {41 out_5 l "Blue Invert to " t "Allows you to shuffle the inverted `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b_inv.out}
+ addUserKnob {26 layer_cs l "Layer Contact Sheet"}
+ addUserKnob {6 show_lcs l "Show in Layer Contact Sheet" t "Allows you to turn on the Layer Contact Sheet view." +STARTLINE}
+ addUserKnob {41 showLayerNames l "Show Layer Names" t "Allows you to turn on the names of the layers." T LayerContactSheet.showLayerNames}
+ addUserKnob {41 width l Resolution T LayerContactSheet.width}
+ addUserKnob {41 height l "" -STARTLINE T LayerContactSheet.height}
+ addUserKnob {26 ref_puli l "Crop / Reformat"}
+ addUserKnob {6 crop_inpu l "Crop Inputs" t "Allows you to crop your inputs." +STARTLINE}
+ addUserKnob {6 app_ref l "Apply Reformat" t "Allows you to reformat the output. " +STARTLINE}
+ addUserKnob {41 format l "Output Format" T Reformat_c_p.format}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/channel-puli')\n"}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Channel Puli© by Attila Gasparetz</font>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode1
+  tile_color 0x777777ff
+  label <center>Inputs
+  note_font_size 42
+  xpos 127
+  ypos -734
+  bdwidth 406
+  bdheight 124
+ }
+ Input {
+  inputs 0
+  name Blue
+  tile_color 0x3fffff
+  xpos 400
+  ypos -658
+ }
+ Crop {
+  box {0 0 4096 2304}
+  crop false
+  name Crop
+  tile_color 0x888888ff
+  xpos 400
+  ypos -538
+  disable {{crop_inpu==0}}
+ }
+ set C285d880 [stack 0]
+ Dot {
+  name Dot3
+  xpos 434
+  ypos -294
+ }
+set N285d500 [stack 0]
+ Dot {
+  name Dot6
+  xpos 434
+  ypos -78
+ }
+set N285d180 [stack 0]
+ Shuffle {
+  red black
+  green black
+  blue alpha
+  name Shuffle_b
+  tile_color 0x3fffff
+  label "\[value in 1]"
+  xpos 400
+  ypos 224
+ }
+set N285ce00 [stack 0]
+ Remove {
+  channels alpha
+  name Remove_a_b
+  tile_color 0x3fffff
+  xpos 400
+  ypos 272
+  disable {{"(parent.rem_a_b) == 0"}}
+ }
+push 0
+ Input {
+  inputs 0
+  name Green
+  tile_color 0x1fff00ff
+  xpos 290
+  ypos -658
+  number 1
+ }
+clone $C285d880 {
+  xpos 290
+  ypos -538
+  selected false
+ }
+ Dot {
+  name Dot2
+  xpos 324
+  ypos -342
+ }
+set N285c000 [stack 0]
+ Dot {
+  name Dot5
+  xpos 324
+  ypos -126
+ }
+set N287fc00 [stack 0]
+ Shuffle {
+  red black
+  green alpha
+  blue black
+  name Shuffle_g
+  tile_color 0x1fff00ff
+  label "\[value in 1]"
+  xpos 290
+  ypos 152
+ }
+set N287f880 [stack 0]
+ Remove {
+  channels alpha
+  name Remove_a_g
+  tile_color 0x1fff00ff
+  xpos 290
+  ypos 272
+  disable {{"(parent.rem_a_g) == 0"}}
+ }
+ Input {
+  inputs 0
+  name Red
+  tile_color 0xff0000ff
+  xpos 180
+  ypos -658
+  number 2
+ }
+clone $C285d880 {
+  xpos 180
+  ypos -538
+  selected false
+ }
+ Dot {
+  name Dot1
+  xpos 214
+  ypos -390
+ }
+set N287ea80 [stack 0]
+ Dot {
+  name Dot4
+  xpos 214
+  ypos -174
+ }
+set N287e700 [stack 0]
+ Shuffle {
+  red alpha
+  green black
+  blue black
+  name Shuffle_r
+  tile_color 0xff0000ff
+  label "\[value in 1]"
+  xpos 180
+  ypos 80
+ }
+set N287e380 [stack 0]
+ Remove {
+  channels alpha
+  name Remove_a_r
+  tile_color 0xff0000ff
+  xpos 180
+  ypos 272
+  disable {{"(parent.rem_a_r) == 0"}}
+ }
+ Merge2 {
+  inputs 3+1
+  operation max
+  name Merge_channel
+  tile_color 0x777777ff
+  label "\[value operation]"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  xpos 290
+  ypos 440
+ }
+push $N285ce00
+push $N287f880
+push $N287e380
+push $N285d180
+ Invert {
+  name Invert_b
+  tile_color 0x777777ff
+  xpos 620
+  ypos -88
+ }
+push $N287fc00
+ Invert {
+  name Invert_g
+  tile_color 0x777777ff
+  xpos 620
+  ypos -136
+ }
+push $N287e700
+ Invert {
+  name Invert_r
+  tile_color 0x777777ff
+  xpos 620
+  ypos -184
+ }
+push $N285d500
+push $N285c000
+push $N287ea80
+ Constant {
+  inputs 0
+  channels rgb
+  name base
+  xpos 840
+  ypos -658
+  postage_stamp false
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_r
+  tile_color 0xff0000ff
+  label "\[value out]"
+  xpos 840
+  ypos -400
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_g
+  tile_color 0x1fff00ff
+  label "\[value out]"
+  xpos 840
+  ypos -352
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_b
+  tile_color 0x3fffff
+  label "\[value out]"
+  note_font Verdana
+  xpos 840
+  ypos -304
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_r_inv
+  tile_color 0xff0000ff
+  label "\[value out]"
+  xpos 840
+  ypos -184
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_g_inv
+  tile_color 0x1fff00ff
+  label "\[value out]"
+  xpos 840
+  ypos -136
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_b_inv
+  tile_color 0x3fffff
+  label "\[value out]"
+  note_font Verdana
+  xpos 840
+  ypos -88
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 rgba.red
+  name Copy_r
+  tile_color 0xff0000ff
+  xpos 840
+  ypos 80
+ }
+ Copy {
+  inputs 2
+  from0 rgba.green
+  to0 rgba.green
+  name Copy_g
+  tile_color 0x1fff00ff
+  xpos 840
+  ypos 152
+ }
+ Copy {
+  inputs 2
+  from0 rgba.blue
+  to0 rgba.blue
+  name Copy_b
+  tile_color 0x3fffff
+  xpos 840
+  ypos 224
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name Copy4
+  tile_color 0xaaaaaaff
+  xpos 840
+  ypos 440
+ }
+ Remove {
+  channels alpha
+  name Remove_a
+  tile_color 0xaaaaaaff
+  xpos 840
+  ypos 536
+  disable {{"(parent.rem_alpha) == 0"}}
+ }
+ Remove {
+  channels rgb
+  name Remove_rgb
+  tile_color 0xaaaaaaff
+  label "\[value channels]"
+  xpos 840
+  ypos 608
+  disable {{"(parent.rem_rgb) == 0"}}
+ }
+ Shuffle {
+  red alpha
+  green alpha
+  blue alpha
+  name Shuffle_a_rgb
+  tile_color 0x666666ff
+  label "\[value in 1]"
+  xpos 840
+  ypos 680
+  disable {{"(parent.shuff_a_rgb) == 0"}}
+ }
+ Reformat {
+  name Reformat_c_p
+  tile_color 0x888888ff
+  xpos 840
+  ypos 752
+  disable {{"(parent.app_ref) ==0"}}
+ }
+ LayerContactSheet {
+  name LayerContactSheet
+  xpos 840
+  ypos 830
+  disable {{"(parent.show_lcs) == 0" x1024 1}}
+ }
+ Output {
+  name Output1
+  xpos 840
+  ypos 902
  }
 end_group
 push $cut_paste_input
@@ -2817,389 +6234,6 @@ push $N2e7c700
  }
 end_group
 push $cut_paste_input
-Group {
- name GM_Channel_Puli
- tile_color 0xffae53ff
- selected true
- xpos 620
- ypos 470
- addUserKnob {20 tab1 l Settings}
- addUserKnob {26 info_title l Information}
- addUserKnob {26 info l "" +STARTLINE T "The node automacially sends the alpha\nvalue to the channel that is the input`s\nname and keeps the incoming alpha\nvalue on the alpha channel combined."}
- addUserKnob {26 adj_out l "Adjust RGBA "}
- addUserKnob {6 rem_alpha l "Remove Alpha" t "Allows you to remove the alpha value." +STARTLINE}
- addUserKnob {6 rem_a_r l "Remove Alpha from Red" t "Allows you to remove the alpha value from the outcome that comes in on the Red input. " +STARTLINE}
- addUserKnob {6 rem_a_g l "Remove Alpha from Green" t "Allows you to remove the alpha value from the outcome that comes in on the Green input. " +STARTLINE}
- addUserKnob {6 rem_a_b l "Remove Alpha from Blue" t "Allows you to remove the alpha value from the outcome that comes in on the Blue input. " +STARTLINE}
- addUserKnob {6 rem_rgb l "Remove RGB" t "Allows you to remove the rgb value." +STARTLINE}
- addUserKnob {6 shuff_a_rgb l "Shuffle Alpha to RGB" t "Allows you to shuffle alpha value to rgb." +STARTLINE}
- addUserKnob {26 cr_ch l "Create new channels"}
- addUserKnob {41 out l "Red to" t "Allows you to shuffle the `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r.out}
- addUserKnob {41 out_1 l "Green to" t "Allows you to shuffle the `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g.out}
- addUserKnob {41 out_2 l "Blue to" t "Allows you to shuffle the `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b.out}
- addUserKnob {41 out_3 l "Red Invert to" t "Allows you to shuffle the inverted `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r_inv.out}
- addUserKnob {41 out_4 l "Green Invert to " t "Allows you to shuffle the inverted `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g_inv.out}
- addUserKnob {41 out_5 l "Blue Invert to " t "Allows you to shuffle the inverted `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b_inv.out}
- addUserKnob {26 layer_cs l "Layer Contact Sheet"}
- addUserKnob {6 show_lcs l "Show in Layer Contact Sheet" t "Allows you to turn on the Layer Contact Sheet view." +STARTLINE}
- addUserKnob {41 showLayerNames l "Show Layer Names" t "Allows you to turn on the names of the layers." T LayerContactSheet.showLayerNames}
- addUserKnob {41 width l Resolution T LayerContactSheet.width}
- addUserKnob {41 height l "" -STARTLINE T LayerContactSheet.height}
- addUserKnob {26 ref_puli l "Crop / Reformat"}
- addUserKnob {6 crop_inpu l "Crop Inputs" t "Allows you to crop your inputs." +STARTLINE}
- addUserKnob {6 app_ref l "Apply Reformat" t "Allows you to reformat the output. " +STARTLINE}
- addUserKnob {41 format l "Output Format" T Reformat_c_p.format}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/channel-puli')\n"}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Channel Puli© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode1
-  tile_color 0x777777ff
-  label <center>Inputs
-  note_font_size 42
-  xpos 127
-  ypos -734
-  bdwidth 406
-  bdheight 124
- }
- Input {
-  inputs 0
-  name Blue
-  tile_color 0x3fffff
-  xpos 400
-  ypos -658
- }
- Crop {
-  box {0 0 4096 2304}
-  crop false
-  name Crop
-  tile_color 0x888888ff
-  xpos 400
-  ypos -538
-  disable {{crop_inpu==0}}
- }
- set C285d880 [stack 0]
- Dot {
-  name Dot3
-  xpos 434
-  ypos -294
- }
-set N285d500 [stack 0]
- Dot {
-  name Dot6
-  xpos 434
-  ypos -78
- }
-set N285d180 [stack 0]
- Shuffle {
-  red black
-  green black
-  blue alpha
-  name Shuffle_b
-  tile_color 0x3fffff
-  label "\[value in 1]"
-  xpos 400
-  ypos 224
- }
-set N285ce00 [stack 0]
- Remove {
-  channels alpha
-  name Remove_a_b
-  tile_color 0x3fffff
-  xpos 400
-  ypos 272
-  disable {{"(parent.rem_a_b) == 0"}}
- }
-push 0
- Input {
-  inputs 0
-  name Green
-  tile_color 0x1fff00ff
-  xpos 290
-  ypos -658
-  number 1
- }
-clone $C285d880 {
-  xpos 290
-  ypos -538
-  selected false
- }
- Dot {
-  name Dot2
-  xpos 324
-  ypos -342
- }
-set N285c000 [stack 0]
- Dot {
-  name Dot5
-  xpos 324
-  ypos -126
- }
-set N287fc00 [stack 0]
- Shuffle {
-  red black
-  green alpha
-  blue black
-  name Shuffle_g
-  tile_color 0x1fff00ff
-  label "\[value in 1]"
-  xpos 290
-  ypos 152
- }
-set N287f880 [stack 0]
- Remove {
-  channels alpha
-  name Remove_a_g
-  tile_color 0x1fff00ff
-  xpos 290
-  ypos 272
-  disable {{"(parent.rem_a_g) == 0"}}
- }
- Input {
-  inputs 0
-  name Red
-  tile_color 0xff0000ff
-  xpos 180
-  ypos -658
-  number 2
- }
-clone $C285d880 {
-  xpos 180
-  ypos -538
-  selected false
- }
- Dot {
-  name Dot1
-  xpos 214
-  ypos -390
- }
-set N287ea80 [stack 0]
- Dot {
-  name Dot4
-  xpos 214
-  ypos -174
- }
-set N287e700 [stack 0]
- Shuffle {
-  red alpha
-  green black
-  blue black
-  name Shuffle_r
-  tile_color 0xff0000ff
-  label "\[value in 1]"
-  xpos 180
-  ypos 80
- }
-set N287e380 [stack 0]
- Remove {
-  channels alpha
-  name Remove_a_r
-  tile_color 0xff0000ff
-  xpos 180
-  ypos 272
-  disable {{"(parent.rem_a_r) == 0"}}
- }
- Merge2 {
-  inputs 3+1
-  operation max
-  name Merge_channel
-  tile_color 0x777777ff
-  label "\[value operation]"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
-  xpos 290
-  ypos 440
- }
-push $N285ce00
-push $N287f880
-push $N287e380
-push $N285d180
- Invert {
-  name Invert_b
-  tile_color 0x777777ff
-  xpos 620
-  ypos -88
- }
-push $N287fc00
- Invert {
-  name Invert_g
-  tile_color 0x777777ff
-  xpos 620
-  ypos -136
- }
-push $N287e700
- Invert {
-  name Invert_r
-  tile_color 0x777777ff
-  xpos 620
-  ypos -184
- }
-push $N285d500
-push $N285c000
-push $N287ea80
- Constant {
-  inputs 0
-  channels rgb
-  name base
-  xpos 840
-  ypos -658
-  postage_stamp false
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_r
-  tile_color 0xff0000ff
-  label "\[value out]"
-  xpos 840
-  ypos -400
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_g
-  tile_color 0x1fff00ff
-  label "\[value out]"
-  xpos 840
-  ypos -352
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_b
-  tile_color 0x3fffff
-  label "\[value out]"
-  note_font Verdana
-  xpos 840
-  ypos -304
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_r_inv
-  tile_color 0xff0000ff
-  label "\[value out]"
-  xpos 840
-  ypos -184
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_g_inv
-  tile_color 0x1fff00ff
-  label "\[value out]"
-  xpos 840
-  ypos -136
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_b_inv
-  tile_color 0x3fffff
-  label "\[value out]"
-  note_font Verdana
-  xpos 840
-  ypos -88
- }
- Copy {
-  inputs 2
-  from0 rgba.red
-  to0 rgba.red
-  name Copy_r
-  tile_color 0xff0000ff
-  xpos 840
-  ypos 80
- }
- Copy {
-  inputs 2
-  from0 rgba.green
-  to0 rgba.green
-  name Copy_g
-  tile_color 0x1fff00ff
-  xpos 840
-  ypos 152
- }
- Copy {
-  inputs 2
-  from0 rgba.blue
-  to0 rgba.blue
-  name Copy_b
-  tile_color 0x3fffff
-  xpos 840
-  ypos 224
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.alpha
-  name Copy4
-  tile_color 0xaaaaaaff
-  xpos 840
-  ypos 440
- }
- Remove {
-  channels alpha
-  name Remove_a
-  tile_color 0xaaaaaaff
-  xpos 840
-  ypos 536
-  disable {{"(parent.rem_alpha) == 0"}}
- }
- Remove {
-  channels rgb
-  name Remove_rgb
-  tile_color 0xaaaaaaff
-  label "\[value channels]"
-  xpos 840
-  ypos 608
-  disable {{"(parent.rem_rgb) == 0"}}
- }
- Shuffle {
-  red alpha
-  green alpha
-  blue alpha
-  name Shuffle_a_rgb
-  tile_color 0x666666ff
-  label "\[value in 1]"
-  xpos 840
-  ypos 680
-  disable {{"(parent.shuff_a_rgb) == 0"}}
- }
- Reformat {
-  name Reformat_c_p
-  tile_color 0x888888ff
-  xpos 840
-  ypos 752
-  disable {{"(parent.app_ref) ==0"}}
- }
- LayerContactSheet {
-  name LayerContactSheet
-  xpos 840
-  ypos 830
-  disable {{"(parent.show_lcs) == 0" x1024 1}}
- }
- Output {
-  name Output1
-  xpos 840
-  ypos 902
- }
-end_group
-push $cut_paste_input
 push 0
 Group {
  inputs 2
@@ -3739,3042 +6773,6 @@ push $N273d880
 end_group
 push $cut_paste_input
 Group {
- name GM_Switch_Highlight
- tile_color 0xffff00ff
- label "\[if \{\[numvalue this.which_highlight] == 0\} \{return \[value this.zero_is]\} else \{return \[value this.one_is]\}]\nGroup: \[value group_n]\n\[knob tile_color \[ expr \{ \[value which_highlight]? 16711935 : 4294902015 \}]]\n"
- note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
- note_font_size 13
- selected true
- xpos 620
- ypos 216
- addUserKnob {20 User}
- addUserKnob {41 which_highlight l which T Switch1.which}
- addUserKnob {26 ""}
- addUserKnob {1 zero_is l "0 is"}
- zero_is "on script"
- addUserKnob {1 one_is l "1 is"}
- one_is "on precomp"
- addUserKnob {26 ""}
- addUserKnob {1 group_n l Group}
- group_n "Light passes"
- addUserKnob {26 ""}
- addUserKnob {22 control1 l "Set All 0" T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(False)\n        except Exception:\n            pass\n" +STARTLINE}
- addUserKnob {22 control2 l "Set All 1" -STARTLINE T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(True)\n        except Exception:\n            pass\n"}
- addUserKnob {26 ""}
- addUserKnob {22 setgroup0 l "Set same group 0" T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(False)\n            else:\n                pass        \n        except Exception:\n            pass\n" +STARTLINE}
- addUserKnob {22 setgroup1 l "Set same group 1" -STARTLINE T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(True)\n            else:\n                pass        \n        except Exception:\n            pass\n"}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/switch-highlight')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Switch_Highlight© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name Input1
-  xpos 290
-  ypos 398
-  number 1
- }
- Input {
-  inputs 0
-  name Input0
-  xpos 510
-  ypos 398
- }
- Switch {
-  inputs 2
-  name Switch1
-  xpos 400
-  ypos 494
- }
- Output {
-  name Output1
-  xpos 400
-  ypos 590
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_ShapeRepeater
- tile_color 0xf25400ff
- selected true
- xpos 620
- ypos -832
- addUserKnob {20 User}
- addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image"}}
- addUserKnob {26 shape l "<b>S H A P E"}
- addUserKnob {41 position l Position T Flare.position}
- addUserKnob {22 set_center_pos l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"position\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 size_mult l "Size " T Flare.size_mult}
- addUserKnob {41 anamorph l Anamorph T Flare.anamorph}
- addUserKnob {41 corners l Points T Flare.corners}
- addUserKnob {41 flattening l "Edge Flattening" T Flare.flattening}
- addUserKnob {41 sharpness l "Corner Sharpness" T Flare.sharpness}
- addUserKnob {41 corners_angle l Angle T Flare.corners_angle}
- addUserKnob {41 falloff l Falloff T proxy1.falloff}
- addUserKnob {41 multiply l Color T Grade.multiply}
- addUserKnob {20 trans_shape l "T r a n s f o r m  S h a p e" n 1}
- trans_shape 0
- addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
- addUserKnob {41 rotate2 l rotate T Trans_COPY1_proxy_2.rotate2}
- addUserKnob {41 scale2 l scale T Trans_COPY1_proxy_2.scale2}
- addUserKnob {41 skewX2 l skewX T Trans_COPY1_proxy_2.skewX2}
- addUserKnob {41 skewY2 l skewY T Trans_COPY1_proxy_2.skewY2}
- addUserKnob {41 skeworder2 l "skew order" T Trans_COPY1_proxy_2.skeworder2}
- addUserKnob {41 center2 l center T Trans_COPY1_proxy_2.center2}
- addUserKnob {22 set_senter_trans_shape l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center2\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 invert2 l invert T Trans_COPY1_proxy_2.invert2}
- addUserKnob {41 filter2 l filter T Trans_COPY1_proxy_2.filter2}
- addUserKnob {20 endGroup n -1}
- addUserKnob {26 rep1 l "<b>R E P E A T E R"}
- addUserKnob {41 copy1 l Copies T PROXY_MAIN1.copy1}
- addUserKnob {41 fadeout1 l "Fade Out" T Trans_COPY1_proxy.fadeout1}
- addUserKnob {41 fadein1 l "Fade In" T Trans_COPY1_proxy.fadein1}
- addUserKnob {6 apply_on_copy1 l "Apply Transform on Original Shape" +STARTLINE}
- addUserKnob {41 translate1 l translate T Trans_COPY1_proxy.translate1}
- addUserKnob {41 rotate1 l rotate T Trans_COPY1_proxy.rotate1}
- addUserKnob {41 scale1 l scale T Trans_COPY1_proxy.scale1}
- addUserKnob {41 skewX1 l skewX T Trans_COPY1_proxy.skewX1}
- addUserKnob {41 skewY1 l skewY T Trans_COPY1_proxy.skewY1}
- addUserKnob {41 skeworder1 l "skew order" T Trans_COPY1_proxy.skeworder1}
- addUserKnob {41 center1 l center T Trans_COPY1_proxy.center1}
- addUserKnob {41 invert1 l invert T Trans_COPY1_proxy.invert1}
- addUserKnob {41 filter1 l filter T Trans_COPY1_proxy.filter1}
- addUserKnob {41 motionblur1 l motionblur T Trans_COPY1_proxy.motionblur1}
- addUserKnob {41 shutter1 l shutter T Trans_COPY1_proxy.shutter1}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/shape-repeater')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_ShapeRepeater© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode1
-  tile_color 0xff
-  label "<center><font color=red>DON`T TOUCH\nstatic"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
-  note_font_size 42
-  xpos 738
-  ypos 63
-  bdwidth 285
-  bdheight 305
- }
- NoOp {
-  inputs 0
-  name proxy1
-  label static
-  xpos 620
-  ypos 248
-  addUserKnob {20 User}
-  addUserKnob {7 falloff l Falloff R 0 100}
-  falloff 5
- }
- NoOp {
-  inputs 0
-  name PROXY_MAIN1
-  knobChanged "\nm = nuke.thisNode()\nkc = nuke.thisKnob()\nif kc.name() in \[\"copy1\"]:\n    for n in nuke.allNodes():\n        if \"static\" not in n\['label'].getValue():\n            nuke.delete(n)\n    \n    iRep = m.knob('copy1').getValue()\n    iRepeats = int(iRep)-1\n    RepMax = int(iRep)\n    bfirstLoop = True\n    \n    # Main Transform for Copy1\n    w = nuke.toNode('Trans_COPY1')\n    \n    # Last Merge connected to this\n    b = nuke.toNode('COPIES1_end')\n    \n    # Dot would be connected to this and allows toggle between original and modified source \n    s = nuke.toNode('Switch1')\n    \n    nDot = nuke.nodes.Dot()\n    nDot.setInput(0, s)\n\n    nMult = nuke.toNode('mu1t2_1')\n    \n    if (iRepeats+1) >= 2: \n    \n        for i in range(iRepeats):\n            RepNum = int(i)+1\n            RepNum2 = int(i)+2\n            nMult.knob('ReMax').setValue( RepMax )\n            nMult.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CTrans = nuke.nodes.Transform(name = \"t\" + str(i))\n            CTrans.knob('translate').setExpression('Trans_COPY1.translate')\n            CTrans.knob('rotate').setExpression('Trans_COPY1.rotate')\n            CTrans.knob('scale').setExpression('Trans_COPY1.scale')\n            CTrans.knob('skewX').setExpression('Trans_COPY1.skewX')\n            CTrans.knob('skewY').setExpression('Trans_COPY1.skewY')\n            CTrans.knob('skew_order').setExpression('Trans_COPY1.skew_order')\n            CTrans.knob('center').setExpression('Trans_COPY1.center')\n            CTrans.knob('invert_matrix').setExpression('Trans_COPY1.invert_matrix')\n            CTrans.knob('filter').setExpression('Trans_COPY1.filter')\n            CTrans.knob('motionblur').setExpression('Trans_COPY1.motionblur')\n            CTrans.knob('shutter').setExpression('Trans_COPY1.shutter')\n            CTrans.knob('shutteroffset').setValue(0)\n            CMult1 = nuke.nodes.Multiply(name = \"mu1_\" + str(i))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult1.addKnob(k)\n            CMult1.addKnob(k2)\n            CMult1.knob('ReMax').setValue( RepMax )\n            CMult1.knob('ReNum').setValue( RepNum )\n            CMult1.knob('value').setExpression('((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )')\n            CMult1.setInput(0, CTrans)\n            CMult2 = nuke.nodes.Multiply(name = \"mu1t2_\" + str(RepNum2))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult2.addKnob(k)\n            CMult2.addKnob(k2)\n            CMult2.knob('ReMax').setValue( RepMax )\n            CMult2.knob('ReNum').setValue( RepNum )\n            CMult2.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CMult2.setInput(0, CMult1)\n            nMerge = nuke.nodes.Merge2(name = \"m\" + str(i))\n            nMerge.knob('also_merge').setValue('all')\n            nMerge.setInput(1, CMult2)\n            \n            if bfirstLoop:\n                bfirstLoop = False\n                CTrans.setInput(0, nDot)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nMult)\n            else:\n                CTrans.setInput(0, nPrevTrans)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nPrevMerge)\n \n            nPrevMerge = nMerge\n            nPrevTrans = CTrans\n            nPrevMult1 = CMult1\n            nPrevMult2 = CMult2\n        \n        MNum = int(iRepeats) - 1\n        \n        p = nuke.toNode(\"m\" + str(MNum))\n        \n        b.setInput(0, p)\n\n\n    else:\n        b.setInput(0, nDot)\n"
-  label static
-  xpos 840
-  ypos 248
-  addUserKnob {20 User}
-  addUserKnob {3 copy1 l Copies1}
-  copy1 3
- }
- Input {
-  inputs 0
-  name Input
-  label static
-  xpos 510
-  ypos -16
- }
- Dot {
-  name Dot2
-  label static
-  xpos 544
-  ypos 90
- }
-set Nb7a69880 [stack 0]
- Remove {
-  name Remove
-  label static
-  xpos 510
-  ypos 169
- }
- Flare {
-  position {960 540}
-  radius {100 {radius.0} {100+parent.proxy1.falloff}}
-  ring_color {1 1 1}
-  inner_color {1 1 1}
-  outer_falloff {1 1 1}
-  inner_falloff {1 1 1}
-  brightness {1 1 1}
-  vis_out 1
-  flattening 6
-  sharpness 1
-  corners_angle 0.1
-  mult_offset 0
-  name Flare
-  label static
-  xpos 510
-  ypos 248
- }
- Shuffle {
-  alpha red
-  name Shuffle1
-  label static
-  xpos 510
-  ypos 320
- }
- Clamp {
-  name Clamp
-  label static
-  xpos 510
-  ypos 361
- }
- Transform {
-  translate {{Trans_COPY1_proxy_2.translate2} {Trans_COPY1_proxy_2.translate2}}
-  rotate {{Trans_COPY1_proxy_2.rotate2}}
-  scale {{Trans_COPY1_proxy_2.scale2} {Trans_COPY1_proxy_2.scale2}}
-  skewX {{Trans_COPY1_proxy_2.skewX2}}
-  skewY {{Trans_COPY1_proxy_2.skewY2}}
-  skew_order {{Trans_COPY1_proxy_2.skeworder2}}
-  center {{Trans_COPY1_proxy_2.center2} {Trans_COPY1_proxy_2.center2}}
-  invert_matrix {{Trans_COPY1_proxy_2.invert2}}
-  filter {{Trans_COPY1_proxy_2.filter2}}
-  shutteroffset centred
-  name Transform1
-  label static
-  xpos 510
-  ypos 416
- }
- Grade {
-  name Grade
-  label static
-  xpos 510
-  ypos 488
- }
-set Nb7a68380 [stack 0]
-push $Nb7a68380
- Transform {
-  translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
-  rotate {{Trans_COPY1_proxy.rotate1}}
-  scale {{Trans_COPY1_proxy.scale1} {Trans_COPY1_proxy.scale1}}
-  skewX {{Trans_COPY1_proxy.skewX1}}
-  skewY {{Trans_COPY1_proxy.skewY1}}
-  skew_order {{Trans_COPY1_proxy.skeworder1}}
-  center {{"Flare.position - translate.x + Trans_COPY1_proxy.center1.x"} {"Flare.position- translate.y +  + Trans_COPY1_proxy.center1.y"}}
-  invert_matrix {{Trans_COPY1_proxy.invert1}}
-  filter {{Trans_COPY1_proxy.filter1}}
-  motionblur {{Trans_COPY1_proxy.motionblur1}}
-  shutter {{Trans_COPY1_proxy.shutter1}}
-  shutteroffset centred
-  name Trans_COPY1
-  label static
-  xpos 400
-  ypos 488
- }
- Switch {
-  inputs 2
-  which {{!apply_on_copy1}}
-  name Switch1
-  label static
-  xpos 510
-  ypos 608
- }
-set Nb7aa1c00 [stack 0]
- Dot {
-  name Dot1
-  xpos 544
-  ypos 646
- }
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t0
-  xpos 510
-  ypos 664
- }
-set Nb7aa1500 [stack 0]
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t1
-  xpos 620
-  ypos 690
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_1
-  xpos 620
-  ypos 716
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 2
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_3
-  xpos 620
-  ypos 761
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 2
- }
-push $Nb7aa1500
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_0
-  xpos 510
-  ypos 690
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_2
-  xpos 510
-  ypos 735
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
-push $Nb7aa1c00
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_1
-  label static
-  xpos 730
-  ypos 601
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
- Merge2 {
-  inputs 2
-  also_merge all
-  name m0
-  xpos 730
-  ypos 741
- }
- Merge2 {
-  inputs 2
-  also_merge all
-  name m1
-  xpos 730
-  ypos 767
- }
- NoOp {
-  name COPIES1_end
-  label static
-  xpos 510
-  ypos 2456
- }
- Crop {
-  box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
-  name Crop1
-  label "Box: \[value box]\nstatic"
-  xpos 510
-  ypos 2593
- }
-set Nb7ad7180 [stack 0]
-push $Nb7a69880
- Dot {
-  name Dot4
-  label static
-  xpos 104
-  ypos 2610
- }
- Merge2 {
-  inputs 2
-  name Merge1
-  label static
-  xpos 290
-  ypos 2600
- }
-push $Nb7ad7180
- Switch {
-  inputs 2
-  which {{output}}
-  name Switch2
-  label "Which: \[value which]\nstatic"
-  xpos 510
-  ypos 2689
- }
- Output {
-  name Output1
-  label static
-  xpos 510
-  ypos 2816
- }
- NoOp {
-  inputs 0
-  name Trans_COPY1_proxy_2
-  label static
-  xpos 290
-  ypos 464
-  addUserKnob {20 User}
-  addUserKnob {12 translate2}
-  addUserKnob {7 rotate2 R -180 180}
-  addUserKnob {14 scale2 R 0 100}
-  scale2 1
-  addUserKnob {7 skewX2 R -1 1}
-  addUserKnob {7 skewY2 R -1 1}
-  addUserKnob {4 skeworder2 M {XY YX ""}}
-  addUserKnob {12 center2}
-  center2 {960 540}
-  addUserKnob {6 invert2 +STARTLINE}
-  addUserKnob {4 filter2 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4 ""}}
-  filter2 Cubic
- }
- NoOp {
-  inputs 0
-  name Trans_COPY1_proxy
-  label static
-  xpos 180
-  ypos 656
-  addUserKnob {20 User}
-  addUserKnob {12 translate1}
-  translate1 {200 0}
-  addUserKnob {7 rotate1 R -180 180}
-  addUserKnob {14 scale1 R 0 100}
-  scale1 1
-  addUserKnob {7 skewX1 R -1 1}
-  addUserKnob {7 skewY1 R -1 1}
-  addUserKnob {4 skeworder1 M {XY YX}}
-  addUserKnob {12 center1}
-  addUserKnob {6 invert1 +STARTLINE}
-  addUserKnob {4 filter1 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4}}
-  filter1 Cubic
-  addUserKnob {7 motionblur1 R 0 4}
-  motionblur1 1
-  addUserKnob {7 shutter1 R 0 2}
-  shutter1 0.5
-  addUserKnob {26 ""}
-  addUserKnob {7 fadeout l "Fade Out"}
-  fadeout {{1-fadeout1}}
-  addUserKnob {7 fadeout1 l "Fade Out 1"}
-  addUserKnob {7 fadein l "Fade In"}
-  fadein {{1-fadein1}}
-  addUserKnob {7 fadein1 l "Fade In"}
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_CrossPattern
- tile_color 0xd5ff1dff
- selected true
- xpos 400
- ypos -592
- addUserKnob {20 User}
- addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image" "Distorted Image" STMap "" ""}}
- output "Pattern Over Image"
- addUserKnob {6 keep_alpha l "Keep Original Alpha" -STARTLINE}
- keep_alpha true
- addUserKnob {26 ""}
- addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
- addUserKnob {26 ""}
- addUserKnob {41 type l Type T CP_Expression.type}
- addUserKnob {41 type2 l Type2 T CP_Expression.type2}
- addUserKnob {41 direction l Direction T CP_Expression.direction}
- addUserKnob {41 direction2 l Direction2 T CP_Expression.direction2}
- addUserKnob {41 size l Size T CP_Expression.size}
- addUserKnob {41 size2 l Size2 T CP_Expression.size2}
- addUserKnob {41 offset l Offset T CP_Expression.offset}
- addUserKnob {41 offset2 l Offset2 T CP_Expression.offset2}
- addUserKnob {41 speed l Speed T CP_Expression.speed}
- addUserKnob {41 speed2 l Speed2 T CP_Expression.speed2}
- addUserKnob {41 multiply l Color T CP_Grade2.multiply}
- addUserKnob {6 invert l Invert +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {7 roundness l Roundness R 0 100}
- roundness 30
- addUserKnob {7 contr l Contrast}
- addUserKnob {7 blur l Blur R 0 100}
- addUserKnob {26 ""}
- addUserKnob {41 mix l Mix T Merge1.mix}
- addUserKnob {26 "" +STARTLINE}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/cross-pattern')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_CrossPattern© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name Input
-  xpos 70
-  ypos -634
- }
- Dot {
-  name Dot1
-  xpos 104
-  ypos -534
- }
-set N58a90a80 [stack 0]
- Remove {
-  name CP_Remove1
-  xpos 70
-  ypos -328
- }
-set N58a90700 [stack 0]
- Expression {
-  expr0 "ceil((\[value type](y/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))) + (\[value type](x/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))))"
-  expr1 "ceil((\[value type2](y/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))) / (\[value type2](x/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))))"
-  name CP_Expression
-  xpos 70
-  ypos -274
-  addUserKnob {20 User}
-  addUserKnob {4 type l Type M {sin cos tan}}
-  addUserKnob {4 type2 l Type2 M {sin cos tan}}
-  addUserKnob {4 direction l Direction M {Up Down ""}}
-  addUserKnob {4 direction2 l Direction2 M {Up Down}}
-  direction2 Down
-  addUserKnob {7 size l Size R 0 100}
-  size 30
-  addUserKnob {7 size2 l Size2 R 0 100}
-  size2 60
-  addUserKnob {7 offset l Offset R 0 100}
-  addUserKnob {7 offset2 l Offset2 R 0 100}
-  addUserKnob {7 speed l Speed R 0 100}
-  speed 5
-  addUserKnob {7 speed2 l Speed2 R 0 100}
-  speed2 5
- }
-set N58a90380 [stack 0]
- Shuffle {
-  green black
-  blue black
-  alpha black
-  name CP_ShuffleR
-  xpos -40
-  ypos -154
- }
- Clamp {
-  name CP_Clamp1
-  xpos -40
-  ypos -88
- }
-push $N58a90380
- Shuffle {
-  red green
-  green black
-  blue black
-  alpha black
-  name CP_ShuffleG
-  xpos 180
-  ypos -154
- }
- Clamp {
-  name CP_Clamp2
-  xpos 180
-  ypos -88
- }
- Merge2 {
-  inputs 2
-  operation {{Merge_Proxy.operation1}}
-  Achannels {rgba.red -rgba.green -rgba.blue rgba.alpha}
-  Bchannels {rgba.red rgba.green -rgba.blue rgba.alpha}
-  output rgb
-  name CP_Merge
-  xpos 70
-  ypos 14
- }
- Clamp {
-  name CP_Clamp3
-  xpos 70
-  ypos 56
- }
- Shuffle {
-  red black
-  green black
-  blue black
-  alpha red
-  name Shuffle4
-  xpos 70
-  ypos 134
- }
- Invert {
-  name CP_Invert
-  xpos 70
-  ypos 176
-  disable {{!invert}}
- }
- Group {
-  name key_chew
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  xpos 70
-  ypos 230
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{-parent.roundness}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set N58ac0700 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set N58ac0380 [stack 0]
-push $N58ac0380
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $N58ac0380
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N216f180 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $N216f180
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $N58ac0700
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
- Group {
-  name key_chew1
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  xpos 70
-  ypos 302
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{-parent.key_chew.chew}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set N21b5500 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set N21b5180 [stack 0]
-push $N21b5180
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $N21b5180
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N21b4000 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $N21b4000
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $N21b5500
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
- Clamp {
-  name CP_Clamp4
-  xpos 70
-  ypos 368
- }
- Grade {
-  channels all
-  blackpoint {{"parent.contr * .45"}}
-  whitepoint {{"1 - ( blackpoint * 1.1) "}}
-  white_clamp true
-  name CP_Grade
-  xpos 70
-  ypos 440
- }
- Shuffle {
-  red alpha
-  green alpha
-  blue alpha
-  name Shuffle5
-  xpos 70
-  ypos 494
- }
- Dot {
-  name Dot3
-  xpos 104
-  ypos 570
- }
-set N221b880 [stack 0]
- Dot {
-  name Dot4
-  xpos 104
-  ypos 642
- }
-set N221b500 [stack 0]
-push $N221b880
-push $N58a90700
- Dot {
-  name Dot8
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 434
-  ypos -318
- }
-set N221b180 [stack 0]
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.red
-  name CP_CopyR
-  tile_color 0xff0000ff
-  xpos 400
-  ypos 560
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.green
-  name CP_CopyG
-  tile_color 0x1fff00ff
-  xpos 400
-  ypos 632
- }
-set N221aa80 [stack 0]
- Blur {
-  size {{blur}}
-  name Blur1
-  label "Size: \[value size]"
-  xpos 730
-  ypos 625
- }
-push $N221b180
- Dot {
-  name Dot2
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 1204
-  ypos -318
- }
- Expression {
-  expr0 (x+0.5)/width
-  expr1 (y+0.5)/height
-  name Expression1
-  xpos 1170
-  ypos -58
- }
- Merge2 {
-  inputs 2
-  mix {{Merge1.mix/5}}
-  name Merge2
-  xpos 1170
-  ypos 638
- }
-set N2245880 [stack 0]
-push $N2245880
-push $N58a90a80
- Dot {
-  name Dot7
-  xpos 984
-  ypos -534
- }
- Shuffle {
-  alpha black
-  name Shuffle1
-  label "\[value in]"
-  xpos 950
-  ypos 776
-  disable {{keep_alpha}}
- }
- Dot {
-  name Dot9
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 984
-  ypos 978
- }
-set N2244e00 [stack 0]
- STMap {
-  inputs 2
-  uv rgb
-  name STMap1
-  label "UV: \[value uv]"
-  xpos 1170
-  ypos 961
- }
-push $N221b500
- Dot {
-  name Dot5
-  xpos 104
-  ypos 714
- }
-set N2244700 [stack 0]
- Dot {
-  name Dot6
-  xpos 104
-  ypos 834
- }
-push $N2244700
-push $N221aa80
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.blue
-  name CP_CopyB
-  tile_color 0x3fffff
-  xpos 400
-  ypos 704
- }
- Grade {
-  name CP_Grade2
-  xpos 400
-  ypos 758
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.alpha
-  name CP_CopyA
-  tile_color 0x999999ff
-  xpos 400
-  ypos 824
- }
- Blur {
-  size {{Blur1.size}}
-  name Blur2
-  label "Size: \[value size]"
-  xpos 400
-  ypos 913
- }
- Premult {
-  name Premult1
-  xpos 400
-  ypos 1070
- }
-set N2277180 [stack 0]
-push $N2244e00
- Merge2 {
-  inputs 2
-  also_merge all
-  name Merge1
-  xpos 950
-  ypos 1070
- }
-push $N2277180
- Switch {
-  inputs 4
-  which {{output}}
-  name Switch1
-  label "Which: \[value which]"
-  xpos 950
-  ypos 1232
- }
- Output {
-  name Output1
-  xpos 950
-  ypos 1454
- }
- NoOp {
-  inputs 0
-  name Merge_Proxy
-  xpos 180
-  ypos 14
-  addUserKnob {20 User}
-  addUserKnob {4 operation1 M {atop average color-burn color-dodge conjoint-over copy difference disjoint-over divide exclusion from geometric hard-light hypot in mask matte max min minus multiply out over overlay plus screen soft-light stencil under xor ""}}
-  operation1 multiply
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Moving_Lines
- tile_color 0xe8f57dff
- note_font "DejaVu Sans"
- selected true
- xpos 620
- ypos -591
- addUserKnob {20 User}
- addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image" "Distorted Image" STMap ""}}
- output "Pattern Over Image"
- addUserKnob {6 keep_a l "Keep Original Alpha" -STARTLINE}
- keep_a true
- addUserKnob {26 ""}
- addUserKnob {41 type_1 l Type T proxy.type}
- addUserKnob {41 axis_1 l Axis T proxy.axis}
- addUserKnob {41 direction_1 l Direction T proxy.direction}
- addUserKnob {41 thickness_1 l Thickness T proxy.thickness}
- addUserKnob {41 chew l Gap T key_chew_ML.chew}
- addUserKnob {41 speed_1 l Speed T proxy.speed}
- addUserKnob {41 value_1 l Value +INVISIBLE T proxy.value}
- addUserKnob {41 offset_1 l Offset T proxy.offset}
- addUserKnob {7 blur l Blur R 0 100}
- addUserKnob {41 multiply l Color T Grade_ML.multiply}
- addUserKnob {6 invert +STARTLINE}
- invert true
- addUserKnob {26 ""}
- addUserKnob {6 cross l "Enable Cross" +STARTLINE}
- cross true
- addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
- addUserKnob {26 ""}
- addUserKnob {41 mix l Mix T Merge2.mix}
- addUserKnob {26 "" +STARTLINE}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/moving-lines')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Moving_Lines© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name Input
-  xpos 180
-  ypos -874
- }
- Dot {
-  name Dot9
-  xpos 214
-  ypos -750
- }
-set N35ce000 [stack 0]
- Remove {
-  name Remove_ML
-  tile_color 0x555555ff
-  xpos 180
-  ypos -640
- }
- Dot {
-  name Dot5
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 214
-  ypos -534
- }
-set N7a31880 [stack 0]
- Dot {
-  name Dot7
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -6
-  ypos -534
- }
- Expression {
-  channel3 alpha
-  expr3 "( \[value proxy.type](\[if \{\[numvalue proxy.axis] == 0\} \{return \"y\"\} else \{return \"x\"\}]/proxy.thickness \[if \{\[numvalue proxy.direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]  (frame+proxy.offset)*proxy.speed )  )*proxy.value"
-  name Moving_Lines_Exp1
-  tile_color 0x555555ff
-  selected true
-  xpos -40
-  ypos -490
-  addUserKnob {20 User}
-  addUserKnob {4 type M {sin cos tan}}
-  addUserKnob {4 axis M {x y}}
-  axis y
-  addUserKnob {4 direction M {up down}}
-  direction down
-  addUserKnob {7 thickness R 1 100}
-  thickness 34.5
-  addUserKnob {7 speed R 0 2}
-  speed 0.3
-  addUserKnob {7 value R 0 10}
-  value 1
-  addUserKnob {7 offset R 0 100}
- }
- Clamp {
-  name Clamp_ML1
-  tile_color 0x555555ff
-  xpos -40
-  ypos -424
- }
- Group {
-  name key_chew_ML1
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos -40
-  ypos -346
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{parent.key_chew_ML.chew}}
-  addUserKnob {7 soften R 0 200}
-  soften {{parent.key_chew_ML.soften}}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set N7a30700 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set N7a30380 [stack 0]
-push $N7a30380
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $N7a30380
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N7a5d180 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $N7a5d180
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $N7a30700
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
- Dot {
-  name Dot8
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -6
-  ypos -270
- }
-push $N7a31880
- Expression {
-  channel3 alpha
-  expr3 "( \[value proxy.type](\[if \{\[numvalue proxy.axis] == 0\} \{return \"x\"\} else \{return \"y\"\}]/proxy.thickness \[if \{\[numvalue proxy.direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]  (frame+proxy.offset)*proxy.speed )  )*proxy.value"
-  name Moving_Lines_Exp
-  tile_color 0x555555ff
-  xpos 180
-  ypos -490
-  addUserKnob {20 User}
-  addUserKnob {4 type M {sin cos tan}}
-  addUserKnob {4 axis M {x y}}
-  axis y
-  addUserKnob {4 direction M {up down}}
-  direction down
-  addUserKnob {7 thickness R 1 100}
-  thickness 19.5
-  addUserKnob {7 speed R 0 2}
-  speed 0.3
-  addUserKnob {7 value R 0 10}
-  value 1
-  addUserKnob {7 offset R 0 100}
-  addUserKnob {7 rotate R 0 180}
-  rotate 23.6
- }
- Clamp {
-  name Clamp_ML
-  tile_color 0x555555ff
-  xpos 180
-  ypos -424
- }
- Group {
-  name key_chew_ML
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos 180
-  ypos -346
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set Nad40700 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set Nad40380 [stack 0]
-push $Nad40380
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $Nad40380
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set Nad73180 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $Nad73180
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $Nad40700
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
- Merge2 {
-  inputs 2
-  operation {{Merge_Proxy.operation1}}
-  name Merge_ML
-  tile_color 0x555555ff
-  xpos 180
-  ypos -274
-  disable {{"parent.cross ==0"}}
- }
- Invert {
-  name Invert_ML
-  tile_color 0x555555ff
-  xpos 180
-  ypos -160
-  disable {{"parent.invert == 0"}}
- }
- Dot {
-  name Dot6
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 214
-  ypos -78
- }
-set Nadb0e00 [stack 0]
- Dot {
-  name Dot2
-  xpos 214
-  ypos 18
- }
-set Nadb0a80 [stack 0]
-push $Nadb0e00
-push $N7a31880
- Dot {
-  name Dot1
-  xpos 544
-  ypos -534
- }
-set Nadb0700 [stack 0]
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green black
-  blue black
-  alpha black
-  name ShuffleCopy_R
-  tile_color 0x555555ff
-  xpos 510
-  ypos -82
- }
- ShuffleCopy {
-  inputs 2
-  green alpha
-  blue black
-  alpha black
-  name ShuffleCopy_G
-  tile_color 0x555555ff
-  xpos 510
-  ypos 14
- }
- Dot {
-  name Dot12
-  xpos 544
-  ypos 66
- }
-set Nadddc00 [stack 0]
- Blur {
-  size {{blur}}
-  name Blur1
-  label "Size: \[value size]"
-  xpos 730
-  ypos 49
- }
-push $Nadb0700
- Dot {
-  name Dot10
-  xpos 1204
-  ypos -534
- }
- Expression {
-  expr0 (x+0.5)/width
-  expr1 (y+0.5)/height
-  name Expression1
-  xpos 1170
-  ypos -346
- }
- Merge2 {
-  inputs 2
-  mix {{Merge2.mix/5}}
-  name Merge1
-  xpos 1170
-  ypos 62
- }
-set Naddca80 [stack 0]
-push $Naddca80
-push $N35ce000
- Dot {
-  name Dot11
-  xpos 984
-  ypos -750
- }
- Shuffle {
-  alpha black
-  name Shuffle1
-  label "\[value in]"
-  xpos 950
-  ypos -184
-  disable {{keep_a}}
- }
- Dot {
-  name Dot13
-  xpos 984
-  ypos 258
- }
-set Naddc000 [stack 0]
- STMap {
-  inputs 2
-  uv rgb
-  name STMap1
-  label "UV: \[value uv]"
-  xpos 1170
-  ypos 241
- }
-push $Nadb0a80
- Dot {
-  name Dot3
-  xpos 214
-  ypos 114
- }
-set Nae01880 [stack 0]
- Dot {
-  name Dot4
-  xpos 214
-  ypos 210
- }
-push $Nae01880
-push $Nadddc00
- ShuffleCopy {
-  inputs 2
-  blue alpha
-  alpha black
-  name ShuffleCopy_B
-  tile_color 0x555555ff
-  xpos 510
-  ypos 110
- }
- Grade {
-  name Grade_ML
-  xpos 510
-  ypos 158
- }
- ShuffleCopy {
-  inputs 2
-  name ShuffleCopy_A
-  tile_color 0x555555ff
-  xpos 510
-  ypos 206
-  disable {{"parent.alpha == 0"}}
- }
- Blur {
-  size {{Blur1.size}}
-  name Blur2
-  label "Size: \[value size]"
-  xpos 510
-  ypos 265
- }
- Premult {
-  name Premult1
-  xpos 510
-  ypos 374
- }
-set Nae00380 [stack 0]
-push $Naddc000
- Merge2 {
-  inputs 2
-  name Merge2
-  xpos 950
-  ypos 374
- }
-push $Nae00380
- Switch {
-  inputs 4
-  which {{output}}
-  name Switch1
-  label "Which: \[value which]"
-  xpos 950
-  ypos 536
- }
- Output {
-  name Output
-  xpos 950
-  ypos 686
- }
- NoOp {
-  inputs 0
-  name Merge_Proxy
-  xpos 290
-  ypos -274
-  addUserKnob {20 User}
-  addUserKnob {4 operation1 M {atop average color-burn color-dodge conjoint-over copy difference disjoint-over divide exclusion from geometric hard-light hypot in mask matte max min minus multiply out over overlay plus screen soft-light stencil under xor ""}}
-  operation1 over
- }
- NoOp {
-  inputs 0
-  name proxy
-  tile_color 0x555555ff
-  xpos -150
-  ypos -490
-  addUserKnob {20 User}
-  addUserKnob {4 type l typ M {sin cos tan}}
-  addUserKnob {4 axis M {x y}}
-  addUserKnob {4 direction M {up down}}
-  addUserKnob {7 thickness R 1 100}
-  thickness 30
-  addUserKnob {7 speed R 0 2}
-  speed 1
-  addUserKnob {7 value R 0 10}
-  value 10
-  addUserKnob {7 offset R 0 100}
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Color_Flicker
- tile_color 0xffbf00ff
- selected true
- xpos 400
- ypos -82
- addUserKnob {20 User l "Color Flicker"}
- addUserKnob {26 wa_co l "<font color=yellow size=\"4\"><b>Wave Control</b></font>"}
- addUserKnob {41 freq l "Wave Length " T proxy.freq}
- addUserKnob {41 maxVal l Max T proxy.maxVal}
- addUserKnob {41 minVal l Min T proxy.minVal}
- addUserKnob {41 offset l Offset T proxy.offset}
- addUserKnob {26 clamp l "<font color=yellow size=\"4\"><b>Clamp"}
- addUserKnob {41 minimum l Minimum T Clamp_red.minimum}
- addUserKnob {41 maximum l Maximum T Clamp_red.maximum}
- addUserKnob {26 mix_4 l "<font color=yellow size=\"4\"><b>Mix "}
- addUserKnob {41 mix_1 l "Red mix" T Copy_RED.mix}
- addUserKnob {41 mix_2 l "Green Mix" T Copy_GREEN.mix}
- addUserKnob {41 mix_3 l "Blue Mix" T Copy_BLUE.mix}
- addUserKnob {41 which l Mix T Dissolve1.which}
- addUserKnob {26 ""}
- addUserKnob {22 tut1 l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/color-flicker')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Color Flicker© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode7
-  tile_color 0x181818ff
-  label "<center><font color=red>\nRED\nrandom((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=green>\nGREEN\nrandom((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=blue>\nBLUE\nrandom((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"
-  note_font_size 42
-  xpos -328
-  ypos -113
-  bdwidth 1537
-  bdheight 658
- }
- Input {
-  inputs 0
-  name Mask
-  xpos -1470
-  ypos 135
-  number 1
- }
- Input {
-  inputs 0
-  name Input
-  xpos -1030
-  ypos -57
- }
- Dot {
-  name Dot1
-  xpos -996
-  ypos 66
- }
-set N2fc5c00 [stack 0]
- Expression {
-  channel3 alpha
-  expr3 1
-  name Expression
-  xpos -1250
-  ypos 63
- }
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge
-  tile_color 0xff
-  xpos -1250
-  ypos 123
-  disable {{"!\[exists parent.input1]"}}
- }
-set N2fc5180 [stack 0]
- Dot {
-  name Dot2
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1216
-  ypos 378
- }
-push $N2fc5180
-push $N2fc5c00
- Dot {
-  name Dot3
-  xpos -666
-  ypos 66
- }
-set N2fc4a80 [stack 0]
- Grade {
-  multiply {{"random((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"}}
-  name Grade_B
-  xpos -700
-  ypos 279
- }
- Clamp {
-  channels rgb
-  minimum {{Clamp_red.minimum}}
-  maximum {{Clamp_red.maximum}}
-  mix {{Grade_RED.mix}}
-  name Clamp_blue
-  tile_color 0x777777ff
-  xpos -920
-  ypos 279
- }
-push $N2fc5180
-push $N2fc4a80
- Grade {
-  multiply {{"random((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
-  name Grade_G
-  xpos -700
-  ypos 207
- }
- Clamp {
-  channels rgb
-  minimum {{Clamp_red.minimum}}
-  maximum {{Clamp_red.maximum}}
-  mix {{Grade_RED.mix}}
-  name Clamp_green
-  tile_color 0x777777ff
-  xpos -920
-  ypos 207
- }
-push $N2fc5180
-push $N2fc4a80
- Grade {
-  multiply {{"random((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
-  name Grade_R
-  xpos -700
-  ypos 135
- }
- Clamp {
-  channels rgb
-  mix {{Grade_RED.mix}}
-  name Clamp_red
-  tile_color 0x777777ff
-  xpos -920
-  ypos 135
- }
-push $N2fc5c00
- Copy {
-  inputs 2+1
-  from0 rgba.red
-  to0 rgba.red
-  name Copy_RED
-  tile_color 0xff0000ff
-  xpos -1030
-  ypos 129
-  disable {{"!\[exists parent.input0]"}}
- }
- Copy {
-  inputs 2+1
-  from0 rgba.green
-  to0 rgba.green
-  name Copy_GREEN
-  tile_color 0x1fff00ff
-  xpos -1030
-  ypos 201
-  disable {{"!\[exists parent.input0]"}}
- }
- Copy {
-  inputs 2+1
-  from0 rgba.blue
-  to0 rgba.blue
-  name Copy_BLUE
-  tile_color 0x3fffff
-  xpos -1030
-  ypos 273
-  disable {{"!\[exists parent.input0]"}}
- }
-push $N2fc5c00
- Dissolve {
-  inputs 2+1
-  which 1
-  name Dissolve1
-  label "Which: \[value which]"
-  xpos -1030
-  ypos 363
- }
- Output {
-  name Output1
-  xpos -1030
-  ypos 543
- }
- NoOp {
-  inputs 0
-  name proxy
-  tile_color 0xff
-  selected true
-  xpos -480
-  ypos 207
-  addUserKnob {20 User}
-  addUserKnob {7 freq l Frequency R 0 10}
-  freq 2
-  addUserKnob {7 offset l Offset R 0 100}
-  addUserKnob {7 maxVal l Max R 0 20}
-  maxVal 3
-  addUserKnob {7 minVal l Min R 0 20}
-  minVal 1
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Liquid_Distortion
- tile_color 0x55ffbfff
- selected true
- xpos 620
- ypos -82
- addUserKnob {20 User l Liquid}
- addUserKnob {7 contrast_liq l Contrast R 1 4}
- contrast_liq 3
- addUserKnob {41 scale1 l Scale T CONTROL.scale1}
- addUserKnob {7 speed_liq l Speed R 1 100}
- speed_liq 50
- addUserKnob {41 slid_03 l Offset T CONTROL.slid_03}
- addUserKnob {41 size l Blur T Blur_liq.size}
- addUserKnob {6 crop l Crop +STARTLINE}
- crop true
- addUserKnob {26 ""}
- addUserKnob {7 mix l Mix}
- mix 0.5
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/liquid-distortion')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 credit l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Liquid Distortion© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name mask
-  xpos -260
-  ypos -202
-  number 1
- }
- Input {
-  inputs 0
-  name Input
-  xpos 400
-  ypos -514
- }
- Dot {
-  name Dot18
-  xpos 434
-  ypos -270
- }
-set N2f33880 [stack 0]
- Dot {
-  name Dot12
-  xpos 214
-  ypos -270
- }
-set N2f33500 [stack 0]
- Dot {
-  name Dot17
-  xpos 214
-  ypos -438
- }
- Dot {
-  name Dot2
-  xpos -6
-  ypos -438
- }
-set N2f32e00 [stack 0]
- Shuffle {
-  red black
-  green black
-  blue black
-  alpha white
-  name Shuffle1
-  xpos -40
-  ypos -298
- }
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge1
-  xpos -40
-  ypos -215
-  disable {{"!\[exists parent.input1]"}}
- }
-push $N2f32e00
- Expression {
-  temp_name0 seed
-  temp_expr0 "\[ regexp -inline \{\\d+\}  \[knob name] ]"
-  temp_name1 scale
-  temp_expr1 CONTROL.slid_02*random(seed*2)
-  temp_name2 offset
-  temp_expr2 random(seed)*CONTROL.slid_03
-  expr0 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
-  expr1 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
-  expr2 0
-  name ELEMENTS_liq
-  xpos -590
-  ypos -442
- }
- ColorCorrect {
-  contrast {{contrast_liq}}
-  shadows 0
-  name ColorCorrect_liq
-  xpos -590
-  ypos -346
- }
- Dot {
-  name Dot13
-  xpos -556
-  ypos -294
- }
-set N2f55880 [stack 0]
- TimeOffset {
-  time_offset 2
-  time ""
-  name TimeOffset_to_red
-  xpos -700
-  ypos -298
- }
-push $N2f55880
- Copy {
-  inputs 2
-  from0 rgba.red
-  to0 rgba.red
-  name Copy3
-  xpos -590
-  ypos -232
- }
- Dot {
-  name Dot14
-  xpos -556
-  ypos -150
- }
-set N2f55180 [stack 0]
- TimeOffset {
-  time_offset {{-TimeOffset_to_red.time_offset}}
-  time ""
-  name TimeOffset_to_green
-  xpos -700
-  ypos -154
- }
-push $N2f55180
- Copy {
-  inputs 2
-  from0 rgba.green
-  to0 rgba.green
-  name Copy4
-  xpos -590
-  ypos -88
- }
- Blur {
-  channels rgb
-  size 30
-  name Blur_liq
-  xpos -370
-  ypos -82
- }
- Merge2 {
-  inputs 2
-  operation mask
-  name Merge1
-  xpos -40
-  ypos -82
- }
-push $N2f33500
- Expression {
-  expr0 (x+0.5)/width
-  expr1 (y+0.5)/height
-  name Expression_STmap
-  xpos 180
-  ypos -178
- }
- Merge2 {
-  inputs 2
-  mix {{(parent.mix)/100 x1005 0.1}}
-  name Merge_dist_to_st
-  xpos 180
-  ypos -82
- }
- Dot {
-  name Dot1
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 214
-  ypos -6
- }
-push $N2f33880
- STMap {
-  inputs 2
-  uv rgb
-  name STMap_liq
-  xpos 400
-  ypos -16
- }
- Crop {
-  box {{input.format.x} {input.format.y} {input.width} {input.height}}
-  name Crop_liq
-  xpos 400
-  ypos 62
-  disable {{!parent.crop}}
- }
- Output {
-  name Output
-  xpos 400
-  ypos 110
- }
- NoOp {
-  inputs 0
-  name CONTROL
-  tile_color 0x444444ff
-  note_font_size 30
-  xpos -590
-  ypos -523
-  addUserKnob {20 User}
-  addUserKnob {7 slid_01 l slider01_speed R 1 100}
-  slid_01 {{101-(speed_liq)}}
-  addUserKnob {7 slid_02 l slider02_scale R 0 100}
-  slid_02 {{100-scale1}}
-  addUserKnob {7 slid_03 l slider03_seed R 1 100}
-  slid_03 1
-  addUserKnob {7 scale1 l scale R 0 100}
-  scale1 50
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Matte_Edge
- tile_color 0xcc9800ff
- selected true
- xpos 620
- ypos -346
- addUserKnob {20 User}
- addUserKnob {4 method l Method M {"Merge In/Out" "Separate In/Out"}}
- addUserKnob {26 out l "<b><font color=orange>Outside"}
- addUserKnob {41 in_1 l Size T proxy.in}
- addUserKnob {41 size_1 l Blur T Blur_IN.size}
- addUserKnob {41 which l Mix T Dissolve1.which}
- addUserKnob {26 in l "<b><font color=orange>Inside"}
- addUserKnob {41 out_1 l Size T proxy.out}
- addUserKnob {41 size_3 l Blur T Blur_OUT.size}
- addUserKnob {41 which_1 l Mix T Dissolve2.which}
- addUserKnob {26 ""}
- addUserKnob {6 prem l Premult +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {7 mix_all l Mix}
- mix_all 1
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/matte-edge')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Matte Edge© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name Input
-  tile_color 0x666666ff
-  xpos -480
-  ypos 38
- }
- Dot {
-  name Dot14
-  xpos -446
-  ypos 378
- }
-set N303a700 [stack 0]
- Dot {
-  name Dot15
-  xpos -556
-  ypos 378
- }
-set N303a380 [stack 0]
- Group {
-  name key_chew
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos -700
-  ypos 518
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{parent.proxy.in}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos -40
-   ypos -10
-  }
-set N303a000 [stack 0]
-  Dot {
-   name Dot1
-   xpos 324
-   ypos -6
-  }
-set N3063c00 [stack 0]
-push $N3063c00
-  Invert {
-   name Invert1
-   xpos 180
-   ypos 32
-  }
-push $N3063c00
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 180
-   ypos 86
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)"}}
-   name FgEdgeBlur
-   xpos 180
-   ypos 128
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1)}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 180
-   ypos 176
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew)))}}
-   name FgEdgeGamma1
-   selected true
-   xpos 180
-   ypos 224
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N3062a80 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 290
-   ypos 230
-  }
-push $N3062a80
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 180
-   ypos 278
-  }
-  Clamp {
-   name Clamp2
-   xpos 180
-   ypos 320
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 180
-   ypos 440
-  }
-push $N303a000
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos -40
-   ypos 446
-  }
-  Premult {
-   name Premult1
-   xpos -40
-   ypos 494
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos -40
-   ypos 566
-  }
- end_group
-push $N303a380
- Dissolve {
-  inputs 2
-  which 1
-  name Dissolve2
-  tile_color 0x555555ff
-  xpos -590
-  ypos 584
- }
- Blur {
-  channels alpha
-  size 5
-  name Blur_IN
-  tile_color 0x666666ff
-  xpos -590
-  ypos 656
- }
- Dot {
-  name Dot16
-  xpos -556
-  ypos 762
- }
-push $N303a700
- Dot {
-  name Dot8
-  xpos -336
-  ypos 378
- }
-set N309c380 [stack 0]
- Group {
-  name key_chew1
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos -260
-  ypos 518
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{-proxy.out}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set N309c000 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set N30c9c00 [stack 0]
-push $N30c9c00
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $N30c9c00
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N30c8a80 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $N30c8a80
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $N309c000
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
-push $N309c380
- Dissolve {
-  inputs 2
-  which 1
-  name Dissolve1
-  tile_color 0x555555ff
-  xpos -370
-  ypos 584
- }
-set N3102e00 [stack 0]
- Dot {
-  name Dot18
-  xpos -336
-  ypos 762
- }
- ChannelMerge {
-  inputs 2
-  operation xor
-  name ChannelMerge
-  tile_color 0x666666ff
-  xpos -480
-  ypos 745
- }
-push $N309c380
- Dot {
-  name Dot3
-  xpos -116
-  ypos 378
- }
-set N3102380 [stack 0]
- Dot {
-  name Dot4
-  xpos -116
-  ypos 930
- }
-set N3102000 [stack 0]
- Invert {
-  name Invert1
-  tile_color 0x555555ff
-  xpos -260
-  ypos 920
- }
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge4
-  tile_color 0x555555ff
-  label "\[value operation]"
-  xpos -480
-  ypos 907
- }
-push $N3102380
- Dot {
-  name Dot11
-  xpos 214
-  ypos 378
- }
-set N3133500 [stack 0]
- Dot {
-  name Dot5
-  xpos 214
-  ypos 426
- }
-set N3133180 [stack 0]
- Dot {
-  name Dot6
-  xpos 104
-  ypos 426
- }
-set N3132e00 [stack 0]
- Group {
-  name key_chew2
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos -40
-  ypos 566
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{parent.proxy.in}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos -40
-   ypos -10
-  }
-set N3132a80 [stack 0]
-  Dot {
-   name Dot1
-   xpos 324
-   ypos -6
-  }
-set N3132700 [stack 0]
-push $N3132700
-  Invert {
-   name Invert1
-   xpos 180
-   ypos 32
-  }
-push $N3132700
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 180
-   ypos 86
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)"}}
-   name FgEdgeBlur
-   xpos 180
-   ypos 128
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1)}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 180
-   ypos 176
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew)))}}
-   name FgEdgeGamma1
-   selected true
-   xpos 180
-   ypos 224
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N315b500 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 290
-   ypos 230
-  }
-push $N315b500
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 180
-   ypos 278
-  }
-  Clamp {
-   name Clamp2
-   xpos 180
-   ypos 320
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 180
-   ypos 440
-  }
-push $N3132a80
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos -40
-   ypos 446
-  }
-  Premult {
-   name Premult1
-   xpos -40
-   ypos 494
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos -40
-   ypos 566
-  }
- end_group
-push $N3132e00
- Dissolve {
-  inputs 2
-  which {{Dissolve2.which}}
-  name Dissolve4
-  tile_color 0x555555ff
-  xpos 70
-  ypos 632
- }
- Dot {
-  name Dot7
-  xpos 104
-  ypos 810
- }
-push $N3133180
- Dot {
-  name Dot9
-  xpos 324
-  ypos 426
- }
-set N3197180 [stack 0]
- Group {
-  name key_chew3
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos 400
-  ypos 566
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{-proxy.out}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set N3196e00 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set N3196a80 [stack 0]
-push $N3196a80
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $N3196a80
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N31c3880 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $N31c3880
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $N3196e00
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
-push $N3197180
- Dissolve {
-  inputs 2
-  which {{Dissolve1.which}}
-  name Dissolve5
-  tile_color 0x555555ff
-  xpos 290
-  ypos 632
- }
- Blur {
-  channels alpha
-  size {{parent.Blur_OUT.size}}
-  name Blur_OUT1
-  tile_color 0x666666ff
-  xpos 290
-  ypos 704
- }
- Dot {
-  name Dot10
-  xpos 324
-  ypos 810
- }
- ChannelMerge {
-  inputs 2
-  operation xor
-  name ChannelMerge1
-  tile_color 0x666666ff
-  xpos 180
-  ypos 793
- }
-push $N3102000
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge3
-  tile_color 0x555555ff
-  label "\[value operation]"
-  xpos 180
-  ypos 907
- }
- ChannelMerge {
-  inputs 2
-  operation plus
-  name ChannelMerge2
-  tile_color 0x555555ff
-  label "\[value operation]"
-  xpos -150
-  ypos 1003
- }
-push $N303a380
- Dot {
-  name Dot21
-  xpos -996
-  ypos 378
- }
- Dot {
-  name Dot12
-  xpos -996
-  ypos 618
- }
-set N3204380 [stack 0]
- Dot {
-  name Dot13
-  xpos -1106
-  ypos 618
- }
-set N3204000 [stack 0]
- Group {
-  name key_chew4
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos -1250
-  ypos 758
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{parent.proxy.in}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos -40
-   ypos -10
-  }
-set N3231c00 [stack 0]
-  Dot {
-   name Dot1
-   xpos 324
-   ypos -6
-  }
-set N3231880 [stack 0]
-push $N3231880
-  Invert {
-   name Invert1
-   xpos 180
-   ypos 32
-  }
-push $N3231880
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 180
-   ypos 86
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)"}}
-   name FgEdgeBlur
-   xpos 180
-   ypos 128
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1)}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 180
-   ypos 176
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew)))}}
-   name FgEdgeGamma1
-   selected true
-   xpos 180
-   ypos 224
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N3230700 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 290
-   ypos 230
-  }
-push $N3230700
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 180
-   ypos 278
-  }
-  Clamp {
-   name Clamp2
-   xpos 180
-   ypos 320
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 180
-   ypos 440
-  }
-push $N3231c00
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos -40
-   ypos 446
-  }
-  Premult {
-   name Premult1
-   xpos -40
-   ypos 494
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos -40
-   ypos 566
-  }
- end_group
-push $N3204000
- Dissolve {
-  inputs 2
-  which {{Dissolve2.which}}
-  name Dissolve6
-  tile_color 0x555555ff
-  xpos -1140
-  ypos 824
- }
- Blur {
-  channels alpha
-  size {{parent.Blur_IN.size}}
-  name Blur_IN1
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 872
- }
- Dot {
-  name Dot17
-  xpos -1106
-  ypos 1002
- }
-push $N3204380
- Dot {
-  name Dot19
-  xpos -886
-  ypos 618
- }
-set N326a000 [stack 0]
- Group {
-  name key_chew5
-  help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
-  tile_color 0x555555ff
-  xpos -810
-  ypos 758
-  addUserKnob {20 Controls}
-  addUserKnob {7 chew t "\t\t" R -200 200}
-  chew {{-proxy.out}}
-  addUserKnob {7 soften R 0 200}
-  addUserKnob {6 matteMult +STARTLINE}
- }
-  Input {
-   inputs 0
-   name Input
-   xpos 0
-  }
-set N329dc00 [stack 0]
-  Dot {
-   name Dot1
-   xpos 366
-   ypos 5
-  }
-set N329d880 [stack 0]
-push $N329d880
-  Invert {
-   name Invert1
-   xpos 177
-   ypos 34
-  }
-push $N329d880
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch1
-   xpos 177
-   ypos 87
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.chew]))/4)+(floor(abs(\[value parent.chew]))/8)" i}}
-   name FgEdgeBlur
-   xpos 177
-   ypos 111
-  }
-  Grade {
-   channels alpha
-   multiply {1 1 1 {max(FgEdgeBlur.size*1.5,1) i}}
-   black_clamp false
-   name FgEdgeMult
-   xpos 177
-   ypos 165
-  }
-  Grade {
-   channels alpha
-   gamma {1 1 1 {JSplineVFake(floor(abs(parent.chew))) i}}
-   name FgEdgeGamma1
-   xpos 177
-   ypos 213
-   addUserKnob {20 User}
-   addUserKnob {7 JSplineVFake}
-   JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
-  }
-set N329c700 [stack 0]
-  Merge2 {
-   inputs 2
-   operation minus
-   name Merge1
-   xpos 332
-   ypos 218
-  }
-push $N329c700
-  Switch {
-   inputs 2
-   which {{"\[value parent.chew]>=0?0:1"}}
-   name Switch2
-   xpos 177
-   ypos 284
-  }
-  Clamp {
-   name Clamp2
-   xpos 177
-   ypos 323
-  }
-  Blur {
-   size {{"(floor(abs(\[value parent.soften]))/4)+(floor(abs(\[value parent.soften]))/8)"}}
-   name BlurResult
-   xpos 177
-   ypos 446
-  }
-push $N329dc00
-  ShuffleCopy {
-   inputs 2
-   name ShuffleCopy1
-   xpos 0
-   ypos 451
-  }
-  Premult {
-   name Premult1
-   xpos 0
-   ypos 486
-   disable {{"1-\[value parent.matteMult]" i}}
-  }
-  Output {
-   name Output1
-   xpos 0
-   ypos 556
-  }
- end_group
-push $N326a000
- Dissolve {
-  inputs 2
-  which {{Dissolve1.which}}
-  name Dissolve7
-  tile_color 0x555555ff
-  xpos -920
-  ypos 824
- }
- Blur {
-  channels alpha
-  size {{parent.Blur_OUT.size}}
-  name Blur_OUT2
-  tile_color 0x666666ff
-  xpos -920
-  ypos 896
- }
- Dot {
-  name Dot20
-  xpos -886
-  ypos 1002
- }
- ChannelMerge {
-  inputs 2
-  operation xor
-  name ChannelMerge5
-  tile_color 0x666666ff
-  xpos -1030
-  ypos 985
- }
- Dot {
-  name Dot22
-  xpos -996
-  ypos 1146
- }
- Switch {
-  inputs 2
-  which {{parent.method}}
-  name Switch1
-  tile_color 0x555555ff
-  xpos -150
-  ypos 1142
- }
- Clamp {
-  name Clamp
-  tile_color 0x555555ff
-  xpos -150
-  ypos 1304
- }
- Dot {
-  name Dot2
-  xpos -116
-  ypos 1434
- }
-push $N3133500
- Dot {
-  name Dot1
-  xpos 874
-  ypos 378
- }
- Dissolve {
-  inputs 2
-  channels alpha
-  which {{parent.mix_all}}
-  name Dissolve3
-  tile_color 0x555555ff
-  xpos 840
-  ypos 1424
- }
- Premult {
-  name Premult1
-  tile_color 0x555555ff
-  xpos 840
-  ypos 1550
-  disable {{"parent.prem == 0"}}
- }
- Output {
-  name Output
-  tile_color 0x666666ff
-  xpos 840
-  ypos 1598
- }
- NoOp {
-  inputs 0
-  name proxy
-  tile_color 0x666666ff
-  xpos -480
-  ypos 518
-  addUserKnob {20 User}
-  addUserKnob {7 in l Size R 0 100}
-  in 10
-  addUserKnob {7 out l Size R 0 100}
-  out 10
- }
-push $N3102e00
- Blur {
-  channels alpha
-  size 5
-  name Blur_OUT
-  tile_color 0x666666ff
-  xpos -260
-  ypos 656
- }
-end_group
-push $cut_paste_input
-Group {
  name GM_Input_Info
  tile_color 0xff9455ff
  selected true
@@ -6814,6 +6812,7 @@ Group {
  addUserKnob {7 spacing l "Line Spacing" R -200 200}
  addUserKnob {26 ""}
  addUserKnob {20 edit_text l "Edit Text" n 1}
+ edit_text 0
  addUserKnob {7 fontsize l "Font Size" R 1 200}
  fontsize 60
  addUserKnob {41 color l "Text Color" T TextColor.color}
@@ -6827,6 +6826,7 @@ Group {
  addUserKnob {20 endGroup_1 l endGroup n -1}
  addUserKnob {26 ""}
  addUserKnob {20 shadow l Shadow n 1}
+ shadow 0
  addUserKnob {6 shad l "Enable Shadow" +STARTLINE}
  shad true
  addUserKnob {7 angle l Angle R -180 180}
