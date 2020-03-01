@@ -3,7 +3,7 @@ BackdropNode {
  name BackdropNode10
  tile_color 0x666666ff
  label "<center><font color=orange>Motion Graphics"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 170
@@ -17,7 +17,7 @@ BackdropNode {
  name BackdropNode11
  tile_color 0x444444ff
  label "<center><font color=aqua>Repeaters"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -31,7 +31,7 @@ BackdropNode {
  name BackdropNode12
  tile_color 0x444444ff
  label "<center><font color=aqua>Pattern generators"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -45,7 +45,7 @@ BackdropNode {
  name BackdropNode13
  tile_color 0x444444ff
  label "<center><font color=aqua>Alpha edge treatments"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -59,7 +59,7 @@ BackdropNode {
  name BackdropNode14
  tile_color 0x444444ff
  label "<center><font color=aqua>Switches"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -73,7 +73,7 @@ BackdropNode {
  name BackdropNode15
  tile_color 0x444444ff
  label "<center><font color=aqua>Roto helpers"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -87,7 +87,7 @@ BackdropNode {
  name BackdropNode16
  tile_color 0x444444ff
  label "<center><font color=aqua>Cleanup tool"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -101,7 +101,7 @@ BackdropNode {
  name BackdropNode17
  tile_color 0x444444ff
  label "<center><font color=aqua>Roundtable tool"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -115,7 +115,7 @@ BackdropNode {
  name BackdropNode18
  tile_color 0x444444ff
  label "<center><font color=aqua>Info checker"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -129,7 +129,7 @@ BackdropNode {
  name BackdropNode19
  tile_color 0x444444ff
  label "<center><font color=aqua>Filter"
- note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
  note_font_size 42
  selected true
  xpos 275
@@ -138,829 +138,6 @@ BackdropNode {
  bdheight 179
  z_order 1
 }
-push $cut_paste_input
-Group {
- name GM_Repeater
- tile_color 0xdf7100ff
- selected true
- xpos 400
- ypos -826
- addUserKnob {20 User}
- addUserKnob {26 shape l "<b>I N P U T"}
- addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
- addUserKnob {41 rotate2 l rotate T Trans_COPY1_proxy_2.rotate2}
- addUserKnob {41 scale2 l scale T Trans_COPY1_proxy_2.scale2}
- addUserKnob {41 skewX2 l skewX T Trans_COPY1_proxy_2.skewX2}
- addUserKnob {41 skewY2 l skewY T Trans_COPY1_proxy_2.skewY2}
- addUserKnob {41 skeworder2 l "skew order" T Trans_COPY1_proxy_2.skeworder2}
- addUserKnob {41 center2 l center T Trans_COPY1_proxy_2.center2}
- addUserKnob {22 set_center_2 l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center2\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 invert2 l invert T Trans_COPY1_proxy_2.invert2}
- addUserKnob {41 filter2 l filter T Trans_COPY1_proxy_2.filter2}
- addUserKnob {26 rep1 l "<b>R E P E A T E R"}
- addUserKnob {41 copies l Copies T PROXY.copies}
- addUserKnob {41 fadeout1 l "Fade Out" T Trans_COPY1_proxy.fadeout1}
- addUserKnob {41 fadein1 l "Fade In" T Trans_COPY1_proxy.fadein1}
- addUserKnob {6 apply_on_copy1 l "Apply Transform on Input Image" +STARTLINE}
- apply_on_copy1 true
- addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
- addUserKnob {41 translate1 l translate T Trans_COPY1_proxy.translate1}
- addUserKnob {41 rotate1 l rotate T Trans_COPY1_proxy.rotate1}
- addUserKnob {41 scale1 l scale T Trans_COPY1_proxy.scale1}
- addUserKnob {41 skewX1 l skewX T Trans_COPY1_proxy.skewX1}
- addUserKnob {41 skewY1 l skewY T Trans_COPY1_proxy.skewY1}
- addUserKnob {41 skeworder1 l skeworder T Trans_COPY1_proxy.skeworder1}
- addUserKnob {41 center1 l center T Trans_COPY1_proxy.center1}
- addUserKnob {22 set_center_center l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center1\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 invert1 l invert T Trans_COPY1_proxy.invert1}
- addUserKnob {41 filter1 l filter T Trans_COPY1_proxy.filter1}
- addUserKnob {41 motionblur1 l motionblur T Trans_COPY1_proxy.motionblur1}
- addUserKnob {41 shutter1 l shutter T Trans_COPY1_proxy.shutter1}
- addUserKnob {26 ""}
- addUserKnob {6 clamp l Clamp +STARTLINE}
- clamp true
- addUserKnob {6 crop l Crop +STARTLINE}
- crop true
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/repeater')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Repeater© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode1
-  tile_color 0xff
-  label "<center><font color=red>DON`T TOUCH\nstatic"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
-  note_font_size 42
-  xpos 738
-  ypos 63
-  bdwidth 285
-  bdheight 305
- }
- Input {
-  inputs 0
-  name Input
-  label static
-  xpos 510
-  ypos 272
- }
- Transform {
-  translate {{Trans_COPY1_proxy_2.translate2} {Trans_COPY1_proxy_2.translate2}}
-  rotate {{Trans_COPY1_proxy_2.rotate2}}
-  scale {{Trans_COPY1_proxy_2.scale2} {Trans_COPY1_proxy_2.scale2}}
-  skewX {{Trans_COPY1_proxy_2.skewX2}}
-  skewY {{Trans_COPY1_proxy_2.skewY2}}
-  skew_order {{Trans_COPY1_proxy_2.skeworder2}}
-  center {{Trans_COPY1_proxy_2.center2} {Trans_COPY1_proxy_2.center2}}
-  invert_matrix {{Trans_COPY1_proxy_2.invert2}}
-  filter {{Trans_COPY1_proxy_2.filter2}}
-  shutteroffset centred
-  name Trans_COPY2
-  label static
-  xpos 510
-  ypos 464
- }
-set Nb7a3ce00 [stack 0]
-push $Nb7a3ce00
- Transform {
-  translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
-  rotate {{Trans_COPY1_proxy.rotate1}}
-  scale {{Trans_COPY1_proxy.scale1} {Trans_COPY1_proxy.scale1}}
-  skewX {{Trans_COPY1_proxy.skewX1}}
-  skewY {{Trans_COPY1_proxy.skewY1}}
-  skew_order {{Trans_COPY1_proxy.skeworder1}}
-  center {{Trans_COPY1_proxy.center1.x} {Trans_COPY1_proxy.center1.y}}
-  invert_matrix {{Trans_COPY1_proxy.invert1}}
-  filter {{Trans_COPY1_proxy.filter1}}
-  motionblur {{Trans_COPY1_proxy.motionblur1}}
-  shutter {{Trans_COPY1_proxy.shutter1}}
-  shutteroffset centred
-  name Trans_COPY1
-  label static
-  xpos 400
-  ypos 632
- }
- Switch {
-  inputs 2
-  which {{!apply_on_copy1}}
-  name Switch1
-  label static
-  xpos 510
-  ypos 632
- }
-set Nb7a3c700 [stack 0]
- Dot {
-  name Dot1
-  xpos 544
-  ypos 670
- }
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t0
-  xpos 510
-  ypos 688
- }
-set Nb7a3c000 [stack 0]
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t1
-  xpos 620
-  ypos 714
- }
-set Nda19fc00 [stack 0]
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t2
-  xpos 730
-  ypos 740
- }
-set Nda19f880 [stack 0]
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t3
-  xpos 840
-  ypos 766
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_3
-  xpos 840
-  ypos 792
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 4
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_5
-  xpos 840
-  ypos 818
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 4
- }
-push $Nda19f880
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_2
-  xpos 730
-  ypos 766
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 3
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_4
-  xpos 730
-  ypos 792
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 3
- }
-push $Nda19fc00
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_1
-  xpos 620
-  ypos 740
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 2
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_3
-  xpos 620
-  ypos 766
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 2
- }
-push $Nb7a3c000
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_0
-  xpos 510
-  ypos 714
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_2
-  xpos 510
-  ypos 753
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
-push $Nb7a3c700
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_1
-  label static
-  xpos 695
-  ypos 577
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 5
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
- Merge2 {
-  inputs 2
-  operation {{Merge_Proxy.operation1}}
-  also_merge all
-  name m0
-  xpos 695
-  ypos 753
- }
- Merge2 {
-  inputs 2
-  operation {{Merge_Proxy.operation1}}
-  also_merge all
-  name m1
-  xpos 695
-  ypos 779
- }
- Merge2 {
-  inputs 2
-  operation {{Merge_Proxy.operation1}}
-  also_merge all
-  name m2
-  xpos 730
-  ypos 844
- }
- Merge2 {
-  inputs 2
-  operation {{Merge_Proxy.operation1}}
-  also_merge all
-  name m3
-  xpos 840
-  ypos 844
- }
- NoOp {
-  name COPIES1_end
-  label static
-  xpos 510
-  ypos 1832
- }
- Clamp {
-  name Clamp
-  label static
-  xpos 510
-  ypos 1921
-  disable {{!parent.clamp}}
- }
- Crop {
-  box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
-  name Crop1
-  label "Box: \[value box]\nstatic"
-  xpos 510
-  ypos 2017
-  disable {{!parent.crop}}
- }
- Output {
-  name Output1
-  label static
-  xpos 510
-  ypos 2096
- }
- NoOp {
-  inputs 0
-  name Trans_COPY1_proxy_2
-  label static
-  xpos 290
-  ypos 464
-  addUserKnob {20 User}
-  addUserKnob {12 translate2}
-  addUserKnob {7 rotate2 R -180 180}
-  addUserKnob {14 scale2 R 0 100}
-  scale2 1
-  addUserKnob {7 skewX2 R -1 1}
-  addUserKnob {7 skewY2 R -1 1}
-  addUserKnob {4 skeworder2 M {XY YX ""}}
-  addUserKnob {12 center2}
-  center2 {960 540}
-  addUserKnob {6 invert2 +STARTLINE}
-  addUserKnob {4 filter2 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4 ""}}
-  filter2 Cubic
- }
- NoOp {
-  inputs 0
-  name PROXY
-  knobChanged "\nm = nuke.thisNode()\nkc = nuke.thisKnob()\nif kc.name() in \[\"copies\"]:\n    for n in nuke.allNodes():\n        if \"static\" not in n\['label'].getValue():\n            nuke.delete(n)\n    \n    iRep = m.knob('copies').getValue()\n    iRepeats = int(iRep)-1\n    RepMax = int(iRep)\n    bfirstLoop = True\n    \n    # Main Transform for Copy1\n    w = nuke.toNode('Trans_COPY1')\n    \n    # Last Merge connected to this\n    b = nuke.toNode('COPIES1_end')\n    \n    # Dot would be connected to this and allows toggle between original and modified source \n    s = nuke.toNode('Switch1')\n    \n    nDot = nuke.nodes.Dot()\n    nDot.setInput(0, s)\n\n    nMult = nuke.toNode('mu1t2_1')\n    \n    if (iRepeats+1) >= 2: \n    \n        for i in range(iRepeats):\n            RepNum = int(i)+1\n            RepNum2 = int(i)+2\n            nMult.knob('ReMax').setValue( RepMax )\n            nMult.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CTrans = nuke.nodes.Transform(name = \"t\" + str(i))\n            CTrans.knob('translate').setExpression('Trans_COPY1.translate')\n            CTrans.knob('rotate').setExpression('Trans_COPY1.rotate')\n            CTrans.knob('scale').setExpression('Trans_COPY1.scale')\n            CTrans.knob('skewX').setExpression('Trans_COPY1.skewX')\n            CTrans.knob('skewY').setExpression('Trans_COPY1.skewY')\n            CTrans.knob('skew_order').setExpression('Trans_COPY1.skew_order')\n            CTrans.knob('center').setExpression('Trans_COPY1.center')\n            CTrans.knob('invert_matrix').setExpression('Trans_COPY1.invert_matrix')\n            CTrans.knob('filter').setExpression('Trans_COPY1.filter')\n            CTrans.knob('motionblur').setExpression('Trans_COPY1.motionblur')\n            CTrans.knob('shutter').setExpression('Trans_COPY1.shutter')\n            CTrans.knob('shutteroffset').setValue(0)\n            CMult1 = nuke.nodes.Multiply(name = \"mu1_\" + str(i))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult1.addKnob(k)\n            CMult1.addKnob(k2)\n            CMult1.knob('ReMax').setValue( RepMax )\n            CMult1.knob('ReNum').setValue( RepNum )\n            CMult1.knob('value').setExpression('((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )')\n            CMult1.setInput(0, CTrans)\n            CMult2 = nuke.nodes.Multiply(name = \"mu1t2_\" + str(RepNum2))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult2.addKnob(k)\n            CMult2.addKnob(k2)\n            CMult2.knob('ReMax').setValue( RepMax )\n            CMult2.knob('ReNum').setValue( RepNum )\n            CMult2.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CMult2.setInput(0, CMult1)\n            nMerge = nuke.nodes.Merge2(name = \"m\" + str(i))\n            nMerge.knob('also_merge').setValue('all')\n            nMerge.knob('operation').setExpression('Merge_Proxy.operation1')\n            nMerge.setInput(1, CMult2)\n            \n            if bfirstLoop:\n                bfirstLoop = False\n                CTrans.setInput(0, nDot)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nMult)\n            else:\n                CTrans.setInput(0, nPrevTrans)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nPrevMerge)\n \n            nPrevMerge = nMerge\n            nPrevTrans = CTrans\n            nPrevMult1 = CMult1\n            nPrevMult2 = CMult2\n        \n        MNum = int(iRepeats) - 1\n        \n        p = nuke.toNode(\"m\" + str(MNum))\n        \n        b.setInput(0, p)\n    else:\n        b.setInput(0, nDot)\n\n"
-  label static
-  xpos 840
-  ypos 272
-  addUserKnob {20 User}
-  addUserKnob {3 copies l Copies}
-  copies 5
- }
- NoOp {
-  inputs 0
-  name Merge_Proxy
-  label static
-  xpos 620
-  ypos 464
-  addUserKnob {20 User}
-  addUserKnob {4 operation1 M {atop average color-burn color-dodge conjoint-over copy difference disjoint-over divide exclusion from geometric hard-light hypot in mask matte max min minus multiply out over overlay plus screen soft-light stencil under xor ""}}
-  operation1 xor
- }
- NoOp {
-  inputs 0
-  name Trans_COPY1_proxy
-  label static
-  xpos 290
-  ypos 632
-  addUserKnob {20 User}
-  addUserKnob {12 translate1}
-  translate1 {50 0}
-  addUserKnob {7 rotate1 R -180 180}
-  addUserKnob {14 scale1 R 0 100}
-  scale1 1
-  addUserKnob {7 skewX1 R -1 1}
-  addUserKnob {7 skewY1 R -1 1}
-  addUserKnob {4 skeworder1 M {XY YX}}
-  addUserKnob {12 center1}
-  center1 {960 540}
-  addUserKnob {6 invert1 +STARTLINE}
-  addUserKnob {4 filter1 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4}}
-  filter1 Cubic
-  addUserKnob {7 motionblur1 R 0 4}
-  motionblur1 1
-  addUserKnob {7 shutter1 R 0 2}
-  shutter1 0.5
-  addUserKnob {26 ""}
-  addUserKnob {7 fadeout l "Fade Out"}
-  fadeout {{1-fadeout1}}
-  addUserKnob {7 fadeout1 l "Fade Out"}
-  addUserKnob {7 fadein l "Fade In"}
-  fadein {{1-fadein1}}
-  addUserKnob {7 fadein1 l "Fade In"}
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_ShapeRepeater
- tile_color 0xf25400ff
- selected true
- xpos 620
- ypos -832
- addUserKnob {20 User}
- addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image"}}
- addUserKnob {26 shape l "<b>S H A P E"}
- addUserKnob {41 position l Position T Flare.position}
- addUserKnob {22 set_center_pos l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"position\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 size_mult l "Size " T Flare.size_mult}
- addUserKnob {41 anamorph l Anamorph T Flare.anamorph}
- addUserKnob {41 corners l Points T Flare.corners}
- addUserKnob {41 flattening l "Edge Flattening" T Flare.flattening}
- addUserKnob {41 sharpness l "Corner Sharpness" T Flare.sharpness}
- addUserKnob {41 corners_angle l Angle T Flare.corners_angle}
- addUserKnob {41 falloff l Falloff T proxy1.falloff}
- addUserKnob {41 multiply l Color T Grade.multiply}
- addUserKnob {20 trans_shape l "T r a n s f o r m  S h a p e" n 1}
- trans_shape 0
- addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
- addUserKnob {41 rotate2 l rotate T Trans_COPY1_proxy_2.rotate2}
- addUserKnob {41 scale2 l scale T Trans_COPY1_proxy_2.scale2}
- addUserKnob {41 skewX2 l skewX T Trans_COPY1_proxy_2.skewX2}
- addUserKnob {41 skewY2 l skewY T Trans_COPY1_proxy_2.skewY2}
- addUserKnob {41 skeworder2 l "skew order" T Trans_COPY1_proxy_2.skeworder2}
- addUserKnob {41 center2 l center T Trans_COPY1_proxy_2.center2}
- addUserKnob {22 set_senter_trans_shape l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center2\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 invert2 l invert T Trans_COPY1_proxy_2.invert2}
- addUserKnob {41 filter2 l filter T Trans_COPY1_proxy_2.filter2}
- addUserKnob {20 endGroup n -1}
- addUserKnob {26 rep1 l "<b>R E P E A T E R"}
- addUserKnob {41 copy1 l Copies T PROXY_MAIN1.copy1}
- addUserKnob {41 fadeout1 l "Fade Out" T Trans_COPY1_proxy.fadeout1}
- addUserKnob {41 fadein1 l "Fade In" T Trans_COPY1_proxy.fadein1}
- addUserKnob {6 apply_on_copy1 l "Apply Transform on Original Shape" +STARTLINE}
- addUserKnob {41 translate1 l translate T Trans_COPY1_proxy.translate1}
- addUserKnob {41 rotate1 l rotate T Trans_COPY1_proxy.rotate1}
- addUserKnob {41 scale1 l scale T Trans_COPY1_proxy.scale1}
- addUserKnob {41 skewX1 l skewX T Trans_COPY1_proxy.skewX1}
- addUserKnob {41 skewY1 l skewY T Trans_COPY1_proxy.skewY1}
- addUserKnob {41 skeworder1 l "skew order" T Trans_COPY1_proxy.skeworder1}
- addUserKnob {41 center1 l center T Trans_COPY1_proxy.center1}
- addUserKnob {41 invert1 l invert T Trans_COPY1_proxy.invert1}
- addUserKnob {41 filter1 l filter T Trans_COPY1_proxy.filter1}
- addUserKnob {41 motionblur1 l motionblur T Trans_COPY1_proxy.motionblur1}
- addUserKnob {41 shutter1 l shutter T Trans_COPY1_proxy.shutter1}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/shape-repeater')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_ShapeRepeater© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode1
-  tile_color 0xff
-  label "<center><font color=red>DON`T TOUCH\nstatic"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
-  note_font_size 42
-  xpos 738
-  ypos 63
-  bdwidth 285
-  bdheight 305
- }
- NoOp {
-  inputs 0
-  name proxy1
-  label static
-  xpos 620
-  ypos 248
-  addUserKnob {20 User}
-  addUserKnob {7 falloff l Falloff R 0 100}
-  falloff 5
- }
- NoOp {
-  inputs 0
-  name PROXY_MAIN1
-  knobChanged "\nm = nuke.thisNode()\nkc = nuke.thisKnob()\nif kc.name() in \[\"copy1\"]:\n    for n in nuke.allNodes():\n        if \"static\" not in n\['label'].getValue():\n            nuke.delete(n)\n    \n    iRep = m.knob('copy1').getValue()\n    iRepeats = int(iRep)-1\n    RepMax = int(iRep)\n    bfirstLoop = True\n    \n    # Main Transform for Copy1\n    w = nuke.toNode('Trans_COPY1')\n    \n    # Last Merge connected to this\n    b = nuke.toNode('COPIES1_end')\n    \n    # Dot would be connected to this and allows toggle between original and modified source \n    s = nuke.toNode('Switch1')\n    \n    nDot = nuke.nodes.Dot()\n    nDot.setInput(0, s)\n\n    nMult = nuke.toNode('mu1t2_1')\n    \n    if (iRepeats+1) >= 2: \n    \n        for i in range(iRepeats):\n            RepNum = int(i)+1\n            RepNum2 = int(i)+2\n            nMult.knob('ReMax').setValue( RepMax )\n            nMult.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CTrans = nuke.nodes.Transform(name = \"t\" + str(i))\n            CTrans.knob('translate').setExpression('Trans_COPY1.translate')\n            CTrans.knob('rotate').setExpression('Trans_COPY1.rotate')\n            CTrans.knob('scale').setExpression('Trans_COPY1.scale')\n            CTrans.knob('skewX').setExpression('Trans_COPY1.skewX')\n            CTrans.knob('skewY').setExpression('Trans_COPY1.skewY')\n            CTrans.knob('skew_order').setExpression('Trans_COPY1.skew_order')\n            CTrans.knob('center').setExpression('Trans_COPY1.center')\n            CTrans.knob('invert_matrix').setExpression('Trans_COPY1.invert_matrix')\n            CTrans.knob('filter').setExpression('Trans_COPY1.filter')\n            CTrans.knob('motionblur').setExpression('Trans_COPY1.motionblur')\n            CTrans.knob('shutter').setExpression('Trans_COPY1.shutter')\n            CTrans.knob('shutteroffset').setValue(0)\n            CMult1 = nuke.nodes.Multiply(name = \"mu1_\" + str(i))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult1.addKnob(k)\n            CMult1.addKnob(k2)\n            CMult1.knob('ReMax').setValue( RepMax )\n            CMult1.knob('ReNum').setValue( RepNum )\n            CMult1.knob('value').setExpression('((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )')\n            CMult1.setInput(0, CTrans)\n            CMult2 = nuke.nodes.Multiply(name = \"mu1t2_\" + str(RepNum2))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult2.addKnob(k)\n            CMult2.addKnob(k2)\n            CMult2.knob('ReMax').setValue( RepMax )\n            CMult2.knob('ReNum').setValue( RepNum )\n            CMult2.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CMult2.setInput(0, CMult1)\n            nMerge = nuke.nodes.Merge2(name = \"m\" + str(i))\n            nMerge.knob('also_merge').setValue('all')\n            nMerge.setInput(1, CMult2)\n            \n            if bfirstLoop:\n                bfirstLoop = False\n                CTrans.setInput(0, nDot)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nMult)\n            else:\n                CTrans.setInput(0, nPrevTrans)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nPrevMerge)\n \n            nPrevMerge = nMerge\n            nPrevTrans = CTrans\n            nPrevMult1 = CMult1\n            nPrevMult2 = CMult2\n        \n        MNum = int(iRepeats) - 1\n        \n        p = nuke.toNode(\"m\" + str(MNum))\n        \n        b.setInput(0, p)\n\n\n    else:\n        b.setInput(0, nDot)\n"
-  label static
-  xpos 840
-  ypos 248
-  addUserKnob {20 User}
-  addUserKnob {3 copy1 l Copies1}
-  copy1 3
- }
- Input {
-  inputs 0
-  name Input
-  label static
-  xpos 510
-  ypos -16
- }
- Dot {
-  name Dot2
-  label static
-  xpos 544
-  ypos 90
- }
-set Nb7a69880 [stack 0]
- Remove {
-  name Remove
-  label static
-  xpos 510
-  ypos 169
- }
- Flare {
-  position {960 540}
-  radius {100 {radius.0} {100+parent.proxy1.falloff}}
-  ring_color {1 1 1}
-  inner_color {1 1 1}
-  outer_falloff {1 1 1}
-  inner_falloff {1 1 1}
-  brightness {1 1 1}
-  vis_out 1
-  flattening 6
-  sharpness 1
-  corners_angle 0.1
-  mult_offset 0
-  name Flare
-  label static
-  xpos 510
-  ypos 248
- }
- Shuffle {
-  alpha red
-  name Shuffle1
-  label static
-  xpos 510
-  ypos 320
- }
- Clamp {
-  name Clamp
-  label static
-  xpos 510
-  ypos 361
- }
- Transform {
-  translate {{Trans_COPY1_proxy_2.translate2} {Trans_COPY1_proxy_2.translate2}}
-  rotate {{Trans_COPY1_proxy_2.rotate2}}
-  scale {{Trans_COPY1_proxy_2.scale2} {Trans_COPY1_proxy_2.scale2}}
-  skewX {{Trans_COPY1_proxy_2.skewX2}}
-  skewY {{Trans_COPY1_proxy_2.skewY2}}
-  skew_order {{Trans_COPY1_proxy_2.skeworder2}}
-  center {{Trans_COPY1_proxy_2.center2} {Trans_COPY1_proxy_2.center2}}
-  invert_matrix {{Trans_COPY1_proxy_2.invert2}}
-  filter {{Trans_COPY1_proxy_2.filter2}}
-  shutteroffset centred
-  name Transform1
-  label static
-  xpos 510
-  ypos 416
- }
- Grade {
-  name Grade
-  label static
-  xpos 510
-  ypos 488
- }
-set Nb7a68380 [stack 0]
-push $Nb7a68380
- Transform {
-  translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
-  rotate {{Trans_COPY1_proxy.rotate1}}
-  scale {{Trans_COPY1_proxy.scale1} {Trans_COPY1_proxy.scale1}}
-  skewX {{Trans_COPY1_proxy.skewX1}}
-  skewY {{Trans_COPY1_proxy.skewY1}}
-  skew_order {{Trans_COPY1_proxy.skeworder1}}
-  center {{"Flare.position - translate.x + Trans_COPY1_proxy.center1.x"} {"Flare.position- translate.y +  + Trans_COPY1_proxy.center1.y"}}
-  invert_matrix {{Trans_COPY1_proxy.invert1}}
-  filter {{Trans_COPY1_proxy.filter1}}
-  motionblur {{Trans_COPY1_proxy.motionblur1}}
-  shutter {{Trans_COPY1_proxy.shutter1}}
-  shutteroffset centred
-  name Trans_COPY1
-  label static
-  xpos 400
-  ypos 488
- }
- Switch {
-  inputs 2
-  which {{!apply_on_copy1}}
-  name Switch1
-  label static
-  xpos 510
-  ypos 608
- }
-set Nb7aa1c00 [stack 0]
- Dot {
-  name Dot1
-  xpos 544
-  ypos 646
- }
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t0
-  xpos 510
-  ypos 664
- }
-set Nb7aa1500 [stack 0]
- Transform {
-  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
-  rotate {{Trans_COPY1.rotate}}
-  scale {{Trans_COPY1.scale}}
-  skewX {{Trans_COPY1.skewX}}
-  skewY {{Trans_COPY1.skewY}}
-  skew_order {{Trans_COPY1.skew_order}}
-  center {{Trans_COPY1.center} {Trans_COPY1.center}}
-  invert_matrix {{Trans_COPY1.invert_matrix}}
-  filter {{Trans_COPY1.filter}}
-  motionblur {{Trans_COPY1.motionblur}}
-  shutter {{Trans_COPY1.shutter}}
-  shutteroffset centred
-  name t1
-  xpos 620
-  ypos 690
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_1
-  xpos 620
-  ypos 716
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 2
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_3
-  xpos 620
-  ypos 761
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 2
- }
-push $Nb7aa1500
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
-  name mu1_0
-  xpos 510
-  ypos 690
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_2
-  xpos 510
-  ypos 735
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
-push $Nb7aa1c00
- Multiply {
-  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
-  name mu1t2_1
-  label static
-  xpos 730
-  ypos 601
-  addUserKnob {20 User}
-  addUserKnob {3 ReMax}
-  ReMax 3
-  addUserKnob {3 ReNum}
-  ReNum 1
- }
- Merge2 {
-  inputs 2
-  also_merge all
-  name m0
-  xpos 730
-  ypos 741
- }
- Merge2 {
-  inputs 2
-  also_merge all
-  name m1
-  xpos 730
-  ypos 767
- }
- NoOp {
-  name COPIES1_end
-  label static
-  xpos 510
-  ypos 2456
- }
- Crop {
-  box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
-  name Crop1
-  label "Box: \[value box]\nstatic"
-  xpos 510
-  ypos 2593
- }
-set Nb7ad7180 [stack 0]
-push $Nb7a69880
- Dot {
-  name Dot4
-  label static
-  xpos 104
-  ypos 2610
- }
- Merge2 {
-  inputs 2
-  name Merge1
-  label static
-  xpos 290
-  ypos 2600
- }
-push $Nb7ad7180
- Switch {
-  inputs 2
-  which {{output}}
-  name Switch2
-  label "Which: \[value which]\nstatic"
-  xpos 510
-  ypos 2689
- }
- Output {
-  name Output1
-  label static
-  xpos 510
-  ypos 2816
- }
- NoOp {
-  inputs 0
-  name Trans_COPY1_proxy_2
-  label static
-  xpos 290
-  ypos 464
-  addUserKnob {20 User}
-  addUserKnob {12 translate2}
-  addUserKnob {7 rotate2 R -180 180}
-  addUserKnob {14 scale2 R 0 100}
-  scale2 1
-  addUserKnob {7 skewX2 R -1 1}
-  addUserKnob {7 skewY2 R -1 1}
-  addUserKnob {4 skeworder2 M {XY YX ""}}
-  addUserKnob {12 center2}
-  center2 {960 540}
-  addUserKnob {6 invert2 +STARTLINE}
-  addUserKnob {4 filter2 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4 ""}}
-  filter2 Cubic
- }
- NoOp {
-  inputs 0
-  name Trans_COPY1_proxy
-  label static
-  xpos 180
-  ypos 656
-  addUserKnob {20 User}
-  addUserKnob {12 translate1}
-  translate1 {200 0}
-  addUserKnob {7 rotate1 R -180 180}
-  addUserKnob {14 scale1 R 0 100}
-  scale1 1
-  addUserKnob {7 skewX1 R -1 1}
-  addUserKnob {7 skewY1 R -1 1}
-  addUserKnob {4 skeworder1 M {XY YX}}
-  addUserKnob {12 center1}
-  addUserKnob {6 invert1 +STARTLINE}
-  addUserKnob {4 filter1 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4}}
-  filter1 Cubic
-  addUserKnob {7 motionblur1 R 0 4}
-  motionblur1 1
-  addUserKnob {7 shutter1 R 0 2}
-  shutter1 0.5
-  addUserKnob {26 ""}
-  addUserKnob {7 fadeout l "Fade Out"}
-  fadeout {{1-fadeout1}}
-  addUserKnob {7 fadeout1 l "Fade Out 1"}
-  addUserKnob {7 fadein l "Fade In"}
-  fadein {{1-fadein1}}
-  addUserKnob {7 fadein1 l "Fade In"}
- }
-end_group
 push $cut_paste_input
 Group {
  name GM_CrossPattern
@@ -995,7 +172,7 @@ Group {
  addUserKnob {7 blur l Blur R 0 100}
  addUserKnob {26 ""}
  addUserKnob {41 mix l Mix T Merge1.mix}
- addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 ""}
  addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/cross-pattern')\n" +STARTLINE}
  addUserKnob {26 ""}
  addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
@@ -1012,13 +189,13 @@ Group {
   xpos 104
   ypos -534
  }
-set N58a90a80 [stack 0]
+set N1331d880 [stack 0]
  Remove {
   name CP_Remove1
   xpos 70
   ypos -328
  }
-set N58a90700 [stack 0]
+set N1331d500 [stack 0]
  Expression {
   expr0 "ceil((\[value type](y/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))) + (\[value type](x/size\[if \{\[numvalue direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset)*(speed/100)))))"
   expr1 "ceil((\[value type2](y/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))) / (\[value type2](x/size2\[if \{\[numvalue direction2] == 0\} \{return \"-\"\} else \{return \"+\"\}]((frame+offset2)*(speed2/100)))))"
@@ -1042,7 +219,7 @@ set N58a90700 [stack 0]
   addUserKnob {7 speed2 l Speed2 R 0 100}
   speed2 5
  }
-set N58a90380 [stack 0]
+set N1331d180 [stack 0]
  Shuffle {
   green black
   blue black
@@ -1056,7 +233,7 @@ set N58a90380 [stack 0]
   xpos -40
   ypos -88
  }
-push $N58a90380
+push $N1331d180
  Shuffle {
   red green
   green black
@@ -1117,20 +294,20 @@ push $N58a90380
    name Input
    xpos 0
   }
-set N58ac0700 [stack 0]
+set N1334ee00 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N58ac0380 [stack 0]
-push $N58ac0380
+set N1334ea80 [stack 0]
+push $N1334ea80
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N58ac0380
+push $N1334ea80
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1162,7 +339,7 @@ push $N58ac0380
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N216f180 [stack 0]
+set N1338d880 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -1170,7 +347,7 @@ set N216f180 [stack 0]
    xpos 332
    ypos 218
   }
-push $N216f180
+push $N1338d880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1189,7 +366,7 @@ push $N216f180
    xpos 177
    ypos 446
   }
-push $N58ac0700
+push $N1334ee00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -1224,20 +401,20 @@ push $N58ac0700
    name Input
    xpos 0
   }
-set N21b5500 [stack 0]
+set N134d3c00 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N21b5180 [stack 0]
-push $N21b5180
+set N134d3880 [stack 0]
+push $N134d3880
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N21b5180
+push $N134d3880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1269,7 +446,7 @@ push $N21b5180
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N21b4000 [stack 0]
+set N134d2700 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -1277,7 +454,7 @@ set N21b4000 [stack 0]
    xpos 332
    ypos 218
   }
-push $N21b4000
+push $N134d2700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1296,7 +473,7 @@ push $N21b4000
    xpos 177
    ypos 446
   }
-push $N21b5500
+push $N134d3c00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -1342,15 +519,15 @@ push $N21b5500
   xpos 104
   ypos 570
  }
-set N221b880 [stack 0]
+set N13506000 [stack 0]
  Dot {
   name Dot4
   xpos 104
   ypos 642
  }
-set N221b500 [stack 0]
-push $N221b880
-push $N58a90700
+set N13539c00 [stack 0]
+push $N13506000
+push $N1331d500
  Dot {
   name Dot8
   tile_color 0x949494ff
@@ -1359,7 +536,7 @@ push $N58a90700
   xpos 434
   ypos -318
  }
-set N221b180 [stack 0]
+set N13539880 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1378,7 +555,7 @@ set N221b180 [stack 0]
   xpos 400
   ypos 632
  }
-set N221aa80 [stack 0]
+set N13539180 [stack 0]
  Blur {
   size {{blur}}
   name Blur1
@@ -1386,7 +563,7 @@ set N221aa80 [stack 0]
   xpos 730
   ypos 625
  }
-push $N221b180
+push $N13539880
  Dot {
   name Dot2
   tile_color 0x949494ff
@@ -1409,9 +586,9 @@ push $N221b180
   xpos 1170
   ypos 638
  }
-set N2245880 [stack 0]
-push $N2245880
-push $N58a90a80
+set N13538000 [stack 0]
+push $N13538000
+push $N1331d880
  Dot {
   name Dot7
   xpos 984
@@ -1433,7 +610,7 @@ push $N58a90a80
   xpos 984
   ypos 978
  }
-set N2244e00 [stack 0]
+set N13569500 [stack 0]
  STMap {
   inputs 2
   uv rgb
@@ -1442,20 +619,20 @@ set N2244e00 [stack 0]
   xpos 1170
   ypos 961
  }
-push $N221b500
+push $N13539c00
  Dot {
   name Dot5
   xpos 104
   ypos 714
  }
-set N2244700 [stack 0]
+set N13568e00 [stack 0]
  Dot {
   name Dot6
   xpos 104
   ypos 834
  }
-push $N2244700
-push $N221aa80
+push $N13568e00
+push $N13539180
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -1491,8 +668,8 @@ push $N221aa80
   xpos 400
   ypos 1070
  }
-set N2277180 [stack 0]
-push $N2244e00
+set N1359b880 [stack 0]
+push $N13569500
  Merge2 {
   inputs 2
   also_merge all
@@ -1500,7 +677,7 @@ push $N2244e00
   xpos 950
   ypos 1070
  }
-push $N2277180
+push $N1359b880
  Switch {
   inputs 4
   which {{output}}
@@ -1556,7 +733,7 @@ Group {
  addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
  addUserKnob {26 ""}
  addUserKnob {41 mix l Mix T Merge2.mix}
- addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 ""}
  addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/moving-lines')\n" +STARTLINE}
  addUserKnob {26 ""}
  addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
@@ -1573,7 +750,7 @@ Group {
   xpos 214
   ypos -750
  }
-set N35ce000 [stack 0]
+set N1359a380 [stack 0]
  Remove {
   name Remove_ML
   tile_color 0x555555ff
@@ -1588,7 +765,7 @@ set N35ce000 [stack 0]
   xpos 214
   ypos -534
  }
-set N7a31880 [stack 0]
+set N135c7c00 [stack 0]
  Dot {
   name Dot7
   tile_color 0x949494ff
@@ -1643,20 +820,20 @@ set N7a31880 [stack 0]
    name Input
    xpos 0
   }
-set N7a30700 [stack 0]
+set N135c6a80 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N7a30380 [stack 0]
-push $N7a30380
+set N135c6700 [stack 0]
+push $N135c6700
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N7a30380
+push $N135c6700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1688,7 +865,7 @@ push $N7a30380
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N7a5d180 [stack 0]
+set N135f3500 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -1696,7 +873,7 @@ set N7a5d180 [stack 0]
    xpos 332
    ypos 218
   }
-push $N7a5d180
+push $N135f3500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1715,7 +892,7 @@ push $N7a5d180
    xpos 177
    ypos 446
   }
-push $N7a30700
+push $N135c6a80
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -1742,7 +919,7 @@ push $N7a30700
   xpos -6
   ypos -270
  }
-push $N7a31880
+push $N135c7c00
  Expression {
   channel3 alpha
   expr3 "( \[value proxy.type](\[if \{\[numvalue proxy.axis] == 0\} \{return \"x\"\} else \{return \"y\"\}]/proxy.thickness \[if \{\[numvalue proxy.direction] == 0\} \{return \"-\"\} else \{return \"+\"\}]  (frame+proxy.offset)*proxy.speed )  )*proxy.value"
@@ -1788,20 +965,20 @@ push $N7a31880
    name Input
    xpos 0
   }
-set Nad40700 [stack 0]
+set N13636a80 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set Nad40380 [stack 0]
-push $Nad40380
+set N13636700 [stack 0]
+push $N13636700
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $Nad40380
+push $N13636700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1833,7 +1010,7 @@ push $Nad40380
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set Nad73180 [stack 0]
+set N13663500 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -1841,7 +1018,7 @@ set Nad73180 [stack 0]
    xpos 332
    ypos 218
   }
-push $Nad73180
+push $N13663500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -1860,7 +1037,7 @@ push $Nad73180
    xpos 177
    ypos 446
   }
-push $Nad40700
+push $N13636a80
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -1903,21 +1080,21 @@ push $Nad40700
   xpos 214
   ypos -78
  }
-set Nadb0e00 [stack 0]
+set N136a1180 [stack 0]
  Dot {
   name Dot2
   xpos 214
   ypos 18
  }
-set Nadb0a80 [stack 0]
-push $Nadb0e00
-push $N7a31880
+set N136a0e00 [stack 0]
+push $N136a1180
+push $N135c7c00
  Dot {
   name Dot1
   xpos 544
   ypos -534
  }
-set Nadb0700 [stack 0]
+set N136a0a80 [stack 0]
  ShuffleCopy {
   inputs 2
   red alpha
@@ -1944,7 +1121,7 @@ set Nadb0700 [stack 0]
   xpos 544
   ypos 66
  }
-set Nadddc00 [stack 0]
+set N136a0000 [stack 0]
  Blur {
   size {{blur}}
   name Blur1
@@ -1952,7 +1129,7 @@ set Nadddc00 [stack 0]
   xpos 730
   ypos 49
  }
-push $Nadb0700
+push $N136a0a80
  Dot {
   name Dot10
   xpos 1204
@@ -1972,9 +1149,9 @@ push $Nadb0700
   xpos 1170
   ypos 62
  }
-set Naddca80 [stack 0]
-push $Naddca80
-push $N35ce000
+set N136c8e00 [stack 0]
+push $N136c8e00
+push $N1359a380
  Dot {
   name Dot11
   xpos 984
@@ -1993,7 +1170,7 @@ push $N35ce000
   xpos 984
   ypos 258
  }
-set Naddc000 [stack 0]
+set N136c8380 [stack 0]
  STMap {
   inputs 2
   uv rgb
@@ -2002,20 +1179,20 @@ set Naddc000 [stack 0]
   xpos 1170
   ypos 241
  }
-push $Nadb0a80
+push $N136a0e00
  Dot {
   name Dot3
   xpos 214
   ypos 114
  }
-set Nae01880 [stack 0]
+set N136f3c00 [stack 0]
  Dot {
   name Dot4
   xpos 214
   ypos 210
  }
-push $Nae01880
-push $Nadddc00
+push $N136f3c00
+push $N136a0000
  ShuffleCopy {
   inputs 2
   blue alpha
@@ -2050,15 +1227,15 @@ push $Nadddc00
   xpos 510
   ypos 374
  }
-set Nae00380 [stack 0]
-push $Naddc000
+set N136f2700 [stack 0]
+push $N136c8380
  Merge2 {
   inputs 2
   name Merge2
   xpos 950
   ypos 374
  }
-push $Nae00380
+push $N136f2700
  Switch {
   inputs 4
   which {{output}}
@@ -2138,13 +1315,13 @@ Group {
   xpos -336
   ypos -486
  }
-set N332b500 [stack 0]
+set N13728e00 [stack 0]
  Dot {
   name Dot23
   xpos -556
   ypos -486
  }
-set N332b180 [stack 0]
+set N13728a80 [stack 0]
  Clamp {
   name Clamp
   tile_color 0x555555ff
@@ -2168,20 +1345,20 @@ set N332b180 [stack 0]
    name Input
    xpos 0
   }
-set N332aa80 [stack 0]
+set N13728380 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N332a700 [stack 0]
-push $N332a700
+set N13728000 [stack 0]
+push $N13728000
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N332a700
+push $N13728000
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2213,7 +1390,7 @@ push $N332a700
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N3363500 [stack 0]
+set N13750e00 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -2221,7 +1398,7 @@ set N3363500 [stack 0]
    xpos 332
    ypos 218
   }
-push $N3363500
+push $N13750e00
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2240,7 +1417,7 @@ push $N3363500
    xpos 177
    ypos 446
   }
-push $N332aa80
+push $N13728380
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -2276,20 +1453,20 @@ push $N332aa80
    name Input
    xpos 0
   }
-set N33a3880 [stack 0]
+set N13795180 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N33a3500 [stack 0]
-push $N33a3500
+set N13794e00 [stack 0]
+push $N13794e00
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N33a3500
+push $N13794e00
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2321,7 +1498,7 @@ push $N33a3500
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N33a2380 [stack 0]
+set N137c3c00 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -2329,7 +1506,7 @@ set N33a2380 [stack 0]
    xpos 332
    ypos 218
   }
-push $N33a2380
+push $N137c3c00
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2348,7 +1525,7 @@ push $N33a2380
    xpos 177
    ypos 446
   }
-push $N33a3880
+push $N13795180
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -2367,14 +1544,14 @@ push $N33a3880
    ypos 556
   }
  end_group
-set N31aa800 [stack 0]
+set N135de800 [stack 0]
  Dot {
   name Dot1
   xpos -776
   ypos -246
  }
-push $N31aa800
-push $N332b180
+push $N135de800
+push $N13728a80
  Merge2 {
   inputs 2
   operation mask
@@ -2401,7 +1578,7 @@ push $N332b180
   xpos -480
   ypos -256
  }
-push $N332b500
+push $N13728e00
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -2466,13 +1643,13 @@ Group {
   xpos -446
   ypos 378
  }
-set N303a700 [stack 0]
+set N137f6380 [stack 0]
  Dot {
   name Dot15
   xpos -556
   ypos 378
  }
-set N303a380 [stack 0]
+set N137f6000 [stack 0]
  Group {
   name key_chew
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -2491,20 +1668,20 @@ set N303a380 [stack 0]
    xpos -40
    ypos -10
   }
-set N303a000 [stack 0]
+set N13831c00 [stack 0]
   Dot {
    name Dot1
    xpos 324
    ypos -6
   }
-set N3063c00 [stack 0]
-push $N3063c00
+set N13831880 [stack 0]
+push $N13831880
   Invert {
    name Invert1
    xpos 180
    ypos 32
   }
-push $N3063c00
+push $N13831880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2537,7 +1714,7 @@ push $N3063c00
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N3062a80 [stack 0]
+set N13830700 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -2545,7 +1722,7 @@ set N3062a80 [stack 0]
    xpos 290
    ypos 230
   }
-push $N3062a80
+push $N13830700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2564,7 +1741,7 @@ push $N3062a80
    xpos 180
    ypos 440
   }
-push $N303a000
+push $N13831c00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -2583,7 +1760,7 @@ push $N303a000
    ypos 566
   }
  end_group
-push $N303a380
+push $N137f6000
  Dissolve {
   inputs 2
   which 1
@@ -2605,13 +1782,13 @@ push $N303a380
   xpos -556
   ypos 762
  }
-push $N303a700
+push $N137f6380
  Dot {
   name Dot8
   xpos -336
   ypos 378
  }
-set N309c380 [stack 0]
+set N13864000 [stack 0]
  Group {
   name key_chew1
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -2629,20 +1806,20 @@ set N309c380 [stack 0]
    name Input
    xpos 0
   }
-set N309c000 [stack 0]
+set N13899c00 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N30c9c00 [stack 0]
-push $N30c9c00
+set N13899880 [stack 0]
+push $N13899880
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N30c9c00
+push $N13899880
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2674,7 +1851,7 @@ push $N30c9c00
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N30c8a80 [stack 0]
+set N13898700 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -2682,7 +1859,7 @@ set N30c8a80 [stack 0]
    xpos 332
    ypos 218
   }
-push $N30c8a80
+push $N13898700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2701,7 +1878,7 @@ push $N30c8a80
    xpos 177
    ypos 446
   }
-push $N309c000
+push $N13899c00
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -2720,7 +1897,7 @@ push $N309c000
    ypos 556
   }
  end_group
-push $N309c380
+push $N13864000
  Dissolve {
   inputs 2
   which 1
@@ -2729,7 +1906,7 @@ push $N309c380
   xpos -370
   ypos 584
  }
-set N3102e00 [stack 0]
+set N138d0a80 [stack 0]
  Dot {
   name Dot18
   xpos -336
@@ -2743,19 +1920,19 @@ set N3102e00 [stack 0]
   xpos -480
   ypos 745
  }
-push $N309c380
+push $N13864000
  Dot {
   name Dot3
   xpos -116
   ypos 378
  }
-set N3102380 [stack 0]
+set N138d0000 [stack 0]
  Dot {
   name Dot4
   xpos -116
   ypos 930
  }
-set N3102000 [stack 0]
+set N13901c00 [stack 0]
  Invert {
   name Invert1
   tile_color 0x555555ff
@@ -2771,25 +1948,25 @@ set N3102000 [stack 0]
   xpos -480
   ypos 907
  }
-push $N3102380
+push $N138d0000
  Dot {
   name Dot11
   xpos 214
   ypos 378
  }
-set N3133500 [stack 0]
+set N13901180 [stack 0]
  Dot {
   name Dot5
   xpos 214
   ypos 426
  }
-set N3133180 [stack 0]
+set N13900e00 [stack 0]
  Dot {
   name Dot6
   xpos 104
   ypos 426
  }
-set N3132e00 [stack 0]
+set N13900a80 [stack 0]
  Group {
   name key_chew2
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -2808,20 +1985,20 @@ set N3132e00 [stack 0]
    xpos -40
    ypos -10
   }
-set N3132a80 [stack 0]
+set N13900700 [stack 0]
   Dot {
    name Dot1
    xpos 324
    ypos -6
   }
-set N3132700 [stack 0]
-push $N3132700
+set N13900380 [stack 0]
+push $N13900380
   Invert {
    name Invert1
    xpos 180
    ypos 32
   }
-push $N3132700
+push $N13900380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2854,7 +2031,7 @@ push $N3132700
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N315b500 [stack 0]
+set N1392d180 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -2862,7 +2039,7 @@ set N315b500 [stack 0]
    xpos 290
    ypos 230
   }
-push $N315b500
+push $N1392d180
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2881,7 +2058,7 @@ push $N315b500
    xpos 180
    ypos 440
   }
-push $N3132a80
+push $N13900700
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -2900,7 +2077,7 @@ push $N3132a80
    ypos 566
   }
  end_group
-push $N3132e00
+push $N13900a80
  Dissolve {
   inputs 2
   which {{Dissolve2.which}}
@@ -2914,13 +2091,13 @@ push $N3132e00
   xpos 104
   ypos 810
  }
-push $N3133180
+push $N13900e00
  Dot {
   name Dot9
   xpos 324
   ypos 426
  }
-set N3197180 [stack 0]
+set N13966e00 [stack 0]
  Group {
   name key_chew3
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -2938,20 +2115,20 @@ set N3197180 [stack 0]
    name Input
    xpos 0
   }
-set N3196e00 [stack 0]
+set N13966a80 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N3196a80 [stack 0]
-push $N3196a80
+set N13966700 [stack 0]
+push $N13966700
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N3196a80
+push $N13966700
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -2983,7 +2160,7 @@ push $N3196a80
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N31c3880 [stack 0]
+set N1398f500 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -2991,7 +2168,7 @@ set N31c3880 [stack 0]
    xpos 332
    ypos 218
   }
-push $N31c3880
+push $N1398f500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3010,7 +2187,7 @@ push $N31c3880
    xpos 177
    ypos 446
   }
-push $N3196e00
+push $N13966a80
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -3029,7 +2206,7 @@ push $N3196e00
    ypos 556
   }
  end_group
-push $N3197180
+push $N13966e00
  Dissolve {
   inputs 2
   which {{Dissolve1.which}}
@@ -3059,7 +2236,7 @@ push $N3197180
   xpos 180
   ypos 793
  }
-push $N3102000
+push $N13901c00
  ChannelMerge {
   inputs 2
   operation multiply
@@ -3078,7 +2255,7 @@ push $N3102000
   xpos -150
   ypos 1003
  }
-push $N303a380
+push $N137f6000
  Dot {
   name Dot21
   xpos -996
@@ -3089,13 +2266,13 @@ push $N303a380
   xpos -996
   ypos 618
  }
-set N3204380 [stack 0]
+set N139d4000 [stack 0]
  Dot {
   name Dot13
   xpos -1106
   ypos 618
  }
-set N3204000 [stack 0]
+set N13a01c00 [stack 0]
  Group {
   name key_chew4
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -3114,20 +2291,20 @@ set N3204000 [stack 0]
    xpos -40
    ypos -10
   }
-set N3231c00 [stack 0]
+set N13a01880 [stack 0]
   Dot {
    name Dot1
    xpos 324
    ypos -6
   }
-set N3231880 [stack 0]
-push $N3231880
+set N13a01500 [stack 0]
+push $N13a01500
   Invert {
    name Invert1
    xpos 180
    ypos 32
   }
-push $N3231880
+push $N13a01500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3160,7 +2337,7 @@ push $N3231880
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N3230700 [stack 0]
+set N13a00380 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -3168,7 +2345,7 @@ set N3230700 [stack 0]
    xpos 290
    ypos 230
   }
-push $N3230700
+push $N13a00380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3187,7 +2364,7 @@ push $N3230700
    xpos 180
    ypos 440
   }
-push $N3231c00
+push $N13a01880
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -3206,7 +2383,7 @@ push $N3231c00
    ypos 566
   }
  end_group
-push $N3204000
+push $N13a01c00
  Dissolve {
   inputs 2
   which {{Dissolve2.which}}
@@ -3228,13 +2405,13 @@ push $N3204000
   xpos -1106
   ypos 1002
  }
-push $N3204380
+push $N139d4000
  Dot {
   name Dot19
   xpos -886
   ypos 618
  }
-set N326a000 [stack 0]
+set N13a67c00 [stack 0]
  Group {
   name key_chew5
   help "======== KeyChew beta ========\n=============================\n\nThis is a port of the KeyChew macro for Shake to Nuke.\n\nThere might be tiny differences on the results given in both apps. Some of them are caused by the internal algorithms of each app, and others by the way I faked the JSplineV\nexpression of Shake in Nuke. If you know a better way to solve this, let\nme know!!\n\n=============================\n             2009 Cuco Bures\n============================="
@@ -3252,20 +2429,20 @@ set N326a000 [stack 0]
    name Input
    xpos 0
   }
-set N329dc00 [stack 0]
+set N13a67880 [stack 0]
   Dot {
    name Dot1
    xpos 366
    ypos 5
   }
-set N329d880 [stack 0]
-push $N329d880
+set N13a67500 [stack 0]
+push $N13a67500
   Invert {
    name Invert1
    xpos 177
    ypos 34
   }
-push $N329d880
+push $N13a67500
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3297,7 +2474,7 @@ push $N329d880
    addUserKnob {7 JSplineVFake}
    JSplineVFake {{curve i l 0.9958 k x5 0.95 0.8 x20 0.5 x40 0.3 x80 0.2 l x200 0.1}}
   }
-set N329c700 [stack 0]
+set N13a66380 [stack 0]
   Merge2 {
    inputs 2
    operation minus
@@ -3305,7 +2482,7 @@ set N329c700 [stack 0]
    xpos 332
    ypos 218
   }
-push $N329c700
+push $N13a66380
   Switch {
    inputs 2
    which {{"\[value parent.chew]>=0?0:1"}}
@@ -3324,7 +2501,7 @@ push $N329c700
    xpos 177
    ypos 446
   }
-push $N329dc00
+push $N13a67880
   ShuffleCopy {
    inputs 2
    name ShuffleCopy1
@@ -3343,7 +2520,7 @@ push $N329dc00
    ypos 556
   }
  end_group
-push $N326a000
+push $N13a67c00
  Dissolve {
   inputs 2
   which {{Dissolve1.which}}
@@ -3397,7 +2574,7 @@ push $N326a000
   xpos -116
   ypos 1434
  }
-push $N3133500
+push $N13901180
  Dot {
   name Dot1
   xpos 874
@@ -3437,7 +2614,7 @@ push $N3133500
   addUserKnob {7 out l Size R 0 100}
   out 10
  }
-push $N3102e00
+push $N138d0a80
  Blur {
   channels alpha
   size 5
@@ -3445,937 +2622,6 @@ push $N3102e00
   tile_color 0x666666ff
   xpos -260
   ypos 656
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Color_Flicker
- tile_color 0xffbf00ff
- selected true
- xpos 400
- ypos -82
- addUserKnob {20 User l "Color Flicker"}
- addUserKnob {26 wa_co l "<font color=yellow size=\"4\"><b>Wave Control</b></font>"}
- addUserKnob {41 freq l "Wave Length " T proxy.freq}
- addUserKnob {41 maxVal l Max T proxy.maxVal}
- addUserKnob {41 minVal l Min T proxy.minVal}
- addUserKnob {41 offset l Offset T proxy.offset}
- addUserKnob {26 clamp l "<font color=yellow size=\"4\"><b>Clamp"}
- addUserKnob {41 minimum l Minimum T Clamp_red.minimum}
- addUserKnob {41 maximum l Maximum T Clamp_red.maximum}
- addUserKnob {26 mix_4 l "<font color=yellow size=\"4\"><b>Mix "}
- addUserKnob {41 mix_1 l "Red mix" T Copy_RED.mix}
- addUserKnob {41 mix_2 l "Green Mix" T Copy_GREEN.mix}
- addUserKnob {41 mix_3 l "Blue Mix" T Copy_BLUE.mix}
- addUserKnob {41 which l Mix T Dissolve1.which}
- addUserKnob {26 ""}
- addUserKnob {22 tut1 l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/color-flicker')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Color Flicker© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode7
-  tile_color 0x181818ff
-  label "<center><font color=red>\nRED\nrandom((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=green>\nGREEN\nrandom((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=blue>\nBLUE\nrandom((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"
-  note_font_size 42
-  xpos -328
-  ypos -113
-  bdwidth 1537
-  bdheight 658
- }
- Input {
-  inputs 0
-  name Mask
-  xpos -1470
-  ypos 135
-  number 1
- }
- Input {
-  inputs 0
-  name Input
-  xpos -1030
-  ypos -57
- }
- Dot {
-  name Dot1
-  xpos -996
-  ypos 66
- }
-set N2fc5c00 [stack 0]
- Expression {
-  channel3 alpha
-  expr3 1
-  name Expression
-  xpos -1250
-  ypos 63
- }
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge
-  tile_color 0xff
-  xpos -1250
-  ypos 123
-  disable {{"!\[exists parent.input1]"}}
- }
-set N2fc5180 [stack 0]
- Dot {
-  name Dot2
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1216
-  ypos 378
- }
-push $N2fc5180
-push $N2fc5c00
- Dot {
-  name Dot3
-  xpos -666
-  ypos 66
- }
-set N2fc4a80 [stack 0]
- Grade {
-  multiply {{"random((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"}}
-  name Grade_B
-  xpos -700
-  ypos 279
- }
- Clamp {
-  channels rgb
-  minimum {{Clamp_red.minimum}}
-  maximum {{Clamp_red.maximum}}
-  mix {{Grade_RED.mix}}
-  name Clamp_blue
-  tile_color 0x777777ff
-  xpos -920
-  ypos 279
- }
-push $N2fc5180
-push $N2fc4a80
- Grade {
-  multiply {{"random((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
-  name Grade_G
-  xpos -700
-  ypos 207
- }
- Clamp {
-  channels rgb
-  minimum {{Clamp_red.minimum}}
-  maximum {{Clamp_red.maximum}}
-  mix {{Grade_RED.mix}}
-  name Clamp_green
-  tile_color 0x777777ff
-  xpos -920
-  ypos 207
- }
-push $N2fc5180
-push $N2fc4a80
- Grade {
-  multiply {{"random((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
-  name Grade_R
-  xpos -700
-  ypos 135
- }
- Clamp {
-  channels rgb
-  mix {{Grade_RED.mix}}
-  name Clamp_red
-  tile_color 0x777777ff
-  xpos -920
-  ypos 135
- }
-push $N2fc5c00
- Copy {
-  inputs 2+1
-  from0 rgba.red
-  to0 rgba.red
-  name Copy_RED
-  tile_color 0xff0000ff
-  xpos -1030
-  ypos 129
-  disable {{"!\[exists parent.input0]"}}
- }
- Copy {
-  inputs 2+1
-  from0 rgba.green
-  to0 rgba.green
-  name Copy_GREEN
-  tile_color 0x1fff00ff
-  xpos -1030
-  ypos 201
-  disable {{"!\[exists parent.input0]"}}
- }
- Copy {
-  inputs 2+1
-  from0 rgba.blue
-  to0 rgba.blue
-  name Copy_BLUE
-  tile_color 0x3fffff
-  xpos -1030
-  ypos 273
-  disable {{"!\[exists parent.input0]"}}
- }
-push $N2fc5c00
- Dissolve {
-  inputs 2+1
-  which 1
-  name Dissolve1
-  label "Which: \[value which]"
-  xpos -1030
-  ypos 363
- }
- Output {
-  name Output1
-  xpos -1030
-  ypos 543
- }
- NoOp {
-  inputs 0
-  name proxy
-  tile_color 0xff
-  selected true
-  xpos -480
-  ypos 207
-  addUserKnob {20 User}
-  addUserKnob {7 freq l Frequency R 0 10}
-  freq 2
-  addUserKnob {7 offset l Offset R 0 100}
-  addUserKnob {7 maxVal l Max R 0 20}
-  maxVal 3
-  addUserKnob {7 minVal l Min R 0 20}
-  minVal 1
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Liquid_Distortion
- tile_color 0x55ffbfff
- selected true
- xpos 620
- ypos -82
- addUserKnob {20 User l Liquid}
- addUserKnob {7 contrast_liq l Contrast R 1 4}
- contrast_liq 3
- addUserKnob {41 scale1 l Scale T CONTROL.scale1}
- addUserKnob {7 speed_liq l Speed R 1 100}
- speed_liq 50
- addUserKnob {41 slid_03 l Offset T CONTROL.slid_03}
- addUserKnob {41 size l Blur T Blur_liq.size}
- addUserKnob {6 crop l Crop +STARTLINE}
- crop true
- addUserKnob {26 ""}
- addUserKnob {7 mix l Mix}
- mix 0.5
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/liquid-distortion')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 credit l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Liquid Distortion© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name mask
-  xpos -260
-  ypos -202
-  number 1
- }
- Input {
-  inputs 0
-  name Input
-  xpos 400
-  ypos -514
- }
- Dot {
-  name Dot18
-  xpos 434
-  ypos -270
- }
-set N2f33880 [stack 0]
- Dot {
-  name Dot12
-  xpos 214
-  ypos -270
- }
-set N2f33500 [stack 0]
- Dot {
-  name Dot17
-  xpos 214
-  ypos -438
- }
- Dot {
-  name Dot2
-  xpos -6
-  ypos -438
- }
-set N2f32e00 [stack 0]
- Shuffle {
-  red black
-  green black
-  blue black
-  alpha white
-  name Shuffle1
-  xpos -40
-  ypos -298
- }
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge1
-  xpos -40
-  ypos -215
-  disable {{"!\[exists parent.input1]"}}
- }
-push $N2f32e00
- Expression {
-  temp_name0 seed
-  temp_expr0 "\[ regexp -inline \{\\d+\}  \[knob name] ]"
-  temp_name1 scale
-  temp_expr1 CONTROL.slid_02*random(seed*2)
-  temp_name2 offset
-  temp_expr2 random(seed)*CONTROL.slid_03
-  expr0 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
-  expr1 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
-  expr2 0
-  name ELEMENTS_liq
-  xpos -590
-  ypos -442
- }
- ColorCorrect {
-  contrast {{contrast_liq}}
-  shadows 0
-  name ColorCorrect_liq
-  xpos -590
-  ypos -346
- }
- Dot {
-  name Dot13
-  xpos -556
-  ypos -294
- }
-set N2f55880 [stack 0]
- TimeOffset {
-  time_offset 2
-  time ""
-  name TimeOffset_to_red
-  xpos -700
-  ypos -298
- }
-push $N2f55880
- Copy {
-  inputs 2
-  from0 rgba.red
-  to0 rgba.red
-  name Copy3
-  xpos -590
-  ypos -232
- }
- Dot {
-  name Dot14
-  xpos -556
-  ypos -150
- }
-set N2f55180 [stack 0]
- TimeOffset {
-  time_offset {{-TimeOffset_to_red.time_offset}}
-  time ""
-  name TimeOffset_to_green
-  xpos -700
-  ypos -154
- }
-push $N2f55180
- Copy {
-  inputs 2
-  from0 rgba.green
-  to0 rgba.green
-  name Copy4
-  xpos -590
-  ypos -88
- }
- Blur {
-  channels rgb
-  size 30
-  name Blur_liq
-  xpos -370
-  ypos -82
- }
- Merge2 {
-  inputs 2
-  operation mask
-  name Merge1
-  xpos -40
-  ypos -82
- }
-push $N2f33500
- Expression {
-  expr0 (x+0.5)/width
-  expr1 (y+0.5)/height
-  name Expression_STmap
-  xpos 180
-  ypos -178
- }
- Merge2 {
-  inputs 2
-  mix {{(parent.mix)/100 x1005 0.1}}
-  name Merge_dist_to_st
-  xpos 180
-  ypos -82
- }
- Dot {
-  name Dot1
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos 214
-  ypos -6
- }
-push $N2f33880
- STMap {
-  inputs 2
-  uv rgb
-  name STMap_liq
-  xpos 400
-  ypos -16
- }
- Crop {
-  box {{input.format.x} {input.format.y} {input.width} {input.height}}
-  name Crop_liq
-  xpos 400
-  ypos 62
-  disable {{!parent.crop}}
- }
- Output {
-  name Output
-  xpos 400
-  ypos 110
- }
- NoOp {
-  inputs 0
-  name CONTROL
-  tile_color 0x444444ff
-  note_font_size 30
-  xpos -590
-  ypos -523
-  addUserKnob {20 User}
-  addUserKnob {7 slid_01 l slider01_speed R 1 100}
-  slid_01 {{101-(speed_liq)}}
-  addUserKnob {7 slid_02 l slider02_scale R 0 100}
-  slid_02 {{100-scale1}}
-  addUserKnob {7 slid_03 l slider03_seed R 1 100}
-  slid_03 1
-  addUserKnob {7 scale1 l scale R 0 100}
-  scale1 50
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Render_Switch
- tile_color 0xbbbbbbff
- selected true
- xpos 400
- ypos 230
- addUserKnob {20 User}
- addUserKnob {26 info1 l "<font size=5><b>Switch this node"}
- addUserKnob {6 r_s_tick l "Show 1" +STARTLINE}
- addUserKnob {26 info2 l "<font size=5><b>Switch all nodes"}
- addUserKnob {22 control1 l "Set All 0" T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"r_s_tick\"].setValue(False)\n        except Exception:\n            pass\n" +STARTLINE}
- addUserKnob {22 control2 l "Set All 1" -STARTLINE T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"r_s_tick\"].setValue(True)\n        except Exception:\n            pass\n"}
- addUserKnob {26 ""}
- addUserKnob {26 info3 l "" +STARTLINE T "Recommended use:\n0 - Lighter nodes\n1 - Heavy nodes\n-------------------------\nThe nodes on 1 will be\n used in rendering."}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/render-switch')\n"}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 credit l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Render Switch© by Attila Gasparetz and Nicholas Zissimos - 2019</font>"}
-}
- Input {
-  inputs 0
-  name Input1
-  xpos 400
-  ypos 518
- }
-set N2f09500 [stack 0]
- Input {
-  inputs 0
-  name Input0
-  xpos 620
-  ypos 518
-  number 1
- }
- Switch {
-  inputs 2
-  which {{"\[python nuke.executing()]"}}
-  name Switch1
-  label "\[value which]"
-  xpos 620
-  ypos 632
- }
-set N2f08e00 [stack 0]
-push $N2f09500
-push $N2f08e00
- Switch {
-  inputs 2
-  which {{parent.r_s_tick}}
-  name Switch2
-  label "\[value which]"
-  xpos 400
-  ypos 632
- }
- Switch {
-  inputs 2
-  which {{"\[python nuke.executing()]"}}
-  name Switch3
-  label "\[value which]"
-  selected true
-  xpos 400
-  ypos 728
- }
- Output {
-  name Output1
-  xpos 400
-  ypos 830
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Switch_Highlight
- tile_color 0xffff00ff
- label "\[if \{\[numvalue this.which_highlight] == 0\} \{return \[value this.zero_is]\} else \{return \[value this.one_is]\}]\nGroup: \[value group_n]\n\[knob tile_color \[ expr \{ \[value which_highlight]? 16711935 : 4294902015 \}]]\n"
- note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
- note_font_size 13
- selected true
- xpos 620
- ypos 216
- addUserKnob {20 User}
- addUserKnob {41 which_highlight l which T Switch1.which}
- addUserKnob {26 ""}
- addUserKnob {1 zero_is l "0 is"}
- zero_is "on script"
- addUserKnob {1 one_is l "1 is"}
- one_is "on precomp"
- addUserKnob {26 ""}
- addUserKnob {1 group_n l Group}
- group_n "Light passes"
- addUserKnob {26 ""}
- addUserKnob {22 control1 l "Set All 0" T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(False)\n        except Exception:\n            pass\n" +STARTLINE}
- addUserKnob {22 control2 l "Set All 1" -STARTLINE T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(True)\n        except Exception:\n            pass\n"}
- addUserKnob {26 ""}
- addUserKnob {22 setgroup0 l "Set same group 0" T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(False)\n            else:\n                pass        \n        except Exception:\n            pass\n" +STARTLINE}
- addUserKnob {22 setgroup1 l "Set same group 1" -STARTLINE T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(True)\n            else:\n                pass        \n        except Exception:\n            pass\n"}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/switch-highlight')\n" +STARTLINE}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Switch_Highlight© by Attila Gasparetz</font>"}
-}
- Input {
-  inputs 0
-  name Input1
-  xpos 290
-  ypos 398
-  number 1
- }
- Input {
-  inputs 0
-  name Input0
-  xpos 510
-  ypos 398
- }
- Switch {
-  inputs 2
-  name Switch1
-  xpos 400
-  ypos 494
- }
- Output {
-  name Output1
-  xpos 400
-  ypos 590
- }
-end_group
-push $cut_paste_input
-Group {
- name GM_Channel_Puli
- tile_color 0xffae53ff
- selected true
- xpos 620
- ypos 470
- addUserKnob {20 tab1 l Settings}
- addUserKnob {26 info_title l Information}
- addUserKnob {26 info l "" +STARTLINE T "The node automacially sends the alpha\nvalue to the channel that is the input`s\nname and keeps the incoming alpha\nvalue on the alpha channel combined."}
- addUserKnob {26 adj_out l "Adjust RGBA "}
- addUserKnob {6 rem_alpha l "Remove Alpha" t "Allows you to remove the alpha value." +STARTLINE}
- addUserKnob {6 rem_a_r l "Remove Alpha from Red" t "Allows you to remove the alpha value from the outcome that comes in on the Red input. " +STARTLINE}
- addUserKnob {6 rem_a_g l "Remove Alpha from Green" t "Allows you to remove the alpha value from the outcome that comes in on the Green input. " +STARTLINE}
- addUserKnob {6 rem_a_b l "Remove Alpha from Blue" t "Allows you to remove the alpha value from the outcome that comes in on the Blue input. " +STARTLINE}
- addUserKnob {6 rem_rgb l "Remove RGB" t "Allows you to remove the rgb value." +STARTLINE}
- addUserKnob {6 shuff_a_rgb l "Shuffle Alpha to RGB" t "Allows you to shuffle alpha value to rgb." +STARTLINE}
- addUserKnob {26 cr_ch l "Create new channels"}
- addUserKnob {41 out l "Red to" t "Allows you to shuffle the `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r.out}
- addUserKnob {41 out_1 l "Green to" t "Allows you to shuffle the `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g.out}
- addUserKnob {41 out_2 l "Blue to" t "Allows you to shuffle the `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b.out}
- addUserKnob {41 out_3 l "Red Invert to" t "Allows you to shuffle the inverted `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r_inv.out}
- addUserKnob {41 out_4 l "Green Invert to " t "Allows you to shuffle the inverted `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g_inv.out}
- addUserKnob {41 out_5 l "Blue Invert to " t "Allows you to shuffle the inverted `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b_inv.out}
- addUserKnob {26 layer_cs l "Layer Contact Sheet"}
- addUserKnob {6 show_lcs l "Show in Layer Contact Sheet" t "Allows you to turn on the Layer Contact Sheet view." +STARTLINE}
- addUserKnob {41 showLayerNames l "Show Layer Names" t "Allows you to turn on the names of the layers." T LayerContactSheet.showLayerNames}
- addUserKnob {41 width l Resolution T LayerContactSheet.width}
- addUserKnob {41 height l "" -STARTLINE T LayerContactSheet.height}
- addUserKnob {26 ref_puli l "Crop / Reformat"}
- addUserKnob {6 crop_inpu l "Crop Inputs" t "Allows you to crop your inputs." +STARTLINE}
- addUserKnob {6 app_ref l "Apply Reformat" t "Allows you to reformat the output. " +STARTLINE}
- addUserKnob {41 format l "Output Format" T Reformat_c_p.format}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/channel-puli')\n"}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Channel Puli© by Attila Gasparetz</font>"}
-}
- BackdropNode {
-  inputs 0
-  name BackdropNode1
-  tile_color 0x777777ff
-  label <center>Inputs
-  note_font_size 42
-  xpos 127
-  ypos -734
-  bdwidth 406
-  bdheight 124
- }
- Input {
-  inputs 0
-  name Blue
-  tile_color 0x3fffff
-  xpos 400
-  ypos -658
- }
- Crop {
-  box {0 0 4096 2304}
-  crop false
-  name Crop
-  tile_color 0x888888ff
-  xpos 400
-  ypos -538
-  disable {{crop_inpu==0}}
- }
- set C285d880 [stack 0]
- Dot {
-  name Dot3
-  xpos 434
-  ypos -294
- }
-set N285d500 [stack 0]
- Dot {
-  name Dot6
-  xpos 434
-  ypos -78
- }
-set N285d180 [stack 0]
- Shuffle {
-  red black
-  green black
-  blue alpha
-  name Shuffle_b
-  tile_color 0x3fffff
-  label "\[value in 1]"
-  xpos 400
-  ypos 224
- }
-set N285ce00 [stack 0]
- Remove {
-  channels alpha
-  name Remove_a_b
-  tile_color 0x3fffff
-  xpos 400
-  ypos 272
-  disable {{"(parent.rem_a_b) == 0"}}
- }
-push 0
- Input {
-  inputs 0
-  name Green
-  tile_color 0x1fff00ff
-  xpos 290
-  ypos -658
-  number 1
- }
-clone $C285d880 {
-  xpos 290
-  ypos -538
-  selected false
- }
- Dot {
-  name Dot2
-  xpos 324
-  ypos -342
- }
-set N285c000 [stack 0]
- Dot {
-  name Dot5
-  xpos 324
-  ypos -126
- }
-set N287fc00 [stack 0]
- Shuffle {
-  red black
-  green alpha
-  blue black
-  name Shuffle_g
-  tile_color 0x1fff00ff
-  label "\[value in 1]"
-  xpos 290
-  ypos 152
- }
-set N287f880 [stack 0]
- Remove {
-  channels alpha
-  name Remove_a_g
-  tile_color 0x1fff00ff
-  xpos 290
-  ypos 272
-  disable {{"(parent.rem_a_g) == 0"}}
- }
- Input {
-  inputs 0
-  name Red
-  tile_color 0xff0000ff
-  xpos 180
-  ypos -658
-  number 2
- }
-clone $C285d880 {
-  xpos 180
-  ypos -538
-  selected false
- }
- Dot {
-  name Dot1
-  xpos 214
-  ypos -390
- }
-set N287ea80 [stack 0]
- Dot {
-  name Dot4
-  xpos 214
-  ypos -174
- }
-set N287e700 [stack 0]
- Shuffle {
-  red alpha
-  green black
-  blue black
-  name Shuffle_r
-  tile_color 0xff0000ff
-  label "\[value in 1]"
-  xpos 180
-  ypos 80
- }
-set N287e380 [stack 0]
- Remove {
-  channels alpha
-  name Remove_a_r
-  tile_color 0xff0000ff
-  xpos 180
-  ypos 272
-  disable {{"(parent.rem_a_r) == 0"}}
- }
- Merge2 {
-  inputs 3+1
-  operation max
-  name Merge_channel
-  tile_color 0x777777ff
-  label "\[value operation]"
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
-  xpos 290
-  ypos 440
- }
-push $N285ce00
-push $N287f880
-push $N287e380
-push $N285d180
- Invert {
-  name Invert_b
-  tile_color 0x777777ff
-  xpos 620
-  ypos -88
- }
-push $N287fc00
- Invert {
-  name Invert_g
-  tile_color 0x777777ff
-  xpos 620
-  ypos -136
- }
-push $N287e700
- Invert {
-  name Invert_r
-  tile_color 0x777777ff
-  xpos 620
-  ypos -184
- }
-push $N285d500
-push $N285c000
-push $N287ea80
- Constant {
-  inputs 0
-  channels rgb
-  name base
-  xpos 840
-  ypos -658
-  postage_stamp false
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_r
-  tile_color 0xff0000ff
-  label "\[value out]"
-  xpos 840
-  ypos -400
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_g
-  tile_color 0x1fff00ff
-  label "\[value out]"
-  xpos 840
-  ypos -352
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_b
-  tile_color 0x3fffff
-  label "\[value out]"
-  note_font Verdana
-  xpos 840
-  ypos -304
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_r_inv
-  tile_color 0xff0000ff
-  label "\[value out]"
-  xpos 840
-  ypos -184
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_g_inv
-  tile_color 0x1fff00ff
-  label "\[value out]"
-  xpos 840
-  ypos -136
- }
- ShuffleCopy {
-  inputs 2
-  red alpha
-  green alpha
-  blue alpha
-  name ShuffleCopy_b_inv
-  tile_color 0x3fffff
-  label "\[value out]"
-  note_font Verdana
-  xpos 840
-  ypos -88
- }
- Copy {
-  inputs 2
-  from0 rgba.red
-  to0 rgba.red
-  name Copy_r
-  tile_color 0xff0000ff
-  xpos 840
-  ypos 80
- }
- Copy {
-  inputs 2
-  from0 rgba.green
-  to0 rgba.green
-  name Copy_g
-  tile_color 0x1fff00ff
-  xpos 840
-  ypos 152
- }
- Copy {
-  inputs 2
-  from0 rgba.blue
-  to0 rgba.blue
-  name Copy_b
-  tile_color 0x3fffff
-  xpos 840
-  ypos 224
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.alpha
-  name Copy4
-  tile_color 0xaaaaaaff
-  xpos 840
-  ypos 440
- }
- Remove {
-  channels alpha
-  name Remove_a
-  tile_color 0xaaaaaaff
-  xpos 840
-  ypos 536
-  disable {{"(parent.rem_alpha) == 0"}}
- }
- Remove {
-  channels rgb
-  name Remove_rgb
-  tile_color 0xaaaaaaff
-  label "\[value channels]"
-  xpos 840
-  ypos 608
-  disable {{"(parent.rem_rgb) == 0"}}
- }
- Shuffle {
-  red alpha
-  green alpha
-  blue alpha
-  name Shuffle_a_rgb
-  tile_color 0x666666ff
-  label "\[value in 1]"
-  xpos 840
-  ypos 680
-  disable {{"(parent.shuff_a_rgb) == 0"}}
- }
- Reformat {
-  name Reformat_c_p
-  tile_color 0x888888ff
-  xpos 840
-  ypos 752
-  disable {{"(parent.app_ref) ==0"}}
- }
- LayerContactSheet {
-  name LayerContactSheet
-  xpos 840
-  ypos 830
-  disable {{"(parent.show_lcs) == 0" x1024 1}}
- }
- Output {
-  name Output1
-  xpos 840
-  ypos 902
  }
 end_group
 push $cut_paste_input
@@ -4547,62 +2793,62 @@ Group {
   xpos 764
   ypos -534
  }
-set N2944a80 [stack 0]
+set N13b4aa80 [stack 0]
  Crop {
   box {0 0 {width} {height}}
   name Crop1
   xpos 2600
   ypos -538
  }
- set C2944700 [stack 0]
+ set C13b4a700 [stack 0]
  Dot {
   name Dot16
   xpos 3074
   ypos -534
  }
-set N2944380 [stack 0]
+set N13b4a380 [stack 0]
  Dot {
   name Dot20
   xpos 3734
   ypos -534
  }
-set N2944000 [stack 0]
+set N13b4a000 [stack 0]
  Dot {
   name Dot23
   xpos 4394
   ypos -534
  }
-set N2961c00 [stack 0]
+set N13b67c00 [stack 0]
  Dot {
   name Dot29
   xpos 4944
   ypos -534
  }
-set N2961880 [stack 0]
+set N13b67880 [stack 0]
  Dot {
   name Dot34
   xpos 5604
   ypos -534
  }
-set N2961500 [stack 0]
+set N13b67500 [stack 0]
  Dot {
   name Dot43
   xpos 6264
   ypos -534
  }
-set N2961180 [stack 0]
+set N13b67180 [stack 0]
  Dot {
   name Dot35
   xpos 7034
   ypos -534
  }
-set N2960e00 [stack 0]
+set N13b66e00 [stack 0]
  Dot {
   name Dot51
   xpos 7694
   ypos -534
  }
-set N2960a80 [stack 0]
+set N13b66a80 [stack 0]
  Dot {
   name Dot41
   xpos 8354
@@ -4656,8 +2902,8 @@ set N2960a80 [stack 0]
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N2985c00 [stack 0]
-push $N2985c00
+set N13b8dc00 [stack 0]
+push $N13b8dc00
  Dilate {
   channels mask
   size 8
@@ -4674,7 +2920,7 @@ push $N2985c00
   xpos 8210
   ypos 1040
  }
-push $N2985c00
+push $N13b8dc00
  Multiply {
   inputs 1+1
   value 0
@@ -4690,13 +2936,13 @@ push $N2985c00
   xpos 8320
   ypos 1214
  }
- set C2984a80 [stack 0]
+ set C13b8ca80 [stack 0]
  Dot {
   name Dot42
   xpos 8354
   ypos 1458
  }
-push $N2960a80
+push $N13b66a80
  Grade {
   channels alpha
   gamma 1e-06
@@ -4745,8 +2991,8 @@ push $N2960a80
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N29bfc00 [stack 0]
-push $N29bfc00
+set N13bc9c00 [stack 0]
+push $N13bc9c00
  Dilate {
   channels mask
   size 8
@@ -4763,7 +3009,7 @@ push $N29bfc00
   xpos 7550
   ypos 1040
  }
-push $N29bfc00
+push $N13bc9c00
  Multiply {
   inputs 1+1
   value 0
@@ -4773,7 +3019,7 @@ push $N29bfc00
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 7660
   ypos 1214
   selected false
@@ -4783,7 +3029,7 @@ clone $C2984a80 {
   xpos 7694
   ypos 1458
  }
-push $N2960e00
+push $N13b66e00
  Shuffle {
   red alpha
   green alpha
@@ -4825,8 +3071,8 @@ push $N2960e00
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N29be000 [stack 0]
-push $N29be000
+set N13bc8000 [stack 0]
+push $N13bc8000
  Dilate {
   channels mask
   size 8
@@ -4843,7 +3089,7 @@ push $N29be000
   xpos 6890
   ypos 1040
  }
-push $N29be000
+push $N13bc8000
  Multiply {
   inputs 1+1
   value 0
@@ -4853,7 +3099,7 @@ push $N29be000
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 7000
   ypos 1214
   selected false
@@ -4863,7 +3109,7 @@ clone $C2984a80 {
   xpos 7034
   ypos 1458
  }
-push $N2961180
+push $N13b67180
  Grade {
   channels alpha
   blackpoint 0.1
@@ -4877,7 +3123,7 @@ push $N2961180
   xpos 6264
   ypos 66
  }
-set N2a02380 [stack 0]
+set N13c0a380 [stack 0]
  Dot {
   name Dot49
   xpos 6154
@@ -4888,7 +3134,7 @@ set N2a02380 [stack 0]
   name FilterErode6
   tile_color 0x6aff55ff
   label IN
-  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 12
   xpos 6120
   ypos 96
@@ -4906,7 +3152,7 @@ set N2a02380 [stack 0]
   xpos 6154
   ypos 234
  }
-push $N2a02380
+push $N13c0a380
  Dot {
   name Dot53
   xpos 6374
@@ -4917,7 +3163,7 @@ push $N2a02380
   name FilterErode7
   tile_color 0xff5594ff
   label OUT
-  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 12
   xpos 6340
   ypos 96
@@ -4942,13 +3188,13 @@ push $N2a02380
   xpos 6230
   ypos 217
  }
-set N2a36380 [stack 0]
+set N13c42380 [stack 0]
  Dot {
   name Dot64
   xpos 6264
   ypos 282
  }
-set N2a36000 [stack 0]
+set N13c42000 [stack 0]
  Dot {
   name Dot65
   xpos 6044
@@ -4959,7 +3205,7 @@ set N2a36000 [stack 0]
   xpos 6044
   ypos 522
  }
-push $N2a36000
+push $N13c42000
  Constant {
   inputs 0
   channels rgb
@@ -5010,7 +3256,7 @@ push $N2a36000
   xpos 4800
   ypos -897
  }
-set N2a64700 [stack 0]
+set N13c6e700 [stack 0]
  Switch {
   inputs 5
   which {{parent.over_color}}
@@ -5018,7 +3264,7 @@ set N2a64700 [stack 0]
   xpos 5020
   ypos -682
  }
-set N2a64380 [stack 0]
+set N13c6e380 [stack 0]
  Dot {
   name Dot55
   label " RED"
@@ -5027,14 +3273,14 @@ set N2a64380 [stack 0]
   ypos 330
   hide_input true
  }
-set N2a64000 [stack 0]
-push $N2a36380
+set N13c6e000 [stack 0]
+push $N13c42380
  Invert {
   name Invert7
   xpos 6340
   ypos 272
  }
-push $N2a64000
+push $N13c6e000
  Invert {
   name Invert6
   xpos 6340
@@ -5051,8 +3297,8 @@ push $N2a64000
   xpos 434
   ypos -342
  }
-set N2a8b180 [stack 0]
-clone $C2944700 {
+set N13c97180 [stack 0]
+clone $C13b4a700 {
   xpos 2600
   ypos -346
   selected false
@@ -5062,31 +3308,31 @@ clone $C2944700 {
   xpos 2854
   ypos -342
  }
-set N2a8aa80 [stack 0]
+set N13c96a80 [stack 0]
  Dot {
   name Dot21
   xpos 3624
   ypos -342
  }
-set N2a8a700 [stack 0]
+set N13c96700 [stack 0]
  Dot {
   name Dot24
   xpos 4284
   ypos -342
  }
-set N2a8a380 [stack 0]
+set N13c96380 [stack 0]
  Dot {
   name Dot31
   xpos 4834
   ypos -342
  }
-set N2a8a000 [stack 0]
+set N13c96000 [stack 0]
  Dot {
   name Dot36
   xpos 5714
   ypos -342
  }
-set N2aafc00 [stack 0]
+set N13cb9c00 [stack 0]
  Dot {
   name Dot44
   xpos 6484
@@ -5111,7 +3357,7 @@ set N2aafc00 [stack 0]
   xpos 6230
   ypos 416
  }
- set C2aaee00 [stack 0]
+ set C13cb8e00 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -5152,8 +3398,8 @@ set N2aafc00 [stack 0]
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N2aae700 [stack 0]
-push $N2aae700
+set N13cb8700 [stack 0]
+push $N13cb8700
  Dilate {
   channels mask
   size 8
@@ -5170,7 +3416,7 @@ push $N2aae700
   xpos 6120
   ypos 1040
  }
-push $N2aae700
+push $N13cb8700
  Multiply {
   inputs 1+1
   value 0
@@ -5180,7 +3426,7 @@ push $N2aae700
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 6230
   ypos 1214
   selected false
@@ -5190,22 +3436,22 @@ clone $C2984a80 {
   xpos 6264
   ypos 1434
  }
-push $N2961880
-push $N2961880
-push $N2a64380
+push $N13b67880
+push $N13b67880
+push $N13c6e380
  Dot {
   name Dot30
   xpos 5054
   ypos 426
  }
-set N2ae0e00 [stack 0]
-push $N2a8a000
+set N13ceae00 [stack 0]
+push $N13c96000
  Dot {
   name Dot32
   xpos 4834
   ypos 426
  }
-clone $C2aaee00 {
+clone $C13cb8e00 {
   inputs 3
   xpos 4910
   ypos 416
@@ -5250,8 +3496,8 @@ clone $C2aaee00 {
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N2ae0000 [stack 0]
-push $N2ae0000
+set N13cea000 [stack 0]
+push $N13cea000
  Dilate {
   channels mask
   size 8
@@ -5268,7 +3514,7 @@ push $N2ae0000
   xpos 4800
   ypos 1040
  }
-push $N2ae0000
+push $N13cea000
  Multiply {
   inputs 1+1
   value 0
@@ -5278,7 +3524,7 @@ push $N2ae0000
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 4910
   ypos 1214
   selected false
@@ -5288,22 +3534,22 @@ clone $C2984a80 {
   xpos 4944
   ypos 1434
  }
-push $N2961500
+push $N13b67500
  Invert {
   name Invert5
   xpos 5570
   ypos 248
  }
-set N2b16700 [stack 0]
-push $N2b16700
-push $N2ae0e00
-push $N2aafc00
+set N13d1e700 [stack 0]
+push $N13d1e700
+push $N13ceae00
+push $N13cb9c00
  Dot {
   name Dot37
   xpos 5714
   ypos 426
  }
-clone $C2aaee00 {
+clone $C13cb8e00 {
   inputs 3
   xpos 5570
   ypos 416
@@ -5349,8 +3595,8 @@ clone $C2aaee00 {
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N2b4d880 [stack 0]
-push $N2b4d880
+set N13d55880 [stack 0]
+push $N13d55880
  Dilate {
   channels mask
   size 8
@@ -5367,7 +3613,7 @@ push $N2b4d880
   xpos 5460
   ypos 1040
  }
-push $N2b4d880
+push $N13d55880
  Multiply {
   inputs 1+1
   value 0
@@ -5377,7 +3623,7 @@ push $N2b4d880
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 5570
   ypos 1214
   selected false
@@ -5387,7 +3633,7 @@ clone $C2984a80 {
   xpos 5604
   ypos 1434
  }
-push $N2961c00
+push $N13b67c00
  Grade {
   channels alpha
   gamma 10
@@ -5395,7 +3641,7 @@ push $N2961c00
   xpos 4360
   ypos 200
  }
-push $N2a8a380
+push $N13c96380
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -5458,7 +3704,7 @@ push $N2a8a380
   xpos 3514
   ypos 378
  }
-set N2b8c380 [stack 0]
+set N13d96380 [stack 0]
  Dot {
   name Dot25
   xpos 4174
@@ -5502,8 +3748,8 @@ set N2b8c380 [stack 0]
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N2bb9880 [stack 0]
-push $N2bb9880
+set N13dc5880 [stack 0]
+push $N13dc5880
  Dilate {
   channels mask
   size 8
@@ -5520,7 +3766,7 @@ push $N2bb9880
   xpos 4030
   ypos 1040
  }
-push $N2bb9880
+push $N13dc5880
  Multiply {
   inputs 1+1
   value 0
@@ -5530,7 +3776,7 @@ push $N2bb9880
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 4140
   ypos 1214
   selected false
@@ -5540,7 +3786,7 @@ clone $C2984a80 {
   xpos 4174
   ypos 1410
  }
-push $N2944000
+push $N13b4a000
  Grade {
   channels alpha
   gamma 1e-06
@@ -5548,7 +3794,7 @@ push $N2944000
   xpos 3700
   ypos 224
  }
-push $N2a8a700
+push $N13c96700
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -5562,7 +3808,7 @@ push $N2a8a700
   xpos 3590
   ypos 446
  }
-push $N2b8c380
+push $N13d96380
  Merge2 {
   inputs 2
   name Merge10
@@ -5601,8 +3847,8 @@ push $N2b8c380
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-set N2bf7180 [stack 0]
-push $N2bf7180
+set N13e05180 [stack 0]
+push $N13e05180
  Dilate {
   channels mask
   size 8
@@ -5619,7 +3865,7 @@ push $N2bf7180
   xpos 3370
   ypos 1040
  }
-push $N2bf7180
+push $N13e05180
  Multiply {
   inputs 1+1
   value 0
@@ -5629,7 +3875,7 @@ push $N2bf7180
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0"}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 3480
   ypos 1214
   selected false
@@ -5639,20 +3885,20 @@ clone $C2984a80 {
   xpos 3514
   ypos 1410
  }
-push $N2944380
+push $N13b4a380
  Dot {
   name Dot18
   xpos 3074
   ypos 450
  }
-set N2c3b880 [stack 0]
+set N13e45880 [stack 0]
  Clamp {
   channels alpha
   name Clamp4
   xpos 3150
   ypos 440
  }
-push $N2c3b880
+push $N13e45880
  Merge2 {
   inputs 2
   operation difference
@@ -5672,7 +3918,7 @@ push $N2c3b880
   xpos 3040
   ypos 710
  }
-push $N2a64700
+push $N13c6e700
  Dot {
   name Dot19
   label " RED"
@@ -5681,7 +3927,7 @@ push $N2a64700
   ypos 354
   hide_input true
  }
-set N2c3a380 [stack 0]
+set N13e44380 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -5695,13 +3941,13 @@ set N2c3a380 [stack 0]
   xpos 2930
   ypos 782
  }
-push $N2c3a380
+push $N13e44380
  Invert {
   name Invert4
   xpos 2930
   ypos 488
  }
-push $N2a8aa80
+push $N13c96a80
  Merge2 {
   inputs 2
   name Merge8
@@ -5753,8 +3999,8 @@ push $N2a8aa80
   ypos 944
   disable {{"parent.contact_labels== 0 ? 1 : 0" x1018 1}}
  }
-set N2c6ea80 [stack 0]
-push $N2c6ea80
+set N13e78a80 [stack 0]
+push $N13e78a80
  Dilate {
   channels mask
   size 8
@@ -5771,7 +4017,7 @@ push $N2c6ea80
   xpos 2710
   ypos 1040
  }
-push $N2c6ea80
+push $N13e78a80
  Multiply {
   inputs 1+1
   value 0
@@ -5781,7 +4027,7 @@ push $N2c6ea80
   ypos 1040
   disable {{"parent.contact_labels== 0 ? 1 : 0" x1001 0}}
  }
-clone $C2984a80 {
+clone $C13b8ca80 {
   xpos 2820
   ypos 1214
   selected false
@@ -5818,25 +4064,25 @@ clone $C2984a80 {
   xpos 4470
   ypos 2318
  }
-push $N2944a80
+push $N13b4aa80
  Dot {
   name Dot1
   xpos 764
   ypos 162
  }
-set N2cae700 [stack 0]
+set N13eb6700 [stack 0]
  Dot {
   name Dot2
   xpos 874
   ypos 162
  }
-set N2cae380 [stack 0]
+set N13eb6380 [stack 0]
  Dot {
   name Dot3
   xpos 984
   ypos 162
  }
-set N2cae000 [stack 0]
+set N13eb6000 [stack 0]
  Grade {
   channels alpha
   gamma 10
@@ -5844,7 +4090,7 @@ set N2cae000 [stack 0]
   xpos 950
   ypos 200
  }
-push $N2cae380
+push $N13eb6380
  Grade {
   channels alpha
   gamma 1e-06
@@ -5852,7 +4098,7 @@ push $N2cae380
   xpos 840
   ypos 200
  }
-push $N2cae700
+push $N13eb6700
  Switch {
   inputs 3
   which {{parent.checker_1}}
@@ -5877,13 +4123,13 @@ push $N2cae700
   xpos 510
   ypos 632
  }
-push $N2a8b180
+push $N13c97180
  Dot {
   name Dot11
   xpos 434
   ypos 498
  }
-set N2cdc700 [stack 0]
+set N13ee2700 [stack 0]
  ColorCorrect {
   shadows 0
   midtones 0
@@ -5902,7 +4148,7 @@ set N2cdc700 [stack 0]
  }
  Reformat {
   name Reformat_MAIN
-  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
   note_font_size 21
   xpos 400
   ypos 950
@@ -5912,7 +4158,7 @@ set N2cdc700 [stack 0]
   xpos 434
   ypos 1050
  }
-set N2d27880 [stack 0]
+set N13f33880 [stack 0]
  Dot {
   name Dot4
   xpos 434
@@ -5928,32 +4174,32 @@ set N2d27880 [stack 0]
   xpos 510
   ypos 1520
  }
-set N2d27180 [stack 0]
-push $N2d27880
+set N13f33180 [stack 0]
+push $N13f33880
  Dot {
   name Dot39
   xpos 544
   ypos 1050
  }
-set N2d26e00 [stack 0]
+set N13f32e00 [stack 0]
  Premult {
   name Premult2
   xpos 620
   ypos 1046
  }
-set N2d26a80 [stack 0]
+set N13f32a80 [stack 0]
  Dot {
   name Dot7
   xpos 654
   ypos 1098
  }
-set N2d26700 [stack 0]
+set N13f32700 [stack 0]
  Dot {
   name Dot13
   xpos 654
   ypos 1146
  }
-set N2d26380 [stack 0]
+set N13f32380 [stack 0]
  Dot {
   name Dot12
   xpos 654
@@ -5973,7 +4219,7 @@ set N2d26380 [stack 0]
   xpos 1060
   ypos 1190
  }
-push $N2d26380
+push $N13f32380
  Constant {
   inputs 0
   channels rgb
@@ -5990,7 +4236,7 @@ push $N2d26380
   xpos 950
   ypos 1142
  }
-push $N2d26700
+push $N13f32700
  Constant {
   inputs 0
   channels rgb
@@ -6007,7 +4253,7 @@ push $N2d26700
   xpos 840
   ypos 1094
  }
-push $N2d26a80
+push $N13f32a80
  Constant {
   inputs 0
   channels rgb
@@ -6023,7 +4269,7 @@ push $N2d26a80
   xpos 730
   ypos 1046
  }
-push $N2d27880
+push $N13f33880
  Constant {
   inputs 0
   channels rgb
@@ -6081,7 +4327,7 @@ push $N2d27880
   xpos -40
   ypos 1406
  }
-push $N2d26e00
+push $N13f32e00
  Keymix {
   inputs 3
   mix 0.2
@@ -6096,7 +4342,7 @@ push $N2d26e00
   xpos 730
   ypos 1406
  }
-set N2e7c700 [stack 0]
+set N13f8a700 [stack 0]
  Dot {
   name Dot10
   xpos 874
@@ -6107,8 +4353,8 @@ set N2e7c700 [stack 0]
   xpos 874
   ypos 1626
  }
-push $N2d27180
-push $N2cae000
+push $N13f33180
+push $N13eb6000
  Dot {
   name Dot6
   xpos 1864
@@ -6119,14 +4365,14 @@ push $N2cae000
   xpos 1864
   ypos 930
  }
-set N2ea7880 [stack 0]
+set N13fb5880 [stack 0]
  Clamp {
   channels alpha
   name Clamp1
   xpos 1940
   ypos 920
  }
-push $N2ea7880
+push $N13fb5880
  Merge2 {
   inputs 2
   operation difference
@@ -6160,7 +4406,7 @@ push $N2ea7880
   xpos 1754
   ypos 978
  }
-set N2ea6000 [stack 0]
+set N13fb4000 [stack 0]
  Copy {
   inputs 2
   from0 rgba.alpha
@@ -6174,13 +4420,13 @@ set N2ea6000 [stack 0]
   xpos 1720
   ypos 1550
  }
-push $N2ea6000
+push $N13fb4000
  Invert {
   name Invert3
   xpos 1610
   ypos 968
  }
-push $N2cdc700
+push $N13ee2700
  Dot {
   name Dot8
   xpos 1424
@@ -6198,7 +4444,7 @@ push $N2cdc700
   xpos 1390
   ypos 1550
  }
-push $N2e7c700
+push $N13f8a700
  Keymix {
   inputs 3
   name Keymix1
@@ -6234,441 +4480,386 @@ push $N2e7c700
  }
 end_group
 push $cut_paste_input
-push 0
 Group {
- inputs 2
- name GM_TransformColorTexture
- tile_color 0xaa55ffff
+ name GM_Channel_Puli
+ tile_color 0xffae53ff
  selected true
- xpos 510
- ypos 728
- addUserKnob {20 User}
- addUserKnob {4 output l Options M {Texture Color Both "" "" "" "" "" "" "" ""}}
- output Both
+ xpos 620
+ ypos 470
+ addUserKnob {20 tab1 l Settings}
+ addUserKnob {26 info_title l Information}
+ addUserKnob {26 info l "" +STARTLINE T "The node automacially sends the alpha\nvalue to the channel that is the input`s\nname and keeps the incoming alpha\nvalue on the alpha channel combined."}
+ addUserKnob {26 adj_out l "Adjust RGBA "}
+ addUserKnob {6 rem_alpha l "Remove Alpha" t "Allows you to remove the alpha value." +STARTLINE}
+ addUserKnob {6 rem_a_r l "Remove Alpha from Red" t "Allows you to remove the alpha value from the outcome that comes in on the Red input. " +STARTLINE}
+ addUserKnob {6 rem_a_g l "Remove Alpha from Green" t "Allows you to remove the alpha value from the outcome that comes in on the Green input. " +STARTLINE}
+ addUserKnob {6 rem_a_b l "Remove Alpha from Blue" t "Allows you to remove the alpha value from the outcome that comes in on the Blue input. " +STARTLINE}
+ addUserKnob {6 rem_rgb l "Remove RGB" t "Allows you to remove the rgb value." +STARTLINE}
+ addUserKnob {6 shuff_a_rgb l "Shuffle Alpha to RGB" t "Allows you to shuffle alpha value to rgb." +STARTLINE}
+ addUserKnob {26 cr_ch l "Create new channels"}
+ addUserKnob {41 out l "Red to" t "Allows you to shuffle the `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r.out}
+ addUserKnob {41 out_1 l "Green to" t "Allows you to shuffle the `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g.out}
+ addUserKnob {41 out_2 l "Blue to" t "Allows you to shuffle the `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b.out}
+ addUserKnob {41 out_3 l "Red Invert to" t "Allows you to shuffle the inverted `alpha` on the `Red` input to a different channel. " T ShuffleCopy_r_inv.out}
+ addUserKnob {41 out_4 l "Green Invert to " t "Allows you to shuffle the inverted `alpha` on the `Green` input to a different channel. " T ShuffleCopy_g_inv.out}
+ addUserKnob {41 out_5 l "Blue Invert to " t "Allows you to shuffle the inverted `alpha` on the `Blue` input to a different channel. " T ShuffleCopy_b_inv.out}
+ addUserKnob {26 layer_cs l "Layer Contact Sheet"}
+ addUserKnob {6 show_lcs l "Show in Layer Contact Sheet" t "Allows you to turn on the Layer Contact Sheet view." +STARTLINE}
+ addUserKnob {41 showLayerNames l "Show Layer Names" t "Allows you to turn on the names of the layers." T LayerContactSheet.showLayerNames}
+ addUserKnob {41 width l Resolution T LayerContactSheet.width}
+ addUserKnob {41 height l "" -STARTLINE T LayerContactSheet.height}
+ addUserKnob {26 ref_puli l "Crop / Reformat"}
+ addUserKnob {6 crop_inpu l "Crop Inputs" t "Allows you to crop your inputs." +STARTLINE}
+ addUserKnob {6 app_ref l "Apply Reformat" t "Allows you to reformat the output. " +STARTLINE}
+ addUserKnob {41 format l "Output Format" T Reformat_c_p.format}
  addUserKnob {26 ""}
- addUserKnob {41 size l "over separation" t "Allows you to adjust the texture/color separation on the layer that goes over the other one." T Blur_TCT2.size}
- addUserKnob {41 size_1 l "under separation" t "Allows you to adjust the texture/color separation on the layer that goes under the other one." T Blur_TCT1.size}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/channel-puli')\n"}
  addUserKnob {26 ""}
- addUserKnob {41 translate T Transform1_TCT.translate}
- addUserKnob {41 rotate T Transform1_TCT.rotate}
- addUserKnob {41 scale1 l scale T Scale_Proxy.scale1}
- addUserKnob {41 skewX l "skew X" T Transform1_TCT.skewX}
- addUserKnob {41 skewY l "skew Y" T Transform1_TCT.skewY}
- addUserKnob {41 skew_order l "skew order" T Transform1_TCT.skew_order}
- addUserKnob {41 center T Transform1_TCT.center}
- addUserKnob {22 setcenter l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center\").setValue(\[newWidth, newHeight])"}
- addUserKnob {41 invert_matrix l invert T Transform1_TCT.invert_matrix}
- addUserKnob {41 filter T Transform1_TCT.filter}
- addUserKnob {41 clamp -STARTLINE T Transform1_TCT.clamp}
- addUserKnob {41 black_outside l "black outside" -STARTLINE T Transform1_TCT.black_outside}
- addUserKnob {41 motionblur T Transform1_TCT.motionblur}
- addUserKnob {41 shutter T Transform1_TCT.shutter}
- addUserKnob {41 shutteroffset l "shutter offset" T Transform1_TCT.shutteroffset}
- addUserKnob {41 shuttercustomoffset l "" -STARTLINE T Transform1_TCT.shuttercustomoffset}
- addUserKnob {26 ""}
- addUserKnob {41 from0 l "mask channel" T Copy_TCT.from0}
- addUserKnob {6 keep_bb l "Keep BBox" +STARTLINE}
- keep_bb true
- addUserKnob {26 ""}
- addUserKnob {41 mix T Merge_TCT.mix}
- addUserKnob {26 ""}
- addUserKnob {20 info n 1}
- info 0
- addUserKnob {26 inf l "" +STARTLINE T "When the node`s A input is not in use the node will \nuse the information comes on the B input."}
- addUserKnob {20 endGroup n -1}
- addUserKnob {26 ""}
- addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/transformcolortexture')\n"}
- addUserKnob {26 ""}
- addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
- addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_TransformColorTexture© by Attila Gasparetz</font>"}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Channel Puli© by Attila Gasparetz</font>"}
 }
+ BackdropNode {
+  inputs 0
+  name BackdropNode1
+  tile_color 0x777777ff
+  label <center>Inputs
+  note_font_size 42
+  xpos 127
+  ypos -734
+  bdwidth 406
+  bdheight 124
+ }
  Input {
   inputs 0
-  name B
-  xpos -1360
-  ypos 375
+  name Blue
+  tile_color 0x3fffff
+  xpos 400
+  ypos -658
  }
-set N273c000 [stack 0]
- Input {
-  inputs 0
-  name A
-  xpos -480
-  ypos 279
-  number 1
+ Crop {
+  box {0 0 4096 2304}
+  crop false
+  name Crop
+  tile_color 0x888888ff
+  xpos 400
+  ypos -538
+  disable {{crop_inpu==0}}
  }
- Switch {
-  inputs 2
-  which {{"!\[exists parent.input1]"}}
-  name Switch1_TCT
-  tile_color 0x666666ff
-  label "which: \[value which]"
-  xpos -480
-  ypos 369
- }
-set N2781880 [stack 0]
- Dot {
-  name Dot1
-  xpos -446
-  ypos 522
- }
-set N2781500 [stack 0]
+ set C14014e00 [stack 0]
  Dot {
   name Dot3
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -556
-  ypos 522
+  xpos 434
+  ypos -294
  }
- Transform {
-  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
-  rotate {{parent.Transform1_TCT.rotate}}
-  scale {{parent.Transform1_TCT.scale}}
-  skewX {{parent.Transform1_TCT.skewX}}
-  skewY {{parent.Transform1_TCT.skewY}}
-  skew_order {{parent.Transform1_TCT.skew_order}}
-  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
-  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
-  filter {{Transform1_TCT.filter}}
-  clamp {{parent.Transform1_TCT.clamp}}
-  black_outside {{parent.Transform1_TCT.black_outside}}
-  motionblur {{parent.Transform1_TCT.motionblur}}
-  shutter {{parent.Transform1_TCT.shutter}}
-  shutteroffset {{Transform1_TCT.shutteroffset}}
-  name Transform2_TCT1
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -590
-  ypos 1412
+set N14014a80 [stack 0]
+ Dot {
+  name Dot6
+  xpos 434
+  ypos -78
+ }
+set N14014700 [stack 0]
+ Shuffle {
+  red black
+  green black
+  blue alpha
+  name Shuffle_b
+  tile_color 0x3fffff
+  label "\[value in 1]"
+  xpos 400
+  ypos 224
+ }
+set N14014380 [stack 0]
+ Remove {
+  channels alpha
+  name Remove_a_b
+  tile_color 0x3fffff
+  xpos 400
+  ypos 272
+  disable {{"(parent.rem_a_b) == 0"}}
+ }
+push 0
+ Input {
+  inputs 0
+  name Green
+  tile_color 0x1fff00ff
+  xpos 290
+  ypos -658
+  number 1
+ }
+clone $C14014e00 {
+  xpos 290
+  ypos -538
+  selected false
+ }
+ Dot {
+  name Dot2
+  xpos 324
+  ypos -342
+ }
+set N14045500 [stack 0]
+ Dot {
+  name Dot5
+  xpos 324
+  ypos -126
+ }
+set N14045180 [stack 0]
+ Shuffle {
+  red black
+  green alpha
+  blue black
+  name Shuffle_g
+  tile_color 0x1fff00ff
+  label "\[value in 1]"
+  xpos 290
+  ypos 152
+ }
+set N14044e00 [stack 0]
+ Remove {
+  channels alpha
+  name Remove_a_g
+  tile_color 0x1fff00ff
+  xpos 290
+  ypos 272
+  disable {{"(parent.rem_a_g) == 0"}}
  }
  Input {
   inputs 0
-  name mask
-  xpos -480
-  ypos 1215
+  name Red
+  tile_color 0xff0000ff
+  xpos 180
+  ypos -658
   number 2
  }
-push $N273c000
+clone $C14014e00 {
+  xpos 180
+  ypos -538
+  selected false
+ }
  Dot {
-  name Dot2
-  xpos -1326
-  ypos 522
+  name Dot1
+  xpos 214
+  ypos -390
  }
-set N2780700 [stack 0]
- Dot {
-  name Dot11
-  xpos -1106
-  ypos 522
- }
-set N2780380 [stack 0]
- Dot {
-  name Dot5
-  xpos -886
-  ypos 522
- }
-set N2780000 [stack 0]
- Dot {
-  name Dot12
-  xpos -666
-  ypos 522
- }
- Expression {
-  channel3 alpha
-  expr3 1
-  name Expression_A1_TCT1
-  tile_color 0x666666ff
-  label "a: \[value expr3]"
-  xpos -700
-  ypos 609
- }
-set N279f880 [stack 0]
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge
-  tile_color 0x444444ff
-  label "\[value disable]"
-  selected true
-  xpos -700
-  ypos 1196
-  disable {{"!\[exists parent.input2]"}}
- }
-push $N2781500
- Dot {
-  name Dot7
-  xpos -226
-  ypos 522
- }
-set N279ee00 [stack 0]
- Dot {
-  name Dot14
-  xpos -6
-  ypos 522
- }
- Transform {
-  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
-  rotate {{parent.Transform1_TCT.rotate}}
-  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
-  skewX {{parent.Transform1_TCT.skewX}}
-  skewY {{parent.Transform1_TCT.skewY}}
-  skew_order {{Transform1_TCT.skew_order}}
-  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
-  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
-  filter {{Transform1_TCT.filter}}
-  clamp {{parent.Transform1_TCT.clamp}}
-  black_outside {{parent.Transform1_TCT.black_outside}}
-  motionblur {{parent.Transform1_TCT.motionblur}}
-  shutter {{parent.Transform1_TCT.shutter}}
-  shutteroffset {{Transform1_TCT.shutteroffset}}
-  name Transform3_TCT
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -40
-  ypos 740
- }
+set N14044000 [stack 0]
  Dot {
   name Dot4
-  xpos -6
-  ypos 1026
+  xpos 214
+  ypos -174
  }
-push $N279f880
-push $N279ee00
- Blur {
-  size 30
-  name Blur_TCT2
-  tile_color 0x666666ff
-  label "size: \[value size]"
-  xpos -260
-  ypos 603
+set N14067c00 [stack 0]
+ Shuffle {
+  red alpha
+  green black
+  blue black
+  name Shuffle_r
+  tile_color 0xff0000ff
+  label "\[value in 1]"
+  xpos 180
+  ypos 80
  }
-set N279e000 [stack 0]
- Transform {
-  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
-  rotate {{parent.Transform1_TCT.rotate}}
-  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
-  skewX {{parent.Transform1_TCT.skewX}}
-  skewY {{parent.Transform1_TCT.skewY}}
-  skew_order {{parent.Transform1_TCT.skew_order}}
-  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
-  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
-  filter {{Transform1_TCT.filter}}
-  clamp {{parent.Transform1_TCT.clamp}}
-  black_outside {{parent.Transform1_TCT.black_outside}}
-  motionblur {{parent.Transform1_TCT.motionblur}}
-  shutter {{parent.Transform1_TCT.shutter}}
-  shutteroffset {{Transform1_TCT.shutteroffset}}
-  name Transform2_TCT
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -260
-  ypos 740
- }
-push $N2780000
- Blur {
-  size 30
-  name Blur_TCT1
-  tile_color 0x666666ff
-  xpos -920
-  ypos 609
- }
-set N27cb880 [stack 0]
- Keymix {
-  inputs 3
-  name Keymix2_TCT
-  tile_color 0x666666ff
-  xpos -920
-  ypos 753
-  disable {{"output  == 1 ? 0 : 1"}}
- }
- Dot {
-  name Dot13
-  xpos -886
-  ypos 882
- }
-push $N279f880
-push $N2781500
-push $N279e000
- Merge2 {
-  inputs 2
-  operation divide
-  name MergeDiv_TCT2
-  tile_color 0x666666ff
-  xpos -480
-  ypos 615
- }
- Transform {
-  translate {100 0}
-  scale {{Scale_Proxy.scale1} {Scale_Proxy.scale1}}
-  center {960 540}
-  shutteroffset centred
-  name Transform1_TCT
-  tile_color 0x666666ff
-  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
-  xpos -480
-  ypos 740
- }
-push $N2780380
-push $N27cb880
- Merge2 {
-  inputs 2
-  operation divide
-  name MergeDiv_TCT1
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 615
- }
- Keymix {
-  inputs 3
-  name Keymix1_TCT
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 753
-  disable {{"output == 0 ? 0 : 1"}}
+set N14067880 [stack 0]
+ Remove {
+  channels alpha
+  name Remove_a_r
+  tile_color 0xff0000ff
+  xpos 180
+  ypos 272
+  disable {{"(parent.rem_a_r) == 0"}}
  }
  Merge2 {
-  inputs 2
-  operation multiply
-  name MergeMult_TCT1
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 879
+  inputs 3+1
+  operation max
+  name Merge_channel
+  tile_color 0x777777ff
+  label "\[value operation]"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  xpos 290
+  ypos 440
  }
- Switch {
+push $N14014380
+push $N14044e00
+push $N14067880
+push $N14014700
+ Invert {
+  name Invert_b
+  tile_color 0x777777ff
+  xpos 620
+  ypos -88
+ }
+push $N14045180
+ Invert {
+  name Invert_g
+  tile_color 0x777777ff
+  xpos 620
+  ypos -136
+ }
+push $N14067c00
+ Invert {
+  name Invert_r
+  tile_color 0x777777ff
+  xpos 620
+  ypos -184
+ }
+push $N14014a80
+push $N14045500
+push $N14044000
+ Constant {
+  inputs 0
+  channels rgb
+  name base
+  xpos 840
+  ypos -658
+  postage_stamp false
+ }
+ ShuffleCopy {
   inputs 2
-  which {{"output  <2 ? 0 : 1"}}
-  name Switch_TCT
-  tile_color 0x666666ff
-  label "which: \[value which]"
-  xpos -1140
-  ypos 1017
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_r
+  tile_color 0xff0000ff
+  label "\[value out]"
+  xpos 840
+  ypos -400
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_g
+  tile_color 0x1fff00ff
+  label "\[value out]"
+  xpos 840
+  ypos -352
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_b
+  tile_color 0x3fffff
+  label "\[value out]"
+  note_font Verdana
+  xpos 840
+  ypos -304
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_r_inv
+  tile_color 0xff0000ff
+  label "\[value out]"
+  xpos 840
+  ypos -184
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_g_inv
+  tile_color 0x1fff00ff
+  label "\[value out]"
+  xpos 840
+  ypos -136
+ }
+ ShuffleCopy {
+  inputs 2
+  red alpha
+  green alpha
+  blue alpha
+  name ShuffleCopy_b_inv
+  tile_color 0x3fffff
+  label "\[value out]"
+  note_font Verdana
+  xpos 840
+  ypos -88
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 rgba.red
+  name Copy_r
+  tile_color 0xff0000ff
+  xpos 840
+  ypos 80
+ }
+ Copy {
+  inputs 2
+  from0 rgba.green
+  to0 rgba.green
+  name Copy_g
+  tile_color 0x1fff00ff
+  xpos 840
+  ypos 152
+ }
+ Copy {
+  inputs 2
+  from0 rgba.blue
+  to0 rgba.blue
+  name Copy_b
+  tile_color 0x3fffff
+  xpos 840
+  ypos 224
  }
  Copy {
   inputs 2
   from0 rgba.alpha
   to0 rgba.alpha
-  name Copy_TCT
+  name Copy4
+  tile_color 0xaaaaaaff
+  xpos 840
+  ypos 440
+ }
+ Remove {
+  channels alpha
+  name Remove_a
+  tile_color 0xaaaaaaff
+  xpos 840
+  ypos 536
+  disable {{"(parent.rem_alpha) == 0"}}
+ }
+ Remove {
+  channels rgb
+  name Remove_rgb
+  tile_color 0xaaaaaaff
+  label "\[value channels]"
+  xpos 840
+  ypos 608
+  disable {{"(parent.rem_rgb) == 0"}}
+ }
+ Shuffle {
+  red alpha
+  green alpha
+  blue alpha
+  name Shuffle_a_rgb
   tile_color 0x666666ff
-  xpos -1140
-  ypos 1209
+  label "\[value in 1]"
+  xpos 840
+  ypos 680
+  disable {{"(parent.shuff_a_rgb) == 0"}}
  }
- Premult {
-  name Premult_TCT
-  tile_color 0x666666ff
-  xpos -1140
-  ypos 1335
+ Reformat {
+  name Reformat_c_p
+  tile_color 0x888888ff
+  xpos 840
+  ypos 752
+  disable {{"(parent.app_ref) ==0"}}
  }
-set N2803500 [stack 0]
- ChannelMerge {
-  inputs 2
-  operation multiply
-  name ChannelMerge_TCT1
-  tile_color 0x555555ff
-  xpos -1140
-  ypos 1419
- }
-push $N2780700
- Dot {
-  name Dot6
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1326
-  ypos 1218
- }
-set N2802e00 [stack 0]
- Dot {
-  name Dot8
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1546
-  ypos 1218
- }
- ChannelMerge {
-  inputs 2
-  name ChannelMerge_TCT2
-  tile_color 0x555555ff
-  xpos -1580
-  ypos 1419
- }
- Dot {
-  name Dot9
-  tile_color 0x949494ff
-  note_font_size 22
-  note_font_color 0xffffffff
-  xpos -1546
-  ypos 1530
- }
-push $N2803500
-push $N2802e00
- Merge2 {
-  inputs 2
-  also_merge all
-  name Merge_TCT
-  tile_color 0x666666ff
-  xpos -1360
-  ypos 1335
- }
- Copy {
-  inputs 2
-  from0 rgba.alpha
-  to0 rgba.alpha
-  name Copy_TCT2
-  tile_color 0x555555ff
-  xpos -1360
-  ypos 1521
- }
- Crop {
-  box {{Crop_proxy_TCT.box.x} {Crop_proxy_TCT.box.y} {Crop_proxy_TCT.box.r} {Crop_proxy_TCT.box.t}}
-  name Crop_TCT
-  tile_color 0x555555ff
-  xpos -1360
-  ypos 1647
-  disable {{!parent.keep_bb}}
+ LayerContactSheet {
+  name LayerContactSheet
+  xpos 840
+  ypos 830
+  disable {{"(parent.show_lcs) == 0" x1024 1}}
  }
  Output {
-  name Output
-  xpos -1360
-  ypos 1743
- }
-push $N2781880
- Crop {
-  box {{input.format.x} {input.format.y} {input.width} {input.height}}
-  name Crop_proxy_TCT
-  tile_color 0x555555ff
-  xpos -260
-  ypos 375
- }
- StickyNote {
-  inputs 0
-  name StickyNote3
-  label "output == 0 ? 0 : 1"
-  xpos -1151
-  ypos 807
- }
- StickyNote {
-  inputs 0
-  name StickyNote1
-  label "output == 1 ? 0 : 1"
-  xpos -931
-  ypos 807
- }
- StickyNote {
-  inputs 0
-  name StickyNote4
-  label "output <2 ? 0 : 1"
-  xpos -1147
-  ypos 1071
- }
- NoOp {
-  inputs 0
-  name Scale_Proxy
-  tile_color 0x666666ff
-  xpos -480
-  ypos 879
-  addUserKnob {20 User}
-  addUserKnob {14 scale1 R 0 100}
-  scale1 1
+  name Output1
+  xpos 840
+  ypos 902
  }
 end_group
 Group {
@@ -6724,8 +4915,8 @@ Group {
   xpos 410
   ypos 354
  }
-set N273d880 [stack 0]
-push $N273d880
+set N140d4000 [stack 0]
+push $N140d4000
  Axis2 {
   inputs 2
   translate {0 {hei_cam} 0}
@@ -6840,7 +5031,7 @@ Group {
  addUserKnob {20 endGroup n -1}
  addUserKnob {26 ""}
  addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/input-info')\n" +STARTLINE}
- addUserKnob {26 "" +STARTLINE}
+ addUserKnob {26 ""}
  addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
  addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Input_Info© by Attila Gasparetz</font>"}
 }
@@ -6855,20 +5046,20 @@ Group {
   xpos 214
   ypos -606
  }
-set N22b3c00 [stack 0]
+set N1411e380 [stack 0]
  Crop {
   box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
   name Crop_proxy
   xpos 1060
   ypos -610
  }
-push $N22b3c00
+push $N1411e380
  Dot {
   name Dot1
   xpos 214
   ypos -486
  }
-set N22b3500 [stack 0]
+set N1415dc00 [stack 0]
  Shuffle {
   red black
   green black
@@ -6879,61 +5070,61 @@ set N22b3500 [stack 0]
   xpos 400
   ypos -496
  }
-set N22b3180 [stack 0]
+set N1415d880 [stack 0]
  Dot {
   name Dot2
   xpos 874
   ypos -486
  }
-set N22b2e00 [stack 0]
+set N1415d500 [stack 0]
  Dot {
   name Dot3
   xpos 1094
   ypos -486
  }
-set N22b2a80 [stack 0]
+set N1415d180 [stack 0]
  Dot {
   name Dot4
   xpos 1314
   ypos -486
  }
-set N22b2700 [stack 0]
+set N1415ce00 [stack 0]
  Dot {
   name Dot9
   xpos 1534
   ypos -486
  }
-set N22b2380 [stack 0]
+set N1415ca80 [stack 0]
  Dot {
   name Dot7
   xpos 1754
   ypos -486
  }
-set N22b2000 [stack 0]
+set N1415c700 [stack 0]
  Dot {
   name Dot5
   xpos 1974
   ypos -486
  }
-set N22cfc00 [stack 0]
+set N1415c380 [stack 0]
  Dot {
   name Dot6
   xpos 2194
   ypos -486
  }
-set N22cf880 [stack 0]
+set N1415c000 [stack 0]
  Dot {
   name Dot14
   xpos 2414
   ypos -486
  }
-set N22cf500 [stack 0]
+set N14179c00 [stack 0]
  Dot {
   name Dot15
   xpos 2634
   ypos -486
  }
-set N22cf180 [stack 0]
+set N14179880 [stack 0]
  Dot {
   name Dot16
   xpos 2854
@@ -6978,7 +5169,7 @@ set N22cf180 [stack 0]
   ypos -394
   disable {{parent.colorspace==0 x1018 1}}
  }
-push $N22cf180
+push $N14179880
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7018,7 +5209,7 @@ push $N22cf180
   ypos -394
   disable {{parent.format_name==0}}
  }
-push $N22cf500
+push $N14179c00
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7059,22 +5250,22 @@ push $N22cf500
   xpos 2380
   ypos -394
  }
-push $N22cf880
+push $N1415c000
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
   font_height_toolbar 100
   message "Frame number: \[value frame]\n"
-  old_message {{70 114 97 109 101 32 110 117 109 98 101 114 58 32 50 56 54 52 52 57 10}
+  old_message {{70 114 97 109 101 32 110 117 109 98 101 114 58 32 49 48 51 56 10}
     }
-  old_expression_markers {{14 19}
+  old_expression_markers {{14 17}
     }
   box {{parent.shot_name.box.x} {parent.shot_name.box.y} {parent.shot_name.box.r} {parent.shot_name.box.t}}
   xjustify {{"proxy.text_pos == 0 || proxy.text_pos == 2 ? 0 :2"}}
   yjustify {{"proxy.text_pos == 2 || proxy.text_pos == 3 ? 2 :0"}}
   transforms {{0 2}
     }
-  font_size_values {{0 100 1 100 2 100 3 100 4 100 12 100 13 100 20 100}
+  font_size_values {{0 100 1 100 2 100 3 100 4 100 12 100 13 100 18 100}
     }
   cursor_position 12
   global_font_scale {{parent.fontsize/100}}
@@ -7100,7 +5291,7 @@ push $N22cf880
   xpos 2160
   ypos -394
  }
-push $N22cfc00
+push $N1415c380
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7141,7 +5332,7 @@ push $N22cfc00
   xpos 1940
   ypos -394
  }
-push $N22b2000
+push $N1415c700
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7180,7 +5371,7 @@ push $N22b2000
   xpos 1720
   ypos -394
  }
-push $N22b2380
+push $N1415ca80
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7219,7 +5410,7 @@ push $N22b2380
   xpos 1500
   ypos -394
  }
-push $N22b2700
+push $N1415ce00
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7259,7 +5450,7 @@ push $N22b2700
   ypos -394
  }
 push 0
-push $N22b2a80
+push $N1415d180
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7297,7 +5488,7 @@ push $N22b2a80
   xpos 1060
   ypos -394
  }
-push $N22b2e00
+push $N1415d500
  Text2 {
   font_size_toolbar 100
   font_width_toolbar 100
@@ -7351,7 +5542,7 @@ push $N22b2e00
   xpos 840
   ypos -10
  }
-set N23e3c00 [stack 0]
+set N14568380 [stack 0]
  Constant {
   inputs 0
   channels rgb
@@ -7381,7 +5572,7 @@ set N23e3c00 [stack 0]
   xpos 840
   ypos 926
  }
-push $N23e3c00
+push $N14568380
  Dot {
   name Dot10
   xpos 764
@@ -7400,7 +5591,7 @@ push $N23e3c00
   xpos 730
   ypos 320
  }
-push $N23e3c00
+push $N14568380
  Dot {
   name Dot11
   xpos 1314
@@ -7460,7 +5651,7 @@ push $N23e3c00
   xpos 730
   ypos 422
  }
-push $N22b3180
+push $N1415d880
  Merge2 {
   inputs 2
   name Merge_shadow
@@ -7480,14 +5671,14 @@ push $N22b3180
   xpos 400
   ypos 974
  }
-set N244b500 [stack 0]
-push $N22b3500
+set N1461bc00 [stack 0]
+push $N1415dc00
  Dot {
   name Dot12
   xpos 214
   ypos 762
  }
-set N244b180 [stack 0]
+set N1461b880 [stack 0]
  Dot {
   name Dot13
   xpos -6
@@ -7500,7 +5691,7 @@ set N244b180 [stack 0]
   xpos -40
   ypos 974
  }
-push $N244b500
+push $N1461bc00
  Shuffle {
   alpha black
   name Shuffle2
@@ -7516,9 +5707,9 @@ push $N244b500
   xpos 70
   ypos 1136
  }
-push $N244b500
-push $N244b500
-push $N244b180
+push $N1461bc00
+push $N1461bc00
+push $N1461b880
  Merge2 {
   inputs 2
   name Merge_all
@@ -7568,5 +5759,1761 @@ push $N244b180
   gap {{-parent.spacing}}
   addUserKnob {4 text_pos l "Text Position" M {"Top Left" "Top Right" "Bottom Left" "Bottom Right"}}
   text_pos "Top Right"
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Liquid_Distortion
+ tile_color 0x55ffbfff
+ selected true
+ xpos 620
+ ypos -82
+ addUserKnob {20 User l Liquid}
+ addUserKnob {7 contrast_liq l Contrast R 1 4}
+ contrast_liq 3
+ addUserKnob {41 scale1 l Scale T CONTROL.scale1}
+ addUserKnob {7 speed_liq l Speed R 1 100}
+ speed_liq 50
+ addUserKnob {41 slid_03 l Offset T CONTROL.slid_03}
+ addUserKnob {41 size l Blur T Blur_liq.size}
+ addUserKnob {6 crop l Crop +STARTLINE}
+ crop true
+ addUserKnob {26 ""}
+ addUserKnob {7 mix l Mix}
+ mix 0.5
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/liquid-distortion')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 credit l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Liquid Distortion© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name mask
+  xpos -260
+  ypos -202
+  number 1
+ }
+ Input {
+  inputs 0
+  name Input
+  xpos 400
+  ypos -514
+ }
+ Dot {
+  name Dot18
+  xpos 434
+  ypos -270
+ }
+set N14687880 [stack 0]
+ Dot {
+  name Dot12
+  xpos 214
+  ypos -270
+ }
+set N14687500 [stack 0]
+ Dot {
+  name Dot17
+  xpos 214
+  ypos -438
+ }
+ Dot {
+  name Dot2
+  xpos -6
+  ypos -438
+ }
+set N14686e00 [stack 0]
+ Shuffle {
+  red black
+  green black
+  blue black
+  alpha white
+  name Shuffle1
+  xpos -40
+  ypos -298
+ }
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge1
+  xpos -40
+  ypos -215
+  disable {{"!\[exists parent.input1]"}}
+ }
+push $N14686e00
+ Expression {
+  temp_name0 seed
+  temp_expr0 "\[ regexp -inline \{\\d+\}  \[knob name] ]"
+  temp_name1 scale
+  temp_expr1 CONTROL.slid_02*random(seed*2)
+  temp_name2 offset
+  temp_expr2 random(seed)*CONTROL.slid_03
+  expr0 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
+  expr1 noise((cx+offset)*scale,(cy+offset)*scale,frame/CONTROL.slid_01)
+  expr2 0
+  name ELEMENTS_liq
+  xpos -590
+  ypos -442
+ }
+ ColorCorrect {
+  contrast {{contrast_liq}}
+  shadows 0
+  name ColorCorrect_liq
+  xpos -590
+  ypos -346
+ }
+ Dot {
+  name Dot13
+  xpos -556
+  ypos -294
+ }
+set N146ab880 [stack 0]
+ TimeOffset {
+  time_offset 2
+  time ""
+  name TimeOffset_to_red
+  xpos -700
+  ypos -298
+ }
+push $N146ab880
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 rgba.red
+  name Copy3
+  xpos -590
+  ypos -232
+ }
+ Dot {
+  name Dot14
+  xpos -556
+  ypos -150
+ }
+set N146ab180 [stack 0]
+ TimeOffset {
+  time_offset {{-TimeOffset_to_red.time_offset}}
+  time ""
+  name TimeOffset_to_green
+  xpos -700
+  ypos -154
+ }
+push $N146ab180
+ Copy {
+  inputs 2
+  from0 rgba.green
+  to0 rgba.green
+  name Copy4
+  xpos -590
+  ypos -88
+ }
+ Blur {
+  channels rgb
+  size 30
+  name Blur_liq
+  xpos -370
+  ypos -82
+ }
+ Merge2 {
+  inputs 2
+  operation mask
+  name Merge1
+  xpos -40
+  ypos -82
+ }
+push $N14687500
+ Expression {
+  expr0 (x+0.5)/width
+  expr1 (y+0.5)/height
+  name Expression_STmap
+  xpos 180
+  ypos -178
+ }
+ Merge2 {
+  inputs 2
+  mix {{(parent.mix)/100 x1005 0.1}}
+  name Merge_dist_to_st
+  xpos 180
+  ypos -82
+ }
+ Dot {
+  name Dot1
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos 214
+  ypos -6
+ }
+push $N14687880
+ STMap {
+  inputs 2
+  uv rgb
+  name STMap_liq
+  xpos 400
+  ypos -16
+ }
+ Crop {
+  box {{input.format.x} {input.format.y} {input.width} {input.height}}
+  name Crop_liq
+  xpos 400
+  ypos 62
+  disable {{!parent.crop}}
+ }
+ Output {
+  name Output
+  xpos 400
+  ypos 110
+ }
+ NoOp {
+  inputs 0
+  name CONTROL
+  tile_color 0x444444ff
+  note_font_size 30
+  xpos -590
+  ypos -523
+  addUserKnob {20 User}
+  addUserKnob {7 slid_01 l slider01_speed R 1 100}
+  slid_01 {{101-(speed_liq)}}
+  addUserKnob {7 slid_02 l slider02_scale R 0 100}
+  slid_02 {{100-scale1}}
+  addUserKnob {7 slid_03 l slider03_seed R 1 100}
+  slid_03 1
+  addUserKnob {7 scale1 l scale R 0 100}
+  scale1 50
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Color_Flicker
+ tile_color 0xffbf00ff
+ selected true
+ xpos 400
+ ypos -82
+ addUserKnob {20 User l "Color Flicker"}
+ addUserKnob {26 wa_co l "<font color=yellow size=\"4\"><b>Wave Control</b></font>"}
+ addUserKnob {41 freq l "Wave Length " T proxy.freq}
+ addUserKnob {41 maxVal l Max T proxy.maxVal}
+ addUserKnob {41 minVal l Min T proxy.minVal}
+ addUserKnob {41 offset l Offset T proxy.offset}
+ addUserKnob {26 clamp l "<font color=yellow size=\"4\"><b>Clamp"}
+ addUserKnob {41 minimum l Minimum T Clamp_red.minimum}
+ addUserKnob {41 maximum l Maximum T Clamp_red.maximum}
+ addUserKnob {26 mix_4 l "<font color=yellow size=\"4\"><b>Mix "}
+ addUserKnob {41 mix_1 l "Red mix" T Copy_RED.mix}
+ addUserKnob {41 mix_2 l "Green Mix" T Copy_GREEN.mix}
+ addUserKnob {41 mix_3 l "Blue Mix" T Copy_BLUE.mix}
+ addUserKnob {41 which l Mix T Dissolve1.which}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut1 l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/color-flicker')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Color Flicker© by Attila Gasparetz</font>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode7
+  tile_color 0x181818ff
+  label "<center><font color=red>\nRED\nrandom((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=green>\nGREEN\nrandom((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n<font color=blue>\nBLUE\nrandom((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"
+  note_font_size 42
+  xpos -328
+  ypos -113
+  bdwidth 1537
+  bdheight 658
+ }
+ Input {
+  inputs 0
+  name Mask
+  xpos -1470
+  ypos 135
+  number 1
+ }
+ Input {
+  inputs 0
+  name Input
+  xpos -1030
+  ypos -57
+ }
+ Dot {
+  name Dot1
+  xpos -996
+  ypos 66
+ }
+set N14719c00 [stack 0]
+ Expression {
+  channel3 alpha
+  expr3 1
+  name Expression
+  xpos -1250
+  ypos 63
+ }
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge
+  tile_color 0xff
+  xpos -1250
+  ypos 123
+  disable {{"!\[exists parent.input1]"}}
+ }
+set N14719180 [stack 0]
+ Dot {
+  name Dot2
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1216
+  ypos 378
+ }
+push $N14719180
+push $N14719c00
+ Dot {
+  name Dot3
+  xpos -666
+  ypos 66
+ }
+set N14718a80 [stack 0]
+ Grade {
+  multiply {{"random((frame+proxy.offset+5)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal"}}
+  name Grade_B
+  xpos -700
+  ypos 279
+ }
+ Clamp {
+  channels rgb
+  minimum {{Clamp_red.minimum}}
+  maximum {{Clamp_red.maximum}}
+  mix {{Grade_RED.mix}}
+  name Clamp_blue
+  tile_color 0x777777ff
+  xpos -920
+  ypos 279
+ }
+push $N14719180
+push $N14718a80
+ Grade {
+  multiply {{"random((frame+proxy.offset+3)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
+  name Grade_G
+  xpos -700
+  ypos 207
+ }
+ Clamp {
+  channels rgb
+  minimum {{Clamp_red.minimum}}
+  maximum {{Clamp_red.maximum}}
+  mix {{Grade_RED.mix}}
+  name Clamp_green
+  tile_color 0x777777ff
+  xpos -920
+  ypos 207
+ }
+push $N14719180
+push $N14718a80
+ Grade {
+  multiply {{"random((frame+proxy.offset+1)/(proxy.freq)) * (proxy.maxVal-proxy.minVal) + proxy.minVal\n"}}
+  name Grade_R
+  xpos -700
+  ypos 135
+ }
+ Clamp {
+  channels rgb
+  mix {{Grade_RED.mix}}
+  name Clamp_red
+  tile_color 0x777777ff
+  xpos -920
+  ypos 135
+ }
+push $N14719c00
+ Copy {
+  inputs 2+1
+  from0 rgba.red
+  to0 rgba.red
+  name Copy_RED
+  tile_color 0xff0000ff
+  xpos -1030
+  ypos 129
+  disable {{"!\[exists parent.input0]"}}
+ }
+ Copy {
+  inputs 2+1
+  from0 rgba.green
+  to0 rgba.green
+  name Copy_GREEN
+  tile_color 0x1fff00ff
+  xpos -1030
+  ypos 201
+  disable {{"!\[exists parent.input0]"}}
+ }
+ Copy {
+  inputs 2+1
+  from0 rgba.blue
+  to0 rgba.blue
+  name Copy_BLUE
+  tile_color 0x3fffff
+  xpos -1030
+  ypos 273
+  disable {{"!\[exists parent.input0]"}}
+ }
+push $N14719c00
+ Dissolve {
+  inputs 2+1
+  which 1
+  name Dissolve1
+  label "Which: \[value which]"
+  xpos -1030
+  ypos 363
+ }
+ Output {
+  name Output1
+  xpos -1030
+  ypos 543
+ }
+ NoOp {
+  inputs 0
+  name proxy
+  tile_color 0xff
+  selected true
+  xpos -480
+  ypos 207
+  addUserKnob {20 User}
+  addUserKnob {7 freq l Frequency R 0 10}
+  freq 2
+  addUserKnob {7 offset l Offset R 0 100}
+  addUserKnob {7 maxVal l Max R 0 20}
+  maxVal 3
+  addUserKnob {7 minVal l Min R 0 20}
+  minVal 1
+ }
+end_group
+push $cut_paste_input
+push 0
+Group {
+ inputs 2
+ name GM_TransformColorTexture
+ tile_color 0xaa55ffff
+ selected true
+ xpos 510
+ ypos 728
+ addUserKnob {20 User}
+ addUserKnob {4 output l Options M {Texture Color Both "" "" "" "" "" "" "" ""}}
+ output Both
+ addUserKnob {26 ""}
+ addUserKnob {41 size l "over separation" t "Allows you to adjust the texture/color separation on the layer that goes over the other one." T Blur_TCT2.size}
+ addUserKnob {41 size_1 l "under separation" t "Allows you to adjust the texture/color separation on the layer that goes under the other one." T Blur_TCT1.size}
+ addUserKnob {26 ""}
+ addUserKnob {41 translate T Transform1_TCT.translate}
+ addUserKnob {41 rotate T Transform1_TCT.rotate}
+ addUserKnob {41 scale1 l scale T Scale_Proxy.scale1}
+ addUserKnob {41 skewX l "skew X" T Transform1_TCT.skewX}
+ addUserKnob {41 skewY l "skew Y" T Transform1_TCT.skewY}
+ addUserKnob {41 skew_order l "skew order" T Transform1_TCT.skew_order}
+ addUserKnob {41 center T Transform1_TCT.center}
+ addUserKnob {22 setcenter l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 invert_matrix l invert T Transform1_TCT.invert_matrix}
+ addUserKnob {41 filter T Transform1_TCT.filter}
+ addUserKnob {41 clamp -STARTLINE T Transform1_TCT.clamp}
+ addUserKnob {41 black_outside l "black outside" -STARTLINE T Transform1_TCT.black_outside}
+ addUserKnob {41 motionblur T Transform1_TCT.motionblur}
+ addUserKnob {41 shutter T Transform1_TCT.shutter}
+ addUserKnob {41 shutteroffset l "shutter offset" T Transform1_TCT.shutteroffset}
+ addUserKnob {41 shuttercustomoffset l "" -STARTLINE T Transform1_TCT.shuttercustomoffset}
+ addUserKnob {26 ""}
+ addUserKnob {41 from0 l "mask channel" T Copy_TCT.from0}
+ addUserKnob {6 keep_bb l "Keep BBox" +STARTLINE}
+ keep_bb true
+ addUserKnob {26 ""}
+ addUserKnob {41 mix T Merge_TCT.mix}
+ addUserKnob {26 ""}
+ addUserKnob {20 info n 1}
+ info 0
+ addUserKnob {26 inf l "" +STARTLINE T "When the node`s A input is not in use the node will \nuse the information comes on the B input."}
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/transformcolortexture')\n"}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_TransformColorTexture© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name B
+  xpos -1360
+  ypos 375
+ }
+set N14a66e00 [stack 0]
+ Input {
+  inputs 0
+  name A
+  xpos -480
+  ypos 279
+  number 1
+ }
+ Switch {
+  inputs 2
+  which {{"!\[exists parent.input1]"}}
+  name Switch1_TCT
+  tile_color 0x666666ff
+  label "which: \[value which]"
+  xpos -480
+  ypos 369
+ }
+set N14a66700 [stack 0]
+ Dot {
+  name Dot1
+  xpos -446
+  ypos 522
+ }
+set N14a66380 [stack 0]
+ Dot {
+  name Dot3
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -556
+  ypos 522
+ }
+ Transform {
+  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
+  rotate {{parent.Transform1_TCT.rotate}}
+  scale {{parent.Transform1_TCT.scale}}
+  skewX {{parent.Transform1_TCT.skewX}}
+  skewY {{parent.Transform1_TCT.skewY}}
+  skew_order {{parent.Transform1_TCT.skew_order}}
+  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
+  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
+  filter {{Transform1_TCT.filter}}
+  clamp {{parent.Transform1_TCT.clamp}}
+  black_outside {{parent.Transform1_TCT.black_outside}}
+  motionblur {{parent.Transform1_TCT.motionblur}}
+  shutter {{parent.Transform1_TCT.shutter}}
+  shutteroffset {{Transform1_TCT.shutteroffset}}
+  name Transform2_TCT1
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -590
+  ypos 1412
+ }
+ Input {
+  inputs 0
+  name mask
+  xpos -480
+  ypos 1215
+  number 2
+ }
+push $N14a66e00
+ Dot {
+  name Dot2
+  xpos -1326
+  ypos 522
+ }
+set N14a8f500 [stack 0]
+ Dot {
+  name Dot11
+  xpos -1106
+  ypos 522
+ }
+set N14a8f180 [stack 0]
+ Dot {
+  name Dot5
+  xpos -886
+  ypos 522
+ }
+set N14a8ee00 [stack 0]
+ Dot {
+  name Dot12
+  xpos -666
+  ypos 522
+ }
+ Expression {
+  channel3 alpha
+  expr3 1
+  name Expression_A1_TCT1
+  tile_color 0x666666ff
+  label "a: \[value expr3]"
+  xpos -700
+  ypos 609
+ }
+set N14a8e700 [stack 0]
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge
+  tile_color 0x444444ff
+  label "\[value disable]"
+  selected true
+  xpos -700
+  ypos 1196
+  disable {{"!\[exists parent.input2]"}}
+ }
+push $N14a66380
+ Dot {
+  name Dot7
+  xpos -226
+  ypos 522
+ }
+set N14aafc00 [stack 0]
+ Dot {
+  name Dot14
+  xpos -6
+  ypos 522
+ }
+ Transform {
+  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
+  rotate {{parent.Transform1_TCT.rotate}}
+  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
+  skewX {{parent.Transform1_TCT.skewX}}
+  skewY {{parent.Transform1_TCT.skewY}}
+  skew_order {{Transform1_TCT.skew_order}}
+  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
+  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
+  filter {{Transform1_TCT.filter}}
+  clamp {{parent.Transform1_TCT.clamp}}
+  black_outside {{parent.Transform1_TCT.black_outside}}
+  motionblur {{parent.Transform1_TCT.motionblur}}
+  shutter {{parent.Transform1_TCT.shutter}}
+  shutteroffset {{Transform1_TCT.shutteroffset}}
+  name Transform3_TCT
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -40
+  ypos 740
+ }
+ Dot {
+  name Dot4
+  xpos -6
+  ypos 1026
+ }
+push $N14a8e700
+push $N14aafc00
+ Blur {
+  size 30
+  name Blur_TCT2
+  tile_color 0x666666ff
+  label "size: \[value size]"
+  xpos -260
+  ypos 603
+ }
+set N14aaee00 [stack 0]
+ Transform {
+  translate {{parent.Transform1_TCT.translate} {parent.Transform1_TCT.translate}}
+  rotate {{parent.Transform1_TCT.rotate}}
+  scale {{parent.Transform1_TCT.scale} {parent.Transform1_TCT.scale}}
+  skewX {{parent.Transform1_TCT.skewX}}
+  skewY {{parent.Transform1_TCT.skewY}}
+  skew_order {{parent.Transform1_TCT.skew_order}}
+  center {{parent.Transform1_TCT.center} {parent.Transform1_TCT.center}}
+  invert_matrix {{parent.Transform1_TCT.invert_matrix}}
+  filter {{Transform1_TCT.filter}}
+  clamp {{parent.Transform1_TCT.clamp}}
+  black_outside {{parent.Transform1_TCT.black_outside}}
+  motionblur {{parent.Transform1_TCT.motionblur}}
+  shutter {{parent.Transform1_TCT.shutter}}
+  shutteroffset {{Transform1_TCT.shutteroffset}}
+  name Transform2_TCT
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -260
+  ypos 740
+ }
+push $N14a8ee00
+ Blur {
+  size 30
+  name Blur_TCT1
+  tile_color 0x666666ff
+  xpos -920
+  ypos 609
+ }
+set N14aae700 [stack 0]
+ Keymix {
+  inputs 3
+  name Keymix2_TCT
+  tile_color 0x666666ff
+  xpos -920
+  ypos 753
+  disable {{"output  == 1 ? 0 : 1"}}
+ }
+ Dot {
+  name Dot13
+  xpos -886
+  ypos 882
+ }
+push $N14a8e700
+push $N14a66380
+push $N14aaee00
+ Merge2 {
+  inputs 2
+  operation divide
+  name MergeDiv_TCT2
+  tile_color 0x666666ff
+  xpos -480
+  ypos 615
+ }
+ Transform {
+  translate {100 0}
+  scale {{Scale_Proxy.scale1} {Scale_Proxy.scale1}}
+  center {960 540}
+  shutteroffset centred
+  name Transform1_TCT
+  tile_color 0x666666ff
+  label "\[value skew_order]\n\[value filter]\n\[value shutteroffset]"
+  xpos -480
+  ypos 740
+ }
+push $N14a8f180
+push $N14aae700
+ Merge2 {
+  inputs 2
+  operation divide
+  name MergeDiv_TCT1
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 615
+ }
+ Keymix {
+  inputs 3
+  name Keymix1_TCT
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 753
+  disable {{"output == 0 ? 0 : 1"}}
+ }
+ Merge2 {
+  inputs 2
+  operation multiply
+  name MergeMult_TCT1
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 879
+ }
+ Switch {
+  inputs 2
+  which {{"output  <2 ? 0 : 1"}}
+  name Switch_TCT
+  tile_color 0x666666ff
+  label "which: \[value which]"
+  xpos -1140
+  ypos 1017
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name Copy_TCT
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 1209
+ }
+ Premult {
+  name Premult_TCT
+  tile_color 0x666666ff
+  xpos -1140
+  ypos 1335
+ }
+set N14ada380 [stack 0]
+ ChannelMerge {
+  inputs 2
+  operation multiply
+  name ChannelMerge_TCT1
+  tile_color 0x555555ff
+  xpos -1140
+  ypos 1419
+ }
+push $N14a8f500
+ Dot {
+  name Dot6
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1326
+  ypos 1218
+ }
+set N14b15c00 [stack 0]
+ Dot {
+  name Dot8
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1546
+  ypos 1218
+ }
+ ChannelMerge {
+  inputs 2
+  name ChannelMerge_TCT2
+  tile_color 0x555555ff
+  xpos -1580
+  ypos 1419
+ }
+ Dot {
+  name Dot9
+  tile_color 0x949494ff
+  note_font_size 22
+  note_font_color 0xffffffff
+  xpos -1546
+  ypos 1530
+ }
+push $N14ada380
+push $N14b15c00
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge_TCT
+  tile_color 0x666666ff
+  xpos -1360
+  ypos 1335
+ }
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name Copy_TCT2
+  tile_color 0x555555ff
+  xpos -1360
+  ypos 1521
+ }
+ Crop {
+  box {{Crop_proxy_TCT.box.x} {Crop_proxy_TCT.box.y} {Crop_proxy_TCT.box.r} {Crop_proxy_TCT.box.t}}
+  name Crop_TCT
+  tile_color 0x555555ff
+  xpos -1360
+  ypos 1647
+  disable {{!parent.keep_bb}}
+ }
+ Output {
+  name Output
+  xpos -1360
+  ypos 1743
+ }
+push $N14a66700
+ Crop {
+  box {{input.format.x} {input.format.y} {input.width} {input.height}}
+  name Crop_proxy_TCT
+  tile_color 0x555555ff
+  xpos -260
+  ypos 375
+ }
+ StickyNote {
+  inputs 0
+  name StickyNote3
+  label "output == 0 ? 0 : 1"
+  xpos -1151
+  ypos 807
+ }
+ StickyNote {
+  inputs 0
+  name StickyNote1
+  label "output == 1 ? 0 : 1"
+  xpos -931
+  ypos 807
+ }
+ StickyNote {
+  inputs 0
+  name StickyNote4
+  label "output <2 ? 0 : 1"
+  xpos -1147
+  ypos 1071
+ }
+ NoOp {
+  inputs 0
+  name Scale_Proxy
+  tile_color 0x666666ff
+  xpos -480
+  ypos 879
+  addUserKnob {20 User}
+  addUserKnob {14 scale1 R 0 100}
+  scale1 1
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_ShapeRepeater
+ tile_color 0xf25400ff
+ selected true
+ xpos 620
+ ypos -832
+ addUserKnob {20 User}
+ addUserKnob {4 output l Output M {"Pattern Only" "Pattern Over Image"}}
+ addUserKnob {26 shape l "<b>S H A P E"}
+ addUserKnob {41 position l Position T Flare.position}
+ addUserKnob {22 set_center_pos l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"position\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 size_mult l "Size " T Flare.size_mult}
+ addUserKnob {41 anamorph l Anamorph T Flare.anamorph}
+ addUserKnob {41 corners l Points T Flare.corners}
+ addUserKnob {41 flattening l "Edge Flattening" T Flare.flattening}
+ addUserKnob {41 sharpness l "Corner Sharpness" T Flare.sharpness}
+ addUserKnob {41 corners_angle l Angle T Flare.corners_angle}
+ addUserKnob {41 falloff l Falloff T proxy1.falloff}
+ addUserKnob {41 multiply l Color T Grade.multiply}
+ addUserKnob {20 trans_shape l "T r a n s f o r m  S h a p e" n 1}
+ trans_shape 0
+ addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
+ addUserKnob {41 rotate2 l rotate T Trans_COPY1_proxy_2.rotate2}
+ addUserKnob {41 scale2 l scale T Trans_COPY1_proxy_2.scale2}
+ addUserKnob {41 skewX2 l skewX T Trans_COPY1_proxy_2.skewX2}
+ addUserKnob {41 skewY2 l skewY T Trans_COPY1_proxy_2.skewY2}
+ addUserKnob {41 skeworder2 l "skew order" T Trans_COPY1_proxy_2.skeworder2}
+ addUserKnob {41 center2 l center T Trans_COPY1_proxy_2.center2}
+ addUserKnob {22 set_senter_trans_shape l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center2\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 invert2 l invert T Trans_COPY1_proxy_2.invert2}
+ addUserKnob {41 filter2 l filter T Trans_COPY1_proxy_2.filter2}
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {26 rep1 l "<b>R E P E A T E R"}
+ addUserKnob {41 copy1 l Copies T PROXY_MAIN1.copy1}
+ addUserKnob {41 fadeout1 l "Fade Out" T Trans_COPY1_proxy.fadeout1}
+ addUserKnob {41 fadein1 l "Fade In" T Trans_COPY1_proxy.fadein1}
+ addUserKnob {6 apply_on_copy1 l "Apply Transform on Original Shape" +STARTLINE}
+ addUserKnob {41 translate1 l translate T Trans_COPY1_proxy.translate1}
+ addUserKnob {41 rotate1 l rotate T Trans_COPY1_proxy.rotate1}
+ addUserKnob {41 scale1 l scale T Trans_COPY1_proxy.scale1}
+ addUserKnob {41 skewX1 l skewX T Trans_COPY1_proxy.skewX1}
+ addUserKnob {41 skewY1 l skewY T Trans_COPY1_proxy.skewY1}
+ addUserKnob {41 skeworder1 l "skew order" T Trans_COPY1_proxy.skeworder1}
+ addUserKnob {41 center1 l center T Trans_COPY1_proxy.center1}
+ addUserKnob {41 invert1 l invert T Trans_COPY1_proxy.invert1}
+ addUserKnob {41 filter1 l filter T Trans_COPY1_proxy.filter1}
+ addUserKnob {41 motionblur1 l motionblur T Trans_COPY1_proxy.motionblur1}
+ addUserKnob {41 shutter1 l shutter T Trans_COPY1_proxy.shutter1}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/shape-repeater')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_ShapeRepeater© by Attila Gasparetz</font>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode1
+  tile_color 0xff
+  label "<center><font color=red>DON`T TOUCH\nstatic"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font_size 42
+  xpos 738
+  ypos 63
+  bdwidth 285
+  bdheight 305
+ }
+ NoOp {
+  inputs 0
+  name proxy1
+  label static
+  xpos 620
+  ypos 248
+  addUserKnob {20 User}
+  addUserKnob {7 falloff l Falloff R 0 100}
+  falloff 5
+ }
+ NoOp {
+  inputs 0
+  name PROXY_MAIN1
+  knobChanged "\nm = nuke.thisNode()\nkc = nuke.thisKnob()\nif kc.name() in \[\"copy1\"]:\n    for n in nuke.allNodes():\n        if \"static\" not in n\['label'].getValue():\n            nuke.delete(n)\n    \n    iRep = m.knob('copy1').getValue()\n    iRepeats = int(iRep)-1\n    RepMax = int(iRep)\n    bfirstLoop = True\n    \n    # Main Transform for Copy1\n    w = nuke.toNode('Trans_COPY1')\n    \n    # Last Merge connected to this\n    b = nuke.toNode('COPIES1_end')\n    \n    # Dot would be connected to this and allows toggle between original and modified source \n    s = nuke.toNode('Switch1')\n    \n    nDot = nuke.nodes.Dot()\n    nDot.setInput(0, s)\n\n    nMult = nuke.toNode('mu1t2_1')\n    \n    if (iRepeats+1) >= 2: \n    \n        for i in range(iRepeats):\n            RepNum = int(i)+1\n            RepNum2 = int(i)+2\n            nMult.knob('ReMax').setValue( RepMax )\n            nMult.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CTrans = nuke.nodes.Transform(name = \"t\" + str(i))\n            CTrans.knob('translate').setExpression('Trans_COPY1.translate')\n            CTrans.knob('rotate').setExpression('Trans_COPY1.rotate')\n            CTrans\['scale'].setSingleValue(False)\n            CTrans\['scale'].setExpression(('Trans_COPY1.scale.w'),0)\n            CTrans\['scale'].setExpression(('Trans_COPY1.scale.h'),1)\n            CTrans.knob('skewX').setExpression('Trans_COPY1.skewX')\n            CTrans.knob('skewY').setExpression('Trans_COPY1.skewY')\n            CTrans.knob('skew_order').setExpression('Trans_COPY1.skew_order')\n            CTrans.knob('center').setExpression('Trans_COPY1.center')\n            CTrans.knob('invert_matrix').setExpression('Trans_COPY1.invert_matrix')\n            CTrans.knob('filter').setExpression('Trans_COPY1.filter')\n            CTrans.knob('motionblur').setExpression('Trans_COPY1.motionblur')\n            CTrans.knob('shutter').setExpression('Trans_COPY1.shutter')\n            CTrans.knob('shutteroffset').setValue(0)\n            CMult1 = nuke.nodes.Multiply(name = \"mu1_\" + str(i))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult1.addKnob(k)\n            CMult1.addKnob(k2)\n            CMult1.knob('ReMax').setValue( RepMax )\n            CMult1.knob('ReNum').setValue( RepNum )\n            CMult1.knob('value').setExpression('((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )')\n            CMult1.setInput(0, CTrans)\n            CMult2 = nuke.nodes.Multiply(name = \"mu1t2_\" + str(RepNum2))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult2.addKnob(k)\n            CMult2.addKnob(k2)\n            CMult2.knob('ReMax').setValue( RepMax )\n            CMult2.knob('ReNum').setValue( RepNum )\n            CMult2.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CMult2.setInput(0, CMult1)\n            nMerge = nuke.nodes.Merge2(name = \"m\" + str(i))\n            nMerge.knob('also_merge').setValue('all')\n            nMerge.setInput(1, CMult2)\n            \n            if bfirstLoop:\n                bfirstLoop = False\n                CTrans.setInput(0, nDot)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nMult)\n            else:\n                CTrans.setInput(0, nPrevTrans)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nPrevMerge)\n \n            nPrevMerge = nMerge\n            nPrevTrans = CTrans\n            nPrevMult1 = CMult1\n            nPrevMult2 = CMult2\n        \n        MNum = int(iRepeats) - 1\n        \n        p = nuke.toNode(\"m\" + str(MNum))\n        \n        b.setInput(0, p)\n\n\n    else:\n        b.setInput(0, nDot)\n"
+  label static
+  xpos 840
+  ypos 248
+  addUserKnob {20 User}
+  addUserKnob {3 copy1 l Copies1}
+  copy1 3
+ }
+ Input {
+  inputs 0
+  name Input
+  label static
+  xpos 510
+  ypos -16
+ }
+ Dot {
+  name Dot2
+  label static
+  xpos 544
+  ypos 90
+ }
+set N13273c00 [stack 0]
+ Remove {
+  name Remove
+  label static
+  xpos 510
+  ypos 169
+ }
+ Flare {
+  position {960 540}
+  radius {100 {radius.0} {100+parent.proxy1.falloff}}
+  ring_color {1 1 1}
+  inner_color {1 1 1}
+  outer_falloff {1 1 1}
+  inner_falloff {1 1 1}
+  brightness {1 1 1}
+  vis_out 1
+  flattening 6
+  sharpness 1
+  corners_angle 0.1
+  mult_offset 0
+  name Flare
+  label static
+  xpos 510
+  ypos 248
+ }
+ Shuffle {
+  alpha red
+  name Shuffle1
+  label static
+  xpos 510
+  ypos 320
+ }
+ Clamp {
+  name Clamp
+  label static
+  xpos 510
+  ypos 361
+ }
+ Transform {
+  translate {{Trans_COPY1_proxy_2.translate2} {Trans_COPY1_proxy_2.translate2}}
+  rotate {{Trans_COPY1_proxy_2.rotate2}}
+  scale {{Trans_COPY1_proxy_2.scale2} {Trans_COPY1_proxy_2.scale2}}
+  skewX {{Trans_COPY1_proxy_2.skewX2}}
+  skewY {{Trans_COPY1_proxy_2.skewY2}}
+  skew_order {{Trans_COPY1_proxy_2.skeworder2}}
+  center {{Trans_COPY1_proxy_2.center2} {Trans_COPY1_proxy_2.center2}}
+  invert_matrix {{Trans_COPY1_proxy_2.invert2}}
+  filter {{Trans_COPY1_proxy_2.filter2}}
+  shutteroffset centred
+  name Transform1
+  label static
+  xpos 510
+  ypos 416
+ }
+ Grade {
+  name Grade
+  label static
+  xpos 510
+  ypos 488
+ }
+set N13272700 [stack 0]
+push $N13272700
+ Transform {
+  translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
+  rotate {{Trans_COPY1_proxy.rotate1}}
+  scale {{Trans_COPY1_proxy.scale1} {Trans_COPY1_proxy.scale1}}
+  skewX {{Trans_COPY1_proxy.skewX1}}
+  skewY {{Trans_COPY1_proxy.skewY1}}
+  skew_order {{Trans_COPY1_proxy.skeworder1}}
+  center {{"Flare.position - translate.x + Trans_COPY1_proxy.center1.x"} {"Flare.position- translate.y +  + Trans_COPY1_proxy.center1.y"}}
+  invert_matrix {{Trans_COPY1_proxy.invert1}}
+  filter {{Trans_COPY1_proxy.filter1}}
+  motionblur {{Trans_COPY1_proxy.motionblur1}}
+  shutter {{Trans_COPY1_proxy.shutter1}}
+  shutteroffset centred
+  name Trans_COPY1
+  label static
+  xpos 400
+  ypos 488
+ }
+ Switch {
+  inputs 2
+  which {{!apply_on_copy1}}
+  name Switch1
+  label static
+  xpos 510
+  ypos 608
+ }
+set N13272000 [stack 0]
+ Dot {
+  name Dot1
+ }
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale.w} {Trans_COPY1.scale.h}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t0
+ }
+set N28ab9180 [stack 0]
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale.w} {Trans_COPY1.scale.h}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t1
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_1
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 2
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_3
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 2
+ }
+push $N28ab9180
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_0
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_2
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+push $N13272000
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_1
+  label static
+  xpos 730
+  ypos 601
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 3
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name m0
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name m1
+ }
+ NoOp {
+  name COPIES1_end
+  label static
+  xpos 510
+  ypos 2456
+ }
+ Crop {
+  box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
+  name Crop1
+  label "Box: \[value box]\nstatic"
+  xpos 510
+  ypos 2593
+ }
+set N132ed500 [stack 0]
+push $N13273c00
+ Dot {
+  name Dot4
+  label static
+  xpos 104
+  ypos 2610
+ }
+ Merge2 {
+  inputs 2
+  name Merge1
+  label static
+  xpos 290
+  ypos 2600
+ }
+push $N132ed500
+ Switch {
+  inputs 2
+  which {{output}}
+  name Switch2
+  label "Which: \[value which]\nstatic"
+  xpos 510
+  ypos 2689
+ }
+ Output {
+  name Output1
+  label static
+  xpos 510
+  ypos 2816
+ }
+ NoOp {
+  inputs 0
+  name Trans_COPY1_proxy_2
+  label static
+  xpos 290
+  ypos 464
+  addUserKnob {20 User}
+  addUserKnob {12 translate2}
+  addUserKnob {7 rotate2 R -180 180}
+  addUserKnob {14 scale2 R 0 100}
+  scale2 1
+  addUserKnob {7 skewX2 R -1 1}
+  addUserKnob {7 skewY2 R -1 1}
+  addUserKnob {4 skeworder2 M {XY YX ""}}
+  addUserKnob {12 center2}
+  center2 {960 540}
+  addUserKnob {6 invert2 +STARTLINE}
+  addUserKnob {4 filter2 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4 ""}}
+  filter2 Cubic
+ }
+ NoOp {
+  inputs 0
+  name Trans_COPY1_proxy
+  label static
+  xpos 180
+  ypos 656
+  addUserKnob {20 User}
+  addUserKnob {12 translate1}
+  translate1 {200 0}
+  addUserKnob {7 rotate1 R -180 180}
+  addUserKnob {14 scale1 R 0 100}
+  scale1 1
+  addUserKnob {7 skewX1 R -1 1}
+  addUserKnob {7 skewY1 R -1 1}
+  addUserKnob {4 skeworder1 M {XY YX}}
+  addUserKnob {12 center1}
+  addUserKnob {6 invert1 +STARTLINE}
+  addUserKnob {4 filter1 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4}}
+  filter1 Cubic
+  addUserKnob {7 motionblur1 R 0 4}
+  motionblur1 1
+  addUserKnob {7 shutter1 R 0 2}
+  shutter1 0.5
+  addUserKnob {26 ""}
+  addUserKnob {7 fadeout l "Fade Out"}
+  fadeout {{1-fadeout1}}
+  addUserKnob {7 fadeout1 l "Fade Out 1"}
+  addUserKnob {7 fadein l "Fade In"}
+  fadein {{1-fadein1}}
+  addUserKnob {7 fadein1 l "Fade In"}
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Repeater
+ tile_color 0xdf7100ff
+ selected true
+ xpos 400
+ ypos -826
+ addUserKnob {20 User}
+ addUserKnob {26 shape l "<b>I N P U T"}
+ addUserKnob {41 translate2 l translate T Trans_COPY1_proxy_2.translate2}
+ addUserKnob {41 rotate2 l rotate T Trans_COPY1_proxy_2.rotate2}
+ addUserKnob {41 scale2 l scale T Trans_COPY1_proxy_2.scale2}
+ addUserKnob {41 skewX2 l skewX T Trans_COPY1_proxy_2.skewX2}
+ addUserKnob {41 skewY2 l skewY T Trans_COPY1_proxy_2.skewY2}
+ addUserKnob {41 skeworder2 l "skew order" T Trans_COPY1_proxy_2.skeworder2}
+ addUserKnob {41 center2 l center T Trans_COPY1_proxy_2.center2}
+ addUserKnob {22 set_center_2 l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center2\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 invert2 l invert T Trans_COPY1_proxy_2.invert2}
+ addUserKnob {41 filter2 l filter T Trans_COPY1_proxy_2.filter2}
+ addUserKnob {26 rep1 l "<b>R E P E A T E R"}
+ addUserKnob {41 copies l Copies T PROXY.copies}
+ addUserKnob {41 fadeout1 l "Fade Out" T Trans_COPY1_proxy.fadeout1}
+ addUserKnob {41 fadein1 l "Fade In" T Trans_COPY1_proxy.fadein1}
+ addUserKnob {6 apply_on_copy1 l "Apply Transform on Input Image" +STARTLINE}
+ apply_on_copy1 true
+ addUserKnob {41 operation1 l Operation T Merge_Proxy.operation1}
+ addUserKnob {41 translate1 l translate T Trans_COPY1_proxy.translate1}
+ addUserKnob {41 rotate1 l rotate T Trans_COPY1_proxy.rotate1}
+ addUserKnob {41 scale1 l scale T Trans_COPY1_proxy.scale1}
+ addUserKnob {41 skewX1 l skewX T Trans_COPY1_proxy.skewX1}
+ addUserKnob {41 skewY1 l skewY T Trans_COPY1_proxy.skewY1}
+ addUserKnob {41 skeworder1 l skeworder T Trans_COPY1_proxy.skeworder1}
+ addUserKnob {41 center1 l center T Trans_COPY1_proxy.center1}
+ addUserKnob {22 set_center_center l "Set Center" -STARTLINE T "this_width = nuke.thisGroup().width()\n\nthis_height = nuke.thisGroup().height()\n\nnewWidth = this_width/2\nnewHeight = this_height/2\n\nnuke.thisGroup().knob(\"center1\").setValue(\[newWidth, newHeight])"}
+ addUserKnob {41 invert1 l invert T Trans_COPY1_proxy.invert1}
+ addUserKnob {41 filter1 l filter T Trans_COPY1_proxy.filter1}
+ addUserKnob {41 motionblur1 l motionblur T Trans_COPY1_proxy.motionblur1}
+ addUserKnob {41 shutter1 l shutter T Trans_COPY1_proxy.shutter1}
+ addUserKnob {26 ""}
+ addUserKnob {6 clamp l Clamp +STARTLINE}
+ clamp true
+ addUserKnob {6 crop l Crop +STARTLINE}
+ crop true
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/repeater')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Repeater© by Attila Gasparetz</font>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode1
+  tile_color 0xff
+  label "<center><font color=red>DON`T TOUCH\nstatic"
+  note_font "Verdana Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+  note_font_size 42
+  xpos 738
+  ypos 63
+  bdwidth 285
+  bdheight 305
+ }
+ Input {
+  inputs 0
+  name Input
+  label static
+  xpos 510
+  ypos 272
+ }
+ Transform {
+  translate {{Trans_COPY1_proxy_2.translate2} {Trans_COPY1_proxy_2.translate2}}
+  rotate {{Trans_COPY1_proxy_2.rotate2}}
+  scale {{Trans_COPY1_proxy_2.scale2} {Trans_COPY1_proxy_2.scale2}}
+  skewX {{Trans_COPY1_proxy_2.skewX2}}
+  skewY {{Trans_COPY1_proxy_2.skewY2}}
+  skew_order {{Trans_COPY1_proxy_2.skeworder2}}
+  center {{Trans_COPY1_proxy_2.center2} {Trans_COPY1_proxy_2.center2}}
+  invert_matrix {{Trans_COPY1_proxy_2.invert2}}
+  filter {{Trans_COPY1_proxy_2.filter2}}
+  shutteroffset centred
+  name Trans_COPY2
+  label static
+  xpos 510
+  ypos 464
+ }
+set N1319d180 [stack 0]
+push $N1319d180
+ Transform {
+  translate {{Trans_COPY1_proxy.translate1} {Trans_COPY1_proxy.translate1}}
+  rotate {{Trans_COPY1_proxy.rotate1}}
+  scale {{Trans_COPY1_proxy.scale1} {Trans_COPY1_proxy.scale1}}
+  skewX {{Trans_COPY1_proxy.skewX1}}
+  skewY {{Trans_COPY1_proxy.skewY1}}
+  skew_order {{Trans_COPY1_proxy.skeworder1}}
+  center {{Trans_COPY1_proxy.center1.x} {Trans_COPY1_proxy.center1.y}}
+  invert_matrix {{Trans_COPY1_proxy.invert1}}
+  filter {{Trans_COPY1_proxy.filter1}}
+  motionblur {{Trans_COPY1_proxy.motionblur1}}
+  shutter {{Trans_COPY1_proxy.shutter1}}
+  shutteroffset centred
+  name Trans_COPY1
+  label static
+  xpos 400
+  ypos 632
+ }
+ Switch {
+  inputs 2
+  which {{!apply_on_copy1}}
+  name Switch1
+  label static
+  xpos 510
+  ypos 632
+ }
+set N1319ca80 [stack 0]
+ Dot {
+  name Dot1
+ }
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale.w} {Trans_COPY1.scale.h}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t0
+ }
+set N6122b180 [stack 0]
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale.w} {Trans_COPY1.scale.h}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t1
+ }
+set N6122a380 [stack 0]
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale.w} {Trans_COPY1.scale.h}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t2
+ }
+set N8fd57500 [stack 0]
+ Transform {
+  translate {{Trans_COPY1.translate} {Trans_COPY1.translate}}
+  rotate {{Trans_COPY1.rotate}}
+  scale {{Trans_COPY1.scale.w} {Trans_COPY1.scale.h}}
+  skewX {{Trans_COPY1.skewX}}
+  skewY {{Trans_COPY1.skewY}}
+  skew_order {{Trans_COPY1.skew_order}}
+  center {{Trans_COPY1.center} {Trans_COPY1.center}}
+  invert_matrix {{Trans_COPY1.invert_matrix}}
+  filter {{Trans_COPY1.filter}}
+  motionblur {{Trans_COPY1.motionblur}}
+  shutter {{Trans_COPY1.shutter}}
+  shutteroffset centred
+  name t3
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_3
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 4
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_5
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 4
+ }
+push $N8fd57500
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_2
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 3
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_4
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 3
+ }
+push $N6122a380
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_1
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 2
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_3
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 2
+ }
+push $N6122b180
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )"}}
+  name mu1_0
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_2
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+push $N1319ca80
+ Multiply {
+  value {{"((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )"}}
+  name mu1t2_1
+  label static
+  xpos 695
+  ypos 577
+  addUserKnob {20 User}
+  addUserKnob {3 ReMax}
+  ReMax 5
+  addUserKnob {3 ReNum}
+  ReNum 1
+ }
+ Merge2 {
+  inputs 2
+  operation {{Merge_Proxy.operation1}}
+  also_merge all
+  name m0
+ }
+ Merge2 {
+  inputs 2
+  operation {{Merge_Proxy.operation1}}
+  also_merge all
+  name m1
+ }
+ Merge2 {
+  inputs 2
+  operation {{Merge_Proxy.operation1}}
+  also_merge all
+  name m2
+ }
+ Merge2 {
+  inputs 2
+  operation {{Merge_Proxy.operation1}}
+  also_merge all
+  name m3
+ }
+ NoOp {
+  name COPIES1_end
+  label static
+  xpos 510
+  ypos 1832
+ }
+ Clamp {
+  name Clamp
+  label static
+  xpos 510
+  ypos 1921
+  disable {{!parent.clamp}}
+ }
+ Crop {
+  box {{input.format.x} {input.format.y} {input.format.r} {input.format.t}}
+  name Crop1
+  label "Box: \[value box]\nstatic"
+  xpos 510
+  ypos 2017
+  disable {{!parent.crop}}
+ }
+ Output {
+  name Output1
+  label static
+  xpos 510
+  ypos 2096
+ }
+ NoOp {
+  inputs 0
+  name Trans_COPY1_proxy_2
+  label static
+  xpos 290
+  ypos 464
+  addUserKnob {20 User}
+  addUserKnob {12 translate2}
+  addUserKnob {7 rotate2 R -180 180}
+  addUserKnob {14 scale2 R 0 100}
+  scale2 1
+  addUserKnob {7 skewX2 R -1 1}
+  addUserKnob {7 skewY2 R -1 1}
+  addUserKnob {4 skeworder2 M {XY YX ""}}
+  addUserKnob {12 center2}
+  center2 {960 540}
+  addUserKnob {6 invert2 +STARTLINE}
+  addUserKnob {4 filter2 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4 ""}}
+  filter2 Cubic
+ }
+ NoOp {
+  inputs 0
+  name PROXY
+  knobChanged "\nm = nuke.thisNode()\nkc = nuke.thisKnob()\nif kc.name() in \[\"copies\"]:\n    for n in nuke.allNodes():\n        if \"static\" not in n\['label'].getValue():\n            nuke.delete(n)\n    \n    iRep = m.knob('copies').getValue()\n    iRepeats = int(iRep)-1\n    RepMax = int(iRep)\n    bfirstLoop = True\n    \n    # Main Transform for Copy1\n    w = nuke.toNode('Trans_COPY1')\n    \n    # Last Merge connected to this\n    b = nuke.toNode('COPIES1_end')\n    \n    # Dot would be connected to this and allows toggle between original and modified source \n    s = nuke.toNode('Switch1')\n    \n    nDot = nuke.nodes.Dot()\n    nDot.setInput(0, s)\n\n    nMult = nuke.toNode('mu1t2_1')\n    \n    if (iRepeats+1) >= 2: \n    \n        for i in range(iRepeats):\n            RepNum = int(i)+1\n            RepNum2 = int(i)+2\n            nMult.knob('ReMax').setValue( RepMax )\n            nMult.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CTrans = nuke.nodes.Transform(name = \"t\" + str(i))\n            CTrans.knob('translate').setExpression('Trans_COPY1.translate')\n            CTrans.knob('rotate').setExpression('Trans_COPY1.rotate')\n            CTrans\['scale'].setSingleValue(False)\n            CTrans\['scale'].setExpression(('Trans_COPY1.scale.w'),0)\n            CTrans\['scale'].setExpression(('Trans_COPY1.scale.h'),1)\n            CTrans.knob('skewX').setExpression('Trans_COPY1.skewX')\n            CTrans.knob('skewY').setExpression('Trans_COPY1.skewY')\n            CTrans.knob('skew_order').setExpression('Trans_COPY1.skew_order')\n            CTrans.knob('center').setExpression('Trans_COPY1.center')\n            CTrans.knob('invert_matrix').setExpression('Trans_COPY1.invert_matrix')\n            CTrans.knob('filter').setExpression('Trans_COPY1.filter')\n            CTrans.knob('motionblur').setExpression('Trans_COPY1.motionblur')\n            CTrans.knob('shutter').setExpression('Trans_COPY1.shutter')\n            CTrans.knob('shutteroffset').setValue(0)\n            CMult1 = nuke.nodes.Multiply(name = \"mu1_\" + str(i))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult1.addKnob(k)\n            CMult1.addKnob(k2)\n            CMult1.knob('ReMax').setValue( RepMax )\n            CMult1.knob('ReNum').setValue( RepNum )\n            CMult1.knob('value').setExpression('((1/(ReMax-1))*(ReMax-ReNum)) + ( ( 1- ((1/(ReMax-1))*(ReMax-ReNum)) ) * Trans_COPY1_proxy.fadeout )')\n            CMult1.setInput(0, CTrans)\n            CMult2 = nuke.nodes.Multiply(name = \"mu1t2_\" + str(RepNum2))\n            k = nuke.Int_Knob('ReMax', 'ReMax' )\n            k2 = nuke.Int_Knob('ReNum', 'ReNum' )\n            CMult2.addKnob(k)\n            CMult2.addKnob(k2)\n            CMult2.knob('ReMax').setValue( RepMax )\n            CMult2.knob('ReNum').setValue( RepNum )\n            CMult2.knob('value').setExpression('((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) + ( ( 1- ((1/(ReMax-1))*(ReMax-(ReMax-ReNum))) ) * Trans_COPY1_proxy.fadein )')\n            CMult2.setInput(0, CMult1)\n            nMerge = nuke.nodes.Merge2(name = \"m\" + str(i))\n            nMerge.knob('also_merge').setValue('all')\n            nMerge.knob('operation').setExpression('Merge_Proxy.operation1')\n            nMerge.setInput(1, CMult2)\n            \n            if bfirstLoop:\n                bfirstLoop = False\n                CTrans.setInput(0, nDot)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nMult)\n            else:\n                CTrans.setInput(0, nPrevTrans)\n                CMult1.setInput(0, CTrans)\n                CMult2.setInput(0, CMult1)\n                nMerge.setInput(0, nPrevMerge)\n \n            nPrevMerge = nMerge\n            nPrevTrans = CTrans\n            nPrevMult1 = CMult1\n            nPrevMult2 = CMult2\n        \n        MNum = int(iRepeats) - 1\n        \n        p = nuke.toNode(\"m\" + str(MNum))\n        \n        b.setInput(0, p)\n    else:\n        b.setInput(0, nDot)\n\n"
+  label static
+  xpos 840
+  ypos 272
+  addUserKnob {20 User}
+  addUserKnob {3 copies l Copies}
+  copies 5
+ }
+ NoOp {
+  inputs 0
+  name Merge_Proxy
+  label static
+  xpos 620
+  ypos 464
+  addUserKnob {20 User}
+  addUserKnob {4 operation1 M {atop average color-burn color-dodge conjoint-over copy difference disjoint-over divide exclusion from geometric hard-light hypot in mask matte max min minus multiply out over overlay plus screen soft-light stencil under xor ""}}
+  operation1 xor
+ }
+ NoOp {
+  inputs 0
+  name Trans_COPY1_proxy
+  label static
+  xpos 290
+  ypos 632
+  addUserKnob {20 User}
+  addUserKnob {12 translate1}
+  translate1 {50 0}
+  addUserKnob {7 rotate1 R -180 180}
+  addUserKnob {14 scale1 R 0 100}
+  scale1 1
+  addUserKnob {7 skewX1 R -1 1}
+  addUserKnob {7 skewY1 R -1 1}
+  addUserKnob {4 skeworder1 M {XY YX}}
+  addUserKnob {12 center1}
+  center1 {960 540}
+  addUserKnob {6 invert1 +STARTLINE}
+  addUserKnob {4 filter1 M {Impulse Cubic Keys Simon Rifman Mitchell Parzen Notsch Lanczos4 Lanczos6 Sinc4}}
+  filter1 Cubic
+  addUserKnob {7 motionblur1 R 0 4}
+  motionblur1 1
+  addUserKnob {7 shutter1 R 0 2}
+  shutter1 0.5
+  addUserKnob {26 ""}
+  addUserKnob {7 fadeout l "Fade Out"}
+  fadeout {{1-fadeout1}}
+  addUserKnob {7 fadeout1 l "Fade Out"}
+  addUserKnob {7 fadein l "Fade In"}
+  fadein {{1-fadein1}}
+  addUserKnob {7 fadein1 l "Fade In"}
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Switch_Highlight
+ tile_color 0xffff00ff
+ label "\[if \{\[numvalue this.which_highlight] == 0\} \{return \[value this.zero_is]\} else \{return \[value this.one_is]\}]\nGroup: \[value group_n]\n\[knob tile_color \[ expr \{ \[value which_highlight]? 16711935 : 4294902015 \}]]\n"
+ note_font "Bitstream Vera Sans Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold Bold"
+ note_font_size 13
+ selected true
+ xpos 620
+ ypos 216
+ addUserKnob {20 User}
+ addUserKnob {41 which_highlight l which T Switch1.which}
+ addUserKnob {26 ""}
+ addUserKnob {1 zero_is l "0 is"}
+ zero_is "on script"
+ addUserKnob {1 one_is l "1 is"}
+ one_is "on precomp"
+ addUserKnob {26 ""}
+ addUserKnob {1 group_n l Group}
+ group_n "Light passes"
+ addUserKnob {26 ""}
+ addUserKnob {22 control1 l "Set All 0" T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(False)\n        except Exception:\n            pass\n" +STARTLINE}
+ addUserKnob {22 control2 l "Set All 1" -STARTLINE T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"which_highlight\"].setValue(True)\n        except Exception:\n            pass\n"}
+ addUserKnob {26 ""}
+ addUserKnob {22 setgroup0 l "Set same group 0" T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(False)\n            else:\n                pass        \n        except Exception:\n            pass\n" +STARTLINE}
+ addUserKnob {22 setgroup1 l "Set same group 1" -STARTLINE T "m = nuke.thisGroup()\nk = m.knob('group_n').getValue()\n\nnodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            if node\[\"group_n\"].getValue() == k:\n                node\[\"which_highlight\"].setValue(True)\n            else:\n                pass        \n        except Exception:\n            pass\n"}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/switch-highlight')\n" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.02 version</font>"}
+ addUserKnob {26 HeadlineB l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Switch_Highlight© by Attila Gasparetz</font>"}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 290
+  ypos 398
+  number 1
+ }
+ Input {
+  inputs 0
+  name Input0
+  xpos 510
+  ypos 398
+ }
+ Switch {
+  inputs 2
+  name Switch1
+  xpos 400
+  ypos 494
+ }
+ Output {
+  name Output1
+  xpos 400
+  ypos 590
+ }
+end_group
+push $cut_paste_input
+Group {
+ name GM_Render_Switch
+ tile_color 0xbbbbbbff
+ selected true
+ xpos 400
+ ypos 230
+ addUserKnob {20 User}
+ addUserKnob {26 info1 l "<font size=5><b>Switch this node"}
+ addUserKnob {6 r_s_tick l "Show 1" +STARTLINE}
+ addUserKnob {26 info2 l "<font size=5><b>Switch all nodes"}
+ addUserKnob {22 control1 l "Set All 0" T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"r_s_tick\"].setValue(False)\n        except Exception:\n            pass\n" +STARTLINE}
+ addUserKnob {22 control2 l "Set All 1" -STARTLINE T "nodes_classes = \[\"Group\"]\n\nfor node in nuke.allNodes(group=nuke.root()):\n    if node.Class() in nodes_classes:\n        try:\n            node\[\"r_s_tick\"].setValue(True)\n        except Exception:\n            pass\n"}
+ addUserKnob {26 ""}
+ addUserKnob {26 info3 l "" +STARTLINE T "Recommended use:\n0 - Lighter nodes\n1 - Heavy nodes\n-------------------------\nThe nodes on 1 will be\n used in rendering."}
+ addUserKnob {26 ""}
+ addUserKnob {22 tut l Tutorial t "Opens the relevant tutorial from my site in your browser. " -STARTLINE T "import os\nimport sys\n\ntry:\n    import subprocess\n    def _run(cmd, shell, wait):\n        opener = subprocess.Popen(cmd, shell=shell)\n        if wait:\n            opener.wait()\n        return opener.pid\nexcept ImportError:\n    import popen2\n    def _run(cmd, shell, wait):\n        opener = popen2.Popen3(cmd)\n        if wait:\n            opener.wait()\n        return opener.pid\n\ndef _open(url, wait=0):\n    if sys.platform == \"darwin\":\n        cmd = \[\"open\", url]\n    elif hasattr(os, \"startfile\"):\n        return os.startfile(url)\n    elif os.environ.has_key(\"KDE_FULL_SESSION\") or os.environ.has_key(\"KDE_MULTIHEAD\") or \\\n        os.environ.has_key(\"GNOME_DESKTOP_SESSION_ID\") or os.environ.has_key(\"GNOME_KEYRING_SOCKET\"):\n        cmd = \[\"xdg-open\", url]\n    else:\n        raise OSError, \"Desktop not supported.\"\n\n    return _run(cmd, 0, wait)\n\n_open('https://www.gatimedia.co.uk/render-switch')\n"}
+ addUserKnob {26 ""}
+ addUserKnob {26 TEXT l "" +STARTLINE T "<font color=#808080 size=\"5\" >1.01 version</font>"}
+ addUserKnob {26 credit l "" +STARTLINE T "<font color=#808080 size=\"2\">GM_Render Switch© by Attila Gasparetz and Nicholas Zissimos - 2019</font>"}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 400
+  ypos 494
+  number 1
+ }
+set N8fd94380 [stack 0]
+ Input {
+  inputs 0
+  name Input0
+  xpos 620
+  ypos 494
+ }
+ Switch {
+  inputs 2
+  which {{"\[python nuke.executing()]"}}
+  name Switch1
+  label "\[value which]"
+  xpos 620
+  ypos 632
+ }
+set N8fd94000 [stack 0]
+push $N8fd94380
+push $N8fd94000
+ Switch {
+  inputs 2
+  which {{parent.r_s_tick}}
+  name Switch2
+  label "\[value which]"
+  xpos 400
+  ypos 632
+ }
+ Switch {
+  inputs 2
+  which {{"\[python nuke.executing()]"}}
+  name Switch3
+  label "\[value which]"
+  xpos 400
+  ypos 728
+ }
+ Output {
+  name Output1
+  xpos 400
+  ypos 830
  }
 end_group
